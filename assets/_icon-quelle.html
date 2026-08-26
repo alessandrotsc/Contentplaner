@@ -1,0 +1,46 @@
+<!doctype html><html><head><meta charset="utf-8"><style>
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:1024px;height:1024px;overflow:hidden}
+.grund{
+  width:1024px;height:1024px;
+  background:linear-gradient(158deg,#12406B 0%,#0A2942 42%,#061A2C 100%);
+  display:grid;place-items:center;position:relative;
+}
+/* leiser Lichtkegel oben links, wie auf den Syncrate-Buehnen */
+.grund:before{
+  content:"";position:absolute;inset:0;
+  background:radial-gradient(circle at 28% 20%, rgba(24,199,216,.20), transparent 58%);
+}
+.blatt{
+  position:relative;width:592px;height:560px;border-radius:96px;
+  background:linear-gradient(180deg,#F4FAFF 0%,#DCEBF8 100%);
+  box-shadow:0 34px 70px rgba(0,0,0,.42);
+  display:flex;flex-direction:column;overflow:hidden;
+}
+.kopfband{
+  height:150px;flex:none;
+  background:linear-gradient(135deg,#1B9AE0,#0A5FA8);
+}
+.punkte{
+  flex:1;display:grid;grid-template-columns:1fr 1fr;
+  place-items:center;padding:56px 76px 66px;gap:34px;
+}
+.punkt{width:112px;height:112px;border-radius:34px;background:#9DB6CE;opacity:.5}
+.punkt.an{background:linear-gradient(135deg,#2BE0EE,#12A9BC);opacity:1;
+  box-shadow:0 12px 26px rgba(24,199,216,.5)}
+/* die zwei Oesen oben */
+.oese{position:absolute;top:-34px;width:64px;height:104px;border-radius:32px;
+  background:linear-gradient(180deg,#E9F4FF,#B8D2E8)}
+.oese.l{left:132px} .oese.r{right:132px}
+</style></head><body>
+<div class="grund">
+  <div class="blatt">
+    <div class="kopfband"></div>
+    <div class="punkte">
+      <div class="punkt"></div><div class="punkt"></div>
+      <div class="punkt an"></div><div class="punkt"></div>
+    </div>
+    <div class="oese l"></div><div class="oese r"></div>
+  </div>
+</div>
+</body></html>

@@ -1,0 +1,334 @@
+/*
+ * Contentplaner. Aufbau nach Google Kalender, Farben von Syncrate.
+ * Alle Farbwerte stammen aus brand-guidelines/syncrate/colors.md.
+ */
+
+:root {
+  --navy-tief:   #071C30;
+  --navy:        #0E3055;
+  --navy-kante:  #05416F;
+  --flaeche:     #0A2942;
+  --flaeche-2:   #103457;
+  --blau:        #0B76D1;
+  --blau-hell:   #1096D4;
+  --cyan:        #18C7D8;
+  --ink:         #E9F4FF;
+  --ink-dim:     #9DB6CE;
+  --ink-schwach: #6B87A3;
+  --weiss:       #FFFFFF;
+  --rot:         #D2544F;
+
+  --kopf-h: 56px;
+  --radius: 14px;
+  --oben: env(safe-area-inset-top, 0px);
+  --unten: env(safe-area-inset-bottom, 0px);
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+
+html, body {
+  height: 100%;
+  background: var(--navy-tief);
+  color: var(--ink);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  overscroll-behavior: none;
+}
+
+body { display: flex; flex-direction: column; }
+#app { flex: 1; display: flex; flex-direction: column; min-height: 0; }
+
+button, input, select, textarea {
+  font: inherit; color: inherit; background: none; border: none; outline: none;
+}
+button { cursor: pointer; }
+
+/* ------------------------------------------------------------------- Kopf */
+
+.kopf {
+  padding-top: var(--oben);
+  background: var(--navy-tief);
+  border-bottom: 1px solid rgba(255,255,255,.07);
+  position: sticky; top: 0; z-index: 20;
+}
+.kopf-zeile {
+  height: var(--kopf-h);
+  display: flex; align-items: center; gap: 4px;
+  padding: 0 6px 0 4px;
+}
+.ikon-knopf {
+  width: 42px; height: 42px; border-radius: 50%;
+  display: grid; place-items: center; color: var(--ink);
+  flex: none;
+}
+.ikon-knopf:active { background: rgba(255,255,255,.08); }
+.ikon-knopf svg { width: 22px; height: 22px; }
+
+.titel {
+  font-size: 20px; font-weight: 600; letter-spacing: -.01em;
+  flex: 1; min-width: 0; padding-left: 4px;
+  white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+}
+.heute-knopf {
+  border: 1px solid rgba(255,255,255,.2); border-radius: 999px;
+  padding: 6px 13px; font-size: 13px; font-weight: 600; color: var(--ink-dim);
+  flex: none;
+}
+
+/* Wochentagsleiste */
+.wochentage {
+  display: grid; grid-template-columns: repeat(7, 1fr);
+  padding: 4px 0 6px;
+}
+.wochentage span {
+  text-align: center; font-size: 11px; font-weight: 600;
+  color: var(--ink-schwach); letter-spacing: .06em;
+}
+
+/* ---------------------------------------------------------------- Monat */
+
+.blatt { flex: 1; overflow-y: auto; -webkit-overflow-scrolling: touch; }
+
+.monat {
+  display: grid; grid-template-columns: repeat(7, 1fr);
+  grid-auto-rows: minmax(84px, 1fr);
+  min-height: 100%;
+}
+.zelle {
+  border-right: 1px solid rgba(255,255,255,.05);
+  border-bottom: 1px solid rgba(255,255,255,.05);
+  padding: 4px 3px; overflow: hidden;
+  display: flex; flex-direction: column; gap: 2px;
+}
+.zelle:nth-child(7n) { border-right: none; }
+.zelle.fremd { opacity: .38; }
+.zelle.gewaehlt { background: rgba(11,118,209,.13); }
+
+.tageszahl {
+  font-size: 13px; font-weight: 500; color: var(--ink-dim);
+  width: 25px; height: 25px; border-radius: 50%;
+  display: grid; place-items: center; margin: 0 auto 1px;
+  flex: none;
+}
+.zelle.heute .tageszahl { background: var(--blau); color: var(--weiss); font-weight: 700; }
+
+.chip {
+  font-size: 10.5px; line-height: 1.25; font-weight: 600;
+  padding: 2px 4px; border-radius: 4px;
+  white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+  border-left: 3px solid;
+  background: rgba(255,255,255,.07);
+  color: var(--ink);
+}
+.mehr { font-size: 10px; color: var(--ink-schwach); padding-left: 4px; }
+
+/* ----------------------------------------------------------------- Woche */
+
+.woche-kopf {
+  display: grid; grid-template-columns: 46px repeat(7, 1fr);
+  border-bottom: 1px solid rgba(255,255,255,.07);
+  position: sticky; top: 0; background: var(--navy-tief); z-index: 5;
+}
+.woche-kopf div { text-align: center; padding: 5px 0 8px; }
+.woche-kopf .wt { font-size: 10px; color: var(--ink-schwach); font-weight: 600; }
+.woche-kopf .zahl {
+  font-size: 17px; font-weight: 600; margin: 2px auto 0;
+  width: 30px; height: 30px; border-radius: 50%; display: grid; place-items: center;
+}
+.woche-kopf .heute .zahl { background: var(--blau); color: var(--weiss); }
+
+.raster { display: grid; grid-template-columns: 46px repeat(7, 1fr); position: relative; }
+.stunde-spalte div {
+  height: 52px; font-size: 10px; color: var(--ink-schwach);
+  text-align: right; padding-right: 6px; transform: translateY(-6px);
+}
+.tag-spalte { border-left: 1px solid rgba(255,255,255,.05); position: relative; }
+.stunde-linie { height: 52px; border-bottom: 1px solid rgba(255,255,255,.05); }
+
+.block {
+  position: absolute; left: 2px; right: 2px;
+  border-radius: 5px; padding: 3px 5px; overflow: hidden;
+  font-size: 10.5px; line-height: 1.2; font-weight: 600;
+  border-left: 3px solid; background: rgba(255,255,255,.1);
+}
+
+/* ------------------------------------------------------------- Agenda/Tag */
+
+.agenda { padding: 6px 12px calc(96px + var(--unten)); }
+.agenda-tag { margin-top: 18px; }
+.agenda-tag:first-child { margin-top: 6px; }
+.agenda-datum {
+  display: flex; align-items: baseline; gap: 9px;
+  padding: 0 2px 8px; border-bottom: 1px solid rgba(255,255,255,.07);
+  margin-bottom: 8px;
+}
+.agenda-datum b { font-size: 15px; font-weight: 700; }
+.agenda-datum span { font-size: 12px; color: var(--ink-schwach); }
+.agenda-datum.ist-heute b { color: var(--cyan); }
+
+.karte {
+  display: flex; gap: 10px; align-items: flex-start;
+  background: var(--flaeche); border: 1px solid rgba(255,255,255,.06);
+  border-radius: var(--radius); padding: 11px 12px; margin-bottom: 8px;
+}
+.karte:active { background: var(--flaeche-2); }
+.karte-strich { width: 4px; align-self: stretch; border-radius: 3px; flex: none; }
+.karte-text { flex: 1; min-width: 0; }
+.karte-titel { font-size: 15px; font-weight: 600; margin-bottom: 3px; }
+.karte-meta { font-size: 12px; color: var(--ink-dim); display: flex; flex-wrap: wrap; gap: 6px; }
+.punkt { color: var(--ink-schwach); }
+
+.status-pille {
+  font-size: 10.5px; font-weight: 700; letter-spacing: .04em;
+  padding: 3px 8px; border-radius: 999px; flex: none;
+  text-transform: uppercase;
+}
+
+.leer { text-align: center; color: var(--ink-schwach); padding: 60px 30px; font-size: 14px; line-height: 1.6; }
+
+/* ------------------------------------------------------------------- FAB */
+
+.fab {
+  position: fixed; right: 18px; bottom: calc(18px + var(--unten));
+  width: 58px; height: 58px; border-radius: 19px;
+  background: linear-gradient(135deg, var(--blau-hell), #0A5FA8);
+  box-shadow: 0 8px 22px rgba(0,0,0,.45);
+  display: grid; place-items: center; z-index: 30; color: var(--weiss);
+}
+.fab:active { transform: scale(.94); }
+.fab svg { width: 26px; height: 26px; }
+
+/* ----------------------------------------------------------- Seitenmenue */
+
+.schleier {
+  position: fixed; inset: 0; background: rgba(0,0,0,.55); z-index: 40;
+  opacity: 0; pointer-events: none; transition: opacity .2s;
+}
+.schleier.auf { opacity: 1; pointer-events: auto; }
+
+.menue {
+  position: fixed; top: 0; left: 0; bottom: 0; width: min(300px, 84vw);
+  background: var(--navy); z-index: 50; transform: translateX(-100%);
+  transition: transform .24s cubic-bezier(.3,.7,.4,1);
+  display: flex; flex-direction: column;
+  padding-top: var(--oben); padding-bottom: var(--unten);
+}
+.menue.auf { transform: none; }
+.menue-kopf { padding: 18px 18px 14px; border-bottom: 1px solid rgba(255,255,255,.08); }
+.menue-kopf b { font-size: 19px; font-weight: 700; letter-spacing: -.01em; }
+.menue-kopf p { font-size: 12px; color: var(--ink-schwach); margin-top: 3px; }
+.menue-inhalt { flex: 1; overflow-y: auto; padding: 10px 0 20px; }
+.menue-titel {
+  font-size: 11px; font-weight: 700; letter-spacing: .09em; text-transform: uppercase;
+  color: var(--ink-schwach); padding: 14px 18px 7px;
+}
+.menue-zeile {
+  display: flex; align-items: center; gap: 11px;
+  padding: 11px 18px; font-size: 15px; width: 100%; text-align: left;
+}
+.menue-zeile:active { background: rgba(255,255,255,.06); }
+.menue-zeile.aktiv { color: var(--cyan); font-weight: 600; }
+.menue-zeile svg { width: 19px; height: 19px; flex: none; }
+
+.kanal-punkt {
+  width: 17px; height: 17px; border-radius: 5px; flex: none;
+  border: 2px solid; display: grid; place-items: center;
+}
+.kanal-punkt svg { width: 11px; height: 11px; color: var(--navy-tief); }
+.kanal-name { flex: 1; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.kanal-aus .kanal-name { color: var(--ink-schwach); }
+
+/* ------------------------------------------------------------------ Dialog */
+
+.dialog-huelle {
+  position: fixed; inset: 0; z-index: 60; display: flex; align-items: flex-end;
+  background: rgba(0,0,0,.6);
+}
+.dialog {
+  background: var(--navy); width: 100%; max-height: 92vh;
+  border-radius: 20px 20px 0 0; display: flex; flex-direction: column;
+  padding-bottom: var(--unten);
+  animation: hoch .26s cubic-bezier(.3,.7,.4,1);
+}
+@keyframes hoch { from { transform: translateY(100%); } }
+
+.dialog-kopf {
+  display: flex; align-items: center; gap: 8px;
+  padding: 12px 10px 12px 6px; border-bottom: 1px solid rgba(255,255,255,.08);
+  flex: none;
+}
+.dialog-kopf b { flex: 1; font-size: 17px; font-weight: 600; }
+.speichern {
+  background: var(--blau); color: var(--weiss); font-weight: 600; font-size: 14px;
+  padding: 9px 18px; border-radius: 999px;
+}
+.speichern:active { filter: brightness(1.15); }
+
+.dialog-inhalt { overflow-y: auto; padding: 6px 16px 22px; -webkit-overflow-scrolling: touch; }
+
+.feld { margin-top: 15px; }
+.feld > label {
+  display: block; font-size: 11.5px; font-weight: 700; letter-spacing: .07em;
+  text-transform: uppercase; color: var(--ink-schwach); margin-bottom: 6px;
+}
+.eingabe {
+  width: 100%; background: var(--flaeche); border: 1px solid rgba(255,255,255,.1);
+  border-radius: 11px; padding: 12px 13px; font-size: 15px; color: var(--ink);
+}
+.eingabe:focus { border-color: var(--blau); }
+textarea.eingabe { min-height: 92px; resize: vertical; line-height: 1.5; }
+select.eingabe { appearance: none; background-image: none; }
+
+.zeile-2 { display: flex; gap: 10px; }
+.zeile-2 > * { flex: 1; min-width: 0; }
+
+.wahl { display: flex; flex-wrap: wrap; gap: 7px; }
+.wahl button {
+  border: 1px solid rgba(255,255,255,.14); border-radius: 999px;
+  padding: 8px 14px; font-size: 13px; font-weight: 600; color: var(--ink-dim);
+}
+.wahl button.an { background: var(--blau); border-color: var(--blau); color: var(--weiss); }
+
+.tage-wahl { display: flex; gap: 6px; }
+.tage-wahl button {
+  flex: 1; height: 38px; border-radius: 10px; font-size: 12px; font-weight: 700;
+  border: 1px solid rgba(255,255,255,.14); color: var(--ink-dim); padding: 0;
+}
+.tage-wahl button.an { background: var(--cyan); border-color: var(--cyan); color: var(--navy-tief); }
+
+.kopieren {
+  display: flex; align-items: center; gap: 6px; margin-top: 8px;
+  font-size: 13px; font-weight: 600; color: var(--cyan);
+  border: 1px solid rgba(24,199,216,.35); border-radius: 999px; padding: 8px 14px;
+}
+.kopieren svg { width: 15px; height: 15px; }
+.kopieren.fertig { color: #2E9E62; border-color: rgba(46,158,98,.5); }
+
+.gefahr {
+  width: 100%; text-align: center; color: var(--rot); font-size: 14px;
+  font-weight: 600; padding: 14px; margin-top: 22px;
+  border: 1px solid rgba(210,84,79,.35); border-radius: 12px;
+}
+
+.hinweis { font-size: 12px; color: var(--ink-schwach); line-height: 1.55; margin-top: 7px; }
+
+/* --------------------------------------------------------------- Listen */
+
+.liste-zeile {
+  display: flex; align-items: center; gap: 11px;
+  background: var(--flaeche); border: 1px solid rgba(255,255,255,.06);
+  border-radius: 12px; padding: 12px; margin-bottom: 8px;
+}
+.liste-zeile b { font-size: 14.5px; font-weight: 600; display: block; }
+.liste-zeile small { font-size: 12px; color: var(--ink-schwach); }
+.liste-zeile .weg { color: var(--ink-schwach); padding: 4px; }
+.liste-zeile .weg svg { width: 17px; height: 17px; display: block; }
+
+.zufuegen {
+  width: 100%; border: 1px dashed rgba(255,255,255,.22); border-radius: 12px;
+  padding: 13px; font-size: 14px; font-weight: 600; color: var(--ink-dim); margin-top: 4px;
+}
+
+.anhang-vorschau {
+  width: 100%; border-radius: 11px; margin-top: 9px; display: block;
+  border: 1px solid rgba(255,255,255,.1);
+}

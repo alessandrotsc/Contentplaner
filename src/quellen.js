@@ -15,6 +15,7 @@
 
 import * as S from "./store.js";
 import * as D from "./datum.js";
+import * as Server from "./server.js";
 
 const IG = "https://graph.instagram.com/v25.0";
 const TT = "https://open.tiktokapis.com/v2";
@@ -55,8 +56,10 @@ export const QUELLEN = {
 
 export const quelleFuer = (typ) => QUELLEN[typ] || { direkt: false, anleitung: ["Für diese Plattform gibt es keine offene Schnittstelle. Werte von Hand eintragen."] };
 
-/** Alle verbundenen Plattformen abrufen. Gibt die Zahl erfolgreicher Abrufe zurueck. */
+/** Alle verbundenen Plattformen abrufen. Gibt die Zahl erfolgreicher Abrufe zurueck.
+ *  Mit eingetragenem Server holt die App alles von dort statt direkt. */
 export async function allesAbgleichen({ nurWennAlt = false } = {}) {
+  if (Server.aktiv()) return Server.abgleichen();
   let n = 0;
   for (const pl of S.plattformen()) {
     const v = S.verbindung(pl.id);
@@ -70,6 +73,7 @@ export async function allesAbgleichen({ nurWennAlt = false } = {}) {
 export async function abgleichen(pl) {
   const v = S.verbindung(pl.id);
   const q = quelleFuer(pl.typ);
+  if (v?.server) return Server.abgleichen();
   if (!v || !q.abrufen) throw new Error("Nicht verbunden");
   try {
     const info = await q.abrufen(pl, v);

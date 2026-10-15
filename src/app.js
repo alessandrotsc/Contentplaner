@@ -17,6 +17,7 @@ import { formateBereich } from "./formate.js";
 import { analyticsBereich } from "./analytics.js";
 import { mehrBereich } from "./mehr.js";
 import { allesAbgleichen } from "./quellen.js";
+import * as Server from "./server.js";
 
 const app = document.getElementById("app");
 
@@ -113,5 +114,10 @@ beimZeichnen(zeichnen);
 S.beiAenderung(() => {});
 zeichnen();
 
-// Verbundene Schnittstellen beim Oeffnen still abgleichen (hoechstens alle 6 h)
-allesAbgleichen({ nurWennAlt: true }).then((n) => { if (n) zeichnen(); }).catch(() => {});
+// Mit Server: solange die App offen ist, alle 30 s die neuesten Zahlen holen.
+// Ohne Server: verbundene Schnittstellen beim Oeffnen still abgleichen (hoechstens alle 6 h).
+if (Server.aktiv()) {
+  Server.dauerabgleich((n) => { if (n || Z.bereich === "analytics") zeichnen(); });
+} else {
+  allesAbgleichen({ nurWennAlt: true }).then((n) => { if (n) zeichnen(); }).catch(() => {});
+}

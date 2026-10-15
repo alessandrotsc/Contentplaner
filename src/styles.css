@@ -509,3 +509,32 @@ select.eingabe { -webkit-appearance: none; appearance: none; }
 .ziel-balken { height: 8px; border-radius: 4px; background: #EEF2F6; overflow: hidden; }
 .ziel-balken span { display: block; height: 100%; border-radius: 4px; background: var(--verlauf); }
 .ziel-wert { text-align: right; font-weight: 700; color: var(--ink); }
+
+/* ------------------------------------------------- Kennzahl-Detail (Verlauf) */
+.klickbar { cursor: pointer; transition: transform .12s ease; }
+.klickbar:active { transform: scale(.97); }
+.kpi.klickbar > small::after { content: " ›"; color: var(--blau); }
+.detail-zeit { margin: 12px 0 4px; }
+.detail-zeit button { flex: 1; justify-content: center; }
+.detail-kopf { padding: 12px 2px 6px; min-height: 74px; }
+.detail-kopf b { display: block; font-size: 36px; font-weight: 800; letter-spacing: -.03em; font-variant-numeric: tabular-nums; }
+.detail-unter { font-size: 13px; color: var(--ink-2); font-weight: 600; }
+.detail-unter .gut, .detail-zeile .gut { color: var(--gut); }
+.detail-unter .schlecht, .detail-zeile .schlecht { color: var(--schlecht); }
+.detail-unter small { color: var(--gold); font-weight: 700; }
+.detail-diagramm { touch-action: none; user-select: none; -webkit-user-select: none; margin: 4px 0 6px; }
+.detail-diagramm .wert { font-size: 9.5px; }
+.detail-diagramm rect { fill: var(--blau); }
+.detail-diagramm rect.plus { fill: var(--gut); }
+.detail-diagramm rect.minus { fill: var(--schlecht); }
+.detail-diagramm rect.an { fill: var(--cyan); }
+.detail-diagramm .zeiger line { stroke: var(--navy); stroke-width: 1; stroke-dasharray: 3 3; }
+.detail-diagramm .zeiger circle { fill: var(--blau); stroke: #fff; stroke-width: 2; }
+.detail-titel { font-size: 12px; font-weight: 700; color: var(--ink-2); margin-top: 14px; }
+.detail-erkl { background: #F7F5F0; border-radius: 12px; padding: 10px 12px; margin: 12px 0; }
+.detail-tabelle { margin-top: 10px; }
+.detail-zeile { display: grid; grid-template-columns: 1fr auto 76px; gap: 10px; padding: 9px 2px; border-bottom: 1px solid #F0ECE3; font-size: 14px; font-variant-numeric: tabular-nums; }
+.detail-zeile > :nth-child(2), .detail-zeile > :nth-child(3) { text-align: right; }
+.detail-zeile.titel { font-size: 11px; font-weight: 700; color: var(--ink-3); text-transform: uppercase; letter-spacing: .08em; }
+.detail-zeile.vorl { color: var(--ink-3); }
+.detail-tabelle.zwei .detail-zeile { grid-template-columns: 1fr auto; }

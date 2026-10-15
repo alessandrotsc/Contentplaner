@@ -16,6 +16,7 @@ import { Z, neu, aktivePlattformIds, aktiveProjekte } from "./zustand.js";
 import { el, ikon, dialog, feld, pillen } from "./ui.js";
 import { allesAbgleichen } from "./quellen.js";
 import * as Server from "./server.js";
+import { detailOeffnen } from "./detail.js";
 
 const ZEITRAEUME = [
   { id: 7, name: "7 Tage" }, { id: 28, name: "28 Tage" }, { id: 90, name: "90 Tage" },
@@ -183,20 +184,28 @@ function kennzahlen(tab, pids, z, vorRoh) {
   const vor = vergleichbar ? vorRoh : { von: "0000-00-00", bis: "0000-00-00" };
   const vglText = vergleichbar ? "zum Vorzeitraum" : "";
   const nurOhneIg = !pids.some((id) => S.plattformVon(id)?.typ === "instagram");
+  // Jede Kennzahl-Kachel oeffnet ihren Verlauf
+  const rechnen = { tab, pids, summe, stand };
+  const klick = (k, id) => {
+    const m = S.METRIKEN.find((x) => x.id === id);
+    k.classList.add("klickbar");
+    k.addEventListener("click", () => detailOeffnen(m, rechnen, start));
+    return k;
+  };
 
   // Follower: Stand und Bewegung
   const fJetzt = stand(tab, pids, "follower", z.bis);
   const fStart = stand(tab, pids, "follower", vor.bis, true);
   if (fJetzt != null) {
     const netto = fStart != null ? fJetzt - fStart : null;
-    karten.push(kachel("Follower", fJetzt, netto, "netto im Zeitraum", true));
+    karten.push(klick(kachel("Follower", fJetzt, netto, "netto im Zeitraum", true), "follower"));
   } else leer.push("Follower");
 
   for (const m of S.METRIKEN.filter((x) => x.art === "summe")) {
     const jetzt = summe(tab, pids, m.id, z.von, z.bis);
     const davor = summe(tab, pids, m.id, vor.von, vor.bis);
     if (jetzt == null && davor == null) { if (!(nurOhneIg && IG_NUR.has(m.id))) leer.push(m.name); continue; }
-    karten.push(kachel(m.name, jetzt || 0, vergleichbar ? prozent(jetzt || 0, davor) : null, vglText, false, m.id === "verloren"));
+    karten.push(klick(kachel(m.name, jetzt || 0, vergleichbar ? prozent(jetzt || 0, davor) : null, vglText, false, m.id === "verloren"), m.id));
   }
 
   // Engagement-Rate: Interaktionen je erreichtem Konto (TikTok ohne Reichweite: je Aufruf)
@@ -217,7 +226,7 @@ function kennzahlen(tab, pids, z, vorRoh) {
     const jetzt = stand(tab, pids, m.id, z.bis);
     if (jetzt == null) continue;
     const davor = vergleichbar ? stand(tab, pids, m.id, vor.bis, true) : null;
-    karten.push(kachel(m.name, jetzt, davor != null ? jetzt - davor : null, "im Zeitraum", true));
+    karten.push(klick(kachel(m.name, jetzt, davor != null ? jetzt - davor : null, "im Zeitraum", true), m.id));
   }
 
   // Gesamtzahlen ueber alle Beitraege (unabhaengig vom Zeitraum, sofort verfuegbar)
@@ -269,7 +278,7 @@ function diagramme(tab, pids, z) {
   // Plattformen, die spaeter dazukamen, mit ihrem ersten Wert auffuellen, damit die Kurve nicht springt
   const punkte = tage.map((t) => stand(tab, pids, "follower", t, true));
   if (punkte.some((x) => x != null)) {
-    box.append(el("div", { class: "karte-gross" },
+    box.append(el("div", { class: "karte-gross klickbar", onclick: () => detailOeffnen(S.METRIKEN[0], { tab, pids, summe, stand }, ersterTag(pids)) },
       el("div", { class: "diagramm-titel" }, "Follower",
         el("span", { text: `${(punkte.find((x) => x != null)).toLocaleString("de-DE")} → ${punkte.filter((x) => x != null).at(-1).toLocaleString("de-DE")}` })),
       linie(tage, punkte)));

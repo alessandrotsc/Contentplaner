@@ -471,3 +471,41 @@ select.eingabe { -webkit-appearance: none; appearance: none; }
   .tabs { justify-content: center; }
   .tab { max-width: 140px; }
 }
+
+/* --------------------------------------------------- Beitraege (Analytics) */
+
+.schnitt-reihe { display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 14px; margin: -2px 0 12px; font-size: 12.5px; color: var(--ink-3); }
+.schnitt-reihe small { font-weight: 700; color: var(--ink-2); }
+.schnitt-reihe b { color: var(--ink); font-weight: 800; }
+.beitrag {
+  display: flex; gap: 10px; align-items: flex-start; padding: 10px 0; color: inherit; text-decoration: none;
+  border-top: 1px solid var(--linie);
+}
+.beitrag:first-of-type { border-top: 0; }
+.beitrag-platz { width: 18px; flex-shrink: 0; font-size: 12px; font-weight: 800; color: var(--ink-3); padding-top: 2px; text-align: right; }
+.beitrag-bild { width: 46px; height: 62px; flex-shrink: 0; object-fit: cover; border-radius: 8px; background: var(--creme-hell); }
+.beitrag-bild.leer { display: grid; place-items: center; color: var(--ink-3); }
+.beitrag-text { flex: 1; min-width: 0; }
+.beitrag-text small { display: flex; align-items: center; gap: 3px; font-size: 11.5px; color: var(--ink-3); }
+.beitrag-text b {
+  display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;
+  font-size: 13.5px; font-weight: 600; line-height: 1.3; margin: 2px 0 3px;
+}
+.beitrag-werte { display: block; font-size: 12px; color: var(--blau-dunkel); font-weight: 600; line-height: 1.4; }
+
+/* ------------------------------------------------ Beste Zeit / Zielgruppe */
+
+.diagramm .balken-g rect.top { fill: var(--cyan); }
+.ziel-titel { font-size: 12px; font-weight: 700; color: var(--ink-2); margin: 16px 0 6px; }
+.anteil-band { display: flex; height: 12px; border-radius: 6px; overflow: hidden; gap: 2px; }
+.anteil-legende { display: flex; flex-wrap: wrap; gap: 4px 14px; margin-top: 6px; font-size: 12.5px; color: var(--ink-2); }
+.anteil-legende span { display: flex; align-items: center; gap: 5px; }
+.anteil-legende i { width: 9px; height: 9px; border-radius: 50%; }
+.g-F { background: var(--cyan); }
+.g-M { background: var(--blau); }
+.g-U { background: #C9C2B3; }
+.ziel-zeile { display: grid; grid-template-columns: 96px 1fr 40px; align-items: center; gap: 8px; padding: 3px 0; font-size: 12.5px; }
+.ziel-name { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; color: var(--ink-2); }
+.ziel-balken { height: 8px; border-radius: 4px; background: #EEF2F6; overflow: hidden; }
+.ziel-balken span { display: block; height: 100%; border-radius: 4px; background: var(--verlauf); }
+.ziel-wert { text-align: right; font-weight: 700; color: var(--ink); }

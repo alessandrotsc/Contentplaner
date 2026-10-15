@@ -62,14 +62,20 @@ export const METRIKEN = [
   { id: "verloren", name: "Entfolgt", art: "summe" },
   { id: "aufrufe", name: "Aufrufe", art: "summe" },
   { id: "reichweite", name: "Reichweite", art: "summe" },
+  { id: "interagierende", name: "Interagierende Konten", art: "summe" },
   { id: "profilaufrufe", name: "Profilaufrufe", art: "summe" },
   { id: "interaktionen", name: "Interaktionen", art: "summe" },
   { id: "likes", name: "Likes", art: "summe" },
   { id: "kommentare", name: "Kommentare", art: "summe" },
   { id: "geteilt", name: "Geteilt", art: "summe" },
   { id: "gespeichert", name: "Gespeichert", art: "summe" },
+  { id: "reposts", name: "Reposts", art: "summe" },
+  { id: "antworten", name: "Antworten", art: "summe" },
   { id: "linkklicks", name: "Link-Klicks", art: "summe" },
+  { id: "webklicks", name: "Website-Klicks", art: "summe" },
   { id: "beitraege", name: "Beiträge", art: "stand" },
+  { id: "folgt", name: "Gefolgt", art: "stand" },
+  { id: "likes_gesamt", name: "Likes gesamt", art: "stand" },
 ];
 
 export function k() {

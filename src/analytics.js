@@ -15,6 +15,7 @@ import * as D from "./datum.js";
 import { Z, neu, aktivePlattformIds, aktiveProjekte } from "./zustand.js";
 import { el, ikon, dialog, feld, pillen } from "./ui.js";
 import { allesAbgleichen } from "./quellen.js";
+import * as Server from "./server.js";
 
 const ZEITRAEUME = [
   { id: 7, name: "7 Tage" }, { id: 28, name: "28 Tage" }, { id: 90, name: "90 Tage" },
@@ -23,6 +24,9 @@ const ZEITRAEUME = [
 
 let chartMetrik = "aufrufe";
 let laedt = false;
+let beitragSort = "aufrufe";
+let beitraegeAlle = false;
+let zielgruppeWer = "follower";
 
 /* ------------------------------------------------------------- Rechnen */
 
@@ -114,6 +118,9 @@ export function analyticsBereich() {
     abrufZeile(pids),
     kennzahlen(tab, pids, z, vor),
     diagramme(tab, pids, z),
+    beitraegeBlock(pids, z),
+    onlineBlock(pids),
+    zielgruppeBlock(pids),
     !Z.plattformId && plattformTabelle(tab, z),
     einnahmenBlock(z),
     el("div", { class: "knopf-reihe" },
@@ -158,9 +165,24 @@ function abrufZeile(pids) {
       } }, ikon("sync", 18)) : null);
 }
 
-function kennzahlen(tab, pids, z, vor) {
+// Kennzahlen, die es nur bei Instagram gibt (bei reinen TikTok-Ansichten nicht als "fehlt" melden)
+const IG_NUR = new Set(["neu", "verloren", "reichweite", "interagierende", "profilaufrufe", "gespeichert", "reposts", "antworten", "linkklicks", "webklicks"]);
+
+/** Erster Tag mit Daten ueber alle gewaehlten Plattformen. */
+function ersterTag(pids) {
+  const tage = S.messungen(pids).map((m) => m.von);
+  return tage.length ? tage.reduce((a, b) => (a < b ? a : b)) : null;
+}
+
+function kennzahlen(tab, pids, z, vorRoh) {
   const karten = [];
   const leer = [];
+  // Vergleich nur, wenn der Vorzeitraum komplett mit Daten abgedeckt ist, sonst sind die Prozente Unsinn
+  const start = ersterTag(pids);
+  const vergleichbar = start && start <= vorRoh.von;
+  const vor = vergleichbar ? vorRoh : { von: "0000-00-00", bis: "0000-00-00" };
+  const vglText = vergleichbar ? "zum Vorzeitraum" : "";
+  const nurOhneIg = !pids.some((id) => S.plattformVon(id)?.typ === "instagram");
 
   // Follower: Stand und Bewegung
   const fJetzt = stand(tab, pids, "follower", z.bis);
@@ -173,20 +195,52 @@ function kennzahlen(tab, pids, z, vor) {
   for (const m of S.METRIKEN.filter((x) => x.art === "summe")) {
     const jetzt = summe(tab, pids, m.id, z.von, z.bis);
     const davor = summe(tab, pids, m.id, vor.von, vor.bis);
-    if (jetzt == null && davor == null) { leer.push(m.name); continue; }
-    karten.push(kachel(m.name, jetzt || 0, prozent(jetzt || 0, davor), "zum Vorzeitraum", false, m.id === "verloren"));
+    if (jetzt == null && davor == null) { if (!(nurOhneIg && IG_NUR.has(m.id))) leer.push(m.name); continue; }
+    karten.push(kachel(m.name, jetzt || 0, vergleichbar ? prozent(jetzt || 0, davor) : null, vglText, false, m.id === "verloren"));
+  }
+
+  // Engagement-Rate: Interaktionen je erreichtem Konto (TikTok ohne Reichweite: je Aufruf)
+  const inter = summe(tab, pids, "interaktionen", z.von, z.bis);
+  const basis = summe(tab, pids, "reichweite", z.von, z.bis) || summe(tab, pids, "aufrufe", z.von, z.bis);
+  if (inter != null && basis) {
+    const rate = (inter / basis) * 100;
+    const interV = summe(tab, pids, "interaktionen", vor.von, vor.bis);
+    const basisV = summe(tab, pids, "reichweite", vor.von, vor.bis) || summe(tab, pids, "aufrufe", vor.von, vor.bis);
+    const rateV = interV != null && basisV ? (interV / basisV) * 100 : null;
+    const k = kachel("Engagement-Rate", 0, rateV != null ? Math.round((rate - rateV) * 10) / 10 : null, "Punkte zum Vorzeitraum", true);
+    k.querySelector("b").textContent = rate.toLocaleString("de-DE", { maximumFractionDigits: 1 }) + " %";
+    karten.splice(1, 0, k);
+  }
+
+  // Weitere Staende (Gefolgt, Likes gesamt, Beitraege): Wert am Ende, Bewegung im Zeitraum
+  for (const m of S.METRIKEN.filter((x) => x.art === "stand" && x.id !== "follower")) {
+    const jetzt = stand(tab, pids, m.id, z.bis);
+    if (jetzt == null) continue;
+    const davor = vergleichbar ? stand(tab, pids, m.id, vor.bis, true) : null;
+    karten.push(kachel(m.name, jetzt, davor != null ? jetzt - davor : null, "im Zeitraum", true));
+  }
+
+  // Gesamtzahlen ueber alle Beitraege (unabhaengig vom Zeitraum, sofort verfuegbar)
+  const alleB = Server.beitraege(pids);
+  if (alleB.some((b) => b.werte.aufrufe != null)) {
+    const ges = alleB.reduce((a, b) => a + (b.werte.aufrufe || 0), 0);
+    const k = kachel("Aufrufe aller Beiträge", ges, null, "");
+    k.append(el("div", { class: "kpi-delta", text: `Ø ${zahl(ges / alleB.length)} je Beitrag` }));
+    karten.push(k);
   }
 
   const ein = einnahmenSumme(z.von, z.bis);
   const einVor = einnahmenSumme(vor.von, vor.bis);
   if (ein || einVor) karten.push(kachel("Einnahmen", ein, prozent(ein, einVor), "zum Vorzeitraum", false, false, true));
+  if (!vergleichbar && start) leer.unshift(`Vergleich mit dem Vorzeitraum ab ${D.kurzesDatum(D.plusTage(start, 2 * z.tage - 1))} möglich (Daten seit ${D.kurzesDatum(start)})`);
 
   return el("div", {},
     el("div", { class: "kpi-raster" }, karten),
-    leer.length ? el("div", { class: "hinweis", text: "Noch keine Daten: " + leer.join(", ") }) : null);
+    leer.length ? el("div", { class: "hinweis", text: leer.filter((x) => x.startsWith("Vergleich")).concat(
+      leer.some((x) => !x.startsWith("Vergleich")) ? ["Noch keine Daten: " + leer.filter((x) => !x.startsWith("Vergleich")).join(", ")] : []).join(". ") }) : null);
 }
 
-const prozent = (a, b) => (b ? Math.round(((a - b) / b) * 100) : null);
+const prozent = (a, b) => (b > 0 ? Math.round(((a - b) / b) * 100) : null);
 
 function kachel(name, wert, delta, deltaText, absolut, umgekehrt = false, geld = false) {
   const zahlText = geld ? euro(wert) : Math.round(wert).toLocaleString("de-DE");
@@ -212,7 +266,8 @@ function diagramme(tab, pids, z) {
   const box = el("div");
 
   // Followerkurve
-  const punkte = tage.map((t) => stand(tab, pids, "follower", t));
+  // Plattformen, die spaeter dazukamen, mit ihrem ersten Wert auffuellen, damit die Kurve nicht springt
+  const punkte = tage.map((t) => stand(tab, pids, "follower", t, true));
   if (punkte.some((x) => x != null)) {
     box.append(el("div", { class: "karte-gross" },
       el("div", { class: "diagramm-titel" }, "Follower",
@@ -287,6 +342,143 @@ function balken(tage, werte) {
     <text x="2" y="12" class="wert">max ${Math.round(max).toLocaleString("de-DE")} · Summe ${Math.round(summe).toLocaleString("de-DE")}</text>
     <g class="balken-g">${bars}</g>
     ${achse(tage)}`);
+}
+
+/* ---------------------------------------------------- Beitraege */
+
+const BEITRAG_SORT = [
+  { id: "aufrufe", name: "Aufrufe" }, { id: "reichweite", name: "Reichweite" }, { id: "likes", name: "Likes" },
+  { id: "kommentare", name: "Kommentare" }, { id: "geteilt", name: "Geteilt" }, { id: "gespeichert", name: "Gespeichert" },
+  { id: "interaktionen", name: "Interaktionen" }, { id: "wiedergabe_schnitt", name: "Ø Wiedergabe" }, { id: "zeit", name: "Neueste" },
+];
+const zahl = (x) => Math.round(x).toLocaleString("de-DE");
+const berlinTag = (iso) => new Date(iso).toLocaleDateString("sv-SE", { timeZone: "Europe/Berlin" });
+
+function beitraegeBlock(pids, z) {
+  const alle = Server.beitraege(pids);
+  if (!alle.length) return null;
+  const liste = alle.filter((b) => { const t = berlinTag(b.zeit); return t >= z.von && t <= z.bis; });
+  const sorten = BEITRAG_SORT.filter((x) => x.id === "zeit" || liste.some((b) => b.werte[x.id] != null));
+  if (!sorten.some((x) => x.id === beitragSort)) beitragSort = sorten[0]?.id || "zeit";
+  const wert = (b) => (beitragSort === "zeit" ? new Date(b.zeit).getTime() : b.werte[beitragSort] ?? -1);
+  liste.sort((a, b) => wert(b) - wert(a));
+
+  const box = el("div", { class: "karte-gross" },
+    el("div", { class: "diagramm-titel" }, `Beiträge im Zeitraum`, el("span", { text: String(liste.length) })));
+  if (!liste.length) {
+    box.append(el("div", { class: "hinweis", text: "In diesem Zeitraum wurde nichts veröffentlicht." }));
+    return box;
+  }
+  // Durchschnitt je Beitrag
+  const schnitt = (k) => { const w = liste.filter((b) => b.werte[k] != null); return w.length ? w.reduce((a, b) => a + b.werte[k], 0) / w.length : null; };
+  const avg = [["aufrufe", "Aufrufe"], ["likes", "Likes"], ["kommentare", "Komm."], ["geteilt", "Geteilt"]]
+    .map(([k, n]) => [n, schnitt(k)]).filter(([, w]) => w != null);
+  if (avg.length) box.append(el("div", { class: "schnitt-reihe" }, el("small", { text: "Ø je Beitrag" }),
+    avg.map(([n, w]) => el("span", {}, el("b", { text: zahl(w) }), " " + n))));
+
+  box.append(el("div", { class: "chips" }, sorten.map((x) => el("button", {
+    class: "chip-knopf" + (x.id === beitragSort ? " an" : ""), text: x.name,
+    onclick: () => { beitragSort = x.id; neu(); } }))));
+
+  const zeigen = beitraegeAlle ? liste : liste.slice(0, 10);
+  zeigen.forEach((b, i) => box.append(beitragZeile(b, i + 1)));
+  if (liste.length > 10) box.append(el("button", { class: "zufuegen klein", text: beitraegeAlle ? "Weniger anzeigen" : `Alle ${liste.length} anzeigen`,
+    onclick: () => { beitraegeAlle = !beitraegeAlle; neu(); } }));
+  return box;
+}
+
+function beitragZeile(b, platz) {
+  const w = b.werte;
+  const teile = [
+    w.aufrufe != null && `${zahl(w.aufrufe)} Aufrufe`, w.reichweite != null && `${zahl(w.reichweite)} erreicht`,
+    w.likes != null && `${zahl(w.likes)} Likes`, w.kommentare != null && `${zahl(w.kommentare)} Komm.`,
+    w.geteilt != null && `${zahl(w.geteilt)} geteilt`, w.gespeichert != null && `${zahl(w.gespeichert)} gespeichert`,
+    w.wiedergabe_schnitt != null && `Ø ${w.wiedergabe_schnitt.toLocaleString("de-DE")} s`,
+    w.neue_follower != null && `+${zahl(w.neue_follower)} Follower`,
+  ].filter(Boolean);
+  const pl = S.plattformVon(b.plattformId);
+  return el("a", { class: "beitrag", href: b.link || "#", target: "_blank", rel: "noopener" },
+    el("span", { class: "beitrag-platz", text: String(platz) }),
+    b.bild ? el("img", { class: "beitrag-bild", src: b.bild, loading: "lazy", referrerpolicy: "no-referrer", alt: "",
+      onerror: (ev) => ev.target.replaceWith(el("span", { class: "beitrag-bild leer" }, ikon(pl?.typ || "chart", 18))) })
+      : el("span", { class: "beitrag-bild leer" }, ikon(pl?.typ || "chart", 18)),
+    el("div", { class: "beitrag-text" },
+      el("small", {}, ikon(pl?.typ || "chart", 12), ` ${b.art} · ${new Date(b.zeit).toLocaleString("de-DE", { day: "2-digit", month: "2-digit", hour: "2-digit", minute: "2-digit", timeZone: "Europe/Berlin" })}`),
+      el("b", { text: b.titel || "(ohne Text)" }),
+      el("span", { class: "beitrag-werte", text: teile.join(" · ") })));
+}
+
+/* ---------------------------------------------------- Beste Zeit */
+
+function onlineBlock(pids) {
+  const reihen = pids.map((pid) => Server.profil(pid)?.online).filter((o) => o?.length === 24);
+  if (!reihen.length) return null;
+  const werte = Array.from({ length: 24 }, (_, h) => reihen.reduce((a, r) => a + r[h], 0));
+  const max = Math.max(1, ...werte);
+  const top = werte.map((w, h) => [h, w]).sort((a, b) => b[1] - a[1]).slice(0, 3).map(([h]) => h).sort((a, b) => a - b);
+  const breite = (B - 8) / 24;
+  const bars = werte.map((w, h) => {
+    const hoehe = (w / max) * (H - 18);
+    return `<rect x="${(4 + h * breite + breite * 0.15).toFixed(1)}" y="${(H - hoehe).toFixed(1)}" width="${(breite * 0.7).toFixed(1)}" height="${hoehe.toFixed(1)}" rx="2" ${top.includes(h) ? 'class="top"' : ""}/>`;
+  }).join("");
+  const marken = [0, 6, 12, 18, 23].map((h) => `<text x="${(4 + h * breite + breite / 2).toFixed(1)}" y="${H + 17}" text-anchor="middle">${h} Uhr</text>`).join("");
+  return el("div", { class: "karte-gross" },
+    el("div", { class: "diagramm-titel" }, "Wann deine Follower online sind", el("span", { text: top.map((h) => `${h} Uhr`).join(", ") })),
+    svg(`<line x1="0" x2="${B}" y1="${H}" y2="${H}" class="grund"/><g class="balken-g">${bars}</g>${marken}`),
+    el("div", { class: "hinweis", text: "Instagram, Durchschnitt der letzten Tage, deutsche Zeit. Die markierten Stunden sind die besten Zeiten zum Posten." }));
+}
+
+/* ---------------------------------------------------- Zielgruppe */
+
+const STADT = { Munich: "München", Cologne: "Köln", Nuremberg: "Nürnberg", Vienna: "Wien", Zurich: "Zürich",
+  Hanover: "Hannover", Brunswick: "Braunschweig", Geneva: "Genf", Duesseldorf: "Düsseldorf", Dusseldorf: "Düsseldorf" };
+const GESCHLECHT = { F: "Frauen", M: "Männer", U: "Ohne Angabe" };
+let landName;
+try { const dn = new Intl.DisplayNames(["de"], { type: "region" }); landName = (c) => dn.of(c) || c; } catch { landName = (c) => c; }
+
+function zielgruppeBlock(pids) {
+  const profile = pids.map((pid) => Server.profil(pid)?.zielgruppe).filter(Boolean);
+  if (!profile.length) return null;
+  const hat = (wer) => profile.some((p) => Object.values(p[wer] || {}).some((l) => l?.length));
+  if (!hat(zielgruppeWer)) zielgruppeWer = hat("follower") ? "follower" : "interagierend";
+  if (!hat(zielgruppeWer)) return null;
+
+  // Mehrere Konten: Werte addieren
+  const sammeln = (art) => {
+    const m = new Map();
+    for (const p of profile) for (const [k, v] of p[zielgruppeWer]?.[art] || []) m.set(k, (m.get(k) || 0) + v);
+    return [...m.entries()].sort((a, b) => b[1] - a[1]);
+  };
+  const box = el("div", { class: "karte-gross" },
+    el("div", { class: "diagramm-titel", text: "Zielgruppe" }),
+    pillen([{ id: "follower", name: "Follower" }, { id: "interagierend", name: "Interagieren" }], zielgruppeWer,
+      (id) => { zielgruppeWer = id; neu(); }));
+
+  const geschlecht = sammeln("geschlecht");
+  if (geschlecht.length) {
+    const ges = geschlecht.reduce((a, [, v]) => a + v, 0) || 1;
+    box.append(el("div", { class: "ziel-titel", text: "Geschlecht" }),
+      el("div", { class: "anteil-band" }, geschlecht.map(([k, v]) => el("span", { class: "g-" + k, style: { flex: String(v) } }))),
+      el("div", { class: "anteil-legende" }, geschlecht.map(([k, v]) =>
+        el("span", {}, el("i", { class: "g-" + k }), `${GESCHLECHT[k] || k} ${Math.round((v / ges) * 100)} %`))));
+  }
+  const balkenListe = (titel, eintraege, name = (x) => x, n = 8) => {
+    if (!eintraege.length) return;
+    const ges = eintraege.reduce((a, [, v]) => a + v, 0) || 1;
+    const max = Math.max(1, ...eintraege.map(([, v]) => v));
+    box.append(el("div", { class: "ziel-titel", text: titel }),
+      ...eintraege.slice(0, n).map(([k, v]) => el("div", { class: "ziel-zeile" },
+        el("span", { class: "ziel-name", text: name(k) }),
+        el("span", { class: "ziel-balken" }, el("span", { style: { width: `${(v / max) * 100}%` } })),
+        el("span", { class: "ziel-wert", text: `${Math.round((v / ges) * 100)} %` }))));
+  };
+  balkenListe("Alter", sammeln("alter").sort((a, b) => a[0].localeCompare(b[0])), (x) => x, 10);
+  balkenListe("Länder", sammeln("land"), landName);
+  balkenListe("Städte", sammeln("stadt"), (x) => STADT[x.split(",")[0]] || x.split(",")[0]);
+  box.append(el("div", { class: "hinweis", text: zielgruppeWer === "follower"
+    ? "Wer dir folgt. Quelle: Instagram, laufender Monat."
+    : "Wer im laufenden Monat mit deinen Beiträgen interagiert hat. Quelle: Instagram." }));
+  return box;
 }
 
 /* ---------------------------------------------------- Je Plattform */

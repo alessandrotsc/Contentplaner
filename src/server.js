@@ -41,6 +41,26 @@ export async function testen(url, schluessel) {
 
 let seit = 0;   // beim Start einmal alles, danach nur Geaendertes
 
+/* Beitraege (Reels, Videos) und Profile (Zielgruppe, Online-Zeiten) kommen nur vom Server und
+   liegen getrennt vom Backup in einem eigenen Zwischenspeicher, nach Server-ID der Plattform. */
+const CACHE = "contentplaner.serverdaten";
+let cache = (() => {
+  try { return JSON.parse(localStorage.getItem(CACHE)) || { beitraege: {}, profile: {} }; }
+  catch { return { beitraege: {}, profile: {} }; }
+})();
+function cacheSichern() {
+  try { localStorage.setItem(CACHE, JSON.stringify(cache)); } catch { /* Speicher voll: beim naechsten Start neu laden */ }
+}
+const sidVon = (plattformId) => S.verbindung(plattformId)?.serverId || plattformId;
+
+/** Alle Beitraege der Plattformen, mit lokaler plattformId. */
+export function beitraege(plattformIds) {
+  const zu = new Map(plattformIds.map((pid) => [sidVon(pid), pid]));
+  return Object.values(cache.beitraege).filter((b) => zu.has(b.plattformId))
+    .map((b) => ({ ...b, plattformId: zu.get(b.plattformId) }));
+}
+export const profil = (plattformId) => cache.profile[sidVon(plattformId)] || null;
+
 const projektVon = (plattformId) => S.projekte().find((p) => p.plattformen.some((x) => x.id === plattformId));
 
 /** Jedes Geraet vergibt eigene Plattform-IDs. Was der Server unter einer fremden ID kennt,
@@ -73,6 +93,9 @@ export async function abgleichen() {
   for (const pl of S.plattformen()) {
     if (S.verbindung(pl.id)?.server && !verbunden.has(pl.id)) S.verbindungSetzen(pl.id, null);   // auf dem Server getrennt
   }
+  for (const b of r.beitraege || []) cache.beitraege[`${b.plattformId}|${b.id}`] = b;
+  Object.assign(cache.profile, r.profile || {});
+  if ((r.beitraege || []).length || Object.keys(r.profile || {}).length) { cacheSichern(); n++; }
   seit = r.jetzt - 5000;   // kleine Ueberlappung, falls waehrend der Abfrage geschrieben wurde
   S.speichernAnstossen();
   return n;

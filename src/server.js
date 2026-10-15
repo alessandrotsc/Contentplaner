@@ -41,31 +41,56 @@ export async function testen(url, schluessel) {
 
 let seit = 0;   // beim Start einmal alles, danach nur Geaendertes
 
+const projektVon = (plattformId) => S.projekte().find((p) => p.plattformen.some((x) => x.id === plattformId));
+
+/** Jedes Geraet vergibt eigene Plattform-IDs. Was der Server unter einer fremden ID kennt,
+ *  wird ueber Projektname + Plattformtyp der passenden Plattform hier zugeordnet. */
+function zuordnung(verbindungen) {
+  const map = {};
+  for (const [sid, st] of Object.entries(verbindungen)) {
+    if (S.plattformVon(sid)) { map[sid] = sid; continue; }
+    const pl = S.projekte().find((p) => p.name === st.projekt)?.plattformen.find((x) => x.typ === st.typ);
+    if (pl) map[sid] = pl.id;
+  }
+  return map;
+}
+
 /** Holt neue Zahlen und den Verbindungsstatus. Gibt die Zahl neuer Messungen zurueck. */
 export async function abgleichen() {
   const r = await anfrage(`/daten?seit=${seit}`);
-  for (const m of r.messungen) S.messungSpeichern(m, true);
+  const map = zuordnung(r.verbindungen);
+  let n = 0;
+  for (const m of r.messungen) {
+    const pid = map[m.plattformId] || (S.plattformVon(m.plattformId) && m.plattformId);
+    if (pid) { S.messungSpeichern({ ...m, plattformId: pid }, true); n++; }
+  }
+  const verbunden = new Set();
+  for (const [sid, st] of Object.entries(r.verbindungen)) {
+    if (!map[sid]) continue;
+    verbunden.add(map[sid]);
+    S.verbindungSetzen(map[sid], { server: true, serverId: sid, ...st });
+  }
   for (const pl of S.plattformen()) {
-    const st = r.verbindungen[pl.id];
-    const lokal = S.verbindung(pl.id);
-    if (st) S.verbindungSetzen(pl.id, { server: true, ...st });
-    else if (lokal?.server) S.verbindungSetzen(pl.id, null);   // auf dem Server getrennt
+    if (S.verbindung(pl.id)?.server && !verbunden.has(pl.id)) S.verbindungSetzen(pl.id, null);   // auf dem Server getrennt
   }
   seit = r.jetzt - 5000;   // kleine Ueberlappung, falls waehrend der Abfrage geschrieben wurde
   S.speichernAnstossen();
-  return r.messungen.length;
+  return n;
 }
 
+const serverId = (plattformId) => S.verbindung(plattformId)?.serverId || plattformId;
+
 export async function verbindungSenden(plattformId, typ, zugang) {
-  const st = await anfrage(`/verbindung/${encodeURIComponent(plattformId)}`,
-    { method: "PUT", body: JSON.stringify({ typ, ...zugang }) });
-  S.verbindungSetzen(plattformId, { server: true, ...st });
+  const sid = serverId(plattformId);
+  const st = await anfrage(`/verbindung/${encodeURIComponent(sid)}`,
+    { method: "PUT", body: JSON.stringify({ typ, projekt: projektVon(plattformId)?.name || "", ...zugang }) });
+  S.verbindungSetzen(plattformId, { server: true, serverId: sid, ...st });
   await abgleichen();
   return st;
 }
 
 export async function verbindungTrennen(plattformId, zahlenLoeschen = false) {
-  await anfrage(`/verbindung/${encodeURIComponent(plattformId)}${zahlenLoeschen ? "?zahlen=1" : ""}`, { method: "DELETE" });
+  await anfrage(`/verbindung/${encodeURIComponent(serverId(plattformId))}${zahlenLoeschen ? "?zahlen=1" : ""}`, { method: "DELETE" });
   S.verbindungSetzen(plattformId, null);
 }
 

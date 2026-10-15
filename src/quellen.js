@@ -29,7 +29,7 @@ export const QUELLEN = {
       "developers.facebook.com öffnen, App anlegen, Anwendungsfall „Instagram API mit Instagram-Login“.",
       "Unter „API-Einrichtung mit Instagram-Login“ das Konto hinzufügen und „Token generieren“.",
       "Berechtigungen: instagram_business_basic und instagram_business_manage_insights.",
-      "Token hier einfügen. Er wird alle 30 Tage von selbst verlängert, solange du die App ab und zu öffnest.",
+      "Token hier einfügen. Er wird alle 30 Tage von selbst verlängert (mit Server automatisch, ohne Server beim Öffnen der App).",
     ],
     abrufen: instagramAbrufen,
   },

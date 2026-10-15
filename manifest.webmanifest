@@ -1,13 +1,13 @@
 {
   "name": "Contentplaner",
   "short_name": "Plan",
-  "description": "Contentplanung für alle Kanäle. Kalender, Formate, Captions.",
+  "description": "Contentplanung für alle Kanäle: Kalender, Formate, Analytics.",
   "start_url": "./index.html",
   "scope": "./",
   "display": "standalone",
   "orientation": "portrait",
-  "background_color": "#071C30",
-  "theme_color": "#071C30",
+  "background_color": "#061A2F",
+  "theme_color": "#061A2F",
   "lang": "de",
   "icons": [
     {

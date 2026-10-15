@@ -1,102 +1,61 @@
 # Contentplaner
 
-Kalender für die Contentplanung über alle Kanäle. Aufbau und Bedienung nach
-Google Kalender, Farben von Syncrate. Läuft als Webseite und lässt sich auf dem
-iPhone wie eine App auf den Homescreen legen.
+Ein Ort für alle Kanäle: **Kalender, Formate, Analytics**. Läuft als Webseite
+und lässt sich auf dem iPhone wie eine App auf den Homescreen legen
+(Safari › Teilen › Zum Home-Bildschirm). Design nach syncrate.de.
 
-## Was drin ist
+Live: https://alessandrotsc.github.io/Contentplaner/
 
-**Drei Ansichten**, umschaltbar über das Menü links oben:
-- **Monat** wie im Google Kalender, sechs Wochen, Einträge als farbige Chips
-- **Woche** mit Stundenraster, springt beim Öffnen auf 7 Uhr
-- **Liste** zeigt die nächsten 45 Tage als Agenda, das ist die Arbeitsansicht
+## Aufbau
 
-**Kanäle.** Jeder Kanal hat eine Farbe und lässt sich im Menü ein- und
-ausblenden. Zwei sind vorangelegt, HausRund und Syncrate.
+Oben wählst du das **Projekt** (Alle, Astromaster, HausRund, SynCrate) und
+darunter die **Plattform** (Alle, Instagram, TikTok ...). Die Auswahl gilt in
+allen Bereichen. Unten die Tab-Leiste:
 
-**Formate.** Pro Kanal die wiederkehrenden Videoarten, zum Beispiel
-Vorher/Nachher oder Wusstest du. Jedes Format kann eine Caption-Vorlage haben.
+- **Kalender**: Monat, Woche, Liste. Einträge mit Projekt, Plattformen, Format,
+  Status (Idee bis Veröffentlicht), Caption zum Kopieren, Wiederholungen.
+- **Formate**: Formate je Projekt, bei Astromaster mit den 5 Säulen, der
+  Reihenfolge (520 Videos) und dem Knopf „In den Kalender einplanen“
+  (z.B. 5 am Tag ab morgen).
+- **Analytics**: Zeitraum 7/28/90 Tage, 1 Jahr oder eigener. Follower mit
+  Netto plus/minus, Neue Follower, Entfolgt, Aufrufe, Reichweite,
+  Profilaufrufe, Interaktionen, Likes, Kommentare, Geteilt, Gespeichert,
+  Link-Klicks, Einnahmen. Immer im Vergleich zum Zeitraum davor.
+  Follower-Kurve, Tagesbalken, Aufteilung je Plattform.
+- **Mehr**: Projekte und Plattformen, Schnittstellen, Datei einlesen, Backup.
 
-**Einträge** mit Titel, Kanal, Format, Datum, Uhrzeit, Status, Caption, Notiz,
-Ablageort und Vorschaubild.
+## Woher die Zahlen kommen
 
-**Status** von Idee über Skript, Gedreht, Im Schnitt, Fertig bis
-Veröffentlicht. Der Status ist der Unterschied zu einem normalen Kalender: du
-siehst nicht nur wann etwas rausgeht, sondern woran es gerade hängt.
+| Plattform | Weg | Was |
+|---|---|---|
+| Instagram | Instagram API mit Instagram-Login, Token in der App | Tageswerte bis 30 Tage zurück, Follower-Verlauf |
+| TikTok | Display API (Login Kit, Sandbox reicht) | Gesamtstände; Tageswerte aus dem Vergleich zum letzten Abruf |
+| YouTube | noch nicht gebaut | kommt mit dem ersten Kanal |
+| alle | „Werte eintragen“ | Tag oder Zeitraum von Hand |
 
-**Wiederholungen:** jeden Tag, jede Woche, alle zwei Wochen, jeden Monat oder
-benutzerdefiniert, also alle N Tage, Wochen oder Monate. Bei wöchentlichen
-Serien lassen sich einzelne Wochentage anklicken. Ein einzelner Termin einer
-Serie kann abgesagt werden, ohne die Serie zu zerstören.
+Die App ruft beim Öffnen selbst ab (höchstens alle 6 Stunden) oder per Knopf.
+Zugangsdaten bleiben auf dem Gerät, nie im Code.
 
-**Caption kopieren.** Ein Knopf unter dem Caption-Feld legt den Text in die
-Zwischenablage, damit er beim Hochladen nur noch eingefügt werden muss.
+## Astromaster-Plan einlesen
 
-## Was bewusst nicht geht
+Am Mac: `python3 01_Contentplan/app_export.py` im Astromaster-Ordner, dann in der
+App unter Mehr › Datei einlesen `astromaster-app.json` wählen. Wird
+zusammengeführt: Kalender, Zahlen und eigene Formate bleiben.
 
-**Die App kann nicht selbst in deine Fotos oder Ordner schauen.** Das erlaubt
-iOS einer Webseite nicht, egal wie sie installiert ist. Dafür gibt es zwei
-Wege im Eintrag:
+## Später zur echten App
 
-1. **Ablageort** als Textfeld, zum Beispiel "Fotos › Album HausRund" oder ein
-   iCloud-Link. Damit findest du das Material wieder.
-2. **Vorschaubild** über den Datei-Auswähler. Das Bild wird auf 900 px
-   verkleinert und im Eintrag gespeichert, damit man auf einen Blick sieht,
-   worum es geht.
+Reines HTML, CSS und JS-Module ohne Server. Mit Capacitor lässt sich der Ordner
+unverändert als iOS-App verpacken; dann nur in `src/store.js` den `SPEICHER`
+auf Capacitor Preferences umstellen.
 
-Wenn echter Ordnerzugriff gebraucht wird, führt kein Weg an einer nativen App
-vorbei. Die Daten sind als JSON exportierbar und lassen sich mitnehmen.
+## Grenzen
 
-## Daten und Backup
+- Daten liegen pro Gerät. Mac und iPhone gleichen sich nicht von selbst ab
+  (Backup exportieren und einlesen). Für echten Abgleich braucht es später
+  einen kleinen Server (z.B. Cloudflare Worker).
+- Eine Webseite darf auf dem iPhone nicht in Fotos oder Ordner schauen.
 
-Alles liegt im Browser-Speicher dieses einen Geräts. Kein Server, kein Konto,
-keine Synchronisation zwischen Handy und Rechner.
+## Weiterbauen
 
-**Deshalb regelmäßig ein Backup ziehen:** Menü → Daten und Backup → Backup
-exportieren. Das ist eine JSON-Datei. Über "Backup einlesen" kommt sie zurück,
-auch auf einem anderen Gerät.
-
-## Auf dem iPhone installieren
-
-Die App muss über **https** oder **localhost** laufen, sonst startet der
-Service Worker nicht und sie funktioniert offline nicht.
-
-1. Ordner auf einen Webspace legen, zum Beispiel GitHub Pages wie beim
-   Calisthenics-Tracker
-2. Die Adresse in Safari öffnen, **nicht** in Chrome
-3. Teilen-Knopf, dann "Zum Home-Bildschirm"
-
-Zum Testen am Rechner reicht:
-
-```
-cd ~/Desktop/Claude\ Code/Contentplaner
-python3 -m http.server 8931
-```
-
-Dann http://localhost:8931 im Browser öffnen.
-
-## Aufbau des Codes
-
-| Datei | Wofür |
-|---|---|
-| `index.html` | Gerüst, lädt Manifest und Service Worker |
-| `src/store.js` | Daten, Speichern, Export und Import |
-| `src/datum.js` | Datumsrechnung und die Wiederholungslogik |
-| `src/ui.js` | DOM-Helfer, Icons, Dialog-Bausteine |
-| `src/app.js` | Ansichten, Menü, Formulare |
-| `src/styles.css` | Design, alle Farben als Variablen oben |
-| `sw.js` | Offline-Cache |
-
-**Zwei Dinge, die beim Ändern wichtig sind:**
-
-1. **Nach jeder Änderung an den Dateien die `VERSION` in `sw.js` hochzählen.**
-   Sonst zeigt das iPhone hartnäckig die alte Fassung aus dem Cache.
-2. **Datumsangaben laufen als Text "JJJJ-MM-TT" durch die App**, nie als
-   Date-Objekt in der Datenhaltung. Date rechnet in UTC, dadurch verschiebt
-   sich in der Sommerzeit ein Termin um einen Tag. Gerechnet wird auf lokaler
-   Mittagszeit, da ist der Abstand zur Zeitumstellung am größten.
-
-Wiederholungen werden **nicht** als viele Einzeltermine gespeichert, sondern
-als Regel am Eintrag. Beim Anzeigen eines Zeitraums werden die Vorkommen
-berechnet. Sonst müllt eine tägliche Serie den Speicher zu und lässt sich
-nachträglich nicht mehr sauber ändern.
+1. Nach jeder Änderung `VERSION` in `sw.js` hochzählen.
+2. Datumsangaben bleiben Text „JJJJ-MM-TT“, nie Date-Objekte speichern.

@@ -89,6 +89,14 @@ export async function verbindungSenden(plattformId, typ, zugang) {
   return st;
 }
 
+/** TikTok-Anmeldung laeuft ueber den Server: liefert die Adresse, zu der die App weiterleitet. */
+export async function tiktokAnmeldung(plattformId) {
+  const zurueck = location.origin + location.pathname;
+  const r = await anfrage(`/tiktok/start?plattform=${encodeURIComponent(serverId(plattformId))}`
+    + `&projekt=${encodeURIComponent(projektVon(plattformId)?.name || "")}&zurueck=${encodeURIComponent(zurueck)}`);
+  return r.url;
+}
+
 export async function verbindungTrennen(plattformId, zahlenLoeschen = false) {
   await anfrage(`/verbindung/${encodeURIComponent(serverId(plattformId))}${zahlenLoeschen ? "?zahlen=1" : ""}`, { method: "DELETE" });
   S.verbindungSetzen(plattformId, null);

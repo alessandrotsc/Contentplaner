@@ -125,6 +125,25 @@ function plattformDialog(p, vorgabe) {
         el("b", { text: alteV.fehler ? "Fehler: " + alteV.fehler
           : alteV.letzterAbruf ? `verbunden${alteV.konto?.name ? " als " + alteV.konto.name : ""}, zuletzt ${new Date(alteV.letzterAbruf).toLocaleString("de-DE", { dateStyle: "short", timeStyle: "short" })}` : "verbunden, noch nicht abgerufen" })));
     }
+    if (Server.aktiv() && pl.typ === "tiktok") {
+      // Mit Server: kein Abschreiben von Schluesseln, nur bei TikTok anmelden und erlauben
+      zugangBox.append(el("p", { class: "detail-text", text: "Du wirst zu TikTok weitergeleitet. Dort mit dem richtigen Konto anmelden und auf „Erlauben“ tippen. Danach holt der Server die Zahlen alle 5 Minuten." }));
+      const knopf = el("button", { class: "zufuegen", text: alteV ? "Neu mit TikTok verbinden" : "Mit TikTok verbinden",
+        onclick: async (ev) => {
+          ev.preventDefault();
+          if (!pl.id) { knopf.textContent = "Erst sichern, dann verbinden"; return; }
+          knopf.textContent = "Einen Moment …";
+          try { location.href = await Server.tiktokAnmeldung(pl.id); }
+          catch (e) { knopf.textContent = "Klappt nicht: " + e.message; }
+        } });
+      zugangBox.append(knopf);
+      if (alteV) zugangBox.append(el("button", { class: "gefahr", text: "Verbindung trennen",
+        onclick: async () => {
+          try { await Server.verbindungTrennen(pl.id); } catch (e) { alert("Server nicht erreichbar: " + e.message); return; }
+          d.zu(); neu();
+        } }));
+      return;
+    }
     zugangBox.append(el("ol", { class: "anleitung" }, q.anleitung.map((t) => el("li", { text: t }))));
     (q.felder || []).forEach((f) => {
       const inp = el(f.lang ? "textarea" : "input", { class: "eingabe" + (f.lang ? " token" : ""), placeholder: f.name,

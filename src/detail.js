@@ -11,10 +11,10 @@ import { el, dialog } from "./ui.js";
 
 export const ERKLAERUNG = {
   follower: "Wie viele Konten dir am Ende des Tages folgen. Darunter siehst du, wie viele es je Tag mehr oder weniger wurden.",
-  neu: "Konten, die dir an dem Tag neu gefolgt sind (nur Instagram).",
+  neu: "Konten, die dir an dem Tag neu gefolgt sind (nur Instagram, bei TikTok siehe Follower: gewonnen oder verloren je Tag).",
   verloren: "Konten, die dir an dem Tag entfolgt sind (nur Instagram).",
   aufrufe: "Wie oft deine Inhalte angesehen bzw. abgespielt wurden. Schaut eine Person dreimal, zählt das dreimal.",
-  reichweite: "Wie viele verschiedene Konten deine Inhalte gesehen haben, jede Person nur einmal pro Tag. Über mehrere Tage addiert kann dieselbe Person mehrfach zählen, darum liegt die Summe etwas über der Zahl in der Instagram-App.",
+  reichweite: "Wie viele verschiedene Konten deine Inhalte gesehen haben, jede Person nur einmal pro Tag (bei TikTok „Zuschauer“). Über mehrere Tage addiert kann dieselbe Person mehrfach zählen, darum liegt die Summe etwas über der Zahl in der Instagram- bzw. TikTok-App.",
   interagierende: "Wie viele verschiedene Konten geliked, kommentiert, geteilt, gespeichert oder geantwortet haben.",
   profilaufrufe: "Wie oft dein Profil geöffnet wurde.",
   interaktionen: "Alle Likes, Kommentare, Geteilt, Gespeichert und Antworten zusammen.",
@@ -117,7 +117,7 @@ function ansicht(m, r, ersterTag, zeichnen) {
         el("b", { text: zahl(x.w) }),
         istStand ? el("span", { class: x.d > 0 ? "gut" : x.d < 0 ? "schlecht" : "", text: x.d == null ? "" : mitZeichen(x.d) }) : null))));
     if (!istStand && zeilen.some((x) => vorlaeufig(x.t))) {
-      kinder.push(el("div", { class: "hinweis", text: "· vorläufig: Instagram zählt die letzten zwei Tage noch nach, die App holt sie automatisch neu." }));
+      kinder.push(el("div", { class: "hinweis", text: "· vorläufig: Instagram und TikTok zählen die letzten Tage noch nach, die App holt sie automatisch neu. TikTok zählt Tage nach UTC (2 Stunden hinter deutscher Zeit)." }));
     }
   }
   return kinder;

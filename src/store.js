@@ -377,10 +377,36 @@ function projektImport(imp) {
                 stufen: imp.stufen || [], stand: imp.stand || "",
                 videos: imp.reihenfolge.map((v) => (links.has(v.nr) ? { ...v, eintragId: links.get(v.nr) } : v)) };
     daten.reihen = daten.reihen.filter((x) => x.projektId !== p.id).concat(r);
+    sendeplanEintragen(p, r);
   }
   sichern();
   const n = imp.reihenfolge?.length || 0;
   return `${imp.projekt}: ${imp.formate?.length || 0} Formate${n ? `, ${n} Videos in der Reihenfolge` : ""} übernommen.`;
+}
+
+/** Videos mit Tag (Sendeplan vom Mac) als Kalendereinträge anlegen bzw. auf den neuesten Tag schieben.
+ *  Verknüpft über planKey; Status und Notizen aus der App bleiben, der Tag kommt immer aus dem Plan. */
+function sendeplanEintragen(p, r) {
+  const geplant = r.videos.filter((v) => v.datum && v.key);
+  if (!geplant.length) return;
+  const vorhanden = new Map(daten.eintraege.filter((e) => e.projektId === p.id && e.planKey).map((e) => [e.planKey, e]));
+  const keys = new Set(geplant.map((v) => v.key));
+  for (const v of geplant) {
+    const fm = daten.formate.find((f) => f.projektId === p.id && f.name === v.format);
+    // Bei Beziehungen sagt das Unterformat mehr ("Passt nicht zusammen"), sonst das Format ("Top 3")
+    const titel = `${v.format === "Beziehungen" ? v.unterformat : v.format}: ${v.thema}`;
+    let e = vorhanden.get(v.key);
+    if (!e) {
+      e = { id: k(), projektId: p.id, plattformIds: p.plattformen.map((x) => x.id), zeit: "", status: "idee", notiz: "", planKey: v.key };
+      daten.eintraege.push(e);
+    }
+    Object.assign(e, { titel, datum: v.datum, formatId: fm?.id || null, reiheNr: v.nr });
+    if (v.status === "fertig" && ["idee", "skript", "gedreht", "schnitt"].includes(e.status)) e.status = "fertig";
+    if (!e.notiz || e.notiz.startsWith("Nr. ")) e.notiz = `Nr. ${v.nr} · ${v.saeule} · ${v.unterformat}${v.id ? ` · ${v.id}` : ""}`;
+    v.eintragId = e.id;
+  }
+  // Aus dem Plan gefallene Videos entfernen, solange sie noch nicht weiter sind als Idee
+  daten.eintraege = daten.eintraege.filter((e) => e.projektId !== p.id || !e.planKey || keys.has(e.planKey) || e.status !== "idee");
 }
 
 export function allesLoeschen() {

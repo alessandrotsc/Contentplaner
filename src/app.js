@@ -13,7 +13,7 @@ import * as S from "./store.js";
 import { Z, neu, beimZeichnen } from "./zustand.js";
 import { el, ikon } from "./ui.js";
 import { kalender, kalenderKopf, eintragDialog } from "./kalender.js";
-import { formateBereich } from "./formate.js";
+import { formateBereich, listenAbgleichen } from "./formate.js";
 import { analyticsBereich } from "./analytics.js";
 import { mehrBereich } from "./mehr.js";
 import { allesAbgleichen } from "./quellen.js";
@@ -121,3 +121,4 @@ if (Server.aktiv()) {
 } else {
   allesAbgleichen({ nurWennAlt: true }).then((n) => { if (n) zeichnen(); }).catch(() => {});
 }
+listenAbgleichen();

@@ -15,10 +15,14 @@ import { el, ikon, dialog, feld, pillen } from "./ui.js";
 let zeigeBis = 15;
 const abgeglichen = new Set();
 
+/** Beim Start: für jedes Projekt mit Liste im Repo (daten/) Formate und Sendeplan still übernehmen. */
+export function listenAbgleichen() {
+  for (const p of S.projekte()) if (!abgeglichen.has(p.id)) { abgeglichen.add(p.id); listeLaden(p, true); }
+}
+
 export function formateBereich() {
   if (!Z.projektId) return uebersicht();
   const p = S.projekt(Z.projektId);
-  // Beim ersten Öffnen pro Sitzung die neueste Liste aus dem Repo still übernehmen
   if (!abgeglichen.has(p.id)) { abgeglichen.add(p.id); listeLaden(p, true); }
   const r = S.reihe(p.id);
   return el("div", { class: "seite" },

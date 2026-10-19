@@ -13,10 +13,13 @@ import { Z, neu } from "./zustand.js";
 import { el, ikon, dialog, feld, pillen } from "./ui.js";
 
 let zeigeBis = 15;
+const abgeglichen = new Set();
 
 export function formateBereich() {
   if (!Z.projektId) return uebersicht();
   const p = S.projekt(Z.projektId);
+  // Beim ersten Öffnen pro Sitzung die neueste Liste aus dem Repo still übernehmen
+  if (!abgeglichen.has(p.id)) { abgeglichen.add(p.id); listeLaden(p, true); }
   const r = S.reihe(p.id);
   return el("div", { class: "seite" },
     r && fortschritt(p, r),
@@ -67,14 +70,14 @@ function fortschritt(p, r) {
 }
 
 // Die Liste liegt im Repo unter daten/<projekt>-app.json (am Mac von app_export.py geschrieben)
-async function listeLaden(p) {
+async function listeLaden(p, still = false) {
   try {
     const antwort = await fetch(`daten/${p.name.toLowerCase()}-app.json`, { cache: "no-store" });
     if (!antwort.ok) throw new Error("Für dieses Projekt liegt keine Liste bereit.");
     const text = S.importieren(await antwort.text());
     neu();
-    alert(text);
-  } catch (err) { alert("Laden ging nicht: " + err.message); }
+    if (!still) alert(text);
+  } catch (err) { if (!still) alert("Laden ging nicht: " + err.message); }
 }
 
 const zahl = (n, t) => el("div", { class: "kennzahl" }, el("b", { text: n.toLocaleString("de-DE") }), el("small", { text: t }));
@@ -111,7 +114,7 @@ function formatZeile(f, r) {
   const videos = r ? r.videos.filter((v) => v.format === f.name) : [];
   const fertig = videos.filter((v) => v.status === "fertig" || v.status === "online").length;
   const info = (f.unterformate
-    ? [`${f.unterformate.length} Unterformate`, `${f.fertig || 0}/${f.anzahl} fertig`, f.laenge]
+    ? [`${f.unterformate.length} ${f.unterformate.length === 1 ? "Unterformat" : "Unterformate"}`, `${f.fertig || 0}/${f.anzahl} fertig`, f.laenge]
     : [f.laenge, videos.length ? `${fertig}/${videos.length} fertig` : f.themen?.length ? `${f.themen.length} Themen` : null])
     .filter(Boolean).join(" · ");
   return el("button", { class: "format-zeile", onclick: () => formatDetail(f, r) },

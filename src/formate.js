@@ -48,18 +48,33 @@ function uebersicht() {
 /* -------------------------------------------------------- Fortschritt */
 
 function fortschritt(p, r) {
-  const fertig = r.videos.filter((v) => v.status === "fertig" || v.status === "online").length;
+  // Mit Formatkatalog zählen dessen Videos, sonst die Reihenfolge
+  const katalog = S.formate(p.id).filter((f) => f.unterformate);
+  const gesamt = katalog.length ? katalog.reduce((s, f) => s + f.anzahl, 0) : r.videos.length;
+  const fertig = katalog.length ? katalog.reduce((s, f) => s + (f.fertig || 0), 0)
+    : r.videos.filter((v) => v.status === "fertig" || v.status === "online").length;
   const geplant = r.videos.filter((v) => v.eintragId && S.eintrag(v.eintragId)).length;
-  const anteil = fertig / r.videos.length;
+  const anteil = fertig / gesamt;
   return el("div", { class: "karte-gross" },
     el("div", { class: "kennzahl-reihe" },
-      zahl(r.videos.length, "Videos"), zahl(r.saeulen.length, "Säulen"),
+      zahl(gesamt, "Videos"), zahl(katalog.length || r.saeulen.length, katalog.length ? "Formate" : "Säulen"),
       zahl(geplant, "eingeplant"), zahl(fertig, "fertig")),
     el("div", { class: "balken" }, el("span", { style: { width: Math.max(1, anteil * 100) + "%" } })),
-    el("div", { class: "hinweis", text: `Stand der Liste: ${r.stand ? D.kurzesDatum(r.stand) : "unbekannt"} · `
-      + "Neue Liste: am Mac app_export.py laufen lassen und unter Mehr einlesen." }),
+    el("div", { class: "hinweis", text: `Stand der Liste: ${r.stand ? D.kurzesDatum(r.stand) : "unbekannt"}` }),
+    el("button", { class: "zufuegen", text: "Neueste Liste laden", onclick: () => listeLaden(p) }),
     r.stufen.length ? el("ul", { class: "stufen" }, r.stufen.map((s) => el("li", { text: s }))) : null,
   );
+}
+
+// Die Liste liegt im Repo unter daten/<projekt>-app.json (am Mac von app_export.py geschrieben)
+async function listeLaden(p) {
+  try {
+    const antwort = await fetch(`daten/${p.name.toLowerCase()}-app.json`, { cache: "no-store" });
+    if (!antwort.ok) throw new Error("Für dieses Projekt liegt keine Liste bereit.");
+    const text = S.importieren(await antwort.text());
+    neu();
+    alert(text);
+  } catch (err) { alert("Laden ging nicht: " + err.message); }
 }
 
 const zahl = (n, t) => el("div", { class: "kennzahl" }, el("b", { text: n.toLocaleString("de-DE") }), el("small", { text: t }));
@@ -95,7 +110,9 @@ function saeulen(p, r) {
 function formatZeile(f, r) {
   const videos = r ? r.videos.filter((v) => v.format === f.name) : [];
   const fertig = videos.filter((v) => v.status === "fertig" || v.status === "online").length;
-  const info = [f.laenge, videos.length ? `${fertig}/${videos.length} fertig` : f.themen?.length ? `${f.themen.length} Themen` : null]
+  const info = (f.unterformate
+    ? [`${f.unterformate.length} Unterformate`, `${f.fertig || 0}/${f.anzahl} fertig`, f.laenge]
+    : [f.laenge, videos.length ? `${fertig}/${videos.length} fertig` : f.themen?.length ? `${f.themen.length} Themen` : null])
     .filter(Boolean).join(" · ");
   return el("button", { class: "format-zeile", onclick: () => formatDetail(f, r) },
     el("div", {}, el("b", { text: f.name }), info && el("small", { text: info })),
@@ -112,6 +129,22 @@ function formatDetail(f, r) {
 
   d.inhalt.append(el("button", { class: "zufuegen", text: "Bearbeiten / Caption-Vorlage",
     onclick: () => { d.zu(); formatDialog(f); } }));
+
+  // Formatkatalog: Unterformate aufklappbar, darin die einzelnen Videos
+  if (f.unterformate) {
+    d.inhalt.append(el("div", { class: "menue-titel", text: `Unterformate (${f.unterformate.length}) · ${f.fertig || 0}/${f.anzahl} Videos fertig` }));
+    d.inhalt.append(el("div", { class: "unterformate" }, f.unterformate.map((u) => {
+      const box = el("details", { class: "unterformat" },
+        el("summary", {},
+          el("div", {}, el("b", { text: u.name }), u.beschreibung && el("small", { text: u.beschreibung })),
+          el("span", { class: "status-pille klein", text: `${u.fertig || 0}/${u.anzahl}` })),
+        el("div", { class: "themen" }, u.videos.map((v) => el("div", { class: "thema" + (v.status === "fertig" ? " fertig" : "") },
+          el("span", { text: v.titel }),
+          v.status === "fertig" && ikon("haken", 15)))));
+      return box;
+    })));
+    return;
+  }
 
   const videos = r ? r.videos.filter((v) => v.format === f.name) : [];
   const themen = videos.length ? videos : (f.themen || []).map((t) => ({ thema: t }));

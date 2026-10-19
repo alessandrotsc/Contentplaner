@@ -362,6 +362,12 @@ function projektImport(imp) {
     if (alt) Object.assign(alt, { ...f, projektId: p.id, quelle: "import" });
     else daten.formate.push({ id: k(), caption: "", ...f, projektId: p.id, quelle: "import" });
   }
+  // Importierte Formate, die es in der neuen Liste nicht mehr gibt, entfernen, solange kein Eintrag daran haengt
+  if (imp.formate) {
+    const namen = new Set(imp.formate.map((f) => f.name));
+    const benutzt = new Set(daten.eintraege.map((e) => e.formatId).filter(Boolean));
+    daten.formate = daten.formate.filter((f) => f.projektId !== p.id || f.quelle !== "import" || namen.has(f.name) || benutzt.has(f.id));
+  }
 
   // Reihenfolge: Verknuepfungen zu Kalendereintraegen ueber die Nr. erhalten
   if (imp.reihenfolge) {

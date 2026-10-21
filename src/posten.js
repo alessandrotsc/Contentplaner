@@ -119,5 +119,6 @@ export function postenDialog(e, v, beiBearbeiten) {
       textBlock("Beschreibung", v.youtubeText, "Beschreibung kopieren")),
 
     el("button", { class: "zufuegen", text: "Eintrag bearbeiten", onclick: () => { d.zu(); beiBearbeiten(); } }),
+    el("button", { class: "posten-zu", text: "Schließen", onclick: () => d.zu() }),
   );
 }

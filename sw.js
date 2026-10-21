@@ -1,7 +1,7 @@
 /* Service Worker. Haelt die App offline lauffaehig.
    Bei jeder Aenderung an den Dateien die VERSION hochzaehlen, sonst zeigt
    das iPhone hartnaeckig die alte Fassung. */
-const VERSION = "contentplaner-v16";
+const VERSION = "contentplaner-v17";
 const DATEIEN = [
   "./", "./index.html", "./manifest.webmanifest",
   "./src/styles.css", "./src/app.js", "./src/store.js",

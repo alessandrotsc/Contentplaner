@@ -405,6 +405,13 @@ function sendeplanEintragen(p, r) {
     if (!e.notiz || e.notiz.startsWith("Nr. ")) e.notiz = `Nr. ${v.nr} · ${v.saeule} · ${v.unterformat}${v.id ? ` · ${v.id}` : ""}`;
     v.eintragId = e.id;
   }
+  // Gepostete Videos mit Postdatum bleiben im Kalender, als veröffentlicht am echten Tag
+  for (const v of r.videos.filter((v) => v.status === "online" && v.gepostet_am && v.key)) {
+    const e = vorhanden.get(v.key);
+    if (!e) continue;
+    Object.assign(e, { datum: v.gepostet_am, status: "online" });
+    keys.add(v.key);
+  }
   // Aus dem Plan gefallene oder schon gepostete Videos (ohne Tag) entfernen, solange sie nur automatisch angelegt sind
   daten.eintraege = daten.eintraege.filter((e) => e.projektId !== p.id || !e.planKey || keys.has(e.planKey) || !["idee", "fertig"].includes(e.status));
 }

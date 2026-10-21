@@ -7,6 +7,7 @@ import * as S from "./store.js";
 import * as D from "./datum.js";
 import { Z, neu, eintragPasst } from "./zustand.js";
 import { el, ikon, ikonKnopf, dialog, feld, pillen, inZwischenablage } from "./ui.js";
+import { zuEintrag, postenDialog } from "./posten.js";
 
 function anTag(tag) {
   return S.eintraege()
@@ -104,7 +105,7 @@ function wochenAnsicht() {
     const sp = el("div");
     anTag(tag).filter((e) => !e.zeit).forEach((e) => sp.append(el("div", {
       class: "gt-chip", style: { borderLeftColor: farbeVon(e) }, text: e.titel || "Ohne Titel",
-      onclick: () => eintragDialog(e, tag) })));
+      onclick: () => oeffnen(e, tag) })));
     ganztag.append(sp);
   });
 
@@ -121,7 +122,7 @@ function wochenAnsicht() {
       spalte.append(el("div", { class: "block",
         style: { top: ((hh + mm / 60) * 52) + "px", height: "48px", borderLeftColor: farbeVon(e) },
         text: e.titel || "Ohne Titel",
-        onclick: (ev) => { ev.stopPropagation(); eintragDialog(e, tag); } }));
+        onclick: (ev) => { ev.stopPropagation(); oeffnen(e, tag); } }));
     });
     raster.append(spalte);
   });
@@ -165,6 +166,13 @@ function plattformIcons(e) {
       .map((pl) => ikon(pl.typ, 14)));
 }
 
+/** Liegt das fertige Video auf dem Server, zuerst die Posten-Ansicht, sonst gleich bearbeiten. */
+function oeffnen(e, tag) {
+  const v = zuEintrag(e);
+  if (v) postenDialog(e, v, () => eintragDialog(e, tag));
+  else eintragDialog(e, tag);
+}
+
 function karte(e, tag) {
   const p = S.projekt(e.projektId);
   const fm = e.formatId ? S.format(e.formatId) : null;
@@ -175,10 +183,11 @@ function karte(e, tag) {
     meta.append(el("span", { text: t }));
   });
   meta.append(plattformIcons(e));
+  if (zuEintrag(e)) meta.append(el("span", { class: "video-bereit", text: "▶ Video bereit" }));
   const serie = e.wiederholung && e.wiederholung.art !== "einmal"
     ? el("div", { class: "karte-meta" }, el("span", { text: D.regelText(e.wiederholung) })) : null;
 
-  return el("div", { class: "karte", onclick: () => eintragDialog(e, tag) },
+  return el("div", { class: "karte", onclick: () => oeffnen(e, tag) },
     el("div", { class: "karte-strich", style: { background: p?.farbe || "#888" } }),
     el("div", { class: "karte-text" },
       el("div", { class: "karte-titel", text: e.titel || "Ohne Titel" }), meta, serie),

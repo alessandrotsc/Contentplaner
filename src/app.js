@@ -18,6 +18,7 @@ import { analyticsBereich } from "./analytics.js";
 import { mehrBereich } from "./mehr.js";
 import { allesAbgleichen } from "./quellen.js";
 import * as Server from "./server.js";
+import { ablageLaden } from "./posten.js";
 
 const app = document.getElementById("app");
 
@@ -118,6 +119,11 @@ zeichnen();
 // Ohne Server: verbundene Schnittstellen beim Oeffnen still abgleichen (hoechstens alle 6 h).
 if (Server.aktiv()) {
   Server.dauerabgleich((n) => { if (n || Z.bereich === "analytics") zeichnen(); });
+  // Fertige Videos zum Posten (Ablage auf dem Server)
+  const ablage = () => ablageLaden().then((neu) => { if (neu && Z.bereich === "kalender") zeichnen(); }).catch((e) => console.warn("Ablage", e.message));
+  ablage();
+  setInterval(() => { if (document.visibilityState === "visible") ablage(); }, 5 * 60_000);
+  document.addEventListener("visibilitychange", () => { if (document.visibilityState === "visible") ablage(); });
 } else {
   allesAbgleichen({ nurWennAlt: true }).then((n) => { if (n) zeichnen(); }).catch(() => {});
 }

@@ -22,6 +22,8 @@ export function einstellen(e) {
 }
 export const aktiv = () => !!(einstellung()?.url && einstellung()?.schluessel);
 
+export const anfrageRoh = (pfad, opt) => anfrage(pfad, opt);
+
 async function anfrage(pfad, opt = {}) {
   const e = einstellung();
   const r = await fetch(e.url.replace(/\/+$/, "") + "/api" + pfad, { ...opt, cache: "no-store",

@@ -548,3 +548,21 @@ select.eingabe { -webkit-appearance: none; appearance: none; }
 .unterformat summary b { display: block; font-size: 14.5px; font-weight: 600; }
 .unterformat summary small { display: block; font-size: 12px; color: var(--ink-3); margin-top: 1px; }
 .unterformat[open] summary { border-bottom: 1px solid #F3EFE7; }
+
+/* ------------------------------------------------- Posten (Videoablage) */
+
+.video-bereit { font-size: 11px; font-weight: 700; color: var(--gut); background: #E6F5EE; padding: 2px 7px; border-radius: 99px; }
+.posten-video { display: block; width: 100%; max-height: 62vh; aspect-ratio: 9 / 16; object-fit: contain; background: #000; border-radius: 14px; margin-top: 8px; }
+.posten-kanal { margin-top: 16px; padding: 14px; border-radius: 14px; background: var(--weiss); box-shadow: 0 2px 0 #D9E6F2, 0 6px 16px -10px rgba(6,26,47,.3); }
+.posten-kopf { display: flex; align-items: center; gap: 6px; font-size: 14.5px; }
+.posten-kopf svg { color: var(--ink-2); }
+.posten-reihe { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+.teilen {
+  display: flex; align-items: center; justify-content: center; gap: 7px; width: 100%; margin-top: 10px; height: 44px; padding: 0 10px;
+  border-radius: 12px; font-size: 14px; font-weight: 700; color: var(--weiss); background: var(--verlauf);
+}
+.posten-reihe .teilen { font-size: 12.5px; height: 40px; color: var(--blau); background: #E8F3FC; }
+.teilen svg { width: 17px; height: 17px; flex: none; }
+.teilen.bereit { background: var(--gut); color: var(--weiss); }
+.teilen:disabled { opacity: .75; }
+.posten-text { white-space: pre-wrap; font-size: 13.5px; line-height: 1.45; color: var(--ink); background: var(--creme-hell); border-radius: 10px; padding: 10px 12px; }

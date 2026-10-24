@@ -394,7 +394,7 @@ function sendeplanEintragen(p, r) {
   for (const v of geplant) {
     const fm = daten.formate.find((f) => f.projektId === p.id && f.name === v.format);
     // Bei Beziehungen sagt das Unterformat mehr ("Passt nicht zusammen"), sonst das Format ("Top 3")
-    const titel = `${v.format === "Beziehungen" ? v.unterformat : v.format}: ${v.thema}`;
+    const titel = v.titel || `${v.format === "Beziehungen" ? v.unterformat : v.format}: ${v.thema}`;
     let e = vorhanden.get(v.key);
     if (!e) {
       e = { id: k(), projektId: p.id, plattformIds: p.plattformen.map((x) => x.id), zeit: "", status: "idee", notiz: "", planKey: v.key };

@@ -1,0 +1,2779 @@
+{
+ "typ": "projekt-import",
+ "projekt": "Astromaster YouTube",
+ "farbe": "#E62117",
+ "plattformen": [
+  {
+   "typ": "youtube",
+   "handle": "Astromaster"
+  }
+ ],
+ "stand": "2026-10-24",
+ "saeulen": [
+  {
+   "name": "Sternzeichen",
+   "muster": [
+    "Sternzeichen-Porträt"
+   ]
+  },
+  {
+   "name": "Beziehungen",
+   "muster": [
+    "Liebe & Partnerschaft"
+   ]
+  },
+  {
+   "name": "Rankings",
+   "muster": [
+    "Ranking: alle 12"
+   ]
+  },
+  {
+   "name": "Mysterien & Theorien",
+   "muster": [
+    "Mysterien Deep Dive"
+   ]
+  },
+  {
+   "name": "Zahlen & Energie",
+   "muster": [
+    "Zahlen & Astro-Wissen"
+   ]
+  },
+  {
+   "name": "Energie",
+   "muster": [
+    "Elemente & Energie"
+   ]
+  },
+  {
+   "name": "Horoskop",
+   "muster": [
+    "Monatshoroskop"
+   ]
+  }
+ ],
+ "stufen": [
+  "Jetzt: 1 langes Video am Tag (8 bis 14 Min., 16:9), 3 Tage im Voraus produzieren",
+  "Ziel: 1.000 Abos und 4.000 Stunden Wiedergabezeit, dann Werbung ab 8 Min. mit Mid-Rolls"
+ ],
+ "regeln": [
+  "Mysterien immer als Theorie erzählen, Gegenstimme nennen, mit einer Frage an die Zuschauer enden.",
+  "Keine Politik, keine Gesundheitsversprechen, keine „die Regierung lügt“-Erzählung: sonst eingeschränkte Werbung.",
+  "Jedes Video eigenständig recherchiert und anders aufgebaut, nie nach Schablone (YouTube-Regel gegen Massen-Inhalte).",
+  "Thumbnail ohne Schockbilder, Titel neugierig statt reißerisch.",
+  "Der passende Short verlinkt das lange Video („Verwandtes Video“)."
+ ],
+ "formate": [
+  {
+   "name": "Sternzeichen-Porträt",
+   "saeule": "Sternzeichen",
+   "laenge": "10 bis 14 Min.",
+   "beschreibung": "Ein Zeichen komplett: Charakter, Stärken, Schwächen, Liebe, Beruf, Geld, Schattenseite und wie man die Schwächen zum Vorteil macht.",
+   "unterformate": [
+    {
+     "name": "Sternzeichen-Porträt",
+     "beschreibung": "Ein Zeichen komplett: Charakter, Stärken, Schwächen, Liebe, Beruf, Geld, Schattenseite und wie man die Schwächen zum Vorteil macht.",
+     "videos": [
+      {
+       "titel": "Stier: Stärken, Schwächen und was niemand über dich weiß",
+       "status": "offen"
+      },
+      {
+       "titel": "Skorpion: Stärken, Schwächen und was niemand über dich weiß",
+       "status": "offen"
+      },
+      {
+       "titel": "Löwe: Stärken, Schwächen und was niemand über dich weiß",
+       "status": "offen"
+      },
+      {
+       "titel": "Fische: Stärken, Schwächen und was niemand über dich weiß",
+       "status": "offen"
+      },
+      {
+       "titel": "Widder: Stärken, Schwächen und was niemand über dich weiß",
+       "status": "offen"
+      },
+      {
+       "titel": "Jungfrau: Stärken, Schwächen und was niemand über dich weiß",
+       "status": "offen"
+      },
+      {
+       "titel": "Wassermann: Stärken, Schwächen und was niemand über dich weiß",
+       "status": "offen"
+      },
+      {
+       "titel": "Krebs: Stärken, Schwächen und was niemand über dich weiß",
+       "status": "offen"
+      },
+      {
+       "titel": "Schütze: Stärken, Schwächen und was niemand über dich weiß",
+       "status": "offen"
+      },
+      {
+       "titel": "Zwillinge: Stärken, Schwächen und was niemand über dich weiß",
+       "status": "offen"
+      },
+      {
+       "titel": "Steinbock: Stärken, Schwächen und was niemand über dich weiß",
+       "status": "offen"
+      },
+      {
+       "titel": "Waage: Stärken, Schwächen und was niemand über dich weiß",
+       "status": "offen"
+      }
+     ]
+    }
+   ],
+   "anzahl": 12,
+   "fertig": 0
+  },
+  {
+   "name": "Liebe & Partnerschaft",
+   "saeule": "Beziehungen",
+   "laenge": "10 bis 12 Min.",
+   "beschreibung": "Ein Zeichen in der Liebe: was es braucht, mit welchen Zeichen es passt und mit welchen nie. Alle 12 Kombinationen.",
+   "unterformate": [
+    {
+     "name": "Liebe & Partnerschaft",
+     "beschreibung": "Ein Zeichen in der Liebe: was es braucht, mit welchen Zeichen es passt und mit welchen nie. Alle 12 Kombinationen.",
+     "videos": [
+      {
+       "titel": "Wassermann in der Liebe: mit wem es passt und mit wem nie",
+       "status": "offen"
+      },
+      {
+       "titel": "Krebs in der Liebe: mit wem es passt und mit wem nie",
+       "status": "offen"
+      },
+      {
+       "titel": "Schütze in der Liebe: mit wem es passt und mit wem nie",
+       "status": "offen"
+      },
+      {
+       "titel": "Zwillinge in der Liebe: mit wem es passt und mit wem nie",
+       "status": "offen"
+      },
+      {
+       "titel": "Steinbock in der Liebe: mit wem es passt und mit wem nie",
+       "status": "offen"
+      },
+      {
+       "titel": "Waage in der Liebe: mit wem es passt und mit wem nie",
+       "status": "offen"
+      },
+      {
+       "titel": "Stier in der Liebe: mit wem es passt und mit wem nie",
+       "status": "offen"
+      },
+      {
+       "titel": "Skorpion in der Liebe: mit wem es passt und mit wem nie",
+       "status": "offen"
+      },
+      {
+       "titel": "Löwe in der Liebe: mit wem es passt und mit wem nie",
+       "status": "offen"
+      },
+      {
+       "titel": "Fische in der Liebe: mit wem es passt und mit wem nie",
+       "status": "offen"
+      },
+      {
+       "titel": "Widder in der Liebe: mit wem es passt und mit wem nie",
+       "status": "offen"
+      },
+      {
+       "titel": "Jungfrau in der Liebe: mit wem es passt und mit wem nie",
+       "status": "offen"
+      }
+     ]
+    }
+   ],
+   "anzahl": 12,
+   "fertig": 0
+  },
+  {
+   "name": "Ranking: alle 12",
+   "saeule": "Rankings",
+   "laenge": "8 bis 10 Min.",
+   "beschreibung": "Alle 12 Zeichen von Platz 12 bis Platz 1. Spannung bis zum Schluss, Platz 1 erst am Ende.",
+   "unterformate": [
+    {
+     "name": "Ranking: alle 12",
+     "beschreibung": "Alle 12 Zeichen von Platz 12 bis Platz 1. Spannung bis zum Schluss, Platz 1 erst am Ende.",
+     "videos": [
+      {
+       "titel": "Alle Sternzeichen gerankt: Wer ist am loyalsten?",
+       "status": "offen"
+      },
+      {
+       "titel": "Alle Sternzeichen gerankt: Wer ist am eifersüchtigsten?",
+       "status": "offen"
+      },
+      {
+       "titel": "Alle Sternzeichen gerankt: Wer ist am gefährlichsten?",
+       "status": "offen"
+      },
+      {
+       "titel": "Alle Sternzeichen gerankt: Wer ist am intuitivsten?",
+       "status": "offen"
+      },
+      {
+       "titel": "Alle Sternzeichen gerankt: Wer ist der geborene Anführer?",
+       "status": "offen"
+      },
+      {
+       "titel": "Alle Sternzeichen gerankt: Wer sind die besten Eltern?",
+       "status": "offen"
+      },
+      {
+       "titel": "Alle Sternzeichen gerankt: Wer ist der größte Romantiker?",
+       "status": "offen"
+      },
+      {
+       "titel": "Alle Sternzeichen gerankt: Wer lügt am meisten?",
+       "status": "offen"
+      },
+      {
+       "titel": "Alle Sternzeichen gerankt: Wen vergisst man nie?",
+       "status": "offen"
+      },
+      {
+       "titel": "Alle Sternzeichen gerankt: Wer ist am klügsten?",
+       "status": "offen"
+      },
+      {
+       "titel": "Alle Sternzeichen gerankt: Wer ist am ehrgeizigsten?",
+       "status": "offen"
+      },
+      {
+       "titel": "Alle Sternzeichen gerankt: Wer ist der beste Freund?",
+       "status": "offen"
+      },
+      {
+       "titel": "Alle Sternzeichen gerankt: Wer ist am kältesten?",
+       "status": "offen"
+      },
+      {
+       "titel": "Alle Sternzeichen gerankt: Wer ist am chaotischsten?",
+       "status": "offen"
+      },
+      {
+       "titel": "Alle Sternzeichen gerankt: Wer ist am mutigsten?",
+       "status": "offen"
+      },
+      {
+       "titel": "Alle Sternzeichen gerankt: Wer ist am geheimnisvollsten?",
+       "status": "offen"
+      },
+      {
+       "titel": "Alle Sternzeichen gerankt: Wer wird am ehesten reich?",
+       "status": "offen"
+      },
+      {
+       "titel": "Alle Sternzeichen gerankt: Wer ist am nachtragendsten?",
+       "status": "offen"
+      },
+      {
+       "titel": "Alle Sternzeichen gerankt: Wer ist am lustigsten?",
+       "status": "offen"
+      },
+      {
+       "titel": "Alle Sternzeichen gerankt: Wer ist am sensibelsten?",
+       "status": "offen"
+      }
+     ]
+    }
+   ],
+   "anzahl": 20,
+   "fertig": 0
+  },
+  {
+   "name": "Mysterien Deep Dive",
+   "saeule": "Mysterien & Theorien",
+   "laenge": "10 bis 15 Min.",
+   "beschreibung": "Ein Rätsel in der Tiefe nach der Mysterien-Formel: Hook, Indizien, Theorien, Gegenstimme, offene Frage. Immer als Theorie.",
+   "unterformate": [
+    {
+     "name": "Mysterien Deep Dive",
+     "beschreibung": "Ein Rätsel in der Tiefe nach der Mysterien-Formel: Hook, Indizien, Theorien, Gegenstimme, offene Frage. Immer als Theorie.",
+     "videos": [
+      {
+       "titel": "Wurden die Pyramiden mit Klang gebaut?",
+       "status": "offen"
+      },
+      {
+       "titel": "Waren Drachen echt?",
+       "status": "offen"
+      },
+      {
+       "titel": "Riesen im alten Ägypten und weltweit",
+       "status": "offen"
+      },
+      {
+       "titel": "Puma Punku: Steine, die es nicht geben dürfte",
+       "status": "offen"
+      },
+      {
+       "titel": "Göbekli Tepe: 12.000 Jahre alt",
+       "status": "offen"
+      },
+      {
+       "titel": "Ist die Sphinx älter als gedacht?",
+       "status": "offen"
+      },
+      {
+       "titel": "Atlantis: was Platon wirklich schrieb",
+       "status": "offen"
+      },
+      {
+       "titel": "Der Antikythera-Mechanismus",
+       "status": "offen"
+      },
+      {
+       "titel": "Die Nazca-Linien",
+       "status": "offen"
+      },
+      {
+       "titel": "Baalbek: die schwersten Steine der Welt",
+       "status": "offen"
+      },
+      {
+       "titel": "Derinkuyu: die Stadt unter der Erde",
+       "status": "offen"
+      },
+      {
+       "titel": "Sacsayhuamán: Mauern ohne Fugen",
+       "status": "offen"
+      },
+      {
+       "titel": "Die Osterinsel",
+       "status": "offen"
+      },
+      {
+       "titel": "Stonehenge",
+       "status": "offen"
+      },
+      {
+       "titel": "Das Serapeum von Sakkara",
+       "status": "offen"
+      },
+      {
+       "titel": "Die Lampen von Dendera",
+       "status": "offen"
+      },
+      {
+       "titel": "Das Voynich-Manuskript",
+       "status": "offen"
+      },
+      {
+       "titel": "Die Bagdad-Batterie",
+       "status": "offen"
+      },
+      {
+       "titel": "Yonaguni: die Pyramide im Meer",
+       "status": "offen"
+      },
+      {
+       "titel": "Teotihuacán: Stadt der Götter",
+       "status": "offen"
+      },
+      {
+       "titel": "Die Orion-Korrelation",
+       "status": "offen"
+      },
+      {
+       "titel": "Sintflut: warum jedes Volk davon erzählt",
+       "status": "offen"
+      },
+      {
+       "titel": "Der Maya-Kalender",
+       "status": "offen"
+      },
+      {
+       "titel": "Newgrange: älter als die Pyramiden",
+       "status": "offen"
+      },
+      {
+       "titel": "Die Himmelsscheibe von Nebra",
+       "status": "offen"
+      },
+      {
+       "titel": "Die Externsteine",
+       "status": "offen"
+      },
+      {
+       "titel": "Die Piri-Reis-Karte",
+       "status": "offen"
+      },
+      {
+       "titel": "Coral Castle",
+       "status": "offen"
+      },
+      {
+       "titel": "Die Dogon und der Sirius",
+       "status": "offen"
+      },
+      {
+       "titel": "Mohenjo-Daro",
+       "status": "offen"
+      }
+     ]
+    }
+   ],
+   "anzahl": 30,
+   "fertig": 0
+  },
+  {
+   "name": "Zahlen & Astro-Wissen",
+   "saeule": "Zahlen & Energie",
+   "laenge": "8 bis 12 Min.",
+   "beschreibung": "Numerologie, Engelszahlen und Astro-Grundlagen verständlich erklärt, mit Beispielen zum Mitrechnen.",
+   "unterformate": [
+    {
+     "name": "Zahlen & Astro-Wissen",
+     "beschreibung": "Numerologie, Engelszahlen und Astro-Grundlagen verständlich erklärt, mit Beispielen zum Mitrechnen.",
+     "videos": [
+      {
+       "titel": "Lebenszahl 1",
+       "status": "offen"
+      },
+      {
+       "titel": "Engelszahlen: was 111 bis 999 bedeuten",
+       "status": "offen"
+      },
+      {
+       "titel": "Der Aszendent erklärt",
+       "status": "offen"
+      },
+      {
+       "titel": "Lebenszahl 2",
+       "status": "offen"
+      },
+      {
+       "titel": "Dein Mondzeichen",
+       "status": "offen"
+      },
+      {
+       "titel": "Lebenszahl 3",
+       "status": "offen"
+      },
+      {
+       "titel": "Merkur rückläufig: was wirklich passiert",
+       "status": "offen"
+      },
+      {
+       "titel": "Lebenszahl 4",
+       "status": "offen"
+      },
+      {
+       "titel": "Die 12 Häuser im Horoskop",
+       "status": "offen"
+      },
+      {
+       "titel": "Lebenszahl 5",
+       "status": "offen"
+      },
+      {
+       "titel": "Dein Venuszeichen und die Liebe",
+       "status": "offen"
+      },
+      {
+       "titel": "Lebenszahl 6",
+       "status": "offen"
+      },
+      {
+       "titel": "Die Saturn-Rückkehr mit 29",
+       "status": "offen"
+      },
+      {
+       "titel": "Lebenszahl 7",
+       "status": "offen"
+      },
+      {
+       "titel": "Das chinesische Horoskop",
+       "status": "offen"
+      },
+      {
+       "titel": "Lebenszahl 8",
+       "status": "offen"
+      },
+      {
+       "titel": "Lebenszahl 9",
+       "status": "offen"
+      },
+      {
+       "titel": "Meisterzahlen 11, 22, 33",
+       "status": "offen"
+      }
+     ]
+    }
+   ],
+   "anzahl": 18,
+   "fertig": 0
+  },
+  {
+   "name": "Elemente & Energie",
+   "saeule": "Energie",
+   "laenge": "8 bis 12 Min.",
+   "beschreibung": "Elemente, Steine, Frequenzen und spirituelle Themen, ruhiger erzählt.",
+   "unterformate": [
+    {
+     "name": "Elemente & Energie",
+     "beschreibung": "Elemente, Steine, Frequenzen und spirituelle Themen, ruhiger erzählt.",
+     "videos": [
+      {
+       "titel": "Element Feuer: Widder, Löwe, Schütze",
+       "status": "offen"
+      },
+      {
+       "titel": "Edelsteine für jedes Sternzeichen",
+       "status": "offen"
+      },
+      {
+       "titel": "Element Erde: Stier, Jungfrau, Steinbock",
+       "status": "offen"
+      },
+      {
+       "titel": "Déjà-vu, Synchronizität und Zufall",
+       "status": "offen"
+      },
+      {
+       "titel": "Element Luft: Zwillinge, Waage, Wassermann",
+       "status": "offen"
+      },
+      {
+       "titel": "Was der Vollmond mit dir macht",
+       "status": "offen"
+      },
+      {
+       "titel": "Element Wasser: Krebs, Skorpion, Fische",
+       "status": "offen"
+      },
+      {
+       "titel": "Klarträume: wach im Traum",
+       "status": "offen"
+      },
+      {
+       "titel": "Frequenzen: Klang, Körper und Raum",
+       "status": "offen"
+      },
+      {
+       "titel": "Alte Seele: woran du sie erkennst",
+       "status": "offen"
+      }
+     ]
+    }
+   ],
+   "anzahl": 10,
+   "fertig": 0
+  },
+  {
+   "name": "Monatshoroskop",
+   "saeule": "Horoskop",
+   "laenge": "12 bis 15 Min.",
+   "beschreibung": "Der kommende Monat für alle 12 Zeichen, mit Kapitelmarken je Zeichen. Am letzten Sonntag im Monat.",
+   "unterformate": [
+    {
+     "name": "Monatshoroskop",
+     "beschreibung": "Der kommende Monat für alle 12 Zeichen, mit Kapitelmarken je Zeichen. Am letzten Sonntag im Monat.",
+     "videos": [
+      {
+       "titel": "Horoskop für den kommenden Monat",
+       "status": "offen"
+      }
+     ]
+    }
+   ],
+   "anzahl": 12,
+   "fertig": 0
+  }
+ ],
+ "reihenfolge": [
+  {
+   "nr": 1,
+   "runde": 1,
+   "saeule": "Sternzeichen",
+   "format": "Sternzeichen-Porträt",
+   "unterformat": "Short: Stier",
+   "thema": "Stier: Stärken, Schwächen und was niemand über dich weiß",
+   "titel": "Stier: Stärken, Schwächen und was niemand über dich weiß",
+   "status": "offen",
+   "datum": "2026-10-26",
+   "key": "YT|Sternzeichen-Porträt|Stier: Stärken, Schwächen und was niemand über dich weiß"
+  },
+  {
+   "nr": 2,
+   "runde": 2,
+   "saeule": "Mysterien & Theorien",
+   "format": "Mysterien Deep Dive",
+   "unterformat": "Mysterien Deep Dive",
+   "thema": "Wurden die Pyramiden mit Klang gebaut?",
+   "titel": "Wurden die Pyramiden mit Klang gebaut?",
+   "status": "offen",
+   "datum": "2026-10-27",
+   "key": "YT|Mysterien Deep Dive|Wurden die Pyramiden mit Klang gebaut?"
+  },
+  {
+   "nr": 3,
+   "runde": 3,
+   "saeule": "Rankings",
+   "format": "Ranking: alle 12",
+   "unterformat": "Ranking: alle 12",
+   "thema": "Alle Sternzeichen gerankt: Wer ist am loyalsten?",
+   "titel": "Alle Sternzeichen gerankt: Wer ist am loyalsten?",
+   "status": "offen",
+   "datum": "2026-10-28",
+   "key": "YT|Ranking: alle 12|Alle Sternzeichen gerankt: Wer ist am loyalsten?"
+  },
+  {
+   "nr": 4,
+   "runde": 4,
+   "saeule": "Beziehungen",
+   "format": "Liebe & Partnerschaft",
+   "unterformat": "Short: Wassermann",
+   "thema": "Wassermann in der Liebe: mit wem es passt und mit wem nie",
+   "titel": "Wassermann in der Liebe: mit wem es passt und mit wem nie",
+   "status": "offen",
+   "datum": "2026-10-29",
+   "key": "YT|Liebe & Partnerschaft|Wassermann in der Liebe: mit wem es passt und mit wem nie"
+  },
+  {
+   "nr": 5,
+   "runde": 5,
+   "saeule": "Mysterien & Theorien",
+   "format": "Mysterien Deep Dive",
+   "unterformat": "Mysterien Deep Dive",
+   "thema": "Waren Drachen echt?",
+   "titel": "Waren Drachen echt?",
+   "status": "offen",
+   "datum": "2026-10-30",
+   "key": "YT|Mysterien Deep Dive|Waren Drachen echt?"
+  },
+  {
+   "nr": 6,
+   "runde": 6,
+   "saeule": "Zahlen & Energie",
+   "format": "Zahlen & Astro-Wissen",
+   "unterformat": "Zahlen & Astro-Wissen",
+   "thema": "Lebenszahl 1",
+   "titel": "Lebenszahl 1",
+   "status": "offen",
+   "datum": "2026-10-31",
+   "key": "YT|Zahlen & Astro-Wissen|Lebenszahl 1"
+  },
+  {
+   "nr": 7,
+   "runde": 7,
+   "saeule": "Energie",
+   "format": "Elemente & Energie",
+   "unterformat": "Elemente & Energie",
+   "thema": "Element Feuer: Widder, Löwe, Schütze",
+   "titel": "Element Feuer: Widder, Löwe, Schütze",
+   "status": "offen",
+   "datum": "2026-11-01",
+   "key": "YT|Elemente & Energie|Element Feuer: Widder, Löwe, Schütze"
+  },
+  {
+   "nr": 8,
+   "runde": 8,
+   "saeule": "Sternzeichen",
+   "format": "Sternzeichen-Porträt",
+   "unterformat": "Short: Skorpion",
+   "thema": "Skorpion: Stärken, Schwächen und was niemand über dich weiß",
+   "titel": "Skorpion: Stärken, Schwächen und was niemand über dich weiß",
+   "status": "offen",
+   "datum": "2026-11-02",
+   "key": "YT|Sternzeichen-Porträt|Skorpion: Stärken, Schwächen und was niemand über dich weiß"
+  },
+  {
+   "nr": 9,
+   "runde": 9,
+   "saeule": "Mysterien & Theorien",
+   "format": "Mysterien Deep Dive",
+   "unterformat": "Mysterien Deep Dive",
+   "thema": "Riesen im alten Ägypten und weltweit",
+   "titel": "Riesen im alten Ägypten und weltweit",
+   "status": "offen",
+   "datum": "2026-11-03",
+   "key": "YT|Mysterien Deep Dive|Riesen im alten Ägypten und weltweit"
+  },
+  {
+   "nr": 10,
+   "runde": 10,
+   "saeule": "Rankings",
+   "format": "Ranking: alle 12",
+   "unterformat": "Ranking: alle 12",
+   "thema": "Alle Sternzeichen gerankt: Wer ist am eifersüchtigsten?",
+   "titel": "Alle Sternzeichen gerankt: Wer ist am eifersüchtigsten?",
+   "status": "offen",
+   "datum": "2026-11-04",
+   "key": "YT|Ranking: alle 12|Alle Sternzeichen gerankt: Wer ist am eifersüchtigsten?"
+  },
+  {
+   "nr": 11,
+   "runde": 11,
+   "saeule": "Beziehungen",
+   "format": "Liebe & Partnerschaft",
+   "unterformat": "Short: Krebs",
+   "thema": "Krebs in der Liebe: mit wem es passt und mit wem nie",
+   "titel": "Krebs in der Liebe: mit wem es passt und mit wem nie",
+   "status": "offen",
+   "datum": "2026-11-05",
+   "key": "YT|Liebe & Partnerschaft|Krebs in der Liebe: mit wem es passt und mit wem nie"
+  },
+  {
+   "nr": 12,
+   "runde": 12,
+   "saeule": "Mysterien & Theorien",
+   "format": "Mysterien Deep Dive",
+   "unterformat": "Mysterien Deep Dive",
+   "thema": "Puma Punku: Steine, die es nicht geben dürfte",
+   "titel": "Puma Punku: Steine, die es nicht geben dürfte",
+   "status": "offen",
+   "datum": "2026-11-06",
+   "key": "YT|Mysterien Deep Dive|Puma Punku: Steine, die es nicht geben dürfte"
+  },
+  {
+   "nr": 13,
+   "runde": 13,
+   "saeule": "Zahlen & Energie",
+   "format": "Zahlen & Astro-Wissen",
+   "unterformat": "Zahlen & Astro-Wissen",
+   "thema": "Engelszahlen: was 111 bis 999 bedeuten",
+   "titel": "Engelszahlen: was 111 bis 999 bedeuten",
+   "status": "offen",
+   "datum": "2026-11-07",
+   "key": "YT|Zahlen & Astro-Wissen|Engelszahlen: was 111 bis 999 bedeuten"
+  },
+  {
+   "nr": 14,
+   "runde": 14,
+   "saeule": "Energie",
+   "format": "Elemente & Energie",
+   "unterformat": "Elemente & Energie",
+   "thema": "Edelsteine für jedes Sternzeichen",
+   "titel": "Edelsteine für jedes Sternzeichen",
+   "status": "offen",
+   "datum": "2026-11-08",
+   "key": "YT|Elemente & Energie|Edelsteine für jedes Sternzeichen"
+  },
+  {
+   "nr": 15,
+   "runde": 15,
+   "saeule": "Sternzeichen",
+   "format": "Sternzeichen-Porträt",
+   "unterformat": "Short: Löwe",
+   "thema": "Löwe: Stärken, Schwächen und was niemand über dich weiß",
+   "titel": "Löwe: Stärken, Schwächen und was niemand über dich weiß",
+   "status": "offen",
+   "datum": "2026-11-09",
+   "key": "YT|Sternzeichen-Porträt|Löwe: Stärken, Schwächen und was niemand über dich weiß"
+  },
+  {
+   "nr": 16,
+   "runde": 16,
+   "saeule": "Mysterien & Theorien",
+   "format": "Mysterien Deep Dive",
+   "unterformat": "Mysterien Deep Dive",
+   "thema": "Göbekli Tepe: 12.000 Jahre alt",
+   "titel": "Göbekli Tepe: 12.000 Jahre alt",
+   "status": "offen",
+   "datum": "2026-11-10",
+   "key": "YT|Mysterien Deep Dive|Göbekli Tepe: 12.000 Jahre alt"
+  },
+  {
+   "nr": 17,
+   "runde": 17,
+   "saeule": "Rankings",
+   "format": "Ranking: alle 12",
+   "unterformat": "Ranking: alle 12",
+   "thema": "Alle Sternzeichen gerankt: Wer ist am gefährlichsten?",
+   "titel": "Alle Sternzeichen gerankt: Wer ist am gefährlichsten?",
+   "status": "offen",
+   "datum": "2026-11-11",
+   "key": "YT|Ranking: alle 12|Alle Sternzeichen gerankt: Wer ist am gefährlichsten?"
+  },
+  {
+   "nr": 18,
+   "runde": 18,
+   "saeule": "Beziehungen",
+   "format": "Liebe & Partnerschaft",
+   "unterformat": "Short: Schütze",
+   "thema": "Schütze in der Liebe: mit wem es passt und mit wem nie",
+   "titel": "Schütze in der Liebe: mit wem es passt und mit wem nie",
+   "status": "offen",
+   "datum": "2026-11-12",
+   "key": "YT|Liebe & Partnerschaft|Schütze in der Liebe: mit wem es passt und mit wem nie"
+  },
+  {
+   "nr": 19,
+   "runde": 19,
+   "saeule": "Mysterien & Theorien",
+   "format": "Mysterien Deep Dive",
+   "unterformat": "Mysterien Deep Dive",
+   "thema": "Ist die Sphinx älter als gedacht?",
+   "titel": "Ist die Sphinx älter als gedacht?",
+   "status": "offen",
+   "datum": "2026-11-13",
+   "key": "YT|Mysterien Deep Dive|Ist die Sphinx älter als gedacht?"
+  },
+  {
+   "nr": 20,
+   "runde": 20,
+   "saeule": "Zahlen & Energie",
+   "format": "Zahlen & Astro-Wissen",
+   "unterformat": "Zahlen & Astro-Wissen",
+   "thema": "Der Aszendent erklärt",
+   "titel": "Der Aszendent erklärt",
+   "status": "offen",
+   "datum": "2026-11-14",
+   "key": "YT|Zahlen & Astro-Wissen|Der Aszendent erklärt"
+  },
+  {
+   "nr": 21,
+   "runde": 21,
+   "saeule": "Energie",
+   "format": "Elemente & Energie",
+   "unterformat": "Elemente & Energie",
+   "thema": "Element Erde: Stier, Jungfrau, Steinbock",
+   "titel": "Element Erde: Stier, Jungfrau, Steinbock",
+   "status": "offen",
+   "datum": "2026-11-15",
+   "key": "YT|Elemente & Energie|Element Erde: Stier, Jungfrau, Steinbock"
+  },
+  {
+   "nr": 22,
+   "runde": 22,
+   "saeule": "Sternzeichen",
+   "format": "Sternzeichen-Porträt",
+   "unterformat": "Short: Fische",
+   "thema": "Fische: Stärken, Schwächen und was niemand über dich weiß",
+   "titel": "Fische: Stärken, Schwächen und was niemand über dich weiß",
+   "status": "offen",
+   "datum": "2026-11-16",
+   "key": "YT|Sternzeichen-Porträt|Fische: Stärken, Schwächen und was niemand über dich weiß"
+  },
+  {
+   "nr": 23,
+   "runde": 23,
+   "saeule": "Mysterien & Theorien",
+   "format": "Mysterien Deep Dive",
+   "unterformat": "Mysterien Deep Dive",
+   "thema": "Atlantis: was Platon wirklich schrieb",
+   "titel": "Atlantis: was Platon wirklich schrieb",
+   "status": "offen",
+   "datum": "2026-11-17",
+   "key": "YT|Mysterien Deep Dive|Atlantis: was Platon wirklich schrieb"
+  },
+  {
+   "nr": 24,
+   "runde": 24,
+   "saeule": "Rankings",
+   "format": "Ranking: alle 12",
+   "unterformat": "Ranking: alle 12",
+   "thema": "Alle Sternzeichen gerankt: Wer ist am intuitivsten?",
+   "titel": "Alle Sternzeichen gerankt: Wer ist am intuitivsten?",
+   "status": "offen",
+   "datum": "2026-11-18",
+   "key": "YT|Ranking: alle 12|Alle Sternzeichen gerankt: Wer ist am intuitivsten?"
+  },
+  {
+   "nr": 25,
+   "runde": 25,
+   "saeule": "Beziehungen",
+   "format": "Liebe & Partnerschaft",
+   "unterformat": "Short: Zwillinge",
+   "thema": "Zwillinge in der Liebe: mit wem es passt und mit wem nie",
+   "titel": "Zwillinge in der Liebe: mit wem es passt und mit wem nie",
+   "status": "offen",
+   "datum": "2026-11-19",
+   "key": "YT|Liebe & Partnerschaft|Zwillinge in der Liebe: mit wem es passt und mit wem nie"
+  },
+  {
+   "nr": 26,
+   "runde": 26,
+   "saeule": "Mysterien & Theorien",
+   "format": "Mysterien Deep Dive",
+   "unterformat": "Mysterien Deep Dive",
+   "thema": "Der Antikythera-Mechanismus",
+   "titel": "Der Antikythera-Mechanismus",
+   "status": "offen",
+   "datum": "2026-11-20",
+   "key": "YT|Mysterien Deep Dive|Der Antikythera-Mechanismus"
+  },
+  {
+   "nr": 27,
+   "runde": 27,
+   "saeule": "Zahlen & Energie",
+   "format": "Zahlen & Astro-Wissen",
+   "unterformat": "Zahlen & Astro-Wissen",
+   "thema": "Lebenszahl 2",
+   "titel": "Lebenszahl 2",
+   "status": "offen",
+   "datum": "2026-11-21",
+   "key": "YT|Zahlen & Astro-Wissen|Lebenszahl 2"
+  },
+  {
+   "nr": 28,
+   "runde": 28,
+   "saeule": "Energie",
+   "format": "Elemente & Energie",
+   "unterformat": "Elemente & Energie",
+   "thema": "Déjà-vu, Synchronizität und Zufall",
+   "titel": "Déjà-vu, Synchronizität und Zufall",
+   "status": "offen",
+   "datum": "2026-11-22",
+   "key": "YT|Elemente & Energie|Déjà-vu, Synchronizität und Zufall"
+  },
+  {
+   "nr": 29,
+   "runde": 29,
+   "saeule": "Sternzeichen",
+   "format": "Sternzeichen-Porträt",
+   "unterformat": "Short: Widder",
+   "thema": "Widder: Stärken, Schwächen und was niemand über dich weiß",
+   "titel": "Widder: Stärken, Schwächen und was niemand über dich weiß",
+   "status": "offen",
+   "datum": "2026-11-23",
+   "key": "YT|Sternzeichen-Porträt|Widder: Stärken, Schwächen und was niemand über dich weiß"
+  },
+  {
+   "nr": 30,
+   "runde": 30,
+   "saeule": "Mysterien & Theorien",
+   "format": "Mysterien Deep Dive",
+   "unterformat": "Mysterien Deep Dive",
+   "thema": "Die Nazca-Linien",
+   "titel": "Die Nazca-Linien",
+   "status": "offen",
+   "datum": "2026-11-24",
+   "key": "YT|Mysterien Deep Dive|Die Nazca-Linien"
+  },
+  {
+   "nr": 31,
+   "runde": 31,
+   "saeule": "Rankings",
+   "format": "Ranking: alle 12",
+   "unterformat": "Ranking: alle 12",
+   "thema": "Alle Sternzeichen gerankt: Wer ist der geborene Anführer?",
+   "titel": "Alle Sternzeichen gerankt: Wer ist der geborene Anführer?",
+   "status": "offen",
+   "datum": "2026-11-25",
+   "key": "YT|Ranking: alle 12|Alle Sternzeichen gerankt: Wer ist der geborene Anführer?"
+  },
+  {
+   "nr": 32,
+   "runde": 32,
+   "saeule": "Beziehungen",
+   "format": "Liebe & Partnerschaft",
+   "unterformat": "Short: Steinbock",
+   "thema": "Steinbock in der Liebe: mit wem es passt und mit wem nie",
+   "titel": "Steinbock in der Liebe: mit wem es passt und mit wem nie",
+   "status": "offen",
+   "datum": "2026-11-26",
+   "key": "YT|Liebe & Partnerschaft|Steinbock in der Liebe: mit wem es passt und mit wem nie"
+  },
+  {
+   "nr": 33,
+   "runde": 33,
+   "saeule": "Mysterien & Theorien",
+   "format": "Mysterien Deep Dive",
+   "unterformat": "Mysterien Deep Dive",
+   "thema": "Baalbek: die schwersten Steine der Welt",
+   "titel": "Baalbek: die schwersten Steine der Welt",
+   "status": "offen",
+   "datum": "2026-11-27",
+   "key": "YT|Mysterien Deep Dive|Baalbek: die schwersten Steine der Welt"
+  },
+  {
+   "nr": 34,
+   "runde": 34,
+   "saeule": "Zahlen & Energie",
+   "format": "Zahlen & Astro-Wissen",
+   "unterformat": "Zahlen & Astro-Wissen",
+   "thema": "Dein Mondzeichen",
+   "titel": "Dein Mondzeichen",
+   "status": "offen",
+   "datum": "2026-11-28",
+   "key": "YT|Zahlen & Astro-Wissen|Dein Mondzeichen"
+  },
+  {
+   "nr": 35,
+   "runde": 35,
+   "saeule": "Horoskop",
+   "format": "Monatshoroskop",
+   "unterformat": "Monatshoroskop",
+   "thema": "Horoskop Dezember 2026 für alle 12 Sternzeichen",
+   "titel": "Horoskop Dezember 2026 für alle 12 Sternzeichen",
+   "status": "offen",
+   "datum": "2026-11-29",
+   "key": "YT|Monatshoroskop|Horoskop Dezember 2026 für alle 12 Sternzeichen"
+  },
+  {
+   "nr": 36,
+   "runde": 36,
+   "saeule": "Sternzeichen",
+   "format": "Sternzeichen-Porträt",
+   "unterformat": "Short: Jungfrau",
+   "thema": "Jungfrau: Stärken, Schwächen und was niemand über dich weiß",
+   "titel": "Jungfrau: Stärken, Schwächen und was niemand über dich weiß",
+   "status": "offen",
+   "datum": "2026-11-30",
+   "key": "YT|Sternzeichen-Porträt|Jungfrau: Stärken, Schwächen und was niemand über dich weiß"
+  },
+  {
+   "nr": 37,
+   "runde": 37,
+   "saeule": "Mysterien & Theorien",
+   "format": "Mysterien Deep Dive",
+   "unterformat": "Mysterien Deep Dive",
+   "thema": "Derinkuyu: die Stadt unter der Erde",
+   "titel": "Derinkuyu: die Stadt unter der Erde",
+   "status": "offen",
+   "datum": "2026-12-01",
+   "key": "YT|Mysterien Deep Dive|Derinkuyu: die Stadt unter der Erde"
+  },
+  {
+   "nr": 38,
+   "runde": 38,
+   "saeule": "Rankings",
+   "format": "Ranking: alle 12",
+   "unterformat": "Ranking: alle 12",
+   "thema": "Alle Sternzeichen gerankt: Wer sind die besten Eltern?",
+   "titel": "Alle Sternzeichen gerankt: Wer sind die besten Eltern?",
+   "status": "offen",
+   "datum": "2026-12-02",
+   "key": "YT|Ranking: alle 12|Alle Sternzeichen gerankt: Wer sind die besten Eltern?"
+  },
+  {
+   "nr": 39,
+   "runde": 39,
+   "saeule": "Beziehungen",
+   "format": "Liebe & Partnerschaft",
+   "unterformat": "Short: Waage",
+   "thema": "Waage in der Liebe: mit wem es passt und mit wem nie",
+   "titel": "Waage in der Liebe: mit wem es passt und mit wem nie",
+   "status": "offen",
+   "datum": "2026-12-03",
+   "key": "YT|Liebe & Partnerschaft|Waage in der Liebe: mit wem es passt und mit wem nie"
+  },
+  {
+   "nr": 40,
+   "runde": 40,
+   "saeule": "Mysterien & Theorien",
+   "format": "Mysterien Deep Dive",
+   "unterformat": "Mysterien Deep Dive",
+   "thema": "Sacsayhuamán: Mauern ohne Fugen",
+   "titel": "Sacsayhuamán: Mauern ohne Fugen",
+   "status": "offen",
+   "datum": "2026-12-04",
+   "key": "YT|Mysterien Deep Dive|Sacsayhuamán: Mauern ohne Fugen"
+  },
+  {
+   "nr": 41,
+   "runde": 41,
+   "saeule": "Zahlen & Energie",
+   "format": "Zahlen & Astro-Wissen",
+   "unterformat": "Zahlen & Astro-Wissen",
+   "thema": "Lebenszahl 3",
+   "titel": "Lebenszahl 3",
+   "status": "offen",
+   "datum": "2026-12-05",
+   "key": "YT|Zahlen & Astro-Wissen|Lebenszahl 3"
+  },
+  {
+   "nr": 42,
+   "runde": 42,
+   "saeule": "Energie",
+   "format": "Elemente & Energie",
+   "unterformat": "Elemente & Energie",
+   "thema": "Element Luft: Zwillinge, Waage, Wassermann",
+   "titel": "Element Luft: Zwillinge, Waage, Wassermann",
+   "status": "offen",
+   "datum": "2026-12-06",
+   "key": "YT|Elemente & Energie|Element Luft: Zwillinge, Waage, Wassermann"
+  },
+  {
+   "nr": 43,
+   "runde": 43,
+   "saeule": "Sternzeichen",
+   "format": "Sternzeichen-Porträt",
+   "unterformat": "Short: Wassermann",
+   "thema": "Wassermann: Stärken, Schwächen und was niemand über dich weiß",
+   "titel": "Wassermann: Stärken, Schwächen und was niemand über dich weiß",
+   "status": "offen",
+   "datum": "2026-12-07",
+   "key": "YT|Sternzeichen-Porträt|Wassermann: Stärken, Schwächen und was niemand über dich weiß"
+  },
+  {
+   "nr": 44,
+   "runde": 44,
+   "saeule": "Mysterien & Theorien",
+   "format": "Mysterien Deep Dive",
+   "unterformat": "Mysterien Deep Dive",
+   "thema": "Die Osterinsel",
+   "titel": "Die Osterinsel",
+   "status": "offen",
+   "datum": "2026-12-08",
+   "key": "YT|Mysterien Deep Dive|Die Osterinsel"
+  },
+  {
+   "nr": 45,
+   "runde": 45,
+   "saeule": "Rankings",
+   "format": "Ranking: alle 12",
+   "unterformat": "Ranking: alle 12",
+   "thema": "Alle Sternzeichen gerankt: Wer ist der größte Romantiker?",
+   "titel": "Alle Sternzeichen gerankt: Wer ist der größte Romantiker?",
+   "status": "offen",
+   "datum": "2026-12-09",
+   "key": "YT|Ranking: alle 12|Alle Sternzeichen gerankt: Wer ist der größte Romantiker?"
+  },
+  {
+   "nr": 46,
+   "runde": 46,
+   "saeule": "Beziehungen",
+   "format": "Liebe & Partnerschaft",
+   "unterformat": "Short: Stier",
+   "thema": "Stier in der Liebe: mit wem es passt und mit wem nie",
+   "titel": "Stier in der Liebe: mit wem es passt und mit wem nie",
+   "status": "offen",
+   "datum": "2026-12-10",
+   "key": "YT|Liebe & Partnerschaft|Stier in der Liebe: mit wem es passt und mit wem nie"
+  },
+  {
+   "nr": 47,
+   "runde": 47,
+   "saeule": "Mysterien & Theorien",
+   "format": "Mysterien Deep Dive",
+   "unterformat": "Mysterien Deep Dive",
+   "thema": "Stonehenge",
+   "titel": "Stonehenge",
+   "status": "offen",
+   "datum": "2026-12-11",
+   "key": "YT|Mysterien Deep Dive|Stonehenge"
+  },
+  {
+   "nr": 48,
+   "runde": 48,
+   "saeule": "Zahlen & Energie",
+   "format": "Zahlen & Astro-Wissen",
+   "unterformat": "Zahlen & Astro-Wissen",
+   "thema": "Merkur rückläufig: was wirklich passiert",
+   "titel": "Merkur rückläufig: was wirklich passiert",
+   "status": "offen",
+   "datum": "2026-12-12",
+   "key": "YT|Zahlen & Astro-Wissen|Merkur rückläufig: was wirklich passiert"
+  },
+  {
+   "nr": 49,
+   "runde": 49,
+   "saeule": "Energie",
+   "format": "Elemente & Energie",
+   "unterformat": "Elemente & Energie",
+   "thema": "Was der Vollmond mit dir macht",
+   "titel": "Was der Vollmond mit dir macht",
+   "status": "offen",
+   "datum": "2026-12-13",
+   "key": "YT|Elemente & Energie|Was der Vollmond mit dir macht"
+  },
+  {
+   "nr": 50,
+   "runde": 50,
+   "saeule": "Sternzeichen",
+   "format": "Sternzeichen-Porträt",
+   "unterformat": "Short: Krebs",
+   "thema": "Krebs: Stärken, Schwächen und was niemand über dich weiß",
+   "titel": "Krebs: Stärken, Schwächen und was niemand über dich weiß",
+   "status": "offen",
+   "datum": "2026-12-14",
+   "key": "YT|Sternzeichen-Porträt|Krebs: Stärken, Schwächen und was niemand über dich weiß"
+  },
+  {
+   "nr": 51,
+   "runde": 51,
+   "saeule": "Mysterien & Theorien",
+   "format": "Mysterien Deep Dive",
+   "unterformat": "Mysterien Deep Dive",
+   "thema": "Das Serapeum von Sakkara",
+   "titel": "Das Serapeum von Sakkara",
+   "status": "offen",
+   "datum": "2026-12-15",
+   "key": "YT|Mysterien Deep Dive|Das Serapeum von Sakkara"
+  },
+  {
+   "nr": 52,
+   "runde": 52,
+   "saeule": "Rankings",
+   "format": "Ranking: alle 12",
+   "unterformat": "Ranking: alle 12",
+   "thema": "Alle Sternzeichen gerankt: Wer lügt am meisten?",
+   "titel": "Alle Sternzeichen gerankt: Wer lügt am meisten?",
+   "status": "offen",
+   "datum": "2026-12-16",
+   "key": "YT|Ranking: alle 12|Alle Sternzeichen gerankt: Wer lügt am meisten?"
+  },
+  {
+   "nr": 53,
+   "runde": 53,
+   "saeule": "Beziehungen",
+   "format": "Liebe & Partnerschaft",
+   "unterformat": "Short: Skorpion",
+   "thema": "Skorpion in der Liebe: mit wem es passt und mit wem nie",
+   "titel": "Skorpion in der Liebe: mit wem es passt und mit wem nie",
+   "status": "offen",
+   "datum": "2026-12-17",
+   "key": "YT|Liebe & Partnerschaft|Skorpion in der Liebe: mit wem es passt und mit wem nie"
+  },
+  {
+   "nr": 54,
+   "runde": 54,
+   "saeule": "Mysterien & Theorien",
+   "format": "Mysterien Deep Dive",
+   "unterformat": "Mysterien Deep Dive",
+   "thema": "Die Lampen von Dendera",
+   "titel": "Die Lampen von Dendera",
+   "status": "offen",
+   "datum": "2026-12-18",
+   "key": "YT|Mysterien Deep Dive|Die Lampen von Dendera"
+  },
+  {
+   "nr": 55,
+   "runde": 55,
+   "saeule": "Zahlen & Energie",
+   "format": "Zahlen & Astro-Wissen",
+   "unterformat": "Zahlen & Astro-Wissen",
+   "thema": "Lebenszahl 4",
+   "titel": "Lebenszahl 4",
+   "status": "offen",
+   "datum": "2026-12-19",
+   "key": "YT|Zahlen & Astro-Wissen|Lebenszahl 4"
+  },
+  {
+   "nr": 56,
+   "runde": 56,
+   "saeule": "Energie",
+   "format": "Elemente & Energie",
+   "unterformat": "Elemente & Energie",
+   "thema": "Element Wasser: Krebs, Skorpion, Fische",
+   "titel": "Element Wasser: Krebs, Skorpion, Fische",
+   "status": "offen",
+   "datum": "2026-12-20",
+   "key": "YT|Elemente & Energie|Element Wasser: Krebs, Skorpion, Fische"
+  },
+  {
+   "nr": 57,
+   "runde": 57,
+   "saeule": "Sternzeichen",
+   "format": "Sternzeichen-Porträt",
+   "unterformat": "Short: Schütze",
+   "thema": "Schütze: Stärken, Schwächen und was niemand über dich weiß",
+   "titel": "Schütze: Stärken, Schwächen und was niemand über dich weiß",
+   "status": "offen",
+   "datum": "2026-12-21",
+   "key": "YT|Sternzeichen-Porträt|Schütze: Stärken, Schwächen und was niemand über dich weiß"
+  },
+  {
+   "nr": 58,
+   "runde": 58,
+   "saeule": "Mysterien & Theorien",
+   "format": "Mysterien Deep Dive",
+   "unterformat": "Mysterien Deep Dive",
+   "thema": "Das Voynich-Manuskript",
+   "titel": "Das Voynich-Manuskript",
+   "status": "offen",
+   "datum": "2026-12-22",
+   "key": "YT|Mysterien Deep Dive|Das Voynich-Manuskript"
+  },
+  {
+   "nr": 59,
+   "runde": 59,
+   "saeule": "Rankings",
+   "format": "Ranking: alle 12",
+   "unterformat": "Ranking: alle 12",
+   "thema": "Alle Sternzeichen gerankt: Wen vergisst man nie?",
+   "titel": "Alle Sternzeichen gerankt: Wen vergisst man nie?",
+   "status": "offen",
+   "datum": "2026-12-23",
+   "key": "YT|Ranking: alle 12|Alle Sternzeichen gerankt: Wen vergisst man nie?"
+  },
+  {
+   "nr": 60,
+   "runde": 60,
+   "saeule": "Beziehungen",
+   "format": "Liebe & Partnerschaft",
+   "unterformat": "Short: Löwe",
+   "thema": "Löwe in der Liebe: mit wem es passt und mit wem nie",
+   "titel": "Löwe in der Liebe: mit wem es passt und mit wem nie",
+   "status": "offen",
+   "datum": "2026-12-24",
+   "key": "YT|Liebe & Partnerschaft|Löwe in der Liebe: mit wem es passt und mit wem nie"
+  },
+  {
+   "nr": 61,
+   "runde": 61,
+   "saeule": "Mysterien & Theorien",
+   "format": "Mysterien Deep Dive",
+   "unterformat": "Mysterien Deep Dive",
+   "thema": "Die Bagdad-Batterie",
+   "titel": "Die Bagdad-Batterie",
+   "status": "offen",
+   "datum": "2026-12-25",
+   "key": "YT|Mysterien Deep Dive|Die Bagdad-Batterie"
+  },
+  {
+   "nr": 62,
+   "runde": 62,
+   "saeule": "Zahlen & Energie",
+   "format": "Zahlen & Astro-Wissen",
+   "unterformat": "Zahlen & Astro-Wissen",
+   "thema": "Die 12 Häuser im Horoskop",
+   "titel": "Die 12 Häuser im Horoskop",
+   "status": "offen",
+   "datum": "2026-12-26",
+   "key": "YT|Zahlen & Astro-Wissen|Die 12 Häuser im Horoskop"
+  },
+  {
+   "nr": 63,
+   "runde": 63,
+   "saeule": "Horoskop",
+   "format": "Monatshoroskop",
+   "unterformat": "Monatshoroskop",
+   "thema": "Horoskop Januar 2027 für alle 12 Sternzeichen",
+   "titel": "Horoskop Januar 2027 für alle 12 Sternzeichen",
+   "status": "offen",
+   "datum": "2026-12-27",
+   "key": "YT|Monatshoroskop|Horoskop Januar 2027 für alle 12 Sternzeichen"
+  },
+  {
+   "nr": 64,
+   "runde": 64,
+   "saeule": "Sternzeichen",
+   "format": "Sternzeichen-Porträt",
+   "unterformat": "Short: Zwillinge",
+   "thema": "Zwillinge: Stärken, Schwächen und was niemand über dich weiß",
+   "titel": "Zwillinge: Stärken, Schwächen und was niemand über dich weiß",
+   "status": "offen",
+   "datum": "2026-12-28",
+   "key": "YT|Sternzeichen-Porträt|Zwillinge: Stärken, Schwächen und was niemand über dich weiß"
+  },
+  {
+   "nr": 65,
+   "runde": 65,
+   "saeule": "Mysterien & Theorien",
+   "format": "Mysterien Deep Dive",
+   "unterformat": "Mysterien Deep Dive",
+   "thema": "Yonaguni: die Pyramide im Meer",
+   "titel": "Yonaguni: die Pyramide im Meer",
+   "status": "offen",
+   "datum": "2026-12-29",
+   "key": "YT|Mysterien Deep Dive|Yonaguni: die Pyramide im Meer"
+  },
+  {
+   "nr": 66,
+   "runde": 66,
+   "saeule": "Rankings",
+   "format": "Ranking: alle 12",
+   "unterformat": "Ranking: alle 12",
+   "thema": "Alle Sternzeichen gerankt: Wer ist am klügsten?",
+   "titel": "Alle Sternzeichen gerankt: Wer ist am klügsten?",
+   "status": "offen",
+   "datum": "2026-12-30",
+   "key": "YT|Ranking: alle 12|Alle Sternzeichen gerankt: Wer ist am klügsten?"
+  },
+  {
+   "nr": 67,
+   "runde": 67,
+   "saeule": "Beziehungen",
+   "format": "Liebe & Partnerschaft",
+   "unterformat": "Short: Fische",
+   "thema": "Fische in der Liebe: mit wem es passt und mit wem nie",
+   "titel": "Fische in der Liebe: mit wem es passt und mit wem nie",
+   "status": "offen",
+   "datum": "2026-12-31",
+   "key": "YT|Liebe & Partnerschaft|Fische in der Liebe: mit wem es passt und mit wem nie"
+  },
+  {
+   "nr": 68,
+   "runde": 68,
+   "saeule": "Mysterien & Theorien",
+   "format": "Mysterien Deep Dive",
+   "unterformat": "Mysterien Deep Dive",
+   "thema": "Teotihuacán: Stadt der Götter",
+   "titel": "Teotihuacán: Stadt der Götter",
+   "status": "offen",
+   "datum": "2027-01-01",
+   "key": "YT|Mysterien Deep Dive|Teotihuacán: Stadt der Götter"
+  },
+  {
+   "nr": 69,
+   "runde": 69,
+   "saeule": "Zahlen & Energie",
+   "format": "Zahlen & Astro-Wissen",
+   "unterformat": "Zahlen & Astro-Wissen",
+   "thema": "Lebenszahl 5",
+   "titel": "Lebenszahl 5",
+   "status": "offen",
+   "datum": "2027-01-02",
+   "key": "YT|Zahlen & Astro-Wissen|Lebenszahl 5"
+  },
+  {
+   "nr": 70,
+   "runde": 70,
+   "saeule": "Energie",
+   "format": "Elemente & Energie",
+   "unterformat": "Elemente & Energie",
+   "thema": "Klarträume: wach im Traum",
+   "titel": "Klarträume: wach im Traum",
+   "status": "offen",
+   "datum": "2027-01-03",
+   "key": "YT|Elemente & Energie|Klarträume: wach im Traum"
+  },
+  {
+   "nr": 71,
+   "runde": 71,
+   "saeule": "Sternzeichen",
+   "format": "Sternzeichen-Porträt",
+   "unterformat": "Short: Steinbock",
+   "thema": "Steinbock: Stärken, Schwächen und was niemand über dich weiß",
+   "titel": "Steinbock: Stärken, Schwächen und was niemand über dich weiß",
+   "status": "offen",
+   "datum": "2027-01-04",
+   "key": "YT|Sternzeichen-Porträt|Steinbock: Stärken, Schwächen und was niemand über dich weiß"
+  },
+  {
+   "nr": 72,
+   "runde": 72,
+   "saeule": "Mysterien & Theorien",
+   "format": "Mysterien Deep Dive",
+   "unterformat": "Mysterien Deep Dive",
+   "thema": "Die Orion-Korrelation",
+   "titel": "Die Orion-Korrelation",
+   "status": "offen",
+   "datum": "2027-01-05",
+   "key": "YT|Mysterien Deep Dive|Die Orion-Korrelation"
+  },
+  {
+   "nr": 73,
+   "runde": 73,
+   "saeule": "Rankings",
+   "format": "Ranking: alle 12",
+   "unterformat": "Ranking: alle 12",
+   "thema": "Alle Sternzeichen gerankt: Wer ist am ehrgeizigsten?",
+   "titel": "Alle Sternzeichen gerankt: Wer ist am ehrgeizigsten?",
+   "status": "offen",
+   "datum": "2027-01-06",
+   "key": "YT|Ranking: alle 12|Alle Sternzeichen gerankt: Wer ist am ehrgeizigsten?"
+  },
+  {
+   "nr": 74,
+   "runde": 74,
+   "saeule": "Beziehungen",
+   "format": "Liebe & Partnerschaft",
+   "unterformat": "Short: Widder",
+   "thema": "Widder in der Liebe: mit wem es passt und mit wem nie",
+   "titel": "Widder in der Liebe: mit wem es passt und mit wem nie",
+   "status": "offen",
+   "datum": "2027-01-07",
+   "key": "YT|Liebe & Partnerschaft|Widder in der Liebe: mit wem es passt und mit wem nie"
+  },
+  {
+   "nr": 75,
+   "runde": 75,
+   "saeule": "Mysterien & Theorien",
+   "format": "Mysterien Deep Dive",
+   "unterformat": "Mysterien Deep Dive",
+   "thema": "Sintflut: warum jedes Volk davon erzählt",
+   "titel": "Sintflut: warum jedes Volk davon erzählt",
+   "status": "offen",
+   "datum": "2027-01-08",
+   "key": "YT|Mysterien Deep Dive|Sintflut: warum jedes Volk davon erzählt"
+  },
+  {
+   "nr": 76,
+   "runde": 76,
+   "saeule": "Zahlen & Energie",
+   "format": "Zahlen & Astro-Wissen",
+   "unterformat": "Zahlen & Astro-Wissen",
+   "thema": "Dein Venuszeichen und die Liebe",
+   "titel": "Dein Venuszeichen und die Liebe",
+   "status": "offen",
+   "datum": "2027-01-09",
+   "key": "YT|Zahlen & Astro-Wissen|Dein Venuszeichen und die Liebe"
+  },
+  {
+   "nr": 77,
+   "runde": 77,
+   "saeule": "Energie",
+   "format": "Elemente & Energie",
+   "unterformat": "Elemente & Energie",
+   "thema": "Frequenzen: Klang, Körper und Raum",
+   "titel": "Frequenzen: Klang, Körper und Raum",
+   "status": "offen",
+   "datum": "2027-01-10",
+   "key": "YT|Elemente & Energie|Frequenzen: Klang, Körper und Raum"
+  },
+  {
+   "nr": 78,
+   "runde": 78,
+   "saeule": "Sternzeichen",
+   "format": "Sternzeichen-Porträt",
+   "unterformat": "Short: Waage",
+   "thema": "Waage: Stärken, Schwächen und was niemand über dich weiß",
+   "titel": "Waage: Stärken, Schwächen und was niemand über dich weiß",
+   "status": "offen",
+   "datum": "2027-01-11",
+   "key": "YT|Sternzeichen-Porträt|Waage: Stärken, Schwächen und was niemand über dich weiß"
+  },
+  {
+   "nr": 79,
+   "runde": 79,
+   "saeule": "Mysterien & Theorien",
+   "format": "Mysterien Deep Dive",
+   "unterformat": "Mysterien Deep Dive",
+   "thema": "Der Maya-Kalender",
+   "titel": "Der Maya-Kalender",
+   "status": "offen",
+   "datum": "2027-01-12",
+   "key": "YT|Mysterien Deep Dive|Der Maya-Kalender"
+  },
+  {
+   "nr": 80,
+   "runde": 80,
+   "saeule": "Rankings",
+   "format": "Ranking: alle 12",
+   "unterformat": "Ranking: alle 12",
+   "thema": "Alle Sternzeichen gerankt: Wer ist der beste Freund?",
+   "titel": "Alle Sternzeichen gerankt: Wer ist der beste Freund?",
+   "status": "offen",
+   "datum": "2027-01-13",
+   "key": "YT|Ranking: alle 12|Alle Sternzeichen gerankt: Wer ist der beste Freund?"
+  },
+  {
+   "nr": 81,
+   "runde": 81,
+   "saeule": "Beziehungen",
+   "format": "Liebe & Partnerschaft",
+   "unterformat": "Short: Jungfrau",
+   "thema": "Jungfrau in der Liebe: mit wem es passt und mit wem nie",
+   "titel": "Jungfrau in der Liebe: mit wem es passt und mit wem nie",
+   "status": "offen",
+   "datum": "2027-01-14",
+   "key": "YT|Liebe & Partnerschaft|Jungfrau in der Liebe: mit wem es passt und mit wem nie"
+  },
+  {
+   "nr": 82,
+   "runde": 82,
+   "saeule": "Mysterien & Theorien",
+   "format": "Mysterien Deep Dive",
+   "unterformat": "Mysterien Deep Dive",
+   "thema": "Newgrange: älter als die Pyramiden",
+   "titel": "Newgrange: älter als die Pyramiden",
+   "status": "offen",
+   "datum": "2027-01-15",
+   "key": "YT|Mysterien Deep Dive|Newgrange: älter als die Pyramiden"
+  },
+  {
+   "nr": 83,
+   "runde": 83,
+   "saeule": "Zahlen & Energie",
+   "format": "Zahlen & Astro-Wissen",
+   "unterformat": "Zahlen & Astro-Wissen",
+   "thema": "Lebenszahl 6",
+   "titel": "Lebenszahl 6",
+   "status": "offen",
+   "datum": "2027-01-16",
+   "key": "YT|Zahlen & Astro-Wissen|Lebenszahl 6"
+  },
+  {
+   "nr": 84,
+   "runde": 84,
+   "saeule": "Energie",
+   "format": "Elemente & Energie",
+   "unterformat": "Elemente & Energie",
+   "thema": "Alte Seele: woran du sie erkennst",
+   "titel": "Alte Seele: woran du sie erkennst",
+   "status": "offen",
+   "datum": "2027-01-17",
+   "key": "YT|Elemente & Energie|Alte Seele: woran du sie erkennst"
+  },
+  {
+   "nr": 85,
+   "runde": 85,
+   "saeule": "Sternzeichen",
+   "format": "Sternzeichen-Porträt",
+   "unterformat": "Short: Stier",
+   "thema": "Stier: Stärken, Schwächen und was niemand über dich weiß",
+   "titel": "Stier: Stärken, Schwächen und was niemand über dich weiß",
+   "status": "offen",
+   "datum": "2027-01-18",
+   "key": "YT|Sternzeichen-Porträt|Stier: Stärken, Schwächen und was niemand über dich weiß"
+  },
+  {
+   "nr": 86,
+   "runde": 86,
+   "saeule": "Mysterien & Theorien",
+   "format": "Mysterien Deep Dive",
+   "unterformat": "Mysterien Deep Dive",
+   "thema": "Die Himmelsscheibe von Nebra",
+   "titel": "Die Himmelsscheibe von Nebra",
+   "status": "offen",
+   "datum": "2027-01-19",
+   "key": "YT|Mysterien Deep Dive|Die Himmelsscheibe von Nebra"
+  },
+  {
+   "nr": 87,
+   "runde": 87,
+   "saeule": "Rankings",
+   "format": "Ranking: alle 12",
+   "unterformat": "Ranking: alle 12",
+   "thema": "Alle Sternzeichen gerankt: Wer ist am kältesten?",
+   "titel": "Alle Sternzeichen gerankt: Wer ist am kältesten?",
+   "status": "offen",
+   "datum": "2027-01-20",
+   "key": "YT|Ranking: alle 12|Alle Sternzeichen gerankt: Wer ist am kältesten?"
+  },
+  {
+   "nr": 88,
+   "runde": 88,
+   "saeule": "Beziehungen",
+   "format": "Liebe & Partnerschaft",
+   "unterformat": "Short: Wassermann",
+   "thema": "Wassermann in der Liebe: mit wem es passt und mit wem nie",
+   "titel": "Wassermann in der Liebe: mit wem es passt und mit wem nie",
+   "status": "offen",
+   "datum": "2027-01-21",
+   "key": "YT|Liebe & Partnerschaft|Wassermann in der Liebe: mit wem es passt und mit wem nie"
+  },
+  {
+   "nr": 89,
+   "runde": 89,
+   "saeule": "Mysterien & Theorien",
+   "format": "Mysterien Deep Dive",
+   "unterformat": "Mysterien Deep Dive",
+   "thema": "Die Externsteine",
+   "titel": "Die Externsteine",
+   "status": "offen",
+   "datum": "2027-01-22",
+   "key": "YT|Mysterien Deep Dive|Die Externsteine"
+  },
+  {
+   "nr": 90,
+   "runde": 90,
+   "saeule": "Zahlen & Energie",
+   "format": "Zahlen & Astro-Wissen",
+   "unterformat": "Zahlen & Astro-Wissen",
+   "thema": "Die Saturn-Rückkehr mit 29",
+   "titel": "Die Saturn-Rückkehr mit 29",
+   "status": "offen",
+   "datum": "2027-01-23",
+   "key": "YT|Zahlen & Astro-Wissen|Die Saturn-Rückkehr mit 29"
+  },
+  {
+   "nr": 91,
+   "runde": 91,
+   "saeule": "Energie",
+   "format": "Elemente & Energie",
+   "unterformat": "Elemente & Energie",
+   "thema": "Element Feuer: Widder, Löwe, Schütze",
+   "titel": "Element Feuer: Widder, Löwe, Schütze",
+   "status": "offen",
+   "datum": "2027-01-24",
+   "key": "YT|Elemente & Energie|Element Feuer: Widder, Löwe, Schütze"
+  },
+  {
+   "nr": 92,
+   "runde": 92,
+   "saeule": "Sternzeichen",
+   "format": "Sternzeichen-Porträt",
+   "unterformat": "Short: Skorpion",
+   "thema": "Skorpion: Stärken, Schwächen und was niemand über dich weiß",
+   "titel": "Skorpion: Stärken, Schwächen und was niemand über dich weiß",
+   "status": "offen",
+   "datum": "2027-01-25",
+   "key": "YT|Sternzeichen-Porträt|Skorpion: Stärken, Schwächen und was niemand über dich weiß"
+  },
+  {
+   "nr": 93,
+   "runde": 93,
+   "saeule": "Mysterien & Theorien",
+   "format": "Mysterien Deep Dive",
+   "unterformat": "Mysterien Deep Dive",
+   "thema": "Die Piri-Reis-Karte",
+   "titel": "Die Piri-Reis-Karte",
+   "status": "offen",
+   "datum": "2027-01-26",
+   "key": "YT|Mysterien Deep Dive|Die Piri-Reis-Karte"
+  },
+  {
+   "nr": 94,
+   "runde": 94,
+   "saeule": "Rankings",
+   "format": "Ranking: alle 12",
+   "unterformat": "Ranking: alle 12",
+   "thema": "Alle Sternzeichen gerankt: Wer ist am chaotischsten?",
+   "titel": "Alle Sternzeichen gerankt: Wer ist am chaotischsten?",
+   "status": "offen",
+   "datum": "2027-01-27",
+   "key": "YT|Ranking: alle 12|Alle Sternzeichen gerankt: Wer ist am chaotischsten?"
+  },
+  {
+   "nr": 95,
+   "runde": 95,
+   "saeule": "Beziehungen",
+   "format": "Liebe & Partnerschaft",
+   "unterformat": "Short: Krebs",
+   "thema": "Krebs in der Liebe: mit wem es passt und mit wem nie",
+   "titel": "Krebs in der Liebe: mit wem es passt und mit wem nie",
+   "status": "offen",
+   "datum": "2027-01-28",
+   "key": "YT|Liebe & Partnerschaft|Krebs in der Liebe: mit wem es passt und mit wem nie"
+  },
+  {
+   "nr": 96,
+   "runde": 96,
+   "saeule": "Mysterien & Theorien",
+   "format": "Mysterien Deep Dive",
+   "unterformat": "Mysterien Deep Dive",
+   "thema": "Coral Castle",
+   "titel": "Coral Castle",
+   "status": "offen",
+   "datum": "2027-01-29",
+   "key": "YT|Mysterien Deep Dive|Coral Castle"
+  },
+  {
+   "nr": 97,
+   "runde": 97,
+   "saeule": "Zahlen & Energie",
+   "format": "Zahlen & Astro-Wissen",
+   "unterformat": "Zahlen & Astro-Wissen",
+   "thema": "Lebenszahl 7",
+   "titel": "Lebenszahl 7",
+   "status": "offen",
+   "datum": "2027-01-30",
+   "key": "YT|Zahlen & Astro-Wissen|Lebenszahl 7"
+  },
+  {
+   "nr": 98,
+   "runde": 98,
+   "saeule": "Horoskop",
+   "format": "Monatshoroskop",
+   "unterformat": "Monatshoroskop",
+   "thema": "Horoskop Februar 2027 für alle 12 Sternzeichen",
+   "titel": "Horoskop Februar 2027 für alle 12 Sternzeichen",
+   "status": "offen",
+   "datum": "2027-01-31",
+   "key": "YT|Monatshoroskop|Horoskop Februar 2027 für alle 12 Sternzeichen"
+  },
+  {
+   "nr": 99,
+   "runde": 99,
+   "saeule": "Sternzeichen",
+   "format": "Sternzeichen-Porträt",
+   "unterformat": "Short: Löwe",
+   "thema": "Löwe: Stärken, Schwächen und was niemand über dich weiß",
+   "titel": "Löwe: Stärken, Schwächen und was niemand über dich weiß",
+   "status": "offen",
+   "datum": "2027-02-01",
+   "key": "YT|Sternzeichen-Porträt|Löwe: Stärken, Schwächen und was niemand über dich weiß"
+  },
+  {
+   "nr": 100,
+   "runde": 100,
+   "saeule": "Mysterien & Theorien",
+   "format": "Mysterien Deep Dive",
+   "unterformat": "Mysterien Deep Dive",
+   "thema": "Die Dogon und der Sirius",
+   "titel": "Die Dogon und der Sirius",
+   "status": "offen",
+   "datum": "2027-02-02",
+   "key": "YT|Mysterien Deep Dive|Die Dogon und der Sirius"
+  },
+  {
+   "nr": 101,
+   "runde": 101,
+   "saeule": "Rankings",
+   "format": "Ranking: alle 12",
+   "unterformat": "Ranking: alle 12",
+   "thema": "Alle Sternzeichen gerankt: Wer ist am mutigsten?",
+   "titel": "Alle Sternzeichen gerankt: Wer ist am mutigsten?",
+   "status": "offen",
+   "datum": "2027-02-03",
+   "key": "YT|Ranking: alle 12|Alle Sternzeichen gerankt: Wer ist am mutigsten?"
+  },
+  {
+   "nr": 102,
+   "runde": 102,
+   "saeule": "Beziehungen",
+   "format": "Liebe & Partnerschaft",
+   "unterformat": "Short: Schütze",
+   "thema": "Schütze in der Liebe: mit wem es passt und mit wem nie",
+   "titel": "Schütze in der Liebe: mit wem es passt und mit wem nie",
+   "status": "offen",
+   "datum": "2027-02-04",
+   "key": "YT|Liebe & Partnerschaft|Schütze in der Liebe: mit wem es passt und mit wem nie"
+  },
+  {
+   "nr": 103,
+   "runde": 103,
+   "saeule": "Mysterien & Theorien",
+   "format": "Mysterien Deep Dive",
+   "unterformat": "Mysterien Deep Dive",
+   "thema": "Mohenjo-Daro",
+   "titel": "Mohenjo-Daro",
+   "status": "offen",
+   "datum": "2027-02-05",
+   "key": "YT|Mysterien Deep Dive|Mohenjo-Daro"
+  },
+  {
+   "nr": 104,
+   "runde": 104,
+   "saeule": "Zahlen & Energie",
+   "format": "Zahlen & Astro-Wissen",
+   "unterformat": "Zahlen & Astro-Wissen",
+   "thema": "Das chinesische Horoskop",
+   "titel": "Das chinesische Horoskop",
+   "status": "offen",
+   "datum": "2027-02-06",
+   "key": "YT|Zahlen & Astro-Wissen|Das chinesische Horoskop"
+  },
+  {
+   "nr": 105,
+   "runde": 105,
+   "saeule": "Energie",
+   "format": "Elemente & Energie",
+   "unterformat": "Elemente & Energie",
+   "thema": "Edelsteine für jedes Sternzeichen",
+   "titel": "Edelsteine für jedes Sternzeichen",
+   "status": "offen",
+   "datum": "2027-02-07",
+   "key": "YT|Elemente & Energie|Edelsteine für jedes Sternzeichen"
+  },
+  {
+   "nr": 106,
+   "runde": 106,
+   "saeule": "Sternzeichen",
+   "format": "Sternzeichen-Porträt",
+   "unterformat": "Short: Fische",
+   "thema": "Fische: Stärken, Schwächen und was niemand über dich weiß",
+   "titel": "Fische: Stärken, Schwächen und was niemand über dich weiß",
+   "status": "offen",
+   "datum": "2027-02-08",
+   "key": "YT|Sternzeichen-Porträt|Fische: Stärken, Schwächen und was niemand über dich weiß"
+  },
+  {
+   "nr": 107,
+   "runde": 107,
+   "saeule": "Mysterien & Theorien",
+   "format": "Mysterien Deep Dive",
+   "unterformat": "Mysterien Deep Dive",
+   "thema": "Wurden die Pyramiden mit Klang gebaut?",
+   "titel": "Wurden die Pyramiden mit Klang gebaut?",
+   "status": "offen",
+   "datum": "2027-02-09",
+   "key": "YT|Mysterien Deep Dive|Wurden die Pyramiden mit Klang gebaut?"
+  },
+  {
+   "nr": 108,
+   "runde": 108,
+   "saeule": "Rankings",
+   "format": "Ranking: alle 12",
+   "unterformat": "Ranking: alle 12",
+   "thema": "Alle Sternzeichen gerankt: Wer ist am geheimnisvollsten?",
+   "titel": "Alle Sternzeichen gerankt: Wer ist am geheimnisvollsten?",
+   "status": "offen",
+   "datum": "2027-02-10",
+   "key": "YT|Ranking: alle 12|Alle Sternzeichen gerankt: Wer ist am geheimnisvollsten?"
+  },
+  {
+   "nr": 109,
+   "runde": 109,
+   "saeule": "Beziehungen",
+   "format": "Liebe & Partnerschaft",
+   "unterformat": "Short: Zwillinge",
+   "thema": "Zwillinge in der Liebe: mit wem es passt und mit wem nie",
+   "titel": "Zwillinge in der Liebe: mit wem es passt und mit wem nie",
+   "status": "offen",
+   "datum": "2027-02-11",
+   "key": "YT|Liebe & Partnerschaft|Zwillinge in der Liebe: mit wem es passt und mit wem nie"
+  },
+  {
+   "nr": 110,
+   "runde": 110,
+   "saeule": "Mysterien & Theorien",
+   "format": "Mysterien Deep Dive",
+   "unterformat": "Mysterien Deep Dive",
+   "thema": "Waren Drachen echt?",
+   "titel": "Waren Drachen echt?",
+   "status": "offen",
+   "datum": "2027-02-12",
+   "key": "YT|Mysterien Deep Dive|Waren Drachen echt?"
+  },
+  {
+   "nr": 111,
+   "runde": 111,
+   "saeule": "Zahlen & Energie",
+   "format": "Zahlen & Astro-Wissen",
+   "unterformat": "Zahlen & Astro-Wissen",
+   "thema": "Lebenszahl 8",
+   "titel": "Lebenszahl 8",
+   "status": "offen",
+   "datum": "2027-02-13",
+   "key": "YT|Zahlen & Astro-Wissen|Lebenszahl 8"
+  },
+  {
+   "nr": 112,
+   "runde": 112,
+   "saeule": "Energie",
+   "format": "Elemente & Energie",
+   "unterformat": "Elemente & Energie",
+   "thema": "Element Erde: Stier, Jungfrau, Steinbock",
+   "titel": "Element Erde: Stier, Jungfrau, Steinbock",
+   "status": "offen",
+   "datum": "2027-02-14",
+   "key": "YT|Elemente & Energie|Element Erde: Stier, Jungfrau, Steinbock"
+  },
+  {
+   "nr": 113,
+   "runde": 113,
+   "saeule": "Sternzeichen",
+   "format": "Sternzeichen-Porträt",
+   "unterformat": "Short: Widder",
+   "thema": "Widder: Stärken, Schwächen und was niemand über dich weiß",
+   "titel": "Widder: Stärken, Schwächen und was niemand über dich weiß",
+   "status": "offen",
+   "datum": "2027-02-15",
+   "key": "YT|Sternzeichen-Porträt|Widder: Stärken, Schwächen und was niemand über dich weiß"
+  },
+  {
+   "nr": 114,
+   "runde": 114,
+   "saeule": "Mysterien & Theorien",
+   "format": "Mysterien Deep Dive",
+   "unterformat": "Mysterien Deep Dive",
+   "thema": "Riesen im alten Ägypten und weltweit",
+   "titel": "Riesen im alten Ägypten und weltweit",
+   "status": "offen",
+   "datum": "2027-02-16",
+   "key": "YT|Mysterien Deep Dive|Riesen im alten Ägypten und weltweit"
+  },
+  {
+   "nr": 115,
+   "runde": 115,
+   "saeule": "Rankings",
+   "format": "Ranking: alle 12",
+   "unterformat": "Ranking: alle 12",
+   "thema": "Alle Sternzeichen gerankt: Wer wird am ehesten reich?",
+   "titel": "Alle Sternzeichen gerankt: Wer wird am ehesten reich?",
+   "status": "offen",
+   "datum": "2027-02-17",
+   "key": "YT|Ranking: alle 12|Alle Sternzeichen gerankt: Wer wird am ehesten reich?"
+  },
+  {
+   "nr": 116,
+   "runde": 116,
+   "saeule": "Beziehungen",
+   "format": "Liebe & Partnerschaft",
+   "unterformat": "Short: Steinbock",
+   "thema": "Steinbock in der Liebe: mit wem es passt und mit wem nie",
+   "titel": "Steinbock in der Liebe: mit wem es passt und mit wem nie",
+   "status": "offen",
+   "datum": "2027-02-18",
+   "key": "YT|Liebe & Partnerschaft|Steinbock in der Liebe: mit wem es passt und mit wem nie"
+  },
+  {
+   "nr": 117,
+   "runde": 117,
+   "saeule": "Mysterien & Theorien",
+   "format": "Mysterien Deep Dive",
+   "unterformat": "Mysterien Deep Dive",
+   "thema": "Puma Punku: Steine, die es nicht geben dürfte",
+   "titel": "Puma Punku: Steine, die es nicht geben dürfte",
+   "status": "offen",
+   "datum": "2027-02-19",
+   "key": "YT|Mysterien Deep Dive|Puma Punku: Steine, die es nicht geben dürfte"
+  },
+  {
+   "nr": 118,
+   "runde": 118,
+   "saeule": "Zahlen & Energie",
+   "format": "Zahlen & Astro-Wissen",
+   "unterformat": "Zahlen & Astro-Wissen",
+   "thema": "Lebenszahl 9",
+   "titel": "Lebenszahl 9",
+   "status": "offen",
+   "datum": "2027-02-20",
+   "key": "YT|Zahlen & Astro-Wissen|Lebenszahl 9"
+  },
+  {
+   "nr": 119,
+   "runde": 119,
+   "saeule": "Energie",
+   "format": "Elemente & Energie",
+   "unterformat": "Elemente & Energie",
+   "thema": "Déjà-vu, Synchronizität und Zufall",
+   "titel": "Déjà-vu, Synchronizität und Zufall",
+   "status": "offen",
+   "datum": "2027-02-21",
+   "key": "YT|Elemente & Energie|Déjà-vu, Synchronizität und Zufall"
+  },
+  {
+   "nr": 120,
+   "runde": 120,
+   "saeule": "Sternzeichen",
+   "format": "Sternzeichen-Porträt",
+   "unterformat": "Short: Jungfrau",
+   "thema": "Jungfrau: Stärken, Schwächen und was niemand über dich weiß",
+   "titel": "Jungfrau: Stärken, Schwächen und was niemand über dich weiß",
+   "status": "offen",
+   "datum": "2027-02-22",
+   "key": "YT|Sternzeichen-Porträt|Jungfrau: Stärken, Schwächen und was niemand über dich weiß"
+  },
+  {
+   "nr": 121,
+   "runde": 121,
+   "saeule": "Mysterien & Theorien",
+   "format": "Mysterien Deep Dive",
+   "unterformat": "Mysterien Deep Dive",
+   "thema": "Göbekli Tepe: 12.000 Jahre alt",
+   "titel": "Göbekli Tepe: 12.000 Jahre alt",
+   "status": "offen",
+   "datum": "2027-02-23",
+   "key": "YT|Mysterien Deep Dive|Göbekli Tepe: 12.000 Jahre alt"
+  },
+  {
+   "nr": 122,
+   "runde": 122,
+   "saeule": "Rankings",
+   "format": "Ranking: alle 12",
+   "unterformat": "Ranking: alle 12",
+   "thema": "Alle Sternzeichen gerankt: Wer ist am nachtragendsten?",
+   "titel": "Alle Sternzeichen gerankt: Wer ist am nachtragendsten?",
+   "status": "offen",
+   "datum": "2027-02-24",
+   "key": "YT|Ranking: alle 12|Alle Sternzeichen gerankt: Wer ist am nachtragendsten?"
+  },
+  {
+   "nr": 123,
+   "runde": 123,
+   "saeule": "Beziehungen",
+   "format": "Liebe & Partnerschaft",
+   "unterformat": "Short: Waage",
+   "thema": "Waage in der Liebe: mit wem es passt und mit wem nie",
+   "titel": "Waage in der Liebe: mit wem es passt und mit wem nie",
+   "status": "offen",
+   "datum": "2027-02-25",
+   "key": "YT|Liebe & Partnerschaft|Waage in der Liebe: mit wem es passt und mit wem nie"
+  },
+  {
+   "nr": 124,
+   "runde": 124,
+   "saeule": "Mysterien & Theorien",
+   "format": "Mysterien Deep Dive",
+   "unterformat": "Mysterien Deep Dive",
+   "thema": "Ist die Sphinx älter als gedacht?",
+   "titel": "Ist die Sphinx älter als gedacht?",
+   "status": "offen",
+   "datum": "2027-02-26",
+   "key": "YT|Mysterien Deep Dive|Ist die Sphinx älter als gedacht?"
+  },
+  {
+   "nr": 125,
+   "runde": 125,
+   "saeule": "Zahlen & Energie",
+   "format": "Zahlen & Astro-Wissen",
+   "unterformat": "Zahlen & Astro-Wissen",
+   "thema": "Meisterzahlen 11, 22, 33",
+   "titel": "Meisterzahlen 11, 22, 33",
+   "status": "offen",
+   "datum": "2027-02-27",
+   "key": "YT|Zahlen & Astro-Wissen|Meisterzahlen 11, 22, 33"
+  },
+  {
+   "nr": 126,
+   "runde": 126,
+   "saeule": "Horoskop",
+   "format": "Monatshoroskop",
+   "unterformat": "Monatshoroskop",
+   "thema": "Horoskop März 2027 für alle 12 Sternzeichen",
+   "titel": "Horoskop März 2027 für alle 12 Sternzeichen",
+   "status": "offen",
+   "datum": "2027-02-28",
+   "key": "YT|Monatshoroskop|Horoskop März 2027 für alle 12 Sternzeichen"
+  },
+  {
+   "nr": 127,
+   "runde": 127,
+   "saeule": "Sternzeichen",
+   "format": "Sternzeichen-Porträt",
+   "unterformat": "Short: Wassermann",
+   "thema": "Wassermann: Stärken, Schwächen und was niemand über dich weiß",
+   "titel": "Wassermann: Stärken, Schwächen und was niemand über dich weiß",
+   "status": "offen",
+   "datum": "2027-03-01",
+   "key": "YT|Sternzeichen-Porträt|Wassermann: Stärken, Schwächen und was niemand über dich weiß"
+  },
+  {
+   "nr": 128,
+   "runde": 128,
+   "saeule": "Mysterien & Theorien",
+   "format": "Mysterien Deep Dive",
+   "unterformat": "Mysterien Deep Dive",
+   "thema": "Atlantis: was Platon wirklich schrieb",
+   "titel": "Atlantis: was Platon wirklich schrieb",
+   "status": "offen",
+   "datum": "2027-03-02",
+   "key": "YT|Mysterien Deep Dive|Atlantis: was Platon wirklich schrieb"
+  },
+  {
+   "nr": 129,
+   "runde": 129,
+   "saeule": "Rankings",
+   "format": "Ranking: alle 12",
+   "unterformat": "Ranking: alle 12",
+   "thema": "Alle Sternzeichen gerankt: Wer ist am lustigsten?",
+   "titel": "Alle Sternzeichen gerankt: Wer ist am lustigsten?",
+   "status": "offen",
+   "datum": "2027-03-03",
+   "key": "YT|Ranking: alle 12|Alle Sternzeichen gerankt: Wer ist am lustigsten?"
+  },
+  {
+   "nr": 130,
+   "runde": 130,
+   "saeule": "Beziehungen",
+   "format": "Liebe & Partnerschaft",
+   "unterformat": "Short: Stier",
+   "thema": "Stier in der Liebe: mit wem es passt und mit wem nie",
+   "titel": "Stier in der Liebe: mit wem es passt und mit wem nie",
+   "status": "offen",
+   "datum": "2027-03-04",
+   "key": "YT|Liebe & Partnerschaft|Stier in der Liebe: mit wem es passt und mit wem nie"
+  },
+  {
+   "nr": 131,
+   "runde": 131,
+   "saeule": "Mysterien & Theorien",
+   "format": "Mysterien Deep Dive",
+   "unterformat": "Mysterien Deep Dive",
+   "thema": "Der Antikythera-Mechanismus",
+   "titel": "Der Antikythera-Mechanismus",
+   "status": "offen",
+   "datum": "2027-03-05",
+   "key": "YT|Mysterien Deep Dive|Der Antikythera-Mechanismus"
+  },
+  {
+   "nr": 132,
+   "runde": 132,
+   "saeule": "Zahlen & Energie",
+   "format": "Zahlen & Astro-Wissen",
+   "unterformat": "Zahlen & Astro-Wissen",
+   "thema": "Lebenszahl 1",
+   "titel": "Lebenszahl 1",
+   "status": "offen",
+   "datum": "2027-03-06",
+   "key": "YT|Zahlen & Astro-Wissen|Lebenszahl 1"
+  },
+  {
+   "nr": 133,
+   "runde": 133,
+   "saeule": "Energie",
+   "format": "Elemente & Energie",
+   "unterformat": "Elemente & Energie",
+   "thema": "Element Luft: Zwillinge, Waage, Wassermann",
+   "titel": "Element Luft: Zwillinge, Waage, Wassermann",
+   "status": "offen",
+   "datum": "2027-03-07",
+   "key": "YT|Elemente & Energie|Element Luft: Zwillinge, Waage, Wassermann"
+  },
+  {
+   "nr": 134,
+   "runde": 134,
+   "saeule": "Sternzeichen",
+   "format": "Sternzeichen-Porträt",
+   "unterformat": "Short: Krebs",
+   "thema": "Krebs: Stärken, Schwächen und was niemand über dich weiß",
+   "titel": "Krebs: Stärken, Schwächen und was niemand über dich weiß",
+   "status": "offen",
+   "datum": "2027-03-08",
+   "key": "YT|Sternzeichen-Porträt|Krebs: Stärken, Schwächen und was niemand über dich weiß"
+  },
+  {
+   "nr": 135,
+   "runde": 135,
+   "saeule": "Mysterien & Theorien",
+   "format": "Mysterien Deep Dive",
+   "unterformat": "Mysterien Deep Dive",
+   "thema": "Die Nazca-Linien",
+   "titel": "Die Nazca-Linien",
+   "status": "offen",
+   "datum": "2027-03-09",
+   "key": "YT|Mysterien Deep Dive|Die Nazca-Linien"
+  },
+  {
+   "nr": 136,
+   "runde": 136,
+   "saeule": "Rankings",
+   "format": "Ranking: alle 12",
+   "unterformat": "Ranking: alle 12",
+   "thema": "Alle Sternzeichen gerankt: Wer ist am sensibelsten?",
+   "titel": "Alle Sternzeichen gerankt: Wer ist am sensibelsten?",
+   "status": "offen",
+   "datum": "2027-03-10",
+   "key": "YT|Ranking: alle 12|Alle Sternzeichen gerankt: Wer ist am sensibelsten?"
+  },
+  {
+   "nr": 137,
+   "runde": 137,
+   "saeule": "Beziehungen",
+   "format": "Liebe & Partnerschaft",
+   "unterformat": "Short: Skorpion",
+   "thema": "Skorpion in der Liebe: mit wem es passt und mit wem nie",
+   "titel": "Skorpion in der Liebe: mit wem es passt und mit wem nie",
+   "status": "offen",
+   "datum": "2027-03-11",
+   "key": "YT|Liebe & Partnerschaft|Skorpion in der Liebe: mit wem es passt und mit wem nie"
+  },
+  {
+   "nr": 138,
+   "runde": 138,
+   "saeule": "Mysterien & Theorien",
+   "format": "Mysterien Deep Dive",
+   "unterformat": "Mysterien Deep Dive",
+   "thema": "Baalbek: die schwersten Steine der Welt",
+   "titel": "Baalbek: die schwersten Steine der Welt",
+   "status": "offen",
+   "datum": "2027-03-12",
+   "key": "YT|Mysterien Deep Dive|Baalbek: die schwersten Steine der Welt"
+  },
+  {
+   "nr": 139,
+   "runde": 139,
+   "saeule": "Zahlen & Energie",
+   "format": "Zahlen & Astro-Wissen",
+   "unterformat": "Zahlen & Astro-Wissen",
+   "thema": "Engelszahlen: was 111 bis 999 bedeuten",
+   "titel": "Engelszahlen: was 111 bis 999 bedeuten",
+   "status": "offen",
+   "datum": "2027-03-13",
+   "key": "YT|Zahlen & Astro-Wissen|Engelszahlen: was 111 bis 999 bedeuten"
+  },
+  {
+   "nr": 140,
+   "runde": 140,
+   "saeule": "Energie",
+   "format": "Elemente & Energie",
+   "unterformat": "Elemente & Energie",
+   "thema": "Was der Vollmond mit dir macht",
+   "titel": "Was der Vollmond mit dir macht",
+   "status": "offen",
+   "datum": "2027-03-14",
+   "key": "YT|Elemente & Energie|Was der Vollmond mit dir macht"
+  },
+  {
+   "nr": 141,
+   "runde": 141,
+   "saeule": "Sternzeichen",
+   "format": "Sternzeichen-Porträt",
+   "unterformat": "Short: Schütze",
+   "thema": "Schütze: Stärken, Schwächen und was niemand über dich weiß",
+   "titel": "Schütze: Stärken, Schwächen und was niemand über dich weiß",
+   "status": "offen",
+   "datum": "2027-03-15",
+   "key": "YT|Sternzeichen-Porträt|Schütze: Stärken, Schwächen und was niemand über dich weiß"
+  },
+  {
+   "nr": 142,
+   "runde": 142,
+   "saeule": "Mysterien & Theorien",
+   "format": "Mysterien Deep Dive",
+   "unterformat": "Mysterien Deep Dive",
+   "thema": "Derinkuyu: die Stadt unter der Erde",
+   "titel": "Derinkuyu: die Stadt unter der Erde",
+   "status": "offen",
+   "datum": "2027-03-16",
+   "key": "YT|Mysterien Deep Dive|Derinkuyu: die Stadt unter der Erde"
+  },
+  {
+   "nr": 143,
+   "runde": 143,
+   "saeule": "Rankings",
+   "format": "Ranking: alle 12",
+   "unterformat": "Ranking: alle 12",
+   "thema": "Alle Sternzeichen gerankt: Wer ist am loyalsten?",
+   "titel": "Alle Sternzeichen gerankt: Wer ist am loyalsten?",
+   "status": "offen",
+   "datum": "2027-03-17",
+   "key": "YT|Ranking: alle 12|Alle Sternzeichen gerankt: Wer ist am loyalsten?"
+  },
+  {
+   "nr": 144,
+   "runde": 144,
+   "saeule": "Beziehungen",
+   "format": "Liebe & Partnerschaft",
+   "unterformat": "Short: Löwe",
+   "thema": "Löwe in der Liebe: mit wem es passt und mit wem nie",
+   "titel": "Löwe in der Liebe: mit wem es passt und mit wem nie",
+   "status": "offen",
+   "datum": "2027-03-18",
+   "key": "YT|Liebe & Partnerschaft|Löwe in der Liebe: mit wem es passt und mit wem nie"
+  },
+  {
+   "nr": 145,
+   "runde": 145,
+   "saeule": "Mysterien & Theorien",
+   "format": "Mysterien Deep Dive",
+   "unterformat": "Mysterien Deep Dive",
+   "thema": "Sacsayhuamán: Mauern ohne Fugen",
+   "titel": "Sacsayhuamán: Mauern ohne Fugen",
+   "status": "offen",
+   "datum": "2027-03-19",
+   "key": "YT|Mysterien Deep Dive|Sacsayhuamán: Mauern ohne Fugen"
+  },
+  {
+   "nr": 146,
+   "runde": 146,
+   "saeule": "Zahlen & Energie",
+   "format": "Zahlen & Astro-Wissen",
+   "unterformat": "Zahlen & Astro-Wissen",
+   "thema": "Der Aszendent erklärt",
+   "titel": "Der Aszendent erklärt",
+   "status": "offen",
+   "datum": "2027-03-20",
+   "key": "YT|Zahlen & Astro-Wissen|Der Aszendent erklärt"
+  },
+  {
+   "nr": 147,
+   "runde": 147,
+   "saeule": "Energie",
+   "format": "Elemente & Energie",
+   "unterformat": "Elemente & Energie",
+   "thema": "Element Wasser: Krebs, Skorpion, Fische",
+   "titel": "Element Wasser: Krebs, Skorpion, Fische",
+   "status": "offen",
+   "datum": "2027-03-21",
+   "key": "YT|Elemente & Energie|Element Wasser: Krebs, Skorpion, Fische"
+  },
+  {
+   "nr": 148,
+   "runde": 148,
+   "saeule": "Sternzeichen",
+   "format": "Sternzeichen-Porträt",
+   "unterformat": "Short: Zwillinge",
+   "thema": "Zwillinge: Stärken, Schwächen und was niemand über dich weiß",
+   "titel": "Zwillinge: Stärken, Schwächen und was niemand über dich weiß",
+   "status": "offen",
+   "datum": "2027-03-22",
+   "key": "YT|Sternzeichen-Porträt|Zwillinge: Stärken, Schwächen und was niemand über dich weiß"
+  },
+  {
+   "nr": 149,
+   "runde": 149,
+   "saeule": "Mysterien & Theorien",
+   "format": "Mysterien Deep Dive",
+   "unterformat": "Mysterien Deep Dive",
+   "thema": "Die Osterinsel",
+   "titel": "Die Osterinsel",
+   "status": "offen",
+   "datum": "2027-03-23",
+   "key": "YT|Mysterien Deep Dive|Die Osterinsel"
+  },
+  {
+   "nr": 150,
+   "runde": 150,
+   "saeule": "Rankings",
+   "format": "Ranking: alle 12",
+   "unterformat": "Ranking: alle 12",
+   "thema": "Alle Sternzeichen gerankt: Wer ist am eifersüchtigsten?",
+   "titel": "Alle Sternzeichen gerankt: Wer ist am eifersüchtigsten?",
+   "status": "offen",
+   "datum": "2027-03-24",
+   "key": "YT|Ranking: alle 12|Alle Sternzeichen gerankt: Wer ist am eifersüchtigsten?"
+  },
+  {
+   "nr": 151,
+   "runde": 151,
+   "saeule": "Beziehungen",
+   "format": "Liebe & Partnerschaft",
+   "unterformat": "Short: Fische",
+   "thema": "Fische in der Liebe: mit wem es passt und mit wem nie",
+   "titel": "Fische in der Liebe: mit wem es passt und mit wem nie",
+   "status": "offen",
+   "datum": "2027-03-25",
+   "key": "YT|Liebe & Partnerschaft|Fische in der Liebe: mit wem es passt und mit wem nie"
+  },
+  {
+   "nr": 152,
+   "runde": 152,
+   "saeule": "Mysterien & Theorien",
+   "format": "Mysterien Deep Dive",
+   "unterformat": "Mysterien Deep Dive",
+   "thema": "Stonehenge",
+   "titel": "Stonehenge",
+   "status": "offen",
+   "datum": "2027-03-26",
+   "key": "YT|Mysterien Deep Dive|Stonehenge"
+  },
+  {
+   "nr": 153,
+   "runde": 153,
+   "saeule": "Zahlen & Energie",
+   "format": "Zahlen & Astro-Wissen",
+   "unterformat": "Zahlen & Astro-Wissen",
+   "thema": "Lebenszahl 2",
+   "titel": "Lebenszahl 2",
+   "status": "offen",
+   "datum": "2027-03-27",
+   "key": "YT|Zahlen & Astro-Wissen|Lebenszahl 2"
+  },
+  {
+   "nr": 154,
+   "runde": 154,
+   "saeule": "Horoskop",
+   "format": "Monatshoroskop",
+   "unterformat": "Monatshoroskop",
+   "thema": "Horoskop April 2027 für alle 12 Sternzeichen",
+   "titel": "Horoskop April 2027 für alle 12 Sternzeichen",
+   "status": "offen",
+   "datum": "2027-03-28",
+   "key": "YT|Monatshoroskop|Horoskop April 2027 für alle 12 Sternzeichen"
+  },
+  {
+   "nr": 155,
+   "runde": 155,
+   "saeule": "Sternzeichen",
+   "format": "Sternzeichen-Porträt",
+   "unterformat": "Short: Steinbock",
+   "thema": "Steinbock: Stärken, Schwächen und was niemand über dich weiß",
+   "titel": "Steinbock: Stärken, Schwächen und was niemand über dich weiß",
+   "status": "offen",
+   "datum": "2027-03-29",
+   "key": "YT|Sternzeichen-Porträt|Steinbock: Stärken, Schwächen und was niemand über dich weiß"
+  },
+  {
+   "nr": 156,
+   "runde": 156,
+   "saeule": "Mysterien & Theorien",
+   "format": "Mysterien Deep Dive",
+   "unterformat": "Mysterien Deep Dive",
+   "thema": "Das Serapeum von Sakkara",
+   "titel": "Das Serapeum von Sakkara",
+   "status": "offen",
+   "datum": "2027-03-30",
+   "key": "YT|Mysterien Deep Dive|Das Serapeum von Sakkara"
+  },
+  {
+   "nr": 157,
+   "runde": 157,
+   "saeule": "Rankings",
+   "format": "Ranking: alle 12",
+   "unterformat": "Ranking: alle 12",
+   "thema": "Alle Sternzeichen gerankt: Wer ist am gefährlichsten?",
+   "titel": "Alle Sternzeichen gerankt: Wer ist am gefährlichsten?",
+   "status": "offen",
+   "datum": "2027-03-31",
+   "key": "YT|Ranking: alle 12|Alle Sternzeichen gerankt: Wer ist am gefährlichsten?"
+  },
+  {
+   "nr": 158,
+   "runde": 158,
+   "saeule": "Beziehungen",
+   "format": "Liebe & Partnerschaft",
+   "unterformat": "Short: Widder",
+   "thema": "Widder in der Liebe: mit wem es passt und mit wem nie",
+   "titel": "Widder in der Liebe: mit wem es passt und mit wem nie",
+   "status": "offen",
+   "datum": "2027-04-01",
+   "key": "YT|Liebe & Partnerschaft|Widder in der Liebe: mit wem es passt und mit wem nie"
+  },
+  {
+   "nr": 159,
+   "runde": 159,
+   "saeule": "Mysterien & Theorien",
+   "format": "Mysterien Deep Dive",
+   "unterformat": "Mysterien Deep Dive",
+   "thema": "Die Lampen von Dendera",
+   "titel": "Die Lampen von Dendera",
+   "status": "offen",
+   "datum": "2027-04-02",
+   "key": "YT|Mysterien Deep Dive|Die Lampen von Dendera"
+  },
+  {
+   "nr": 160,
+   "runde": 160,
+   "saeule": "Zahlen & Energie",
+   "format": "Zahlen & Astro-Wissen",
+   "unterformat": "Zahlen & Astro-Wissen",
+   "thema": "Dein Mondzeichen",
+   "titel": "Dein Mondzeichen",
+   "status": "offen",
+   "datum": "2027-04-03",
+   "key": "YT|Zahlen & Astro-Wissen|Dein Mondzeichen"
+  },
+  {
+   "nr": 161,
+   "runde": 161,
+   "saeule": "Energie",
+   "format": "Elemente & Energie",
+   "unterformat": "Elemente & Energie",
+   "thema": "Klarträume: wach im Traum",
+   "titel": "Klarträume: wach im Traum",
+   "status": "offen",
+   "datum": "2027-04-04",
+   "key": "YT|Elemente & Energie|Klarträume: wach im Traum"
+  },
+  {
+   "nr": 162,
+   "runde": 162,
+   "saeule": "Sternzeichen",
+   "format": "Sternzeichen-Porträt",
+   "unterformat": "Short: Waage",
+   "thema": "Waage: Stärken, Schwächen und was niemand über dich weiß",
+   "titel": "Waage: Stärken, Schwächen und was niemand über dich weiß",
+   "status": "offen",
+   "datum": "2027-04-05",
+   "key": "YT|Sternzeichen-Porträt|Waage: Stärken, Schwächen und was niemand über dich weiß"
+  },
+  {
+   "nr": 163,
+   "runde": 163,
+   "saeule": "Mysterien & Theorien",
+   "format": "Mysterien Deep Dive",
+   "unterformat": "Mysterien Deep Dive",
+   "thema": "Das Voynich-Manuskript",
+   "titel": "Das Voynich-Manuskript",
+   "status": "offen",
+   "datum": "2027-04-06",
+   "key": "YT|Mysterien Deep Dive|Das Voynich-Manuskript"
+  },
+  {
+   "nr": 164,
+   "runde": 164,
+   "saeule": "Rankings",
+   "format": "Ranking: alle 12",
+   "unterformat": "Ranking: alle 12",
+   "thema": "Alle Sternzeichen gerankt: Wer ist am intuitivsten?",
+   "titel": "Alle Sternzeichen gerankt: Wer ist am intuitivsten?",
+   "status": "offen",
+   "datum": "2027-04-07",
+   "key": "YT|Ranking: alle 12|Alle Sternzeichen gerankt: Wer ist am intuitivsten?"
+  },
+  {
+   "nr": 165,
+   "runde": 165,
+   "saeule": "Beziehungen",
+   "format": "Liebe & Partnerschaft",
+   "unterformat": "Short: Jungfrau",
+   "thema": "Jungfrau in der Liebe: mit wem es passt und mit wem nie",
+   "titel": "Jungfrau in der Liebe: mit wem es passt und mit wem nie",
+   "status": "offen",
+   "datum": "2027-04-08",
+   "key": "YT|Liebe & Partnerschaft|Jungfrau in der Liebe: mit wem es passt und mit wem nie"
+  },
+  {
+   "nr": 166,
+   "runde": 166,
+   "saeule": "Mysterien & Theorien",
+   "format": "Mysterien Deep Dive",
+   "unterformat": "Mysterien Deep Dive",
+   "thema": "Die Bagdad-Batterie",
+   "titel": "Die Bagdad-Batterie",
+   "status": "offen",
+   "datum": "2027-04-09",
+   "key": "YT|Mysterien Deep Dive|Die Bagdad-Batterie"
+  },
+  {
+   "nr": 167,
+   "runde": 167,
+   "saeule": "Zahlen & Energie",
+   "format": "Zahlen & Astro-Wissen",
+   "unterformat": "Zahlen & Astro-Wissen",
+   "thema": "Lebenszahl 3",
+   "titel": "Lebenszahl 3",
+   "status": "offen",
+   "datum": "2027-04-10",
+   "key": "YT|Zahlen & Astro-Wissen|Lebenszahl 3"
+  },
+  {
+   "nr": 168,
+   "runde": 168,
+   "saeule": "Energie",
+   "format": "Elemente & Energie",
+   "unterformat": "Elemente & Energie",
+   "thema": "Frequenzen: Klang, Körper und Raum",
+   "titel": "Frequenzen: Klang, Körper und Raum",
+   "status": "offen",
+   "datum": "2027-04-11",
+   "key": "YT|Elemente & Energie|Frequenzen: Klang, Körper und Raum"
+  },
+  {
+   "nr": 169,
+   "runde": 169,
+   "saeule": "Sternzeichen",
+   "format": "Sternzeichen-Porträt",
+   "unterformat": "Short: Stier",
+   "thema": "Stier: Stärken, Schwächen und was niemand über dich weiß",
+   "titel": "Stier: Stärken, Schwächen und was niemand über dich weiß",
+   "status": "offen",
+   "datum": "2027-04-12",
+   "key": "YT|Sternzeichen-Porträt|Stier: Stärken, Schwächen und was niemand über dich weiß"
+  },
+  {
+   "nr": 170,
+   "runde": 170,
+   "saeule": "Mysterien & Theorien",
+   "format": "Mysterien Deep Dive",
+   "unterformat": "Mysterien Deep Dive",
+   "thema": "Yonaguni: die Pyramide im Meer",
+   "titel": "Yonaguni: die Pyramide im Meer",
+   "status": "offen",
+   "datum": "2027-04-13",
+   "key": "YT|Mysterien Deep Dive|Yonaguni: die Pyramide im Meer"
+  },
+  {
+   "nr": 171,
+   "runde": 171,
+   "saeule": "Rankings",
+   "format": "Ranking: alle 12",
+   "unterformat": "Ranking: alle 12",
+   "thema": "Alle Sternzeichen gerankt: Wer ist der geborene Anführer?",
+   "titel": "Alle Sternzeichen gerankt: Wer ist der geborene Anführer?",
+   "status": "offen",
+   "datum": "2027-04-14",
+   "key": "YT|Ranking: alle 12|Alle Sternzeichen gerankt: Wer ist der geborene Anführer?"
+  },
+  {
+   "nr": 172,
+   "runde": 172,
+   "saeule": "Beziehungen",
+   "format": "Liebe & Partnerschaft",
+   "unterformat": "Short: Wassermann",
+   "thema": "Wassermann in der Liebe: mit wem es passt und mit wem nie",
+   "titel": "Wassermann in der Liebe: mit wem es passt und mit wem nie",
+   "status": "offen",
+   "datum": "2027-04-15",
+   "key": "YT|Liebe & Partnerschaft|Wassermann in der Liebe: mit wem es passt und mit wem nie"
+  },
+  {
+   "nr": 173,
+   "runde": 173,
+   "saeule": "Mysterien & Theorien",
+   "format": "Mysterien Deep Dive",
+   "unterformat": "Mysterien Deep Dive",
+   "thema": "Teotihuacán: Stadt der Götter",
+   "titel": "Teotihuacán: Stadt der Götter",
+   "status": "offen",
+   "datum": "2027-04-16",
+   "key": "YT|Mysterien Deep Dive|Teotihuacán: Stadt der Götter"
+  },
+  {
+   "nr": 174,
+   "runde": 174,
+   "saeule": "Zahlen & Energie",
+   "format": "Zahlen & Astro-Wissen",
+   "unterformat": "Zahlen & Astro-Wissen",
+   "thema": "Merkur rückläufig: was wirklich passiert",
+   "titel": "Merkur rückläufig: was wirklich passiert",
+   "status": "offen",
+   "datum": "2027-04-17",
+   "key": "YT|Zahlen & Astro-Wissen|Merkur rückläufig: was wirklich passiert"
+  },
+  {
+   "nr": 175,
+   "runde": 175,
+   "saeule": "Energie",
+   "format": "Elemente & Energie",
+   "unterformat": "Elemente & Energie",
+   "thema": "Alte Seele: woran du sie erkennst",
+   "titel": "Alte Seele: woran du sie erkennst",
+   "status": "offen",
+   "datum": "2027-04-18",
+   "key": "YT|Elemente & Energie|Alte Seele: woran du sie erkennst"
+  },
+  {
+   "nr": 176,
+   "runde": 176,
+   "saeule": "Sternzeichen",
+   "format": "Sternzeichen-Porträt",
+   "unterformat": "Short: Skorpion",
+   "thema": "Skorpion: Stärken, Schwächen und was niemand über dich weiß",
+   "titel": "Skorpion: Stärken, Schwächen und was niemand über dich weiß",
+   "status": "offen",
+   "datum": "2027-04-19",
+   "key": "YT|Sternzeichen-Porträt|Skorpion: Stärken, Schwächen und was niemand über dich weiß"
+  },
+  {
+   "nr": 177,
+   "runde": 177,
+   "saeule": "Mysterien & Theorien",
+   "format": "Mysterien Deep Dive",
+   "unterformat": "Mysterien Deep Dive",
+   "thema": "Die Orion-Korrelation",
+   "titel": "Die Orion-Korrelation",
+   "status": "offen",
+   "datum": "2027-04-20",
+   "key": "YT|Mysterien Deep Dive|Die Orion-Korrelation"
+  },
+  {
+   "nr": 178,
+   "runde": 178,
+   "saeule": "Rankings",
+   "format": "Ranking: alle 12",
+   "unterformat": "Ranking: alle 12",
+   "thema": "Alle Sternzeichen gerankt: Wer sind die besten Eltern?",
+   "titel": "Alle Sternzeichen gerankt: Wer sind die besten Eltern?",
+   "status": "offen",
+   "datum": "2027-04-21",
+   "key": "YT|Ranking: alle 12|Alle Sternzeichen gerankt: Wer sind die besten Eltern?"
+  },
+  {
+   "nr": 179,
+   "runde": 179,
+   "saeule": "Beziehungen",
+   "format": "Liebe & Partnerschaft",
+   "unterformat": "Short: Krebs",
+   "thema": "Krebs in der Liebe: mit wem es passt und mit wem nie",
+   "titel": "Krebs in der Liebe: mit wem es passt und mit wem nie",
+   "status": "offen",
+   "datum": "2027-04-22",
+   "key": "YT|Liebe & Partnerschaft|Krebs in der Liebe: mit wem es passt und mit wem nie"
+  },
+  {
+   "nr": 180,
+   "runde": 180,
+   "saeule": "Mysterien & Theorien",
+   "format": "Mysterien Deep Dive",
+   "unterformat": "Mysterien Deep Dive",
+   "thema": "Sintflut: warum jedes Volk davon erzählt",
+   "titel": "Sintflut: warum jedes Volk davon erzählt",
+   "status": "offen",
+   "datum": "2027-04-23",
+   "key": "YT|Mysterien Deep Dive|Sintflut: warum jedes Volk davon erzählt"
+  },
+  {
+   "nr": 181,
+   "runde": 181,
+   "saeule": "Zahlen & Energie",
+   "format": "Zahlen & Astro-Wissen",
+   "unterformat": "Zahlen & Astro-Wissen",
+   "thema": "Lebenszahl 4",
+   "titel": "Lebenszahl 4",
+   "status": "offen",
+   "datum": "2027-04-24",
+   "key": "YT|Zahlen & Astro-Wissen|Lebenszahl 4"
+  },
+  {
+   "nr": 182,
+   "runde": 182,
+   "saeule": "Horoskop",
+   "format": "Monatshoroskop",
+   "unterformat": "Monatshoroskop",
+   "thema": "Horoskop Mai 2027 für alle 12 Sternzeichen",
+   "titel": "Horoskop Mai 2027 für alle 12 Sternzeichen",
+   "status": "offen",
+   "datum": "2027-04-25",
+   "key": "YT|Monatshoroskop|Horoskop Mai 2027 für alle 12 Sternzeichen"
+  }
+ ]
+}

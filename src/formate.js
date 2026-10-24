@@ -16,7 +16,19 @@ let zeigeBis = 15;
 const abgeglichen = new Set();
 
 /** Beim Start: für jedes Projekt mit Liste im Repo (daten/) Formate und Sendeplan still übernehmen. */
-export function listenAbgleichen() {
+export async function listenAbgleichen() {
+  // Neue Projekte aus daten/projekte.json einmalig anlegen (z.B. Astromaster YouTube)
+  try {
+    const r = await fetch("daten/projekte.json", { cache: "no-store" });
+    if (r.ok) {
+      const bekannt = new Set(S.projekte().map((p) => p.name.toLowerCase()));
+      for (const name of await r.json()) {
+        if (bekannt.has(name.toLowerCase())) continue;
+        const a = await fetch(`daten/${name.toLowerCase()}-app.json`, { cache: "no-store" });
+        if (a.ok) { S.importieren(await a.text()); neu(); }
+      }
+    }
+  } catch { /* offline: beim nächsten Start */ }
   for (const p of S.projekte()) if (!abgeglichen.has(p.id)) { abgeglichen.add(p.id); listeLaden(p, true); }
 }
 

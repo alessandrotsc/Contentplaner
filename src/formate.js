@@ -13,16 +13,27 @@ import { Z, neu } from "./zustand.js";
 import { el, ikon, dialog, feld, pillen } from "./ui.js";
 
 let zeigeBis = 15;
+let kategorie = "";            // "" = Shorts, "YouTube" = lange Videos desselben Projekts
+let kategorieDateien = [];     // aus daten/projekte.json: [{ projekt, kategorie, datei }]
 const abgeglichen = new Set();
+const katName = (k) => k || "Shorts";
 
 /** Beim Start: für jedes Projekt mit Liste im Repo (daten/) Formate und Sendeplan still übernehmen. */
 export async function listenAbgleichen() {
-  // Neue Projekte aus daten/projekte.json einmalig anlegen (z.B. Astromaster YouTube)
+  // daten/projekte.json: neue Projekte einmalig anlegen, Kategorien (z.B. YouTube) merken, alte Projekte entfernen
   try {
     const r = await fetch("daten/projekte.json", { cache: "no-store" });
     if (r.ok) {
+      const liste = await r.json();
+      const { projekte = [], kategorien = [], entfernt = [] } = Array.isArray(liste) ? { projekte: liste } : liste;
+      kategorieDateien = kategorien;
+      // "Astromaster YouTube" war ein eigenes Projekt, ist jetzt Kategorie YouTube unter Astromaster
+      for (const name of entfernt) {
+        const alt = S.projekte().find((p) => p.name.toLowerCase() === name.toLowerCase());
+        if (alt) { S.projektLoeschen(alt.id); neu(); }
+      }
       const bekannt = new Set(S.projekte().map((p) => p.name.toLowerCase()));
-      for (const name of await r.json()) {
+      for (const name of projekte) {
         if (bekannt.has(name.toLowerCase())) continue;
         const a = await fetch(`daten/${name.toLowerCase()}-app.json`, { cache: "no-store" });
         if (a.ok) { S.importieren(await a.text()); neu(); }
@@ -36,8 +47,11 @@ export function formateBereich() {
   if (!Z.projektId) return uebersicht();
   const p = S.projekt(Z.projektId);
   if (!abgeglichen.has(p.id)) { abgeglichen.add(p.id); listeLaden(p, true); }
-  const r = S.reihe(p.id);
+  const kats = S.kategorien(p.id);
+  if (!kats.includes(kategorie)) kategorie = "";
+  const r = S.reihe(p.id, kategorie);
   return el("div", { class: "seite" },
+    kats.length > 1 && pillen(kats.map((k) => ({ id: k, name: katName(k) })), kategorie, (k) => { kategorie = k; zeigeBis = 15; neu(); }),
     r && fortschritt(p, r),
     saeulen(p, r),
     r && reihenfolge(p, r),
@@ -68,7 +82,7 @@ function uebersicht() {
 
 function fortschritt(p, r) {
   // Mit Formatkatalog zählen dessen Videos, sonst die Reihenfolge
-  const katalog = S.formate(p.id).filter((f) => f.unterformate);
+  const katalog = S.formate(p.id, kategorie).filter((f) => f.unterformate);
   const gesamt = katalog.length ? katalog.reduce((s, f) => s + f.anzahl, 0) : r.videos.length;
   const fertig = katalog.length ? katalog.reduce((s, f) => s + (f.fertig || 0), 0)
     : r.videos.filter((v) => v.status === "fertig" || v.status === "online").length;
@@ -85,15 +99,21 @@ function fortschritt(p, r) {
   );
 }
 
-// Die Liste liegt im Repo unter daten/<projekt>-app.json (am Mac von app_export.py geschrieben)
+// Die Liste liegt im Repo unter daten/<projekt>-app.json (am Mac von app_export.py geschrieben),
+// dazu je Kategorie eine eigene Datei (z.B. daten/astromaster-youtube-app.json)
 async function listeLaden(p, still = false) {
-  try {
-    const antwort = await fetch(`daten/${p.name.toLowerCase()}-app.json`, { cache: "no-store" });
-    if (!antwort.ok) throw new Error("Für dieses Projekt liegt keine Liste bereit.");
-    const text = S.importieren(await antwort.text());
-    neu();
-    if (!still) alert(text);
-  } catch (err) { if (!still) alert("Laden ging nicht: " + err.message); }
+  const dateien = [`${p.name.toLowerCase()}-app.json`,
+    ...kategorieDateien.filter((k) => k.projekt.toLowerCase() === p.name.toLowerCase()).map((k) => k.datei)];
+  const meldungen = [];
+  for (const datei of dateien) {
+    try {
+      const antwort = await fetch(`daten/${datei}`, { cache: "no-store" });
+      if (!antwort.ok) throw new Error("Für dieses Projekt liegt keine Liste bereit.");
+      meldungen.push(S.importieren(await antwort.text()));
+    } catch (err) { meldungen.push("Laden ging nicht: " + err.message); }
+  }
+  neu();
+  if (!still) alert(meldungen.join("\n"));
 }
 
 const zahl = (n, t) => el("div", { class: "kennzahl" }, el("b", { text: n.toLocaleString("de-DE") }), el("small", { text: t }));
@@ -101,7 +121,7 @@ const zahl = (n, t) => el("div", { class: "kennzahl" }, el("b", { text: n.toLoca
 /* ------------------------------------------------------------ Saeulen */
 
 function saeulen(p, r) {
-  const formate = S.formate(p.id);
+  const formate = S.formate(p.id, kategorie);
   const box = el("div");
   const namen = r?.saeulen.map((s) => s.name) || [...new Set(formate.map((f) => f.saeule).filter(Boolean))];
 
@@ -122,7 +142,7 @@ function saeulen(p, r) {
     el("div", { class: "saeule-kopf" }, el("span", { class: "saeule-nr", text: "+" }),
       el("div", {}, el("b", { text: namen.length ? "Weitere Formate" : "Formate" }))),
     ohne.map((f) => formatZeile(f, r)),
-    el("button", { class: "zufuegen", text: "Format hinzufügen", onclick: () => formatDialog({ projektId: p.id }) })));
+    el("button", { class: "zufuegen", text: "Format hinzufügen", onclick: () => formatDialog({ projektId: p.id, ...(kategorie ? { kategorie } : {}) }) })));
   return box;
 }
 
@@ -233,7 +253,7 @@ function einplanenDialog(p, r) {
   if (geplant.length && geplant.at(-1) >= w.ab) w.ab = D.plusTage(geplant.at(-1), 1);
 
   const d = dialog("Einplanen", () => {
-    const n = S.einplanen(p.id, w.n, w.proTag, w.ab, D.plusTage);
+    const n = S.einplanen(p.id, w.n, w.proTag, w.ab, D.plusTage, kategorie);
     neu({ bereich: "kalender", ansicht: "agenda", anker: w.ab });
     setTimeout(() => alert(`${n} Videos eingeplant.`), 50);
   });

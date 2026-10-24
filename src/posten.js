@@ -5,7 +5,8 @@
  * direkt an TikTok, Instagram oder YouTube, oder „Video sichern“ in Fotos.
  *
  * TikTok und Instagram bekommen video.mp4 (Musik kommt dort aus der App),
- * YouTube die Shorts-Fassung mit Musik.
+ * YouTube Shorts die Fassung mit Musik, YouTube Video das lange 16:9-Video mit Thumbnail
+ * (meta: dateien.lang, dateien.thumbnail, langTitel, langText).
  */
 
 import * as Server from "./server.js";
@@ -98,11 +99,12 @@ function textBlock(titel, text, knopfText) {
 export function postenDialog(e, v, beiBearbeiten) {
   const d = dialog(e.titel || v.titel);
   const f = v.dateien || {};
+  const kurz = f.video || f.youtube;
   d.inhalt.append(
-    f.video && el("video", { class: "posten-video", src: f.video, poster: f.cover || null,
+    (f.video || f.lang) && el("video", { class: "posten-video", src: f.video || f.lang, poster: f.cover || f.thumbnail || null,
       controls: true, playsinline: true, preload: "none" }),
 
-    el("div", { class: "posten-kanal" },
+    kurz && el("div", { class: "posten-kanal" },
       el("div", { class: "posten-kopf" }, ikon("tiktok", 16), ikon("instagram", 16), el("b", { text: "TikTok & Instagram" })),
       el("div", { class: "hinweis", text: "Video ohne Musik. Den Sound wählst du in der App." }),
       f.video && teilenKnopf("Video", f.video),
@@ -111,12 +113,22 @@ export function postenDialog(e, v, beiBearbeiten) {
         f.cover34 && teilenKnopf("Cover 3:4", f.cover34, "raster")),
       textBlock("Caption", v.caption, "Caption kopieren")),
 
-    el("div", { class: "posten-kanal" },
+    kurz && el("div", { class: "posten-kanal" },
       el("div", { class: "posten-kopf" }, ikon("youtube", 16), el("b", { text: "YouTube Shorts" })),
       el("div", { class: "hinweis", text: "Fassung mit Musik, direkt so hochladen." }),
       f.youtube && teilenKnopf("Video mit Musik", f.youtube),
       textBlock("Titel", v.youtubeTitel, "Titel kopieren"),
       textBlock("Beschreibung", v.youtubeText, "Beschreibung kopieren")),
+
+    el("div", { class: "posten-kanal" },
+      el("div", { class: "posten-kopf" }, ikon("youtube", 16), el("b", { text: "YouTube Video" })),
+      f.lang
+        ? [el("div", { class: "hinweis", text: "Langes Video im Querformat, mit Thumbnail." }),
+           teilenKnopf("Video", f.lang),
+           f.thumbnail && teilenKnopf("Thumbnail", f.thumbnail, "raster"),
+           textBlock("Titel", v.langTitel, "Titel kopieren"),
+           textBlock("Beschreibung", v.langText, "Beschreibung kopieren")]
+        : el("div", { class: "hinweis", text: "Das lange Video zu diesem Thema ist noch nicht fertig." })),
 
     el("button", { class: "zufuegen", text: "Eintrag bearbeiten", onclick: () => { d.zu(); beiBearbeiten(); } }),
     el("button", { class: "posten-zu", text: "Schließen", onclick: () => d.zu() }),

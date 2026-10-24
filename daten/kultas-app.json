@@ -1,0 +1,1092 @@
+{
+ "typ": "projekt-import",
+ "projekt": "Kultas",
+ "farbe": "#2E5E3A",
+ "plattformen": [
+  {
+   "typ": "instagram",
+   "handle": "@kultas.health"
+  },
+  {
+   "typ": "tiktok",
+   "handle": "@kultas.health"
+  },
+  {
+   "typ": "youtube",
+   "handle": "Kultas"
+  }
+ ],
+ "stand": "2026-10-24",
+ "saeulen": [
+  {
+   "name": "Lebensmittel",
+   "muster": [
+    "Unter der Lupe",
+    "Ja oder Nein?",
+    "Top 3"
+   ]
+  },
+  {
+   "name": "Wissen zum Abspeichern",
+   "muster": [
+    "Spickzettel"
+   ]
+  },
+  {
+   "name": "Körper",
+   "muster": [
+    "Komische Zeichen",
+    "Schlaf & Routine"
+   ]
+  },
+  {
+   "name": "Natur & Hausmittel",
+   "muster": [
+    "Hausmittel",
+    "Echt oder Fake?"
+   ]
+  }
+ ],
+ "stufen": [
+  "Start: 1 Short pro Tag auf Instagram, TikTok und YouTube Shorts",
+  "Später: 2 pro Tag, wenn die Fabrik läuft"
+ ],
+ "regeln": [
+  "Inhalt nur von Fabian Kowallik (ExiledMedic), Quelle steht bei jedem Video. Erst 01_Wissen/Kowalik/INDEX.md lesen.",
+  "Keine Heilversprechen: nie „heilt“, „wie Ozempic“, „verbrennt Fett“. Stattdessen „kann unterstützen“, „steckt voll mit“.",
+  "Keine Politik, keine Verschwörung, keine Ärzte- oder Pharma-Schelte, nicht gegen Nahrungsergänzung reden.",
+  "Hook „Das solltest du über X wissen“ plus Vergleich bis Sekunde 5, offene Schleifen, Tipp am Schluss.",
+  "Bilder gemalter Realismus im Hier und Jetzt (03_Assets/Stil/kern.txt).",
+  "Nie zwei gleiche Formate hintereinander."
+ ],
+ "formate": [
+  {
+   "name": "Unter der Lupe",
+   "saeule": "Lebensmittel",
+   "laenge": "50 bis 65 s",
+   "beschreibung": "Ein Lebensmittel komplett: was drinsteckt, wofür es gut ist, worauf man achten muss, Tipp zum Schluss.",
+   "unterformate": [
+    {
+     "name": "Unter der Lupe",
+     "beschreibung": "Ein Lebensmittel komplett: was drinsteckt, wofür es gut ist, worauf man achten muss, Tipp zum Schluss.",
+     "videos": [
+      {
+       "titel": "Das solltest du über Datteln wissen",
+       "status": "fertig",
+       "id": "K02_Datteln",
+       "quelle": "https://youtu.be/ufFUbEmS6Lg",
+       "quelle_titel": "Das wusstest du noch nicht über Datteln..."
+      },
+      {
+       "titel": "Das solltest du über Schwarzkümmelöl wissen",
+       "status": "offen",
+       "quelle": "https://youtu.be/Id10vAKxiS4",
+       "quelle_titel": "NEU: Das wusstest du nicht über Schwarzkümmelöl! (Gefahren, Vorteile, Anwendungen)"
+      },
+      {
+       "titel": "Das solltest du über Apfelessig wissen",
+       "status": "offen",
+       "quelle": "https://youtu.be/S9B3qjfAhBw",
+       "quelle_titel": "Apfelessig Spickzettel (teilen) #gesundheitstipps #ernährungstipps #aufklärung"
+      },
+      {
+       "titel": "Das solltest du über Nelken wissen",
+       "status": "offen",
+       "quelle": "https://youtu.be/bNQk4ZdBsWc",
+       "quelle_titel": "1 Nelke im Kaffee jeden Morgen und DAS HIER passiert"
+      },
+      {
+       "titel": "Das solltest du über Cayennepfeffer wissen",
+       "status": "offen",
+       "quelle": "https://youtu.be/BG-g0vaR6Dg",
+       "quelle_titel": "Cayenne: Wirkt wirklich? #fitnesstipps #cayenne #blutdruck"
+      },
+      {
+       "titel": "Das solltest du über Ingwer und Zimt wissen",
+       "status": "offen",
+       "quelle": "https://youtu.be/q22cyLqLAMs",
+       "quelle_titel": "Was passiert wenn Sie Ingwer&Zimt trinkt? (teilen) #gesundheitstipps #aufklärung #gesunderezepte"
+      },
+      {
+       "titel": "Das solltest du über Eier wissen",
+       "status": "offen",
+       "quelle": "https://youtu.be/_QpIRMbAe8U",
+       "quelle_titel": "Unglaubliches Passiert wenn du jeden Tag 4 Eier isst - So geht es gesund (neue Studie)"
+      },
+      {
+       "titel": "Das solltest du über Olivenöl wissen",
+       "status": "offen",
+       "quelle": "https://youtu.be/nB5Ug_dApiU",
+       "quelle_titel": "Olivenöl Fake Selbsttest? #gesundheitstipps #ernährungstipps #olivenöl"
+      },
+      {
+       "titel": "Das solltest du über Honig wissen",
+       "status": "offen",
+       "quelle": "https://youtu.be/ybNFSummezI",
+       "quelle_titel": "Die Honig Lüge (ALLES was du über HONIG Wissen MUSST)"
+      },
+      {
+       "titel": "Das solltest du über Buchweizen wissen",
+       "status": "offen",
+       "quelle": "https://youtu.be/VAcQ7SPrH_4",
+       "quelle_titel": "Superfood Buchweizen: 1000x Gesünder als Haferflocken"
+      }
+     ]
+    }
+   ],
+   "anzahl": 10,
+   "fertig": 1
+  },
+  {
+   "name": "Ja oder Nein?",
+   "saeule": "Lebensmittel",
+   "laenge": "30 bis 45 s",
+   "beschreibung": "Ein Lebensmittel, eine klare Antwort: wann ja, wann nein, welche Sorte.",
+   "unterformate": [
+    {
+     "name": "Ja oder Nein?",
+     "beschreibung": "Ein Lebensmittel, eine klare Antwort: wann ja, wann nein, welche Sorte.",
+     "videos": [
+      {
+       "titel": "Kaffee: ja oder nein?",
+       "status": "offen",
+       "quelle": "https://youtu.be/Tjxvv0ucJUg",
+       "quelle_titel": "Kaffee: Ja oder Nein? #gesundheitstipps #ernährungstipps #aufklärung"
+      },
+      {
+       "titel": "Äpfel: ja oder nein?",
+       "status": "offen",
+       "quelle": "https://youtu.be/zY44h6NVphM",
+       "quelle_titel": "Äpfel: Ja oder Nein #gesundheitstipps #ernährungstipps #gesundeernährung"
+      },
+      {
+       "titel": "Hafer- oder Mandelmilch?",
+       "status": "offen",
+       "quelle": "https://youtu.be/lGKjEfiwjXM",
+       "quelle_titel": "Hafer oder Mandelmilch? #gesundheitstipps #ernährungstipps #vegan"
+      },
+      {
+       "titel": "Haferflocken: worauf du achten musst",
+       "status": "offen",
+       "quelle": "https://youtu.be/n8hX-dRP7_s",
+       "quelle_titel": "Kauf nicht die falschen Haferflocken #gesundheitstipps #ernährungstipps #gesundeernährung"
+      },
+      {
+       "titel": "Brot: ja oder nein?",
+       "status": "offen",
+       "quelle": "https://youtu.be/1IlHjfCrQWQ",
+       "quelle_titel": "Iss Kein Brot Bevor Du Dieses Video Gesehen Hast (Wichtig!)"
+      },
+      {
+       "titel": "Grüner Tee: ja oder nein?",
+       "status": "offen",
+       "quelle": "https://youtu.be/FBCuApyPEo0",
+       "quelle_titel": "Grüntee nicht Trinken!! #tee #gesundheitstipps #aufklärung"
+      },
+      {
+       "titel": "Kollagen: lohnt sich das?",
+       "status": "offen",
+       "quelle": "https://youtu.be/-tKYJDqT_1o",
+       "quelle_titel": "Funktionieren Kollagen Supplements? (Vermeide diese Fehler!)"
+      },
+      {
+       "titel": "Frühstück: ja oder nein?",
+       "status": "offen",
+       "quelle": "https://youtu.be/V_V82PLYFFY",
+       "quelle_titel": "Iss dieses Frühstück jeden Tag! #gesundheitstipps #ernährungstipps #aufklärung"
+      }
+     ]
+    }
+   ],
+   "anzahl": 8,
+   "fertig": 0
+  },
+  {
+   "name": "Top 3",
+   "saeule": "Lebensmittel",
+   "laenge": "45 bis 60 s",
+   "beschreibung": "Drei Lebensmittel zu einem Ziel, das stärkste zuletzt.",
+   "unterformate": [
+    {
+     "name": "Top 3",
+     "beschreibung": "Drei Lebensmittel zu einem Ziel, das stärkste zuletzt.",
+     "videos": [
+      {
+       "titel": "Top 3 Lebensmittel für besseren Schlaf",
+       "status": "offen",
+       "quelle": "https://youtu.be/z6Sfz47mhh8",
+       "quelle_titel": "Die Große Schlaf Lüge! (Top 6 Nicht mehr falsch schlafen)"
+      },
+      {
+       "titel": "Top 3 Lebensmittel, die besser sind als ihr Ruf",
+       "status": "offen",
+       "quelle": "https://youtu.be/6zHCk2jzkGI",
+       "quelle_titel": "Diese Lebensmittel sind VIEL besser als ihr RUF!! #gesundeernährung ernährungstipps"
+      },
+      {
+       "titel": "Top 3 Lebensmittel, die du zu selten isst",
+       "status": "offen",
+       "quelle": "https://youtu.be/qdPwL3n4RYQ",
+       "quelle_titel": "Die Top 10 Gesündesten Lebensmittel die du nicht genug isst"
+      },
+      {
+       "titel": "Top 3 Gemüse, die du öfter essen solltest",
+       "status": "offen",
+       "quelle": "https://youtu.be/VNbqL1ArX2g",
+       "quelle_titel": "Die Große Gemüse Lüge"
+      },
+      {
+       "titel": "Top 3 Lebensmittel für deine Muskeln",
+       "status": "offen",
+       "quelle": "https://youtu.be/QZaLHi-R0H4",
+       "quelle_titel": "Schnell Muskeln aufbauen ohne frühzeitig alt und krank zu werden"
+      },
+      {
+       "titel": "Top 3 Getränke für den Morgen",
+       "status": "offen",
+       "quelle": "https://youtu.be/4c8yvOEq_fM",
+       "quelle_titel": "Diese Morgenroutine soll Krankheiten verhinder..."
+      }
+     ]
+    }
+   ],
+   "anzahl": 6,
+   "fertig": 0
+  },
+  {
+   "name": "Spickzettel",
+   "saeule": "Wissen zum Abspeichern",
+   "laenge": "30 bis 45 s",
+   "beschreibung": "Kurze Übersicht zum Speichern: welche Sorte wofür.",
+   "unterformate": [
+    {
+     "name": "Spickzettel",
+     "beschreibung": "Kurze Übersicht zum Speichern: welche Sorte wofür.",
+     "videos": [
+      {
+       "titel": "Spickzettel: welcher Tee wofür",
+       "status": "offen",
+       "quelle": "https://youtu.be/O9TEEbFTrK8",
+       "quelle_titel": "🍵Tee Spickzettel (teilen) #gesundheitstipps #ernährungstipps #tee"
+      },
+      {
+       "titel": "Spickzettel: welche Nuss wofür",
+       "status": "offen",
+       "quelle": "https://youtu.be/eBa0gxiFEEE",
+       "quelle_titel": "🥜Nuss Spickzettel (Abspeichern) #gesundheitstipps #ernährungstipps #gesundeernährung"
+      },
+      {
+       "titel": "Spickzettel: welche Dattel wofür",
+       "status": "offen",
+       "quelle": "https://youtu.be/YuoYgJenJuo",
+       "quelle_titel": "Welche Dattel für welches Ziel? #gesundheit #ernährung #ramadan"
+      },
+      {
+       "titel": "Spickzettel: Magnesium, welche Form wofür",
+       "status": "offen",
+       "quelle": "https://youtu.be/TnYvzx51Ex8",
+       "quelle_titel": "🧪Magnesium Spickzettel (Abspeichern) #magnesium #gesundheitstipps #aufklärung"
+      },
+      {
+       "titel": "Spickzettel: mach dein Wasser besser",
+       "status": "offen",
+       "quelle": "https://youtu.be/za9Pc4kH7mc",
+       "quelle_titel": "Spickzettel: Mach dein Wasser Besser (Speichern) #gesundheitstipps #ernährungstipps #aufklärung"
+      },
+      {
+       "titel": "Spickzettel: Kaffee-Upgrades",
+       "status": "offen",
+       "quelle": "https://youtu.be/p7QBdfP33UE",
+       "quelle_titel": "Spickzettel: Kaffee Upgrades (Speichern) #gesundheitstipps #ernährungstipps #aufklärung"
+      },
+      {
+       "titel": "Spickzettel: welche Lebensmittel für welches Organ",
+       "status": "offen",
+       "quelle": "https://youtu.be/MOcNg3I1aAo",
+       "quelle_titel": "lebensmittel für organe"
+      }
+     ]
+    }
+   ],
+   "anzahl": 7,
+   "fertig": 0
+  },
+  {
+   "name": "Komische Zeichen",
+   "saeule": "Körper",
+   "laenge": "40 bis 55 s",
+   "beschreibung": "Was der Körper dir zeigt: Zeichen erkennen und was dahinterstecken kann.",
+   "unterformate": [
+    {
+     "name": "Komische Zeichen",
+     "beschreibung": "Was der Körper dir zeigt: Zeichen erkennen und was dahinterstecken kann.",
+     "videos": [
+      {
+       "titel": "Das verraten deine Fingernägel",
+       "status": "offen",
+       "quelle": "https://youtu.be/bTCBROzQtPQ",
+       "quelle_titel": "das bedeuten deine fingernägel"
+      },
+      {
+       "titel": "Komische Zeichen für Nährstoffmangel",
+       "status": "offen",
+       "quelle": "https://youtu.be/yU4WkVwsrLY",
+       "quelle_titel": "Komische Zeichen für Nährstoffmangel (schlimm) #gesundheitstipps #nahrungsergänzungsmittel"
+      },
+      {
+       "titel": "Was dein Gesicht über deine Gesundheit sagt",
+       "status": "offen",
+       "quelle": "https://youtu.be/UBZx7CcYd0k",
+       "quelle_titel": "12 Komische Zeichen die dein Gesicht über deine Gesundheit aussagt"
+      },
+      {
+       "titel": "Komische Zeichen, dass du gesund bist",
+       "status": "offen",
+       "quelle": "https://youtu.be/JekNriPGNwM",
+       "quelle_titel": "Komische Zeichen dass du GESUND bist (teilen) #gesundheitstipps #ernährungstipps #aufklärung"
+      }
+     ]
+    }
+   ],
+   "anzahl": 4,
+   "fertig": 0
+  },
+  {
+   "name": "Schlaf & Routine",
+   "saeule": "Körper",
+   "laenge": "45 bis 60 s",
+   "beschreibung": "Abend, Morgen, Schlaf: kleine Gewohnheiten mit großer Wirkung.",
+   "unterformate": [
+    {
+     "name": "Schlaf & Routine",
+     "beschreibung": "Abend, Morgen, Schlaf: kleine Gewohnheiten mit großer Wirkung.",
+     "videos": [
+      {
+       "titel": "Das passiert, wenn du abends Magnesium nimmst",
+       "status": "offen",
+       "quelle": "https://youtu.be/NvjniRcW1kI",
+       "quelle_titel": "Das passiert wenn du Nachts MAGNESIUM nimmst (neue Studie)"
+      },
+      {
+       "titel": "3 Gramm Glycin vor dem Schlafen",
+       "status": "offen",
+       "quelle": "https://youtu.be/DEEibbu6y4A",
+       "quelle_titel": "3g und du schläfst 8 Stunden OHNE aufstehen zum Urinieren (neue Studie)"
+      },
+      {
+       "titel": "Warum du nachts aufwachst",
+       "status": "offen",
+       "quelle": "https://youtu.be/4KgXfT5NObk",
+       "quelle_titel": "DAS hier hat mein LEBEN zerstört (Nie wieder nachts aufwachen)"
+      },
+      {
+       "titel": "Der Fehler beim Mittagsschlaf",
+       "status": "offen",
+       "quelle": "https://youtu.be/xOs65LU58CQ",
+       "quelle_titel": "Vermeide diesen Fehler beim Mittagsschlaf #gesundheitstipps #schlaftipps #aufklärung"
+      },
+      {
+       "titel": "Die perfekte Morgenroutine",
+       "status": "offen",
+       "quelle": "https://youtu.be/6fqYJXwI6Lw",
+       "quelle_titel": "Die Perfekte Morgenroutine (Wir haben alles getestet€ #gesundheitstipps #morgenroutine"
+      }
+     ]
+    }
+   ],
+   "anzahl": 5,
+   "fertig": 0
+  },
+  {
+   "name": "Hausmittel",
+   "saeule": "Natur & Hausmittel",
+   "laenge": "45 bis 60 s",
+   "beschreibung": "Altes Wissen aus der Natur, einfach nachzumachen. Ohne Heilversprechen.",
+   "unterformate": [
+    {
+     "name": "Hausmittel",
+     "beschreibung": "Altes Wissen aus der Natur, einfach nachzumachen. Ohne Heilversprechen.",
+     "videos": [
+      {
+       "titel": "Ingwer und Zimt: was passiert, wenn du das trinkst",
+       "status": "offen",
+       "quelle": "https://youtu.be/q22cyLqLAMs",
+       "quelle_titel": "Was passiert wenn Sie Ingwer&Zimt trinkt? (teilen) #gesundheitstipps #aufklärung #gesunderezepte"
+      },
+      {
+       "titel": "Nelkenwasser: warum es kaum einer kennt",
+       "status": "offen",
+       "quelle": "https://youtu.be/9KnkZcpgY8s",
+       "quelle_titel": "Warum kennt niemand dieses Nelkenwasser? (teilen) #gesunderezepte #akne #ernährungstipps"
+      },
+      {
+       "titel": "Zitronenwasser, aber richtig",
+       "status": "offen",
+       "quelle": "https://youtu.be/ZE21WVAb8SU",
+       "quelle_titel": "Das hier macht Zitronenwasser 3,7x gesünder"
+      },
+      {
+       "titel": "Wohltuender Trunk bei Husten",
+       "status": "offen",
+       "quelle": "https://youtu.be/wLhPGW9pE_E",
+       "quelle_titel": "Zaubertrank gegen Schleim und Husten #gesundheitstipps #ernährungstipps #aufklärung"
+      },
+      {
+       "titel": "Hausmittel für eine freie Nase",
+       "status": "offen",
+       "quelle": "https://youtu.be/Bp_TiREmUpk",
+       "quelle_titel": "Sinus Entleeren & Deine Verstopfe Nase Befreien mit 1 Bewegung"
+      }
+     ]
+    }
+   ],
+   "anzahl": 5,
+   "fertig": 0
+  },
+  {
+   "name": "Echt oder Fake?",
+   "saeule": "Natur & Hausmittel",
+   "laenge": "30 bis 45 s",
+   "beschreibung": "Selbsttest für zuhause: ist das Lebensmittel echt?",
+   "unterformate": [
+    {
+     "name": "Echt oder Fake?",
+     "beschreibung": "Selbsttest für zuhause: ist das Lebensmittel echt?",
+     "videos": [
+      {
+       "titel": "Ist dein Olivenöl echt? Der Test für zuhause",
+       "status": "offen",
+       "quelle": "https://youtu.be/nB5Ug_dApiU",
+       "quelle_titel": "Olivenöl Fake Selbsttest? #gesundheitstipps #ernährungstipps #olivenöl"
+      },
+      {
+       "titel": "Ist dein Honig echt? Der Test für zuhause",
+       "status": "offen",
+       "quelle": "https://youtu.be/AMqYRKufkOo",
+       "quelle_titel": "Selbsttest: Ist dein Honig echt oder fake? #gesundheitstipps #honig #aufklärung"
+      },
+      {
+       "titel": "Echte Butter oder nicht?",
+       "status": "offen",
+       "quelle": "https://youtu.be/aGVb2fYGeTo",
+       "quelle_titel": "Achtung: Neue Fake Butter #gesundheitstipps #aufklärung"
+      },
+      {
+       "titel": "Welches Salz du nicht kaufen solltest",
+       "status": "offen",
+       "quelle": "https://youtu.be/LEaFBCPQqmA",
+       "quelle_titel": "welches salz nicht kaufen? (teilen)"
+      }
+     ]
+    }
+   ],
+   "anzahl": 4,
+   "fertig": 0
+  }
+ ],
+ "reihenfolge": [
+  {
+   "nr": 1,
+   "runde": 1,
+   "saeule": "Lebensmittel",
+   "format": "Unter der Lupe",
+   "unterformat": "Unter der Lupe",
+   "thema": "Das solltest du über Datteln wissen",
+   "titel": "Das solltest du über Datteln wissen",
+   "status": "fertig",
+   "key": "KU|Unter der Lupe|Das solltest du über Datteln wissen",
+   "id": "K02_Datteln",
+   "quelle": "https://youtu.be/ufFUbEmS6Lg",
+   "datum": "2026-10-27"
+  },
+  {
+   "nr": 2,
+   "runde": 1,
+   "saeule": "Lebensmittel",
+   "format": "Ja oder Nein?",
+   "unterformat": "Ja oder Nein?",
+   "thema": "Kaffee: ja oder nein?",
+   "titel": "Kaffee: ja oder nein?",
+   "status": "offen",
+   "key": "KU|Ja oder Nein?|Kaffee: ja oder nein?",
+   "quelle": "https://youtu.be/Tjxvv0ucJUg",
+   "datum": "2026-10-28"
+  },
+  {
+   "nr": 3,
+   "runde": 1,
+   "saeule": "Lebensmittel",
+   "format": "Top 3",
+   "unterformat": "Top 3",
+   "thema": "Top 3 Lebensmittel für besseren Schlaf",
+   "titel": "Top 3 Lebensmittel für besseren Schlaf",
+   "status": "offen",
+   "key": "KU|Top 3|Top 3 Lebensmittel für besseren Schlaf",
+   "quelle": "https://youtu.be/z6Sfz47mhh8",
+   "datum": "2026-10-29"
+  },
+  {
+   "nr": 4,
+   "runde": 1,
+   "saeule": "Wissen zum Abspeichern",
+   "format": "Spickzettel",
+   "unterformat": "Spickzettel",
+   "thema": "Spickzettel: welcher Tee wofür",
+   "titel": "Spickzettel: welcher Tee wofür",
+   "status": "offen",
+   "key": "KU|Spickzettel|Spickzettel: welcher Tee wofür",
+   "quelle": "https://youtu.be/O9TEEbFTrK8",
+   "datum": "2026-10-30"
+  },
+  {
+   "nr": 5,
+   "runde": 1,
+   "saeule": "Körper",
+   "format": "Komische Zeichen",
+   "unterformat": "Komische Zeichen",
+   "thema": "Das verraten deine Fingernägel",
+   "titel": "Das verraten deine Fingernägel",
+   "status": "offen",
+   "key": "KU|Komische Zeichen|Das verraten deine Fingernägel",
+   "quelle": "https://youtu.be/bTCBROzQtPQ",
+   "datum": "2026-10-31"
+  },
+  {
+   "nr": 6,
+   "runde": 1,
+   "saeule": "Körper",
+   "format": "Schlaf & Routine",
+   "unterformat": "Schlaf & Routine",
+   "thema": "Das passiert, wenn du abends Magnesium nimmst",
+   "titel": "Das passiert, wenn du abends Magnesium nimmst",
+   "status": "offen",
+   "key": "KU|Schlaf & Routine|Das passiert, wenn du abends Magnesium nimmst",
+   "quelle": "https://youtu.be/NvjniRcW1kI",
+   "datum": "2026-11-01"
+  },
+  {
+   "nr": 7,
+   "runde": 1,
+   "saeule": "Natur & Hausmittel",
+   "format": "Hausmittel",
+   "unterformat": "Hausmittel",
+   "thema": "Ingwer und Zimt: was passiert, wenn du das trinkst",
+   "titel": "Ingwer und Zimt: was passiert, wenn du das trinkst",
+   "status": "offen",
+   "key": "KU|Hausmittel|Ingwer und Zimt: was passiert, wenn du das trinkst",
+   "quelle": "https://youtu.be/q22cyLqLAMs",
+   "datum": "2026-11-02"
+  },
+  {
+   "nr": 8,
+   "runde": 1,
+   "saeule": "Natur & Hausmittel",
+   "format": "Echt oder Fake?",
+   "unterformat": "Echt oder Fake?",
+   "thema": "Ist dein Olivenöl echt? Der Test für zuhause",
+   "titel": "Ist dein Olivenöl echt? Der Test für zuhause",
+   "status": "offen",
+   "key": "KU|Echt oder Fake?|Ist dein Olivenöl echt? Der Test für zuhause",
+   "quelle": "https://youtu.be/nB5Ug_dApiU",
+   "datum": "2026-11-03"
+  },
+  {
+   "nr": 9,
+   "runde": 2,
+   "saeule": "Lebensmittel",
+   "format": "Unter der Lupe",
+   "unterformat": "Unter der Lupe",
+   "thema": "Das solltest du über Schwarzkümmelöl wissen",
+   "titel": "Das solltest du über Schwarzkümmelöl wissen",
+   "status": "offen",
+   "key": "KU|Unter der Lupe|Das solltest du über Schwarzkümmelöl wissen",
+   "quelle": "https://youtu.be/Id10vAKxiS4",
+   "datum": "2026-11-04"
+  },
+  {
+   "nr": 10,
+   "runde": 2,
+   "saeule": "Lebensmittel",
+   "format": "Ja oder Nein?",
+   "unterformat": "Ja oder Nein?",
+   "thema": "Äpfel: ja oder nein?",
+   "titel": "Äpfel: ja oder nein?",
+   "status": "offen",
+   "key": "KU|Ja oder Nein?|Äpfel: ja oder nein?",
+   "quelle": "https://youtu.be/zY44h6NVphM",
+   "datum": "2026-11-05"
+  },
+  {
+   "nr": 11,
+   "runde": 2,
+   "saeule": "Lebensmittel",
+   "format": "Top 3",
+   "unterformat": "Top 3",
+   "thema": "Top 3 Lebensmittel, die besser sind als ihr Ruf",
+   "titel": "Top 3 Lebensmittel, die besser sind als ihr Ruf",
+   "status": "offen",
+   "key": "KU|Top 3|Top 3 Lebensmittel, die besser sind als ihr Ruf",
+   "quelle": "https://youtu.be/6zHCk2jzkGI",
+   "datum": "2026-11-06"
+  },
+  {
+   "nr": 12,
+   "runde": 2,
+   "saeule": "Wissen zum Abspeichern",
+   "format": "Spickzettel",
+   "unterformat": "Spickzettel",
+   "thema": "Spickzettel: welche Nuss wofür",
+   "titel": "Spickzettel: welche Nuss wofür",
+   "status": "offen",
+   "key": "KU|Spickzettel|Spickzettel: welche Nuss wofür",
+   "quelle": "https://youtu.be/eBa0gxiFEEE",
+   "datum": "2026-11-07"
+  },
+  {
+   "nr": 13,
+   "runde": 2,
+   "saeule": "Körper",
+   "format": "Komische Zeichen",
+   "unterformat": "Komische Zeichen",
+   "thema": "Komische Zeichen für Nährstoffmangel",
+   "titel": "Komische Zeichen für Nährstoffmangel",
+   "status": "offen",
+   "key": "KU|Komische Zeichen|Komische Zeichen für Nährstoffmangel",
+   "quelle": "https://youtu.be/yU4WkVwsrLY",
+   "datum": "2026-11-08"
+  },
+  {
+   "nr": 14,
+   "runde": 2,
+   "saeule": "Körper",
+   "format": "Schlaf & Routine",
+   "unterformat": "Schlaf & Routine",
+   "thema": "3 Gramm Glycin vor dem Schlafen",
+   "titel": "3 Gramm Glycin vor dem Schlafen",
+   "status": "offen",
+   "key": "KU|Schlaf & Routine|3 Gramm Glycin vor dem Schlafen",
+   "quelle": "https://youtu.be/DEEibbu6y4A",
+   "datum": "2026-11-09"
+  },
+  {
+   "nr": 15,
+   "runde": 2,
+   "saeule": "Natur & Hausmittel",
+   "format": "Hausmittel",
+   "unterformat": "Hausmittel",
+   "thema": "Nelkenwasser: warum es kaum einer kennt",
+   "titel": "Nelkenwasser: warum es kaum einer kennt",
+   "status": "offen",
+   "key": "KU|Hausmittel|Nelkenwasser: warum es kaum einer kennt",
+   "quelle": "https://youtu.be/9KnkZcpgY8s"
+  },
+  {
+   "nr": 16,
+   "runde": 2,
+   "saeule": "Natur & Hausmittel",
+   "format": "Echt oder Fake?",
+   "unterformat": "Echt oder Fake?",
+   "thema": "Ist dein Honig echt? Der Test für zuhause",
+   "titel": "Ist dein Honig echt? Der Test für zuhause",
+   "status": "offen",
+   "key": "KU|Echt oder Fake?|Ist dein Honig echt? Der Test für zuhause",
+   "quelle": "https://youtu.be/AMqYRKufkOo"
+  },
+  {
+   "nr": 17,
+   "runde": 3,
+   "saeule": "Lebensmittel",
+   "format": "Unter der Lupe",
+   "unterformat": "Unter der Lupe",
+   "thema": "Das solltest du über Apfelessig wissen",
+   "titel": "Das solltest du über Apfelessig wissen",
+   "status": "offen",
+   "key": "KU|Unter der Lupe|Das solltest du über Apfelessig wissen",
+   "quelle": "https://youtu.be/S9B3qjfAhBw"
+  },
+  {
+   "nr": 18,
+   "runde": 3,
+   "saeule": "Lebensmittel",
+   "format": "Ja oder Nein?",
+   "unterformat": "Ja oder Nein?",
+   "thema": "Hafer- oder Mandelmilch?",
+   "titel": "Hafer- oder Mandelmilch?",
+   "status": "offen",
+   "key": "KU|Ja oder Nein?|Hafer- oder Mandelmilch?",
+   "quelle": "https://youtu.be/lGKjEfiwjXM"
+  },
+  {
+   "nr": 19,
+   "runde": 3,
+   "saeule": "Lebensmittel",
+   "format": "Top 3",
+   "unterformat": "Top 3",
+   "thema": "Top 3 Lebensmittel, die du zu selten isst",
+   "titel": "Top 3 Lebensmittel, die du zu selten isst",
+   "status": "offen",
+   "key": "KU|Top 3|Top 3 Lebensmittel, die du zu selten isst",
+   "quelle": "https://youtu.be/qdPwL3n4RYQ"
+  },
+  {
+   "nr": 20,
+   "runde": 3,
+   "saeule": "Wissen zum Abspeichern",
+   "format": "Spickzettel",
+   "unterformat": "Spickzettel",
+   "thema": "Spickzettel: welche Dattel wofür",
+   "titel": "Spickzettel: welche Dattel wofür",
+   "status": "offen",
+   "key": "KU|Spickzettel|Spickzettel: welche Dattel wofür",
+   "quelle": "https://youtu.be/YuoYgJenJuo"
+  },
+  {
+   "nr": 21,
+   "runde": 3,
+   "saeule": "Körper",
+   "format": "Komische Zeichen",
+   "unterformat": "Komische Zeichen",
+   "thema": "Was dein Gesicht über deine Gesundheit sagt",
+   "titel": "Was dein Gesicht über deine Gesundheit sagt",
+   "status": "offen",
+   "key": "KU|Komische Zeichen|Was dein Gesicht über deine Gesundheit sagt",
+   "quelle": "https://youtu.be/UBZx7CcYd0k"
+  },
+  {
+   "nr": 22,
+   "runde": 3,
+   "saeule": "Körper",
+   "format": "Schlaf & Routine",
+   "unterformat": "Schlaf & Routine",
+   "thema": "Warum du nachts aufwachst",
+   "titel": "Warum du nachts aufwachst",
+   "status": "offen",
+   "key": "KU|Schlaf & Routine|Warum du nachts aufwachst",
+   "quelle": "https://youtu.be/4KgXfT5NObk"
+  },
+  {
+   "nr": 23,
+   "runde": 3,
+   "saeule": "Natur & Hausmittel",
+   "format": "Hausmittel",
+   "unterformat": "Hausmittel",
+   "thema": "Zitronenwasser, aber richtig",
+   "titel": "Zitronenwasser, aber richtig",
+   "status": "offen",
+   "key": "KU|Hausmittel|Zitronenwasser, aber richtig",
+   "quelle": "https://youtu.be/ZE21WVAb8SU"
+  },
+  {
+   "nr": 24,
+   "runde": 3,
+   "saeule": "Natur & Hausmittel",
+   "format": "Echt oder Fake?",
+   "unterformat": "Echt oder Fake?",
+   "thema": "Echte Butter oder nicht?",
+   "titel": "Echte Butter oder nicht?",
+   "status": "offen",
+   "key": "KU|Echt oder Fake?|Echte Butter oder nicht?",
+   "quelle": "https://youtu.be/aGVb2fYGeTo"
+  },
+  {
+   "nr": 25,
+   "runde": 4,
+   "saeule": "Lebensmittel",
+   "format": "Unter der Lupe",
+   "unterformat": "Unter der Lupe",
+   "thema": "Das solltest du über Nelken wissen",
+   "titel": "Das solltest du über Nelken wissen",
+   "status": "offen",
+   "key": "KU|Unter der Lupe|Das solltest du über Nelken wissen",
+   "quelle": "https://youtu.be/bNQk4ZdBsWc"
+  },
+  {
+   "nr": 26,
+   "runde": 4,
+   "saeule": "Lebensmittel",
+   "format": "Ja oder Nein?",
+   "unterformat": "Ja oder Nein?",
+   "thema": "Haferflocken: worauf du achten musst",
+   "titel": "Haferflocken: worauf du achten musst",
+   "status": "offen",
+   "key": "KU|Ja oder Nein?|Haferflocken: worauf du achten musst",
+   "quelle": "https://youtu.be/n8hX-dRP7_s"
+  },
+  {
+   "nr": 27,
+   "runde": 4,
+   "saeule": "Lebensmittel",
+   "format": "Top 3",
+   "unterformat": "Top 3",
+   "thema": "Top 3 Gemüse, die du öfter essen solltest",
+   "titel": "Top 3 Gemüse, die du öfter essen solltest",
+   "status": "offen",
+   "key": "KU|Top 3|Top 3 Gemüse, die du öfter essen solltest",
+   "quelle": "https://youtu.be/VNbqL1ArX2g"
+  },
+  {
+   "nr": 28,
+   "runde": 4,
+   "saeule": "Wissen zum Abspeichern",
+   "format": "Spickzettel",
+   "unterformat": "Spickzettel",
+   "thema": "Spickzettel: Magnesium, welche Form wofür",
+   "titel": "Spickzettel: Magnesium, welche Form wofür",
+   "status": "offen",
+   "key": "KU|Spickzettel|Spickzettel: Magnesium, welche Form wofür",
+   "quelle": "https://youtu.be/TnYvzx51Ex8"
+  },
+  {
+   "nr": 29,
+   "runde": 4,
+   "saeule": "Körper",
+   "format": "Komische Zeichen",
+   "unterformat": "Komische Zeichen",
+   "thema": "Komische Zeichen, dass du gesund bist",
+   "titel": "Komische Zeichen, dass du gesund bist",
+   "status": "offen",
+   "key": "KU|Komische Zeichen|Komische Zeichen, dass du gesund bist",
+   "quelle": "https://youtu.be/JekNriPGNwM"
+  },
+  {
+   "nr": 30,
+   "runde": 4,
+   "saeule": "Körper",
+   "format": "Schlaf & Routine",
+   "unterformat": "Schlaf & Routine",
+   "thema": "Der Fehler beim Mittagsschlaf",
+   "titel": "Der Fehler beim Mittagsschlaf",
+   "status": "offen",
+   "key": "KU|Schlaf & Routine|Der Fehler beim Mittagsschlaf",
+   "quelle": "https://youtu.be/xOs65LU58CQ"
+  },
+  {
+   "nr": 31,
+   "runde": 4,
+   "saeule": "Natur & Hausmittel",
+   "format": "Hausmittel",
+   "unterformat": "Hausmittel",
+   "thema": "Wohltuender Trunk bei Husten",
+   "titel": "Wohltuender Trunk bei Husten",
+   "status": "offen",
+   "key": "KU|Hausmittel|Wohltuender Trunk bei Husten",
+   "quelle": "https://youtu.be/wLhPGW9pE_E"
+  },
+  {
+   "nr": 32,
+   "runde": 4,
+   "saeule": "Natur & Hausmittel",
+   "format": "Echt oder Fake?",
+   "unterformat": "Echt oder Fake?",
+   "thema": "Welches Salz du nicht kaufen solltest",
+   "titel": "Welches Salz du nicht kaufen solltest",
+   "status": "offen",
+   "key": "KU|Echt oder Fake?|Welches Salz du nicht kaufen solltest",
+   "quelle": "https://youtu.be/LEaFBCPQqmA"
+  },
+  {
+   "nr": 33,
+   "runde": 5,
+   "saeule": "Lebensmittel",
+   "format": "Unter der Lupe",
+   "unterformat": "Unter der Lupe",
+   "thema": "Das solltest du über Cayennepfeffer wissen",
+   "titel": "Das solltest du über Cayennepfeffer wissen",
+   "status": "offen",
+   "key": "KU|Unter der Lupe|Das solltest du über Cayennepfeffer wissen",
+   "quelle": "https://youtu.be/BG-g0vaR6Dg"
+  },
+  {
+   "nr": 34,
+   "runde": 5,
+   "saeule": "Lebensmittel",
+   "format": "Ja oder Nein?",
+   "unterformat": "Ja oder Nein?",
+   "thema": "Brot: ja oder nein?",
+   "titel": "Brot: ja oder nein?",
+   "status": "offen",
+   "key": "KU|Ja oder Nein?|Brot: ja oder nein?",
+   "quelle": "https://youtu.be/1IlHjfCrQWQ"
+  },
+  {
+   "nr": 35,
+   "runde": 5,
+   "saeule": "Lebensmittel",
+   "format": "Top 3",
+   "unterformat": "Top 3",
+   "thema": "Top 3 Lebensmittel für deine Muskeln",
+   "titel": "Top 3 Lebensmittel für deine Muskeln",
+   "status": "offen",
+   "key": "KU|Top 3|Top 3 Lebensmittel für deine Muskeln",
+   "quelle": "https://youtu.be/QZaLHi-R0H4"
+  },
+  {
+   "nr": 36,
+   "runde": 5,
+   "saeule": "Wissen zum Abspeichern",
+   "format": "Spickzettel",
+   "unterformat": "Spickzettel",
+   "thema": "Spickzettel: mach dein Wasser besser",
+   "titel": "Spickzettel: mach dein Wasser besser",
+   "status": "offen",
+   "key": "KU|Spickzettel|Spickzettel: mach dein Wasser besser",
+   "quelle": "https://youtu.be/za9Pc4kH7mc"
+  },
+  {
+   "nr": 37,
+   "runde": 5,
+   "saeule": "Körper",
+   "format": "Schlaf & Routine",
+   "unterformat": "Schlaf & Routine",
+   "thema": "Die perfekte Morgenroutine",
+   "titel": "Die perfekte Morgenroutine",
+   "status": "offen",
+   "key": "KU|Schlaf & Routine|Die perfekte Morgenroutine",
+   "quelle": "https://youtu.be/6fqYJXwI6Lw"
+  },
+  {
+   "nr": 38,
+   "runde": 5,
+   "saeule": "Natur & Hausmittel",
+   "format": "Hausmittel",
+   "unterformat": "Hausmittel",
+   "thema": "Hausmittel für eine freie Nase",
+   "titel": "Hausmittel für eine freie Nase",
+   "status": "offen",
+   "key": "KU|Hausmittel|Hausmittel für eine freie Nase",
+   "quelle": "https://youtu.be/Bp_TiREmUpk"
+  },
+  {
+   "nr": 39,
+   "runde": 6,
+   "saeule": "Lebensmittel",
+   "format": "Unter der Lupe",
+   "unterformat": "Unter der Lupe",
+   "thema": "Das solltest du über Ingwer und Zimt wissen",
+   "titel": "Das solltest du über Ingwer und Zimt wissen",
+   "status": "offen",
+   "key": "KU|Unter der Lupe|Das solltest du über Ingwer und Zimt wissen",
+   "quelle": "https://youtu.be/q22cyLqLAMs"
+  },
+  {
+   "nr": 40,
+   "runde": 6,
+   "saeule": "Lebensmittel",
+   "format": "Ja oder Nein?",
+   "unterformat": "Ja oder Nein?",
+   "thema": "Grüner Tee: ja oder nein?",
+   "titel": "Grüner Tee: ja oder nein?",
+   "status": "offen",
+   "key": "KU|Ja oder Nein?|Grüner Tee: ja oder nein?",
+   "quelle": "https://youtu.be/FBCuApyPEo0"
+  },
+  {
+   "nr": 41,
+   "runde": 6,
+   "saeule": "Lebensmittel",
+   "format": "Top 3",
+   "unterformat": "Top 3",
+   "thema": "Top 3 Getränke für den Morgen",
+   "titel": "Top 3 Getränke für den Morgen",
+   "status": "offen",
+   "key": "KU|Top 3|Top 3 Getränke für den Morgen",
+   "quelle": "https://youtu.be/4c8yvOEq_fM"
+  },
+  {
+   "nr": 42,
+   "runde": 6,
+   "saeule": "Wissen zum Abspeichern",
+   "format": "Spickzettel",
+   "unterformat": "Spickzettel",
+   "thema": "Spickzettel: Kaffee-Upgrades",
+   "titel": "Spickzettel: Kaffee-Upgrades",
+   "status": "offen",
+   "key": "KU|Spickzettel|Spickzettel: Kaffee-Upgrades",
+   "quelle": "https://youtu.be/p7QBdfP33UE"
+  },
+  {
+   "nr": 43,
+   "runde": 7,
+   "saeule": "Lebensmittel",
+   "format": "Unter der Lupe",
+   "unterformat": "Unter der Lupe",
+   "thema": "Das solltest du über Eier wissen",
+   "titel": "Das solltest du über Eier wissen",
+   "status": "offen",
+   "key": "KU|Unter der Lupe|Das solltest du über Eier wissen",
+   "quelle": "https://youtu.be/_QpIRMbAe8U"
+  },
+  {
+   "nr": 44,
+   "runde": 7,
+   "saeule": "Lebensmittel",
+   "format": "Ja oder Nein?",
+   "unterformat": "Ja oder Nein?",
+   "thema": "Kollagen: lohnt sich das?",
+   "titel": "Kollagen: lohnt sich das?",
+   "status": "offen",
+   "key": "KU|Ja oder Nein?|Kollagen: lohnt sich das?",
+   "quelle": "https://youtu.be/-tKYJDqT_1o"
+  },
+  {
+   "nr": 45,
+   "runde": 7,
+   "saeule": "Wissen zum Abspeichern",
+   "format": "Spickzettel",
+   "unterformat": "Spickzettel",
+   "thema": "Spickzettel: welche Lebensmittel für welches Organ",
+   "titel": "Spickzettel: welche Lebensmittel für welches Organ",
+   "status": "offen",
+   "key": "KU|Spickzettel|Spickzettel: welche Lebensmittel für welches Organ",
+   "quelle": "https://youtu.be/MOcNg3I1aAo"
+  },
+  {
+   "nr": 46,
+   "runde": 8,
+   "saeule": "Lebensmittel",
+   "format": "Unter der Lupe",
+   "unterformat": "Unter der Lupe",
+   "thema": "Das solltest du über Olivenöl wissen",
+   "titel": "Das solltest du über Olivenöl wissen",
+   "status": "offen",
+   "key": "KU|Unter der Lupe|Das solltest du über Olivenöl wissen",
+   "quelle": "https://youtu.be/nB5Ug_dApiU"
+  },
+  {
+   "nr": 47,
+   "runde": 8,
+   "saeule": "Lebensmittel",
+   "format": "Ja oder Nein?",
+   "unterformat": "Ja oder Nein?",
+   "thema": "Frühstück: ja oder nein?",
+   "titel": "Frühstück: ja oder nein?",
+   "status": "offen",
+   "key": "KU|Ja oder Nein?|Frühstück: ja oder nein?",
+   "quelle": "https://youtu.be/V_V82PLYFFY"
+  },
+  {
+   "nr": 48,
+   "runde": 9,
+   "saeule": "Lebensmittel",
+   "format": "Unter der Lupe",
+   "unterformat": "Unter der Lupe",
+   "thema": "Das solltest du über Honig wissen",
+   "titel": "Das solltest du über Honig wissen",
+   "status": "offen",
+   "key": "KU|Unter der Lupe|Das solltest du über Honig wissen",
+   "quelle": "https://youtu.be/ybNFSummezI"
+  },
+  {
+   "nr": 49,
+   "runde": 10,
+   "saeule": "Lebensmittel",
+   "format": "Unter der Lupe",
+   "unterformat": "Unter der Lupe",
+   "thema": "Das solltest du über Buchweizen wissen",
+   "titel": "Das solltest du über Buchweizen wissen",
+   "status": "offen",
+   "key": "KU|Unter der Lupe|Das solltest du über Buchweizen wissen",
+   "quelle": "https://youtu.be/VAcQ7SPrH_4"
+  }
+ ]
+}

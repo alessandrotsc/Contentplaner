@@ -214,8 +214,11 @@ export const neuePlattform = plattform;
 
 /* ------------------------------------------------------------------ Formate */
 
-export const formate = (projektId) =>
-  daten.formate.filter((f) => !projektId || f.projektId === projektId);
+// Kategorie: "" = Shorts (Hauptliste), sonst z.B. "YouTube" für lange Videos im selben Projekt
+const kat = (x) => x.kategorie || "";
+
+export const formate = (projektId, kategorie) =>
+  daten.formate.filter((f) => (!projektId || f.projektId === projektId) && (kategorie === undefined || kat(f) === kategorie));
 export const format = (id) => daten.formate.find((x) => x.id === id);
 
 export function formatSpeichern(entwurf) {
@@ -257,23 +260,28 @@ export function vorkommenAbsagen(id, datumISO) {
 
 /* ------------------------------------------------------------------- Reihen */
 
-export const reihe = (projektId) => daten.reihen.find((r) => r.projektId === projektId);
+export const reihe = (projektId, kategorie = "") => daten.reihen.find((r) => r.projektId === projektId && kat(r) === kategorie);
+export const kategorien = (projektId) => [...new Set(daten.reihen.filter((r) => r.projektId === projektId).map(kat))].sort();
+
+/** Plattformen, auf denen die Videos einer Reihe laufen (YouTube-Kategorie nur YouTube). */
+const reihenPlattformen = (p, r) =>
+  p.plattformen.filter((x) => !r.plattformTypen || r.plattformTypen.includes(x.typ)).map((x) => x.id);
 
 /**
  * Die naechsten n offenen Videos der Reihenfolge ab startTag in den Kalender
  * legen, proTag Stueck pro Tag. Gibt die Anzahl zurueck.
  */
-export function einplanen(projektId, n, proTag, startTag, plusTage) {
-  const r = reihe(projektId);
+export function einplanen(projektId, n, proTag, startTag, plusTage, kategorie = "") {
+  const r = reihe(projektId, kategorie);
   if (!r) return 0;
   const p = projekt(projektId);
   const offen = r.videos.filter((v) => v.status !== "fertig" && v.status !== "online" && !v.eintragId);
   let tag = startTag;
   offen.slice(0, n).forEach((v, i) => {
     if (i && i % proTag === 0) tag = plusTage(tag, 1);
-    const fm = daten.formate.find((f) => f.projektId === projektId && f.name === v.format);
+    const fm = daten.formate.find((f) => f.projektId === projektId && kat(f) === kategorie && f.name === v.format);
     const e = { id: k(), titel: `${v.format}: ${v.thema}`, projektId, formatId: fm?.id || null,
-                plattformIds: p.plattformen.map((x) => x.id), datum: tag, zeit: "",
+                plattformIds: reihenPlattformen(p, r), datum: tag, zeit: "", ...(kategorie ? { kategorie } : {}),
                 status: "idee", notiz: `Reihenfolge Nr. ${v.nr} · Säule ${v.saeule}`, reiheNr: v.nr };
     daten.eintraege.push(e);
     v.eintragId = e.id;
@@ -348,56 +356,62 @@ export function importieren(text) {
 }
 
 function projektImport(imp) {
+  const kategorie = imp.kategorie || "";
+  const mitKat = kategorie ? { kategorie } : {};
   let p = daten.projekte.find((x) => x.name.toLowerCase() === imp.projekt.toLowerCase());
   if (!p) {
-    p = { id: k(), name: imp.projekt, farbe: imp.farbe || PROJEKT_FARBEN[0], sichtbar: true,
-          plattformen: (imp.plattformen || []).map((x) => plattform(x.typ, x.handle)) };
+    p = { id: k(), name: imp.projekt, farbe: imp.farbe || PROJEKT_FARBEN[0], sichtbar: true, plattformen: [] };
     daten.projekte.push(p);
   }
+  // Fehlende Plattformen ergänzen (z.B. YouTube, wenn die Kategorie YouTube dazukommt)
+  for (const x of imp.plattformen || []) if (!p.plattformen.some((y) => y.typ === x.typ)) p.plattformen.push(plattform(x.typ, x.handle));
 
-  // Formate: importierte (quelle "import") ersetzen, eigene behalten, IDs stabil halten
-  const vorher = new Map(daten.formate.filter((f) => f.projektId === p.id).map((f) => [f.name, f]));
+  // Formate: importierte (quelle "import") dieser Kategorie ersetzen, eigene behalten, IDs stabil halten
+  const vorher = new Map(daten.formate.filter((f) => f.projektId === p.id && kat(f) === kategorie).map((f) => [f.name, f]));
   for (const f of imp.formate || []) {
     const alt = vorher.get(f.name);
-    if (alt) Object.assign(alt, { ...f, projektId: p.id, quelle: "import" });
-    else daten.formate.push({ id: k(), caption: "", ...f, projektId: p.id, quelle: "import" });
+    if (alt) Object.assign(alt, { ...f, projektId: p.id, quelle: "import", ...mitKat });
+    else daten.formate.push({ id: k(), caption: "", ...f, projektId: p.id, quelle: "import", ...mitKat });
   }
   // Importierte Formate, die es in der neuen Liste nicht mehr gibt, entfernen, solange kein Eintrag daran haengt
   if (imp.formate) {
     const namen = new Set(imp.formate.map((f) => f.name));
     const benutzt = new Set(daten.eintraege.map((e) => e.formatId).filter(Boolean));
-    daten.formate = daten.formate.filter((f) => f.projektId !== p.id || f.quelle !== "import" || namen.has(f.name) || benutzt.has(f.id));
+    daten.formate = daten.formate.filter((f) => f.projektId !== p.id || kat(f) !== kategorie || f.quelle !== "import" || namen.has(f.name) || benutzt.has(f.id));
   }
 
   // Reihenfolge: Verknuepfungen zu Kalendereintraegen ueber die Nr. erhalten
   if (imp.reihenfolge) {
-    const alt = reihe(p.id);
+    const alt = reihe(p.id, kategorie);
     const links = new Map((alt?.videos || []).filter((v) => v.eintragId).map((v) => [v.nr, v.eintragId]));
-    const r = { projektId: p.id, saeulen: imp.saeulen || [], regeln: imp.regeln || [],
+    const r = { projektId: p.id, ...mitKat, saeulen: imp.saeulen || [], regeln: imp.regeln || [],
                 stufen: imp.stufen || [], stand: imp.stand || "",
+                plattformTypen: kategorie ? (imp.plattformen || []).map((x) => x.typ) : null,
                 videos: imp.reihenfolge.map((v) => (links.has(v.nr) ? { ...v, eintragId: links.get(v.nr) } : v)) };
-    daten.reihen = daten.reihen.filter((x) => x.projektId !== p.id).concat(r);
+    daten.reihen = daten.reihen.filter((x) => x.projektId !== p.id || kat(x) !== kategorie).concat(r);
     sendeplanEintragen(p, r);
   }
   sichern();
   const n = imp.reihenfolge?.length || 0;
-  return `${imp.projekt}: ${imp.formate?.length || 0} Formate${n ? `, ${n} Videos in der Reihenfolge` : ""} übernommen.`;
+  return `${imp.projekt}${kategorie ? " " + kategorie : ""}: ${imp.formate?.length || 0} Formate${n ? `, ${n} Videos in der Reihenfolge` : ""} übernommen.`;
 }
 
 /** Videos mit Tag (Sendeplan vom Mac) als Kalendereinträge anlegen bzw. auf den neuesten Tag schieben.
  *  Verknüpft über planKey; Status und Notizen aus der App bleiben, der Tag kommt immer aus dem Plan. */
 function sendeplanEintragen(p, r) {
+  const kategorie = kat(r);
   const geplant = r.videos.filter((v) => v.datum && v.key);
   if (!geplant.length) return;
   const vorhanden = new Map(daten.eintraege.filter((e) => e.projektId === p.id && e.planKey).map((e) => [e.planKey, e]));
   const keys = new Set(geplant.map((v) => v.key));
   for (const v of geplant) {
-    const fm = daten.formate.find((f) => f.projektId === p.id && f.name === v.format);
+    const fm = daten.formate.find((f) => f.projektId === p.id && kat(f) === kategorie && f.name === v.format);
     // Bei Beziehungen sagt das Unterformat mehr ("Passt nicht zusammen"), sonst das Format ("Top 3")
     const titel = v.titel || `${v.format === "Beziehungen" ? v.unterformat : v.format}: ${v.thema}`;
     let e = vorhanden.get(v.key);
     if (!e) {
-      e = { id: k(), projektId: p.id, plattformIds: p.plattformen.map((x) => x.id), zeit: "", status: "idee", notiz: "", planKey: v.key };
+      e = { id: k(), projektId: p.id, plattformIds: reihenPlattformen(p, r), zeit: "", status: "idee", notiz: "", planKey: v.key,
+            ...(kategorie ? { kategorie } : {}) };
       daten.eintraege.push(e);
     }
     Object.assign(e, { titel, datum: v.datum, formatId: fm?.id || null, reiheNr: v.nr });
@@ -413,7 +427,8 @@ function sendeplanEintragen(p, r) {
     keys.add(v.key);
   }
   // Aus dem Plan gefallene oder schon gepostete Videos (ohne Tag) entfernen, solange sie nur automatisch angelegt sind
-  daten.eintraege = daten.eintraege.filter((e) => e.projektId !== p.id || !e.planKey || keys.has(e.planKey) || !["idee", "fertig"].includes(e.status));
+  daten.eintraege = daten.eintraege.filter((e) => e.projektId !== p.id || kat(e) !== kategorie || !e.planKey || keys.has(e.planKey)
+    || !["idee", "fertig"].includes(e.status));
 }
 
 export function allesLoeschen() {

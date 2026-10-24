@@ -77,58 +77,59 @@
      "beschreibung": "Ein Zeichen komplett: Charakter, Stärken, Schwächen, Liebe, Beruf, Geld, Schattenseite und wie man die Schwächen zum Vorteil macht.",
      "videos": [
       {
-       "titel": "Stier: Stärken, Schwächen und was niemand über dich weiß",
+       "titel": "Stier: Wer du wirklich bist (und was du keinem zeigst)",
+       "status": "fertig",
+       "id": "L01_Stier"
+      },
+      {
+       "titel": "Skorpion: Wer du wirklich bist (und was du keinem zeigst)",
        "status": "offen"
       },
       {
-       "titel": "Skorpion: Stärken, Schwächen und was niemand über dich weiß",
+       "titel": "Löwe: Wer du wirklich bist (und was du keinem zeigst)",
        "status": "offen"
       },
       {
-       "titel": "Löwe: Stärken, Schwächen und was niemand über dich weiß",
+       "titel": "Fische: Wer du wirklich bist (und was du keinem zeigst)",
        "status": "offen"
       },
       {
-       "titel": "Fische: Stärken, Schwächen und was niemand über dich weiß",
+       "titel": "Widder: Wer du wirklich bist (und was du keinem zeigst)",
        "status": "offen"
       },
       {
-       "titel": "Widder: Stärken, Schwächen und was niemand über dich weiß",
+       "titel": "Jungfrau: Wer du wirklich bist (und was du keinem zeigst)",
        "status": "offen"
       },
       {
-       "titel": "Jungfrau: Stärken, Schwächen und was niemand über dich weiß",
+       "titel": "Wassermann: Wer du wirklich bist (und was du keinem zeigst)",
        "status": "offen"
       },
       {
-       "titel": "Wassermann: Stärken, Schwächen und was niemand über dich weiß",
+       "titel": "Krebs: Wer du wirklich bist (und was du keinem zeigst)",
        "status": "offen"
       },
       {
-       "titel": "Krebs: Stärken, Schwächen und was niemand über dich weiß",
+       "titel": "Schütze: Wer du wirklich bist (und was du keinem zeigst)",
        "status": "offen"
       },
       {
-       "titel": "Schütze: Stärken, Schwächen und was niemand über dich weiß",
+       "titel": "Zwillinge: Wer du wirklich bist (und was du keinem zeigst)",
        "status": "offen"
       },
       {
-       "titel": "Zwillinge: Stärken, Schwächen und was niemand über dich weiß",
+       "titel": "Steinbock: Wer du wirklich bist (und was du keinem zeigst)",
        "status": "offen"
       },
       {
-       "titel": "Steinbock: Stärken, Schwächen und was niemand über dich weiß",
-       "status": "offen"
-      },
-      {
-       "titel": "Waage: Stärken, Schwächen und was niemand über dich weiß",
+       "titel": "Waage: Wer du wirklich bist (und was du keinem zeigst)",
        "status": "offen"
       }
      ]
     }
    ],
    "anzahl": 12,
-   "fertig": 0
+   "fertig": 1
   },
   {
    "name": "Liebe & Partnerschaft",
@@ -598,11 +599,12 @@
    "saeule": "Sternzeichen",
    "format": "Sternzeichen-Porträt",
    "unterformat": "Short: Stier",
-   "thema": "Stier: Stärken, Schwächen und was niemand über dich weiß",
-   "titel": "Stier: Stärken, Schwächen und was niemand über dich weiß",
-   "status": "offen",
+   "thema": "Stier: Wer du wirklich bist (und was du keinem zeigst)",
+   "titel": "Stier: Wer du wirklich bist (und was du keinem zeigst)",
+   "status": "fertig",
    "datum": "2026-10-26",
-   "key": "YT|Sternzeichen-Porträt|Stier: Stärken, Schwächen und was niemand über dich weiß"
+   "key": "YT|Sternzeichen-Porträt|Stier: Wer du wirklich bist (und was du keinem zeigst)",
+   "id": "L01_Stier"
   },
   {
    "nr": 2,
@@ -682,11 +684,11 @@
    "saeule": "Sternzeichen",
    "format": "Sternzeichen-Porträt",
    "unterformat": "Short: Skorpion",
-   "thema": "Skorpion: Stärken, Schwächen und was niemand über dich weiß",
-   "titel": "Skorpion: Stärken, Schwächen und was niemand über dich weiß",
+   "thema": "Skorpion: Wer du wirklich bist (und was du keinem zeigst)",
+   "titel": "Skorpion: Wer du wirklich bist (und was du keinem zeigst)",
    "status": "offen",
    "datum": "2026-11-02",
-   "key": "YT|Sternzeichen-Porträt|Skorpion: Stärken, Schwächen und was niemand über dich weiß"
+   "key": "YT|Sternzeichen-Porträt|Skorpion: Wer du wirklich bist (und was du keinem zeigst)"
   },
   {
    "nr": 9,
@@ -766,11 +768,11 @@
    "saeule": "Sternzeichen",
    "format": "Sternzeichen-Porträt",
    "unterformat": "Short: Löwe",
-   "thema": "Löwe: Stärken, Schwächen und was niemand über dich weiß",
-   "titel": "Löwe: Stärken, Schwächen und was niemand über dich weiß",
+   "thema": "Löwe: Wer du wirklich bist (und was du keinem zeigst)",
+   "titel": "Löwe: Wer du wirklich bist (und was du keinem zeigst)",
    "status": "offen",
    "datum": "2026-11-09",
-   "key": "YT|Sternzeichen-Porträt|Löwe: Stärken, Schwächen und was niemand über dich weiß"
+   "key": "YT|Sternzeichen-Porträt|Löwe: Wer du wirklich bist (und was du keinem zeigst)"
   },
   {
    "nr": 16,
@@ -850,11 +852,11 @@
    "saeule": "Sternzeichen",
    "format": "Sternzeichen-Porträt",
    "unterformat": "Short: Fische",
-   "thema": "Fische: Stärken, Schwächen und was niemand über dich weiß",
-   "titel": "Fische: Stärken, Schwächen und was niemand über dich weiß",
+   "thema": "Fische: Wer du wirklich bist (und was du keinem zeigst)",
+   "titel": "Fische: Wer du wirklich bist (und was du keinem zeigst)",
    "status": "offen",
    "datum": "2026-11-16",
-   "key": "YT|Sternzeichen-Porträt|Fische: Stärken, Schwächen und was niemand über dich weiß"
+   "key": "YT|Sternzeichen-Porträt|Fische: Wer du wirklich bist (und was du keinem zeigst)"
   },
   {
    "nr": 23,
@@ -934,11 +936,11 @@
    "saeule": "Sternzeichen",
    "format": "Sternzeichen-Porträt",
    "unterformat": "Short: Widder",
-   "thema": "Widder: Stärken, Schwächen und was niemand über dich weiß",
-   "titel": "Widder: Stärken, Schwächen und was niemand über dich weiß",
+   "thema": "Widder: Wer du wirklich bist (und was du keinem zeigst)",
+   "titel": "Widder: Wer du wirklich bist (und was du keinem zeigst)",
    "status": "offen",
    "datum": "2026-11-23",
-   "key": "YT|Sternzeichen-Porträt|Widder: Stärken, Schwächen und was niemand über dich weiß"
+   "key": "YT|Sternzeichen-Porträt|Widder: Wer du wirklich bist (und was du keinem zeigst)"
   },
   {
    "nr": 30,
@@ -1018,11 +1020,11 @@
    "saeule": "Sternzeichen",
    "format": "Sternzeichen-Porträt",
    "unterformat": "Short: Jungfrau",
-   "thema": "Jungfrau: Stärken, Schwächen und was niemand über dich weiß",
-   "titel": "Jungfrau: Stärken, Schwächen und was niemand über dich weiß",
+   "thema": "Jungfrau: Wer du wirklich bist (und was du keinem zeigst)",
+   "titel": "Jungfrau: Wer du wirklich bist (und was du keinem zeigst)",
    "status": "offen",
    "datum": "2026-11-30",
-   "key": "YT|Sternzeichen-Porträt|Jungfrau: Stärken, Schwächen und was niemand über dich weiß"
+   "key": "YT|Sternzeichen-Porträt|Jungfrau: Wer du wirklich bist (und was du keinem zeigst)"
   },
   {
    "nr": 37,
@@ -1102,11 +1104,11 @@
    "saeule": "Sternzeichen",
    "format": "Sternzeichen-Porträt",
    "unterformat": "Short: Wassermann",
-   "thema": "Wassermann: Stärken, Schwächen und was niemand über dich weiß",
-   "titel": "Wassermann: Stärken, Schwächen und was niemand über dich weiß",
+   "thema": "Wassermann: Wer du wirklich bist (und was du keinem zeigst)",
+   "titel": "Wassermann: Wer du wirklich bist (und was du keinem zeigst)",
    "status": "offen",
    "datum": "2026-12-07",
-   "key": "YT|Sternzeichen-Porträt|Wassermann: Stärken, Schwächen und was niemand über dich weiß"
+   "key": "YT|Sternzeichen-Porträt|Wassermann: Wer du wirklich bist (und was du keinem zeigst)"
   },
   {
    "nr": 44,
@@ -1186,11 +1188,11 @@
    "saeule": "Sternzeichen",
    "format": "Sternzeichen-Porträt",
    "unterformat": "Short: Krebs",
-   "thema": "Krebs: Stärken, Schwächen und was niemand über dich weiß",
-   "titel": "Krebs: Stärken, Schwächen und was niemand über dich weiß",
+   "thema": "Krebs: Wer du wirklich bist (und was du keinem zeigst)",
+   "titel": "Krebs: Wer du wirklich bist (und was du keinem zeigst)",
    "status": "offen",
    "datum": "2026-12-14",
-   "key": "YT|Sternzeichen-Porträt|Krebs: Stärken, Schwächen und was niemand über dich weiß"
+   "key": "YT|Sternzeichen-Porträt|Krebs: Wer du wirklich bist (und was du keinem zeigst)"
   },
   {
    "nr": 51,
@@ -1270,11 +1272,11 @@
    "saeule": "Sternzeichen",
    "format": "Sternzeichen-Porträt",
    "unterformat": "Short: Schütze",
-   "thema": "Schütze: Stärken, Schwächen und was niemand über dich weiß",
-   "titel": "Schütze: Stärken, Schwächen und was niemand über dich weiß",
+   "thema": "Schütze: Wer du wirklich bist (und was du keinem zeigst)",
+   "titel": "Schütze: Wer du wirklich bist (und was du keinem zeigst)",
    "status": "offen",
    "datum": "2026-12-21",
-   "key": "YT|Sternzeichen-Porträt|Schütze: Stärken, Schwächen und was niemand über dich weiß"
+   "key": "YT|Sternzeichen-Porträt|Schütze: Wer du wirklich bist (und was du keinem zeigst)"
   },
   {
    "nr": 58,
@@ -1354,11 +1356,11 @@
    "saeule": "Sternzeichen",
    "format": "Sternzeichen-Porträt",
    "unterformat": "Short: Zwillinge",
-   "thema": "Zwillinge: Stärken, Schwächen und was niemand über dich weiß",
-   "titel": "Zwillinge: Stärken, Schwächen und was niemand über dich weiß",
+   "thema": "Zwillinge: Wer du wirklich bist (und was du keinem zeigst)",
+   "titel": "Zwillinge: Wer du wirklich bist (und was du keinem zeigst)",
    "status": "offen",
    "datum": "2026-12-28",
-   "key": "YT|Sternzeichen-Porträt|Zwillinge: Stärken, Schwächen und was niemand über dich weiß"
+   "key": "YT|Sternzeichen-Porträt|Zwillinge: Wer du wirklich bist (und was du keinem zeigst)"
   },
   {
    "nr": 65,
@@ -1438,11 +1440,11 @@
    "saeule": "Sternzeichen",
    "format": "Sternzeichen-Porträt",
    "unterformat": "Short: Steinbock",
-   "thema": "Steinbock: Stärken, Schwächen und was niemand über dich weiß",
-   "titel": "Steinbock: Stärken, Schwächen und was niemand über dich weiß",
+   "thema": "Steinbock: Wer du wirklich bist (und was du keinem zeigst)",
+   "titel": "Steinbock: Wer du wirklich bist (und was du keinem zeigst)",
    "status": "offen",
    "datum": "2027-01-04",
-   "key": "YT|Sternzeichen-Porträt|Steinbock: Stärken, Schwächen und was niemand über dich weiß"
+   "key": "YT|Sternzeichen-Porträt|Steinbock: Wer du wirklich bist (und was du keinem zeigst)"
   },
   {
    "nr": 72,
@@ -1522,11 +1524,11 @@
    "saeule": "Sternzeichen",
    "format": "Sternzeichen-Porträt",
    "unterformat": "Short: Waage",
-   "thema": "Waage: Stärken, Schwächen und was niemand über dich weiß",
-   "titel": "Waage: Stärken, Schwächen und was niemand über dich weiß",
+   "thema": "Waage: Wer du wirklich bist (und was du keinem zeigst)",
+   "titel": "Waage: Wer du wirklich bist (und was du keinem zeigst)",
    "status": "offen",
    "datum": "2027-01-11",
-   "key": "YT|Sternzeichen-Porträt|Waage: Stärken, Schwächen und was niemand über dich weiß"
+   "key": "YT|Sternzeichen-Porträt|Waage: Wer du wirklich bist (und was du keinem zeigst)"
   },
   {
    "nr": 79,
@@ -1606,11 +1608,12 @@
    "saeule": "Sternzeichen",
    "format": "Sternzeichen-Porträt",
    "unterformat": "Short: Stier",
-   "thema": "Stier: Stärken, Schwächen und was niemand über dich weiß",
-   "titel": "Stier: Stärken, Schwächen und was niemand über dich weiß",
-   "status": "offen",
+   "thema": "Stier: Wer du wirklich bist (und was du keinem zeigst)",
+   "titel": "Stier: Wer du wirklich bist (und was du keinem zeigst)",
+   "status": "fertig",
    "datum": "2027-01-18",
-   "key": "YT|Sternzeichen-Porträt|Stier: Stärken, Schwächen und was niemand über dich weiß"
+   "key": "YT|Sternzeichen-Porträt|Stier: Wer du wirklich bist (und was du keinem zeigst)",
+   "id": "L01_Stier"
   },
   {
    "nr": 86,
@@ -1690,11 +1693,11 @@
    "saeule": "Sternzeichen",
    "format": "Sternzeichen-Porträt",
    "unterformat": "Short: Skorpion",
-   "thema": "Skorpion: Stärken, Schwächen und was niemand über dich weiß",
-   "titel": "Skorpion: Stärken, Schwächen und was niemand über dich weiß",
+   "thema": "Skorpion: Wer du wirklich bist (und was du keinem zeigst)",
+   "titel": "Skorpion: Wer du wirklich bist (und was du keinem zeigst)",
    "status": "offen",
    "datum": "2027-01-25",
-   "key": "YT|Sternzeichen-Porträt|Skorpion: Stärken, Schwächen und was niemand über dich weiß"
+   "key": "YT|Sternzeichen-Porträt|Skorpion: Wer du wirklich bist (und was du keinem zeigst)"
   },
   {
    "nr": 93,
@@ -1774,11 +1777,11 @@
    "saeule": "Sternzeichen",
    "format": "Sternzeichen-Porträt",
    "unterformat": "Short: Löwe",
-   "thema": "Löwe: Stärken, Schwächen und was niemand über dich weiß",
-   "titel": "Löwe: Stärken, Schwächen und was niemand über dich weiß",
+   "thema": "Löwe: Wer du wirklich bist (und was du keinem zeigst)",
+   "titel": "Löwe: Wer du wirklich bist (und was du keinem zeigst)",
    "status": "offen",
    "datum": "2027-02-01",
-   "key": "YT|Sternzeichen-Porträt|Löwe: Stärken, Schwächen und was niemand über dich weiß"
+   "key": "YT|Sternzeichen-Porträt|Löwe: Wer du wirklich bist (und was du keinem zeigst)"
   },
   {
    "nr": 100,
@@ -1858,11 +1861,11 @@
    "saeule": "Sternzeichen",
    "format": "Sternzeichen-Porträt",
    "unterformat": "Short: Fische",
-   "thema": "Fische: Stärken, Schwächen und was niemand über dich weiß",
-   "titel": "Fische: Stärken, Schwächen und was niemand über dich weiß",
+   "thema": "Fische: Wer du wirklich bist (und was du keinem zeigst)",
+   "titel": "Fische: Wer du wirklich bist (und was du keinem zeigst)",
    "status": "offen",
    "datum": "2027-02-08",
-   "key": "YT|Sternzeichen-Porträt|Fische: Stärken, Schwächen und was niemand über dich weiß"
+   "key": "YT|Sternzeichen-Porträt|Fische: Wer du wirklich bist (und was du keinem zeigst)"
   },
   {
    "nr": 107,
@@ -1942,11 +1945,11 @@
    "saeule": "Sternzeichen",
    "format": "Sternzeichen-Porträt",
    "unterformat": "Short: Widder",
-   "thema": "Widder: Stärken, Schwächen und was niemand über dich weiß",
-   "titel": "Widder: Stärken, Schwächen und was niemand über dich weiß",
+   "thema": "Widder: Wer du wirklich bist (und was du keinem zeigst)",
+   "titel": "Widder: Wer du wirklich bist (und was du keinem zeigst)",
    "status": "offen",
    "datum": "2027-02-15",
-   "key": "YT|Sternzeichen-Porträt|Widder: Stärken, Schwächen und was niemand über dich weiß"
+   "key": "YT|Sternzeichen-Porträt|Widder: Wer du wirklich bist (und was du keinem zeigst)"
   },
   {
    "nr": 114,
@@ -2026,11 +2029,11 @@
    "saeule": "Sternzeichen",
    "format": "Sternzeichen-Porträt",
    "unterformat": "Short: Jungfrau",
-   "thema": "Jungfrau: Stärken, Schwächen und was niemand über dich weiß",
-   "titel": "Jungfrau: Stärken, Schwächen und was niemand über dich weiß",
+   "thema": "Jungfrau: Wer du wirklich bist (und was du keinem zeigst)",
+   "titel": "Jungfrau: Wer du wirklich bist (und was du keinem zeigst)",
    "status": "offen",
    "datum": "2027-02-22",
-   "key": "YT|Sternzeichen-Porträt|Jungfrau: Stärken, Schwächen und was niemand über dich weiß"
+   "key": "YT|Sternzeichen-Porträt|Jungfrau: Wer du wirklich bist (und was du keinem zeigst)"
   },
   {
    "nr": 121,
@@ -2110,11 +2113,11 @@
    "saeule": "Sternzeichen",
    "format": "Sternzeichen-Porträt",
    "unterformat": "Short: Wassermann",
-   "thema": "Wassermann: Stärken, Schwächen und was niemand über dich weiß",
-   "titel": "Wassermann: Stärken, Schwächen und was niemand über dich weiß",
+   "thema": "Wassermann: Wer du wirklich bist (und was du keinem zeigst)",
+   "titel": "Wassermann: Wer du wirklich bist (und was du keinem zeigst)",
    "status": "offen",
    "datum": "2027-03-01",
-   "key": "YT|Sternzeichen-Porträt|Wassermann: Stärken, Schwächen und was niemand über dich weiß"
+   "key": "YT|Sternzeichen-Porträt|Wassermann: Wer du wirklich bist (und was du keinem zeigst)"
   },
   {
    "nr": 128,
@@ -2194,11 +2197,11 @@
    "saeule": "Sternzeichen",
    "format": "Sternzeichen-Porträt",
    "unterformat": "Short: Krebs",
-   "thema": "Krebs: Stärken, Schwächen und was niemand über dich weiß",
-   "titel": "Krebs: Stärken, Schwächen und was niemand über dich weiß",
+   "thema": "Krebs: Wer du wirklich bist (und was du keinem zeigst)",
+   "titel": "Krebs: Wer du wirklich bist (und was du keinem zeigst)",
    "status": "offen",
    "datum": "2027-03-08",
-   "key": "YT|Sternzeichen-Porträt|Krebs: Stärken, Schwächen und was niemand über dich weiß"
+   "key": "YT|Sternzeichen-Porträt|Krebs: Wer du wirklich bist (und was du keinem zeigst)"
   },
   {
    "nr": 135,
@@ -2278,11 +2281,11 @@
    "saeule": "Sternzeichen",
    "format": "Sternzeichen-Porträt",
    "unterformat": "Short: Schütze",
-   "thema": "Schütze: Stärken, Schwächen und was niemand über dich weiß",
-   "titel": "Schütze: Stärken, Schwächen und was niemand über dich weiß",
+   "thema": "Schütze: Wer du wirklich bist (und was du keinem zeigst)",
+   "titel": "Schütze: Wer du wirklich bist (und was du keinem zeigst)",
    "status": "offen",
    "datum": "2027-03-15",
-   "key": "YT|Sternzeichen-Porträt|Schütze: Stärken, Schwächen und was niemand über dich weiß"
+   "key": "YT|Sternzeichen-Porträt|Schütze: Wer du wirklich bist (und was du keinem zeigst)"
   },
   {
    "nr": 142,
@@ -2362,11 +2365,11 @@
    "saeule": "Sternzeichen",
    "format": "Sternzeichen-Porträt",
    "unterformat": "Short: Zwillinge",
-   "thema": "Zwillinge: Stärken, Schwächen und was niemand über dich weiß",
-   "titel": "Zwillinge: Stärken, Schwächen und was niemand über dich weiß",
+   "thema": "Zwillinge: Wer du wirklich bist (und was du keinem zeigst)",
+   "titel": "Zwillinge: Wer du wirklich bist (und was du keinem zeigst)",
    "status": "offen",
    "datum": "2027-03-22",
-   "key": "YT|Sternzeichen-Porträt|Zwillinge: Stärken, Schwächen und was niemand über dich weiß"
+   "key": "YT|Sternzeichen-Porträt|Zwillinge: Wer du wirklich bist (und was du keinem zeigst)"
   },
   {
    "nr": 149,
@@ -2446,11 +2449,11 @@
    "saeule": "Sternzeichen",
    "format": "Sternzeichen-Porträt",
    "unterformat": "Short: Steinbock",
-   "thema": "Steinbock: Stärken, Schwächen und was niemand über dich weiß",
-   "titel": "Steinbock: Stärken, Schwächen und was niemand über dich weiß",
+   "thema": "Steinbock: Wer du wirklich bist (und was du keinem zeigst)",
+   "titel": "Steinbock: Wer du wirklich bist (und was du keinem zeigst)",
    "status": "offen",
    "datum": "2027-03-29",
-   "key": "YT|Sternzeichen-Porträt|Steinbock: Stärken, Schwächen und was niemand über dich weiß"
+   "key": "YT|Sternzeichen-Porträt|Steinbock: Wer du wirklich bist (und was du keinem zeigst)"
   },
   {
    "nr": 156,
@@ -2530,11 +2533,11 @@
    "saeule": "Sternzeichen",
    "format": "Sternzeichen-Porträt",
    "unterformat": "Short: Waage",
-   "thema": "Waage: Stärken, Schwächen und was niemand über dich weiß",
-   "titel": "Waage: Stärken, Schwächen und was niemand über dich weiß",
+   "thema": "Waage: Wer du wirklich bist (und was du keinem zeigst)",
+   "titel": "Waage: Wer du wirklich bist (und was du keinem zeigst)",
    "status": "offen",
    "datum": "2027-04-05",
-   "key": "YT|Sternzeichen-Porträt|Waage: Stärken, Schwächen und was niemand über dich weiß"
+   "key": "YT|Sternzeichen-Porträt|Waage: Wer du wirklich bist (und was du keinem zeigst)"
   },
   {
    "nr": 163,
@@ -2614,11 +2617,12 @@
    "saeule": "Sternzeichen",
    "format": "Sternzeichen-Porträt",
    "unterformat": "Short: Stier",
-   "thema": "Stier: Stärken, Schwächen und was niemand über dich weiß",
-   "titel": "Stier: Stärken, Schwächen und was niemand über dich weiß",
-   "status": "offen",
+   "thema": "Stier: Wer du wirklich bist (und was du keinem zeigst)",
+   "titel": "Stier: Wer du wirklich bist (und was du keinem zeigst)",
+   "status": "fertig",
    "datum": "2027-04-12",
-   "key": "YT|Sternzeichen-Porträt|Stier: Stärken, Schwächen und was niemand über dich weiß"
+   "key": "YT|Sternzeichen-Porträt|Stier: Wer du wirklich bist (und was du keinem zeigst)",
+   "id": "L01_Stier"
   },
   {
    "nr": 170,
@@ -2698,11 +2702,11 @@
    "saeule": "Sternzeichen",
    "format": "Sternzeichen-Porträt",
    "unterformat": "Short: Skorpion",
-   "thema": "Skorpion: Stärken, Schwächen und was niemand über dich weiß",
-   "titel": "Skorpion: Stärken, Schwächen und was niemand über dich weiß",
+   "thema": "Skorpion: Wer du wirklich bist (und was du keinem zeigst)",
+   "titel": "Skorpion: Wer du wirklich bist (und was du keinem zeigst)",
    "status": "offen",
    "datum": "2027-04-19",
-   "key": "YT|Sternzeichen-Porträt|Skorpion: Stärken, Schwächen und was niemand über dich weiß"
+   "key": "YT|Sternzeichen-Porträt|Skorpion: Wer du wirklich bist (und was du keinem zeigst)"
   },
   {
    "nr": 177,

@@ -77,52 +77,52 @@
      "beschreibung": "Ein Zeichen komplett: Charakter, Stärken, Schwächen, Liebe, Beruf, Geld, Schattenseite und wie man die Schwächen zum Vorteil macht.",
      "videos": [
       {
-       "titel": "Stier: Wer du wirklich bist (und was du keinem zeigst)",
+       "titel": "Stier: Wer du wirklich bist",
        "status": "fertig",
        "id": "L01_Stier"
       },
       {
-       "titel": "Skorpion: Wer du wirklich bist (und was du keinem zeigst)",
+       "titel": "Skorpion: Wer du wirklich bist",
        "status": "offen"
       },
       {
-       "titel": "Löwe: Wer du wirklich bist (und was du keinem zeigst)",
+       "titel": "Löwe: Wer du wirklich bist",
        "status": "offen"
       },
       {
-       "titel": "Fische: Wer du wirklich bist (und was du keinem zeigst)",
+       "titel": "Fische: Wer du wirklich bist",
        "status": "offen"
       },
       {
-       "titel": "Widder: Wer du wirklich bist (und was du keinem zeigst)",
+       "titel": "Widder: Wer du wirklich bist",
        "status": "offen"
       },
       {
-       "titel": "Jungfrau: Wer du wirklich bist (und was du keinem zeigst)",
+       "titel": "Jungfrau: Wer du wirklich bist",
        "status": "offen"
       },
       {
-       "titel": "Wassermann: Wer du wirklich bist (und was du keinem zeigst)",
+       "titel": "Wassermann: Wer du wirklich bist",
        "status": "offen"
       },
       {
-       "titel": "Krebs: Wer du wirklich bist (und was du keinem zeigst)",
+       "titel": "Krebs: Wer du wirklich bist",
        "status": "offen"
       },
       {
-       "titel": "Schütze: Wer du wirklich bist (und was du keinem zeigst)",
+       "titel": "Schütze: Wer du wirklich bist",
        "status": "offen"
       },
       {
-       "titel": "Zwillinge: Wer du wirklich bist (und was du keinem zeigst)",
+       "titel": "Zwillinge: Wer du wirklich bist",
        "status": "offen"
       },
       {
-       "titel": "Steinbock: Wer du wirklich bist (und was du keinem zeigst)",
+       "titel": "Steinbock: Wer du wirklich bist",
        "status": "offen"
       },
       {
-       "titel": "Waage: Wer du wirklich bist (und was du keinem zeigst)",
+       "titel": "Waage: Wer du wirklich bist",
        "status": "offen"
       }
      ]
@@ -599,11 +599,11 @@
    "saeule": "Sternzeichen",
    "format": "Sternzeichen-Porträt",
    "unterformat": "Short: Stier",
-   "thema": "Stier: Wer du wirklich bist (und was du keinem zeigst)",
-   "titel": "Stier: Wer du wirklich bist (und was du keinem zeigst)",
+   "thema": "Stier: Wer du wirklich bist",
+   "titel": "Stier: Wer du wirklich bist",
    "status": "fertig",
    "datum": "2026-10-26",
-   "key": "YT|Sternzeichen-Porträt|Stier: Wer du wirklich bist (und was du keinem zeigst)",
+   "key": "YT|Sternzeichen-Porträt|Stier: Wer du wirklich bist",
    "id": "L01_Stier"
   },
   {
@@ -684,11 +684,11 @@
    "saeule": "Sternzeichen",
    "format": "Sternzeichen-Porträt",
    "unterformat": "Short: Skorpion",
-   "thema": "Skorpion: Wer du wirklich bist (und was du keinem zeigst)",
-   "titel": "Skorpion: Wer du wirklich bist (und was du keinem zeigst)",
+   "thema": "Skorpion: Wer du wirklich bist",
+   "titel": "Skorpion: Wer du wirklich bist",
    "status": "offen",
    "datum": "2026-11-02",
-   "key": "YT|Sternzeichen-Porträt|Skorpion: Wer du wirklich bist (und was du keinem zeigst)"
+   "key": "YT|Sternzeichen-Porträt|Skorpion: Wer du wirklich bist"
   },
   {
    "nr": 9,
@@ -768,11 +768,11 @@
    "saeule": "Sternzeichen",
    "format": "Sternzeichen-Porträt",
    "unterformat": "Short: Löwe",
-   "thema": "Löwe: Wer du wirklich bist (und was du keinem zeigst)",
-   "titel": "Löwe: Wer du wirklich bist (und was du keinem zeigst)",
+   "thema": "Löwe: Wer du wirklich bist",
+   "titel": "Löwe: Wer du wirklich bist",
    "status": "offen",
    "datum": "2026-11-09",
-   "key": "YT|Sternzeichen-Porträt|Löwe: Wer du wirklich bist (und was du keinem zeigst)"
+   "key": "YT|Sternzeichen-Porträt|Löwe: Wer du wirklich bist"
   },
   {
    "nr": 16,
@@ -852,11 +852,11 @@
    "saeule": "Sternzeichen",
    "format": "Sternzeichen-Porträt",
    "unterformat": "Short: Fische",
-   "thema": "Fische: Wer du wirklich bist (und was du keinem zeigst)",
-   "titel": "Fische: Wer du wirklich bist (und was du keinem zeigst)",
+   "thema": "Fische: Wer du wirklich bist",
+   "titel": "Fische: Wer du wirklich bist",
    "status": "offen",
    "datum": "2026-11-16",
-   "key": "YT|Sternzeichen-Porträt|Fische: Wer du wirklich bist (und was du keinem zeigst)"
+   "key": "YT|Sternzeichen-Porträt|Fische: Wer du wirklich bist"
   },
   {
    "nr": 23,
@@ -936,11 +936,11 @@
    "saeule": "Sternzeichen",
    "format": "Sternzeichen-Porträt",
    "unterformat": "Short: Widder",
-   "thema": "Widder: Wer du wirklich bist (und was du keinem zeigst)",
-   "titel": "Widder: Wer du wirklich bist (und was du keinem zeigst)",
+   "thema": "Widder: Wer du wirklich bist",
+   "titel": "Widder: Wer du wirklich bist",
    "status": "offen",
    "datum": "2026-11-23",
-   "key": "YT|Sternzeichen-Porträt|Widder: Wer du wirklich bist (und was du keinem zeigst)"
+   "key": "YT|Sternzeichen-Porträt|Widder: Wer du wirklich bist"
   },
   {
    "nr": 30,
@@ -1020,11 +1020,11 @@
    "saeule": "Sternzeichen",
    "format": "Sternzeichen-Porträt",
    "unterformat": "Short: Jungfrau",
-   "thema": "Jungfrau: Wer du wirklich bist (und was du keinem zeigst)",
-   "titel": "Jungfrau: Wer du wirklich bist (und was du keinem zeigst)",
+   "thema": "Jungfrau: Wer du wirklich bist",
+   "titel": "Jungfrau: Wer du wirklich bist",
    "status": "offen",
    "datum": "2026-11-30",
-   "key": "YT|Sternzeichen-Porträt|Jungfrau: Wer du wirklich bist (und was du keinem zeigst)"
+   "key": "YT|Sternzeichen-Porträt|Jungfrau: Wer du wirklich bist"
   },
   {
    "nr": 37,
@@ -1104,11 +1104,11 @@
    "saeule": "Sternzeichen",
    "format": "Sternzeichen-Porträt",
    "unterformat": "Short: Wassermann",
-   "thema": "Wassermann: Wer du wirklich bist (und was du keinem zeigst)",
-   "titel": "Wassermann: Wer du wirklich bist (und was du keinem zeigst)",
+   "thema": "Wassermann: Wer du wirklich bist",
+   "titel": "Wassermann: Wer du wirklich bist",
    "status": "offen",
    "datum": "2026-12-07",
-   "key": "YT|Sternzeichen-Porträt|Wassermann: Wer du wirklich bist (und was du keinem zeigst)"
+   "key": "YT|Sternzeichen-Porträt|Wassermann: Wer du wirklich bist"
   },
   {
    "nr": 44,
@@ -1188,11 +1188,11 @@
    "saeule": "Sternzeichen",
    "format": "Sternzeichen-Porträt",
    "unterformat": "Short: Krebs",
-   "thema": "Krebs: Wer du wirklich bist (und was du keinem zeigst)",
-   "titel": "Krebs: Wer du wirklich bist (und was du keinem zeigst)",
+   "thema": "Krebs: Wer du wirklich bist",
+   "titel": "Krebs: Wer du wirklich bist",
    "status": "offen",
    "datum": "2026-12-14",
-   "key": "YT|Sternzeichen-Porträt|Krebs: Wer du wirklich bist (und was du keinem zeigst)"
+   "key": "YT|Sternzeichen-Porträt|Krebs: Wer du wirklich bist"
   },
   {
    "nr": 51,
@@ -1272,11 +1272,11 @@
    "saeule": "Sternzeichen",
    "format": "Sternzeichen-Porträt",
    "unterformat": "Short: Schütze",
-   "thema": "Schütze: Wer du wirklich bist (und was du keinem zeigst)",
-   "titel": "Schütze: Wer du wirklich bist (und was du keinem zeigst)",
+   "thema": "Schütze: Wer du wirklich bist",
+   "titel": "Schütze: Wer du wirklich bist",
    "status": "offen",
    "datum": "2026-12-21",
-   "key": "YT|Sternzeichen-Porträt|Schütze: Wer du wirklich bist (und was du keinem zeigst)"
+   "key": "YT|Sternzeichen-Porträt|Schütze: Wer du wirklich bist"
   },
   {
    "nr": 58,
@@ -1356,11 +1356,11 @@
    "saeule": "Sternzeichen",
    "format": "Sternzeichen-Porträt",
    "unterformat": "Short: Zwillinge",
-   "thema": "Zwillinge: Wer du wirklich bist (und was du keinem zeigst)",
-   "titel": "Zwillinge: Wer du wirklich bist (und was du keinem zeigst)",
+   "thema": "Zwillinge: Wer du wirklich bist",
+   "titel": "Zwillinge: Wer du wirklich bist",
    "status": "offen",
    "datum": "2026-12-28",
-   "key": "YT|Sternzeichen-Porträt|Zwillinge: Wer du wirklich bist (und was du keinem zeigst)"
+   "key": "YT|Sternzeichen-Porträt|Zwillinge: Wer du wirklich bist"
   },
   {
    "nr": 65,
@@ -1440,11 +1440,11 @@
    "saeule": "Sternzeichen",
    "format": "Sternzeichen-Porträt",
    "unterformat": "Short: Steinbock",
-   "thema": "Steinbock: Wer du wirklich bist (und was du keinem zeigst)",
-   "titel": "Steinbock: Wer du wirklich bist (und was du keinem zeigst)",
+   "thema": "Steinbock: Wer du wirklich bist",
+   "titel": "Steinbock: Wer du wirklich bist",
    "status": "offen",
    "datum": "2027-01-04",
-   "key": "YT|Sternzeichen-Porträt|Steinbock: Wer du wirklich bist (und was du keinem zeigst)"
+   "key": "YT|Sternzeichen-Porträt|Steinbock: Wer du wirklich bist"
   },
   {
    "nr": 72,
@@ -1524,11 +1524,11 @@
    "saeule": "Sternzeichen",
    "format": "Sternzeichen-Porträt",
    "unterformat": "Short: Waage",
-   "thema": "Waage: Wer du wirklich bist (und was du keinem zeigst)",
-   "titel": "Waage: Wer du wirklich bist (und was du keinem zeigst)",
+   "thema": "Waage: Wer du wirklich bist",
+   "titel": "Waage: Wer du wirklich bist",
    "status": "offen",
    "datum": "2027-01-11",
-   "key": "YT|Sternzeichen-Porträt|Waage: Wer du wirklich bist (und was du keinem zeigst)"
+   "key": "YT|Sternzeichen-Porträt|Waage: Wer du wirklich bist"
   },
   {
    "nr": 79,
@@ -1608,11 +1608,11 @@
    "saeule": "Sternzeichen",
    "format": "Sternzeichen-Porträt",
    "unterformat": "Short: Stier",
-   "thema": "Stier: Wer du wirklich bist (und was du keinem zeigst)",
-   "titel": "Stier: Wer du wirklich bist (und was du keinem zeigst)",
+   "thema": "Stier: Wer du wirklich bist",
+   "titel": "Stier: Wer du wirklich bist",
    "status": "fertig",
    "datum": "2027-01-18",
-   "key": "YT|Sternzeichen-Porträt|Stier: Wer du wirklich bist (und was du keinem zeigst)",
+   "key": "YT|Sternzeichen-Porträt|Stier: Wer du wirklich bist",
    "id": "L01_Stier"
   },
   {
@@ -1693,11 +1693,11 @@
    "saeule": "Sternzeichen",
    "format": "Sternzeichen-Porträt",
    "unterformat": "Short: Skorpion",
-   "thema": "Skorpion: Wer du wirklich bist (und was du keinem zeigst)",
-   "titel": "Skorpion: Wer du wirklich bist (und was du keinem zeigst)",
+   "thema": "Skorpion: Wer du wirklich bist",
+   "titel": "Skorpion: Wer du wirklich bist",
    "status": "offen",
    "datum": "2027-01-25",
-   "key": "YT|Sternzeichen-Porträt|Skorpion: Wer du wirklich bist (und was du keinem zeigst)"
+   "key": "YT|Sternzeichen-Porträt|Skorpion: Wer du wirklich bist"
   },
   {
    "nr": 93,
@@ -1777,11 +1777,11 @@
    "saeule": "Sternzeichen",
    "format": "Sternzeichen-Porträt",
    "unterformat": "Short: Löwe",
-   "thema": "Löwe: Wer du wirklich bist (und was du keinem zeigst)",
-   "titel": "Löwe: Wer du wirklich bist (und was du keinem zeigst)",
+   "thema": "Löwe: Wer du wirklich bist",
+   "titel": "Löwe: Wer du wirklich bist",
    "status": "offen",
    "datum": "2027-02-01",
-   "key": "YT|Sternzeichen-Porträt|Löwe: Wer du wirklich bist (und was du keinem zeigst)"
+   "key": "YT|Sternzeichen-Porträt|Löwe: Wer du wirklich bist"
   },
   {
    "nr": 100,
@@ -1861,11 +1861,11 @@
    "saeule": "Sternzeichen",
    "format": "Sternzeichen-Porträt",
    "unterformat": "Short: Fische",
-   "thema": "Fische: Wer du wirklich bist (und was du keinem zeigst)",
-   "titel": "Fische: Wer du wirklich bist (und was du keinem zeigst)",
+   "thema": "Fische: Wer du wirklich bist",
+   "titel": "Fische: Wer du wirklich bist",
    "status": "offen",
    "datum": "2027-02-08",
-   "key": "YT|Sternzeichen-Porträt|Fische: Wer du wirklich bist (und was du keinem zeigst)"
+   "key": "YT|Sternzeichen-Porträt|Fische: Wer du wirklich bist"
   },
   {
    "nr": 107,
@@ -1945,11 +1945,11 @@
    "saeule": "Sternzeichen",
    "format": "Sternzeichen-Porträt",
    "unterformat": "Short: Widder",
-   "thema": "Widder: Wer du wirklich bist (und was du keinem zeigst)",
-   "titel": "Widder: Wer du wirklich bist (und was du keinem zeigst)",
+   "thema": "Widder: Wer du wirklich bist",
+   "titel": "Widder: Wer du wirklich bist",
    "status": "offen",
    "datum": "2027-02-15",
-   "key": "YT|Sternzeichen-Porträt|Widder: Wer du wirklich bist (und was du keinem zeigst)"
+   "key": "YT|Sternzeichen-Porträt|Widder: Wer du wirklich bist"
   },
   {
    "nr": 114,
@@ -2029,11 +2029,11 @@
    "saeule": "Sternzeichen",
    "format": "Sternzeichen-Porträt",
    "unterformat": "Short: Jungfrau",
-   "thema": "Jungfrau: Wer du wirklich bist (und was du keinem zeigst)",
-   "titel": "Jungfrau: Wer du wirklich bist (und was du keinem zeigst)",
+   "thema": "Jungfrau: Wer du wirklich bist",
+   "titel": "Jungfrau: Wer du wirklich bist",
    "status": "offen",
    "datum": "2027-02-22",
-   "key": "YT|Sternzeichen-Porträt|Jungfrau: Wer du wirklich bist (und was du keinem zeigst)"
+   "key": "YT|Sternzeichen-Porträt|Jungfrau: Wer du wirklich bist"
   },
   {
    "nr": 121,
@@ -2113,11 +2113,11 @@
    "saeule": "Sternzeichen",
    "format": "Sternzeichen-Porträt",
    "unterformat": "Short: Wassermann",
-   "thema": "Wassermann: Wer du wirklich bist (und was du keinem zeigst)",
-   "titel": "Wassermann: Wer du wirklich bist (und was du keinem zeigst)",
+   "thema": "Wassermann: Wer du wirklich bist",
+   "titel": "Wassermann: Wer du wirklich bist",
    "status": "offen",
    "datum": "2027-03-01",
-   "key": "YT|Sternzeichen-Porträt|Wassermann: Wer du wirklich bist (und was du keinem zeigst)"
+   "key": "YT|Sternzeichen-Porträt|Wassermann: Wer du wirklich bist"
   },
   {
    "nr": 128,
@@ -2197,11 +2197,11 @@
    "saeule": "Sternzeichen",
    "format": "Sternzeichen-Porträt",
    "unterformat": "Short: Krebs",
-   "thema": "Krebs: Wer du wirklich bist (und was du keinem zeigst)",
-   "titel": "Krebs: Wer du wirklich bist (und was du keinem zeigst)",
+   "thema": "Krebs: Wer du wirklich bist",
+   "titel": "Krebs: Wer du wirklich bist",
    "status": "offen",
    "datum": "2027-03-08",
-   "key": "YT|Sternzeichen-Porträt|Krebs: Wer du wirklich bist (und was du keinem zeigst)"
+   "key": "YT|Sternzeichen-Porträt|Krebs: Wer du wirklich bist"
   },
   {
    "nr": 135,
@@ -2281,11 +2281,11 @@
    "saeule": "Sternzeichen",
    "format": "Sternzeichen-Porträt",
    "unterformat": "Short: Schütze",
-   "thema": "Schütze: Wer du wirklich bist (und was du keinem zeigst)",
-   "titel": "Schütze: Wer du wirklich bist (und was du keinem zeigst)",
+   "thema": "Schütze: Wer du wirklich bist",
+   "titel": "Schütze: Wer du wirklich bist",
    "status": "offen",
    "datum": "2027-03-15",
-   "key": "YT|Sternzeichen-Porträt|Schütze: Wer du wirklich bist (und was du keinem zeigst)"
+   "key": "YT|Sternzeichen-Porträt|Schütze: Wer du wirklich bist"
   },
   {
    "nr": 142,
@@ -2365,11 +2365,11 @@
    "saeule": "Sternzeichen",
    "format": "Sternzeichen-Porträt",
    "unterformat": "Short: Zwillinge",
-   "thema": "Zwillinge: Wer du wirklich bist (und was du keinem zeigst)",
-   "titel": "Zwillinge: Wer du wirklich bist (und was du keinem zeigst)",
+   "thema": "Zwillinge: Wer du wirklich bist",
+   "titel": "Zwillinge: Wer du wirklich bist",
    "status": "offen",
    "datum": "2027-03-22",
-   "key": "YT|Sternzeichen-Porträt|Zwillinge: Wer du wirklich bist (und was du keinem zeigst)"
+   "key": "YT|Sternzeichen-Porträt|Zwillinge: Wer du wirklich bist"
   },
   {
    "nr": 149,
@@ -2449,11 +2449,11 @@
    "saeule": "Sternzeichen",
    "format": "Sternzeichen-Porträt",
    "unterformat": "Short: Steinbock",
-   "thema": "Steinbock: Wer du wirklich bist (und was du keinem zeigst)",
-   "titel": "Steinbock: Wer du wirklich bist (und was du keinem zeigst)",
+   "thema": "Steinbock: Wer du wirklich bist",
+   "titel": "Steinbock: Wer du wirklich bist",
    "status": "offen",
    "datum": "2027-03-29",
-   "key": "YT|Sternzeichen-Porträt|Steinbock: Wer du wirklich bist (und was du keinem zeigst)"
+   "key": "YT|Sternzeichen-Porträt|Steinbock: Wer du wirklich bist"
   },
   {
    "nr": 156,
@@ -2533,11 +2533,11 @@
    "saeule": "Sternzeichen",
    "format": "Sternzeichen-Porträt",
    "unterformat": "Short: Waage",
-   "thema": "Waage: Wer du wirklich bist (und was du keinem zeigst)",
-   "titel": "Waage: Wer du wirklich bist (und was du keinem zeigst)",
+   "thema": "Waage: Wer du wirklich bist",
+   "titel": "Waage: Wer du wirklich bist",
    "status": "offen",
    "datum": "2027-04-05",
-   "key": "YT|Sternzeichen-Porträt|Waage: Wer du wirklich bist (und was du keinem zeigst)"
+   "key": "YT|Sternzeichen-Porträt|Waage: Wer du wirklich bist"
   },
   {
    "nr": 163,
@@ -2617,11 +2617,11 @@
    "saeule": "Sternzeichen",
    "format": "Sternzeichen-Porträt",
    "unterformat": "Short: Stier",
-   "thema": "Stier: Wer du wirklich bist (und was du keinem zeigst)",
-   "titel": "Stier: Wer du wirklich bist (und was du keinem zeigst)",
+   "thema": "Stier: Wer du wirklich bist",
+   "titel": "Stier: Wer du wirklich bist",
    "status": "fertig",
    "datum": "2027-04-12",
-   "key": "YT|Sternzeichen-Porträt|Stier: Wer du wirklich bist (und was du keinem zeigst)",
+   "key": "YT|Sternzeichen-Porträt|Stier: Wer du wirklich bist",
    "id": "L01_Stier"
   },
   {
@@ -2702,11 +2702,11 @@
    "saeule": "Sternzeichen",
    "format": "Sternzeichen-Porträt",
    "unterformat": "Short: Skorpion",
-   "thema": "Skorpion: Wer du wirklich bist (und was du keinem zeigst)",
-   "titel": "Skorpion: Wer du wirklich bist (und was du keinem zeigst)",
+   "thema": "Skorpion: Wer du wirklich bist",
+   "titel": "Skorpion: Wer du wirklich bist",
    "status": "offen",
    "datum": "2027-04-19",
-   "key": "YT|Sternzeichen-Porträt|Skorpion: Wer du wirklich bist (und was du keinem zeigst)"
+   "key": "YT|Sternzeichen-Porträt|Skorpion: Wer du wirklich bist"
   },
   {
    "nr": 177,

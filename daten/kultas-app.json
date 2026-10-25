@@ -215,7 +215,7 @@
    "name": "Ja oder Nein?",
    "saeule": "Lebensmittel",
    "laenge": "30 bis 45 s",
-   "beschreibung": "Ein Lebensmittel, eine klare Antwort: kurz das Für und Wider, am Ende Ja, Nein oder Ja, aber.",
+   "beschreibung": "Ein Thema, 6 bis 8 typische Fragen und Mythen, jede mit Ja oder Nein und einem kurzen Warum. Fragekarte oben, Ja-/Nein-Stempel beim Aussprechen. Auflösung und Tipp am Ende.",
    "unterformate": [
     {
      "name": "Essen",
@@ -223,7 +223,8 @@
      "videos": [
       {
        "titel": "Kartoffeln: Ja oder Nein?",
-       "status": "offen",
+       "status": "fertig",
+       "id": "K03_Kartoffeln",
        "quelle": "https://youtu.be/8NjEgubaYMo",
        "quelle_titel": "Kartoffeln: Ja oder Nein?"
       },
@@ -265,7 +266,7 @@
       }
      ],
      "anzahl": 7,
-     "fertig": 0
+     "fertig": 1
     },
     {
      "name": "Trinken & Süßen",
@@ -309,7 +310,7 @@
     }
    ],
    "anzahl": 11,
-   "fertig": 0
+   "fertig": 1
   },
   {
    "name": "Gut gegen Schlecht",
@@ -1761,9 +1762,10 @@
    "unterformat": "Essen",
    "thema": "Kartoffeln: Ja oder Nein?",
    "titel": "Kartoffeln: Ja oder Nein?",
-   "status": "offen",
+   "status": "fertig",
    "key": "KU|Ja oder Nein?|Kartoffeln: Ja oder Nein?",
    "quelle": "https://youtu.be/8NjEgubaYMo",
+   "id": "K03_Kartoffeln",
    "datum": "2026-10-25"
   },
   {

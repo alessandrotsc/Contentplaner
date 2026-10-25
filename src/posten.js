@@ -31,67 +31,6 @@ export async function ablageLaden() {
 export const zuEintrag = (e) => (e?.planKey && videos.find((v) => v.key === e.planKey)) || null;
 export const istErledigt = (v) => !!v?.status?.erledigt;
 
-/** Plattformen, die für dieses Video abgehakt werden müssen. */
-function zielPlattformen(v) {
-  const f = v.dateien || {};
-  const kurz = f.video || f.youtube || v.youtubeTitel || v.caption;
-  return [
-    kurz && { id: "tiktok", name: "TikTok", ikon: "tiktok" },
-    kurz && { id: "instagram", name: "Instagram", ikon: "instagram" },
-    kurz && { id: "facebook", name: "Facebook", ikon: "facebook" },
-    kurz && { id: "shorts", name: "YT Shorts", ikon: "youtube" },
-    (f.lang || v.langTitel) && { id: "youtube", name: "YouTube lang", ikon: "youtube" },
-  ].filter(Boolean);
-}
-
-async function statusSenden(v, plattformen, erledigt) {
-  const r = await Server.anfrageRoh("/ablage/status", { method: "PUT",
-    body: JSON.stringify({ projekt: v.projekt, ordner: v.ordner || v.id, plattformen, erledigt }) });
-  v.status = r.status;
-  if (erledigt) {
-    for (const k of ["video", "youtube", "lang"]) { if (v.dateien?.[k]) { geladen.delete(v.dateien[k]); delete v.dateien[k]; } }
-  }
-  try { localStorage.setItem(CACHE, JSON.stringify(videos)); } catch { /* egal */ }
-}
-
-/** Zeile mit einem Knopf je Plattform zum Abhaken. */
-function haekchen(e, v, d) {
-  const ziel = zielPlattformen(v);
-  const an = { ...(v.status?.plattformen || {}) };
-  if (istErledigt(v)) {
-    return el("div", { class: "posten-kanal erledigt-box" },
-      el("div", { class: "posten-kopf" }, ikon("haken", 16), el("b", { text: "Erledigt" })),
-      el("div", { class: "hinweis", text: "Auf allen Plattformen eingeplant oder hochgeladen. Das Video ist vom Server gelöscht, Cover und Texte bleiben." }));
-  }
-  const knoepfe = ziel.map((p) => {
-    const b = el("button", { class: "abhaken" + (an[p.id] ? " an" : ""), onclick: klick }, ikon(p.ikon, 15), el("span", { text: p.name }));
-    async function klick(ev) {
-      ev.preventDefault();
-      an[p.id] = !an[p.id];
-      b.classList.toggle("an", an[p.id]);
-      const alle = ziel.every((x) => an[x.id]);
-      if (alle && !confirm("Alles abgehakt. Video als erledigt markieren und vom Server löschen?")) {
-        an[p.id] = false; b.classList.remove("an"); return;
-      }
-      try {
-        await statusSenden(v, an, alle);
-        if (alle) {
-          if (e?.id && S.eintrag(e.id)) S.eintragSpeichern({ id: e.id, status: "online" });
-          d.zu(); neu();
-        }
-      } catch (err) {
-        an[p.id] = !an[p.id]; b.classList.toggle("an", an[p.id]);
-        alert("Speichern ging nicht: " + err.message);
-      }
-    }
-    return b;
-  });
-  return el("div", { class: "posten-kanal" },
-    el("div", { class: "posten-kopf" }, ikon("haken", 16), el("b", { text: "Eingeplant oder hochgeladen" })),
-    el("div", { class: "hinweis", text: "Abhaken, sobald es auf der Plattform geplant oder online ist. Sind alle abgehakt, wird das Video vom Server gelöscht." }),
-    el("div", { class: "abhaken-reihe" }, knoepfe));
-}
-
 /* Geladene Dateien bleiben im Speicher, solange die App offen ist (ein Video ca. 110 MB). */
 const geladen = new Map();
 
@@ -160,6 +99,118 @@ function textBlock(titel, text, knopfText) {
   return el("div", { class: "feld" }, el("label", { text: titel }), el("div", { class: "posten-text", text }), knopf);
 }
 
+const NAMEN = { tiktok: "TikTok", instagram: "Instagram", facebook: "Facebook", shorts: "YT Shorts", youtube: "YouTube",
+  pinterest: "Pinterest", linkedin: "LinkedIn" };
+const IKON = { shorts: "youtube" };
+const ziel = (id, name) => ({ id, name: name || NAMEN[id] || id, ikon: IKON[id] || id });
+
+/** Plattformen zum Abhaken. Mit Video: aus den vorhandenen Dateien, sonst aus den Plattformen des Eintrags. */
+export function zielPlattformen(e, v) {
+  if (v) {
+    const f = v.dateien || {};
+    const kurz = f.video || f.youtube || v.youtubeTitel || v.caption;
+    const astro = (v.projekt || "").toLowerCase() === "astromaster";
+    return [kurz && ziel("tiktok"), kurz && ziel("instagram"), kurz && ziel("facebook"), kurz && astro && ziel("pinterest"),
+      kurz && ziel("shorts"), (f.lang || v.langTitel) && ziel("youtube", "YouTube lang")].filter(Boolean);
+  }
+  const p = S.projekt(e?.projektId);
+  const alle = p?.plattformen || [];
+  const ids = e?.plattformIds?.length ? e.plattformIds : alle.map((x) => x.id);
+  return [...new Set(ids.map((id) => alle.find((x) => x.id === id)?.typ).filter(Boolean))].map((t) => ziel(t));
+}
+
+/** Abgehakte Plattformen: im Eintrag gespeichert, beim Video zusätzlich auf dem Server. */
+export function abgehakt(e, v) {
+  return { ...(e?.hochgeladen || {}), ...(v?.status?.plattformen || {}) };
+}
+
+/** Für die Kalenderkarte: [erledigt, gesamt] */
+export function fortschritt(e, v) {
+  const z = zielPlattformen(e, v), an = abgehakt(e, v);
+  return [z.filter((x) => an[x.id]).length, z.length];
+}
+
+async function statusSenden(v, plattformen, erledigt) {
+  const r = await Server.anfrageRoh("/ablage/status", { method: "PUT",
+    body: JSON.stringify({ projekt: v.projekt, ordner: v.ordner || v.id, plattformen, erledigt }) });
+  v.status = r.status;
+  if (erledigt) {
+    for (const k of ["video", "youtube", "lang"]) { if (v.dateien?.[k]) { geladen.delete(v.dateien[k]); delete v.dateien[k]; } }
+  }
+  try { localStorage.setItem(CACHE, JSON.stringify(videos)); } catch { /* egal */ }
+}
+
+/** Zeile mit einem Knopf je Plattform zum Abhaken (Posten-Ansicht und Eintrag-Dialog). */
+export function haekchen(e, v, d) {
+  const ziele = zielPlattformen(e, v);
+  if (!ziele.length) return null;
+  const an = abgehakt(e, v);
+  if (istErledigt(v)) {
+    return el("div", { class: "posten-kanal erledigt-box" },
+      el("div", { class: "posten-kopf" }, ikon("haken", 16), el("b", { text: "Erledigt" })),
+      el("div", { class: "hinweis", text: "Auf allen Plattformen eingeplant oder hochgeladen. Das Video ist vom Server gelöscht, Cover und Texte bleiben." }));
+  }
+  const gespeichert = e?.id && S.eintrag(e.id);
+  const knoepfe = ziele.map((p) => {
+    const b = el("button", { class: "abhaken" + (an[p.id] ? " an" : ""), onclick: klick }, ikon(p.ikon, 15), el("span", { text: p.name }));
+    async function klick(ev) {
+      ev.preventDefault();
+      an[p.id] = !an[p.id];
+      b.classList.toggle("an", an[p.id]);
+      const alle = ziele.every((x) => an[x.id]);
+      if (alle && v && !confirm("Alles abgehakt. Video als erledigt markieren und vom Server löschen?")) {
+        an[p.id] = false; b.classList.remove("an"); return;
+      }
+      try {
+        if (v) await statusSenden(v, an, alle);
+        if (gespeichert) {
+          const x = S.eintrag(e.id);
+          x.hochgeladen = { ...an };
+          S.eintragSpeichern({ id: e.id, hochgeladen: { ...an }, ...(alle ? { status: "online" } : {}) });
+        }
+        if (alle) { d?.zu(); neu(); }
+      } catch (err) {
+        an[p.id] = !an[p.id]; b.classList.toggle("an", an[p.id]);
+        alert("Speichern ging nicht: " + err.message);
+      }
+    }
+    return b;
+  });
+  return el("div", { class: "posten-kanal" },
+    el("div", { class: "posten-kopf" }, ikon("haken", 16), el("b", { text: "Eingeplant oder hochgeladen" })),
+    el("div", { class: "hinweis", text: v
+      ? "Abhaken, sobald es auf der Plattform geplant oder online ist. Sind alle abgehakt, wird das Video vom Server gelöscht."
+      : "Abhaken, sobald es auf der Plattform geplant oder online ist. Sind alle abgehakt, gilt der Eintrag als veröffentlicht." }),
+    el("div", { class: "abhaken-reihe" }, knoepfe));
+}
+
+/** Pinterest (nur Astromaster): Pinnwand nach Format, Titel, Beschreibung und Link zum Kopieren. */
+const PINNWAND = [
+  [/beziehung|paar|liebe|passt/i, "Sternzeichen Liebe und Partnerschaft"],
+  [/top 3|ranking/i, "Top 3 Sternzeichen"],
+  [/myster|theorie|rätsel/i, "Mysterien und Rätsel der Geschichte"],
+  [/numerolog|zahl|engel/i, "Numerologie und Engelszahlen"],
+];
+function pinterestBlock(v, f) {
+  if ((v.projekt || "").toLowerCase() !== "astromaster" || !(f.video || v.caption)) return null;
+  const quelle = `${v.format || ""} ${v.titel || ""}`;
+  const pinnwand = (PINNWAND.find(([re]) => re.test(quelle)) || [, "Sternzeichen Eigenschaften"])[1];
+  const ohneDeko = (t) => (t || "").replace(/#\S+/g, "").replace(/[\u{1F000}-\u{1FFFF}\u{2600}-\u{27BF}\u{2B00}-\u{2BFF}\uFE0F]/gu, "").replace(/\s+/g, " ").trim();
+  const titel = ohneDeko(v.youtubeTitel || v.titel).slice(0, 100);
+  const link = "https://astro-masters.com";
+  let text = ohneDeko((v.caption || "").split("\n\n").slice(0, 2).join(" "));
+  const zusatz = " Deinen Aszendenten berechnest du kostenlos auf astro-masters.com";
+  text = (text.slice(0, 500 - zusatz.length) + zusatz).trim();
+  return el("div", { class: "posten-kanal" },
+    el("div", { class: "posten-kopf" }, ikon("pinterest", 16), el("b", { text: "Pinterest" })),
+    el("div", { class: "hinweis", text: "Als Video-Pin hochladen (Video ohne Musik), Pinnwand wählen, Link immer setzen." }),
+    f.video && teilenKnopf("Video", f.video),
+    textBlock("Pinnwand", pinnwand, "Pinnwand kopieren"),
+    textBlock("Titel", titel, "Titel kopieren"),
+    textBlock("Beschreibung", text, "Beschreibung kopieren"),
+    textBlock("Link", link, "Link kopieren"));
+}
+
 export function postenDialog(e, v, beiBearbeiten) {
   const d = dialog(e.titel || v.titel);
   const f = v.dateien || {};
@@ -185,6 +236,8 @@ export function postenDialog(e, v, beiBearbeiten) {
       f.youtube && teilenKnopf("Video mit Musik", f.youtube),
       textBlock("Titel", v.youtubeTitel, "Titel kopieren"),
       textBlock("Beschreibung", v.youtubeText, "Beschreibung kopieren")),
+
+    pinterestBlock(v, f),
 
     el("div", { class: "posten-kanal" },
       el("div", { class: "posten-kopf" }, ikon("youtube", 16), el("b", { text: "YouTube Video" })),

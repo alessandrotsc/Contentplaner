@@ -7,7 +7,7 @@ import * as S from "./store.js";
 import * as D from "./datum.js";
 import { Z, neu, eintragPasst } from "./zustand.js";
 import { el, ikon, ikonKnopf, dialog, feld, pillen, inZwischenablage } from "./ui.js";
-import { zuEintrag, postenDialog, istErledigt } from "./posten.js";
+import { zuEintrag, postenDialog, istErledigt, haekchen, fortschritt } from "./posten.js";
 
 function anTag(tag) {
   return S.eintraege()
@@ -184,9 +184,12 @@ function karte(e, tag) {
   });
   meta.append(plattformIcons(e));
   const vid = zuEintrag(e);
-  if (vid) meta.append(istErledigt(vid)
-    ? el("span", { class: "video-bereit erledigt", text: "✓ Erledigt" })
-    : el("span", { class: "video-bereit", text: "▶ Video bereit" }));
+  const [fertigN, gesamtN] = fortschritt(e, vid);
+  if (istErledigt(vid) || (gesamtN && fertigN === gesamtN)) meta.append(el("span", { class: "video-bereit erledigt", text: "✓ Erledigt" }));
+  else {
+    if (vid) meta.append(el("span", { class: "video-bereit", text: "▶ Video bereit" }));
+    if (fertigN) meta.append(el("span", { class: "video-bereit erledigt", text: `✓ ${fertigN}/${gesamtN}` }));
+  }
   const serie = e.wiederholung && e.wiederholung.art !== "einmal"
     ? el("div", { class: "karte-meta" }, el("span", { text: D.regelText(e.wiederholung) })) : null;
 
@@ -214,9 +217,13 @@ export function eintragDialog(vorgabe = {}, tagDerSerie = null) {
 
   const d = dialog(istNeu ? "Neuer Eintrag" : "Eintrag", () => {
     if (!e.titel.trim()) { alert("Der Eintrag braucht einen Titel."); return false; }
+    if (e.id && S.eintrag(e.id)?.hochgeladen) e.hochgeladen = S.eintrag(e.id).hochgeladen;  // Häkchen nicht mit altem Stand überschreiben
     S.eintragSpeichern(e);
     neu();
   });
+
+  // Häkchen je Plattform (eingeplant oder hochgeladen), auch ohne Video auf dem Server
+  if (!istNeu && S.eintrag(vorgabe.id)) d.inhalt.append(haekchen(S.eintrag(vorgabe.id), zuEintrag(S.eintrag(vorgabe.id)), d) || "");
 
   d.inhalt.append(feld("Titel", el("input", { class: "eingabe", value: e.titel,
     placeholder: "z.B. Top 3: Die loyalsten", oninput: (ev) => (e.titel = ev.target.value) })));

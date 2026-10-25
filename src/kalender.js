@@ -190,12 +190,12 @@ function karte(e, tag) {
   const serie = e.wiederholung && e.wiederholung.art !== "einmal"
     ? el("div", { class: "karte-meta" }, el("span", { text: D.regelText(e.wiederholung) })) : null;
 
-  // Ein Haken rechts für alles: erledigt = auf allen Plattformen hochgeladen (User 25.10.2026)
+  // Ein Haken rechts für alles: erledigt = auf allen Plattformen hochgeladen, ohne Rückfrage (User 25.10.2026).
+  // Der Eintrag bleibt im Kalender sichtbar (ausgegraut), nur die großen Videodateien verschwinden vom Server.
   const haken = el("button", { class: "fertig-haken" + (erledigt ? " an" : ""), title: erledigt ? "Erledigt" : "Als erledigt abhaken",
     onclick: async (ev) => {
       ev.stopPropagation();
       const wert = !erledigt;
-      if (wert && vid && !confirm("Auf allen Plattformen erledigt? Das Video wird dann vom Server gelöscht.")) return;
       try { await alleErledigen(e, vid, wert); neu(); }
       catch (err) { alert("Speichern ging nicht: " + err.message); }
     } }, ikon("haken", 20));

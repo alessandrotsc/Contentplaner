@@ -1,6 +1,6 @@
 /**
  * Abgleich mit dem eigenen Content-Hub-Server (Hetzner, Quellcode in
- * ~/Desktop/Claude Code/Content-Hub-Server). Ist er eingetragen, holt der Server
+ * ~/Desktop/AI Gedächtnis/Content-Hub-Server). Ist er eingetragen, holt der Server
  * die Zahlen rund um die Uhr bei Instagram und TikTok, und die App zieht sie
  * nur noch ab. Die Zugangsdaten der Plattformen liegen dann auf dem Server,
  * nicht mehr auf dem Geraet. Mac und iPhone sehen dieselben Zahlen.

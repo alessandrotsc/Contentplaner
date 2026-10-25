@@ -198,9 +198,7 @@ function pinterestBlock(v, f) {
   const ohneDeko = (t) => (t || "").replace(/#\S+/g, "").replace(/[\u{1F000}-\u{1FFFF}\u{2600}-\u{27BF}\u{2B00}-\u{2BFF}\uFE0F]/gu, "").replace(/\s+/g, " ").trim();
   const titel = ohneDeko(v.youtubeTitel || v.titel).slice(0, 100);
   const link = "https://astro-masters.com";
-  let text = ohneDeko((v.caption || "").split("\n\n").slice(0, 2).join(" "));
-  const zusatz = " Deinen Aszendenten berechnest du kostenlos auf astro-masters.com";
-  text = (text.slice(0, 500 - zusatz.length) + zusatz).trim();
+  const text = "Deine kostenlose Analyse: https://astro-masters.com";   // User 25.10.2026: nur Hinweis plus Link
   return el("div", { class: "posten-kanal" },
     el("div", { class: "posten-kopf" }, ikon("pinterest", 16), el("b", { text: "Pinterest" })),
     el("div", { class: "hinweis", text: "Als Video-Pin hochladen (Video ohne Musik), Pinnwand wählen, Link immer setzen." }),

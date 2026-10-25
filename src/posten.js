@@ -140,6 +140,17 @@ async function statusSenden(v, plattformen, erledigt) {
   try { localStorage.setItem(CACHE, JSON.stringify(videos)); } catch { /* egal */ }
 }
 
+/** Ein Haken für alles (User 25.10.2026): Eintrag auf allen Plattformen erledigt bzw. wieder offen.
+ *  Erledigt: alle Plattformen abgehakt, Status Veröffentlicht, Video wird vom Server gelöscht. */
+export async function alleErledigen(e, v, wert) {
+  const ziele = zielPlattformen(e, v);
+  const an = Object.fromEntries(ziele.map((x) => [x.id, wert]));
+  if (v && wert) await statusSenden(v, an, true);
+  const x = S.eintrag(e.id);
+  if (x) S.eintragSpeichern({ id: e.id, hochgeladen: wert ? an : {},
+    status: wert ? "online" : (v || x.status === "online" ? "fertig" : x.status) });
+}
+
 /** Zeile mit einem Knopf je Plattform zum Abhaken (Posten-Ansicht und Eintrag-Dialog). */
 export function haekchen(e, v, d) {
   const ziele = zielPlattformen(e, v);
@@ -214,7 +225,6 @@ export function postenDialog(e, v, beiBearbeiten) {
   const f = v.dateien || {};
   const kurz = f.video || f.youtube;
   d.inhalt.append(
-    haekchen(e, v, d),
 
     (f.video || f.lang) && el("video", { class: "posten-video", src: f.video || f.lang, poster: f.cover || f.thumbnail || null,
       controls: true, playsinline: true, preload: "none" }),

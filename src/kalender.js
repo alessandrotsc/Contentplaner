@@ -7,7 +7,7 @@ import * as S from "./store.js";
 import * as D from "./datum.js";
 import { Z, neu, eintragPasst } from "./zustand.js";
 import { el, ikon, ikonKnopf, dialog, feld, pillen, inZwischenablage } from "./ui.js";
-import { zuEintrag, postenDialog, istErledigt, haekchen, fortschritt } from "./posten.js";
+import { zuEintrag, postenDialog, istErledigt, fortschritt, alleErledigen } from "./posten.js";
 
 function anTag(tag) {
   return S.eintraege()
@@ -104,7 +104,7 @@ function wochenAnsicht() {
   tage.forEach((tag) => {
     const sp = el("div");
     anTag(tag).filter((e) => !e.zeit).forEach((e) => sp.append(el("div", {
-      class: "gt-chip", style: { borderLeftColor: farbeVon(e) }, text: e.titel || "Ohne Titel",
+      class: "gt-chip" + (e.status === "online" ? " erledigt" : ""), style: { borderLeftColor: farbeVon(e) }, text: e.titel || "Ohne Titel",
       onclick: () => oeffnen(e, tag) })));
     ganztag.append(sp);
   });
@@ -119,7 +119,7 @@ function wochenAnsicht() {
     for (let h = 0; h < 24; h++) spalte.append(el("div", { class: "stunde-linie" }));
     anTag(tag).filter((e) => e.zeit).forEach((e) => {
       const [hh, mm] = e.zeit.split(":").map(Number);
-      spalte.append(el("div", { class: "block",
+      spalte.append(el("div", { class: "block" + (e.status === "online" ? " erledigt" : ""),
         style: { top: ((hh + mm / 60) * 52) + "px", height: "48px", borderLeftColor: farbeVon(e) },
         text: e.titel || "Ohne Titel",
         onclick: (ev) => { ev.stopPropagation(); oeffnen(e, tag); } }));
@@ -185,19 +185,27 @@ function karte(e, tag) {
   meta.append(plattformIcons(e));
   const vid = zuEintrag(e);
   const [fertigN, gesamtN] = fortschritt(e, vid);
-  if (istErledigt(vid) || (gesamtN && fertigN === gesamtN)) meta.append(el("span", { class: "video-bereit erledigt", text: "✓ Erledigt" }));
-  else {
-    if (vid) meta.append(el("span", { class: "video-bereit", text: "▶ Video bereit" }));
-    if (fertigN) meta.append(el("span", { class: "video-bereit erledigt", text: `✓ ${fertigN}/${gesamtN}` }));
-  }
+  const erledigt = e.status === "online" || istErledigt(vid) || (gesamtN && fertigN === gesamtN);
+  if (!erledigt && vid) meta.append(el("span", { class: "video-bereit", text: "▶ Video bereit" }));
   const serie = e.wiederholung && e.wiederholung.art !== "einmal"
     ? el("div", { class: "karte-meta" }, el("span", { text: D.regelText(e.wiederholung) })) : null;
 
-  return el("div", { class: "karte", onclick: () => oeffnen(e, tag) },
+  // Ein Haken rechts für alles: erledigt = auf allen Plattformen hochgeladen (User 25.10.2026)
+  const haken = el("button", { class: "fertig-haken" + (erledigt ? " an" : ""), title: erledigt ? "Erledigt" : "Als erledigt abhaken",
+    onclick: async (ev) => {
+      ev.stopPropagation();
+      const wert = !erledigt;
+      if (wert && vid && !confirm("Auf allen Plattformen erledigt? Das Video wird dann vom Server gelöscht.")) return;
+      try { await alleErledigen(e, vid, wert); neu(); }
+      catch (err) { alert("Speichern ging nicht: " + err.message); }
+    } }, ikon("haken", 20));
+
+  return el("div", { class: "karte" + (erledigt ? " erledigt" : ""), onclick: () => oeffnen(e, tag) },
     el("div", { class: "karte-strich", style: { background: p?.farbe || "#888" } }),
     el("div", { class: "karte-text" },
       el("div", { class: "karte-titel", text: e.titel || "Ohne Titel" }), meta, serie),
-    el("div", { class: "status-pille", style: { background: st.farbe + "1f", color: st.farbe }, text: st.name }),
+    erledigt ? null : el("div", { class: "status-pille", style: { background: st.farbe + "1f", color: st.farbe }, text: st.name }),
+    haken,
   );
 }
 
@@ -223,7 +231,6 @@ export function eintragDialog(vorgabe = {}, tagDerSerie = null) {
   });
 
   // Häkchen je Plattform (eingeplant oder hochgeladen), auch ohne Video auf dem Server
-  if (!istNeu && S.eintrag(vorgabe.id)) d.inhalt.append(haekchen(S.eintrag(vorgabe.id), zuEintrag(S.eintrag(vorgabe.id)), d) || "");
 
   d.inhalt.append(feld("Titel", el("input", { class: "eingabe", value: e.titel,
     placeholder: "z.B. Top 3: Die loyalsten", oninput: (ev) => (e.titel = ev.target.value) })));

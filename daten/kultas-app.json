@@ -16,7 +16,7 @@
    "handle": "Kultas"
   }
  ],
- "stand": "2026-10-24",
+ "stand": "2026-10-25",
  "saeulen": [
   {
    "name": "Lebensmittel",
@@ -27,15 +27,23 @@
    ]
   },
   {
-   "name": "Wissen zum Abspeichern",
+   "name": "Zuhause & Pflege",
    "muster": [
-    "Spickzettel"
+    "Gut gegen Schlecht",
+    "Natürliche Pflege"
+   ]
+  },
+  {
+   "name": "Nährstoffe",
+   "muster": [
+    "Nährstoff erklärt"
    ]
   },
   {
    "name": "Körper",
    "muster": [
     "Komische Zeichen",
+    "Dein Körper erklärt",
     "Schlaf & Routine"
    ]
   },
@@ -43,7 +51,21 @@
    "name": "Natur & Hausmittel",
    "muster": [
     "Hausmittel",
-    "Echt oder Fake?"
+    "Tee-Serie",
+    "Sonne, Wasser, Wärme"
+   ]
+  },
+  {
+   "name": "Wissen zum Abspeichern",
+   "muster": [
+    "Spickzettel"
+   ]
+  },
+  {
+   "name": "Mythen & Wahrheiten",
+   "muster": [
+    "Echt oder Fake?",
+    "Mythos-Check"
    ]
   }
  ],
@@ -55,174 +77,560 @@
   "Inhalt nur von Fabian Kowallik (ExiledMedic), Quelle steht bei jedem Video. Erst 01_Wissen/Kowalik/INDEX.md lesen.",
   "Keine Heilversprechen: nie „heilt“, „wie Ozempic“, „verbrennt Fett“. Stattdessen „kann unterstützen“, „steckt voll mit“.",
   "Keine Politik, keine Verschwörung, keine Ärzte- oder Pharma-Schelte, nicht gegen Nahrungsergänzung reden.",
-  "Hook „Das solltest du über X wissen“ plus Vergleich bis Sekunde 5, offene Schleifen, Tipp am Schluss.",
+  "Harter Hook in den ersten 2 s (Stilbibel), alle 2 bis 2,5 s ein neues Bild, offene Schleifen, Tipp am Schluss, Verweis auf die lange YouTube-Version.",
   "Bilder gemalter Realismus im Hier und Jetzt (03_Assets/Stil/kern.txt).",
-  "Nie zwei gleiche Formate hintereinander."
+  "Formate so spät wie möglich wiederholen: erst wenn alle anderen dran waren."
  ],
  "formate": [
   {
    "name": "Unter der Lupe",
    "saeule": "Lebensmittel",
-   "laenge": "50 bis 65 s",
-   "beschreibung": "Ein Lebensmittel komplett: was drinsteckt, wofür es gut ist, worauf man achten muss, Tipp zum Schluss.",
+   "laenge": "45 bis 60 s",
+   "beschreibung": "Ein Lebensmittel komplett erklärt: Herkunft, was drinsteckt, worauf du beim Kauf achtest und wie du es am besten isst.",
    "unterformate": [
     {
-     "name": "Unter der Lupe",
-     "beschreibung": "Ein Lebensmittel komplett: was drinsteckt, wofür es gut ist, worauf man achten muss, Tipp zum Schluss.",
+     "name": "Obst & Beeren",
+     "beschreibung": "Ein Obst, alles was du wissen solltest",
      "videos": [
       {
        "titel": "Das solltest du über Datteln wissen",
-       "status": "fertig",
+       "status": "online",
        "id": "K02_Datteln",
        "quelle": "https://youtu.be/ufFUbEmS6Lg",
        "quelle_titel": "Das wusstest du noch nicht über Datteln..."
       },
       {
-       "titel": "Das solltest du über Schwarzkümmelöl wissen",
+       "titel": "Was du über die Avocado wissen solltest",
        "status": "offen",
-       "quelle": "https://youtu.be/Id10vAKxiS4",
-       "quelle_titel": "NEU: Das wusstest du nicht über Schwarzkümmelöl! (Gefahren, Vorteile, Anwendungen)"
+       "quelle": "https://youtu.be/1PhfqChcy9I",
+       "quelle_titel": "Die Avocado Lüge (Das wird dir nicht gefallen..)"
       },
       {
-       "titel": "Das solltest du über Apfelessig wissen",
+       "titel": "Granatapfel: so isst du ihn ganz einfach",
        "status": "offen",
-       "quelle": "https://youtu.be/S9B3qjfAhBw",
-       "quelle_titel": "Apfelessig Spickzettel (teilen) #gesundheitstipps #ernährungstipps #aufklärung"
+       "quelle": "https://youtu.be/8FqV0pCIKVs",
+       "quelle_titel": "Granatapfel Essen Leicht Gemacht"
       },
       {
-       "titel": "Das solltest du über Nelken wissen",
+       "titel": "So holst du mehr aus deinem Zitronenwasser",
        "status": "offen",
-       "quelle": "https://youtu.be/bNQk4ZdBsWc",
-       "quelle_titel": "1 Nelke im Kaffee jeden Morgen und DAS HIER passiert"
+       "quelle": "https://youtu.be/ZE21WVAb8SU",
+       "quelle_titel": "Das hier macht Zitronenwasser 3,7x gesünder"
+      }
+     ],
+     "anzahl": 4,
+     "fertig": 1
+    },
+    {
+     "name": "Vom Hof & aus dem Meer",
+     "beschreibung": "Eier, Milch und Fisch unter der Lupe",
+     "videos": [
+      {
+       "titel": "So isst du Eier am besten",
+       "status": "offen",
+       "quelle": "https://youtu.be/P-WZqXVrwoI",
+       "quelle_titel": "evidenzbasiert: beste art eier zu essen"
       },
       {
-       "titel": "Das solltest du über Cayennepfeffer wissen",
+       "titel": "Milch: was steckt wirklich drin?",
        "status": "offen",
-       "quelle": "https://youtu.be/BG-g0vaR6Dg",
-       "quelle_titel": "Cayenne: Wirkt wirklich? #fitnesstipps #cayenne #blutdruck"
+       "quelle": "https://youtu.be/VRTIf83xnvA",
+       "quelle_titel": "Milch - Weißes Gift oder Gesundes Getränk?"
+      }
+     ],
+     "anzahl": 2,
+     "fertig": 0
+    },
+    {
+     "name": "Getreide & Knolle",
+     "beschreibung": "Brot, Hafer, Buchweizen und Kartoffel",
+     "videos": [
+      {
+       "titel": "Buchweizen: das unterschätzte Korn",
+       "status": "offen",
+       "quelle": "https://youtu.be/VAcQ7SPrH_4",
+       "quelle_titel": "Superfood Buchweizen: 1000x Gesünder als Haferflocken"
       },
       {
-       "titel": "Das solltest du über Ingwer und Zimt wissen",
+       "titel": "Was du über dein Brot wissen solltest",
        "status": "offen",
-       "quelle": "https://youtu.be/q22cyLqLAMs",
-       "quelle_titel": "Was passiert wenn Sie Ingwer&Zimt trinkt? (teilen) #gesundheitstipps #aufklärung #gesunderezepte"
-      },
+       "quelle": "https://youtu.be/1IlHjfCrQWQ",
+       "quelle_titel": "Iss Kein Brot Bevor Du Dieses Video Gesehen Hast (Wichtig!)"
+      }
+     ],
+     "anzahl": 2,
+     "fertig": 0
+    },
+    {
+     "name": "Süßes & Öle",
+     "beschreibung": "Honig, Schokolade und Öle",
+     "videos": [
       {
-       "titel": "Das solltest du über Eier wissen",
-       "status": "offen",
-       "quelle": "https://youtu.be/_QpIRMbAe8U",
-       "quelle_titel": "Unglaubliches Passiert wenn du jeden Tag 4 Eier isst - So geht es gesund (neue Studie)"
-      },
-      {
-       "titel": "Das solltest du über Olivenöl wissen",
-       "status": "offen",
-       "quelle": "https://youtu.be/nB5Ug_dApiU",
-       "quelle_titel": "Olivenöl Fake Selbsttest? #gesundheitstipps #ernährungstipps #olivenöl"
-      },
-      {
-       "titel": "Das solltest du über Honig wissen",
+       "titel": "Alles, was du über Honig wissen solltest",
        "status": "offen",
        "quelle": "https://youtu.be/ybNFSummezI",
        "quelle_titel": "Die Honig Lüge (ALLES was du über HONIG Wissen MUSST)"
       },
       {
-       "titel": "Das solltest du über Buchweizen wissen",
+       "titel": "Die gesündeste Schokolade",
        "status": "offen",
-       "quelle": "https://youtu.be/VAcQ7SPrH_4",
-       "quelle_titel": "Superfood Buchweizen: 1000x Gesünder als Haferflocken"
+       "quelle": "https://youtu.be/UYQqlEttuh8",
+       "quelle_titel": "die gesündeste schokolade"
+      },
+      {
+       "titel": "So gut ist Olivenöl wirklich",
+       "status": "offen",
+       "quelle": "https://youtu.be/XgUO0qk8g_Y",
+       "quelle_titel": "So gut ist Olivenöl wirklich (neue Studie)"
+      },
+      {
+       "titel": "Schwarzkümmelöl: was du wissen solltest",
+       "status": "offen",
+       "quelle": "https://youtu.be/Id10vAKxiS4",
+       "quelle_titel": "NEU: Das wusstest du nicht über Schwarzkümmelöl! (Gefahren, Vorteile, Anwendungen)"
       }
-     ]
+     ],
+     "anzahl": 4,
+     "fertig": 0
+    },
+    {
+     "name": "Gewürze",
+     "beschreibung": "Kleine Mengen, große Wirkung",
+     "videos": [
+      {
+       "titel": "Eine Nelke im Kaffee: was dahintersteckt",
+       "status": "offen",
+       "quelle": "https://youtu.be/bNQk4ZdBsWc",
+       "quelle_titel": "1 Nelke im Kaffee jeden Morgen und DAS HIER passiert"
+      }
+     ],
+     "anzahl": 1,
+     "fertig": 0
     }
    ],
-   "anzahl": 10,
+   "anzahl": 13,
    "fertig": 1
   },
   {
    "name": "Ja oder Nein?",
    "saeule": "Lebensmittel",
    "laenge": "30 bis 45 s",
-   "beschreibung": "Ein Lebensmittel, eine klare Antwort: wann ja, wann nein, welche Sorte.",
+   "beschreibung": "Ein Lebensmittel, eine klare Antwort: kurz das Für und Wider, am Ende Ja, Nein oder Ja, aber.",
    "unterformate": [
     {
-     "name": "Ja oder Nein?",
-     "beschreibung": "Ein Lebensmittel, eine klare Antwort: wann ja, wann nein, welche Sorte.",
+     "name": "Essen",
+     "beschreibung": "Alltagslebensmittel im Schnellcheck",
      "videos": [
       {
-       "titel": "Kaffee: ja oder nein?",
+       "titel": "Kartoffeln: Ja oder Nein?",
        "status": "offen",
-       "quelle": "https://youtu.be/Tjxvv0ucJUg",
-       "quelle_titel": "Kaffee: Ja oder Nein? #gesundheitstipps #ernährungstipps #aufklärung"
+       "quelle": "https://youtu.be/8NjEgubaYMo",
+       "quelle_titel": "Kartoffeln: Ja oder Nein?"
       },
       {
-       "titel": "Äpfel: ja oder nein?",
+       "titel": "Haferflocken: Ja oder Nein?",
+       "status": "offen",
+       "quelle": "https://youtu.be/dvSfx5tv6zc",
+       "quelle_titel": "Haferflocken: Ja oder Nein"
+      },
+      {
+       "titel": "Magerquark und Skyr: Ja oder Nein?",
+       "status": "offen",
+       "quelle": "https://youtu.be/uFEvDLrUVnE",
+       "quelle_titel": "Magerquark/Skyr: Ja oder Nein?"
+      },
+      {
+       "titel": "Erdnussbutter: Ja oder Nein?",
+       "status": "offen",
+       "quelle": "https://youtu.be/Km-QqSWfB5A",
+       "quelle_titel": "Erdnussbutter: Ja oder Nein?"
+      },
+      {
+       "titel": "Äpfel: Ja oder Nein?",
        "status": "offen",
        "quelle": "https://youtu.be/zY44h6NVphM",
-       "quelle_titel": "Äpfel: Ja oder Nein #gesundheitstipps #ernährungstipps #gesundeernährung"
+       "quelle_titel": "Äpfel: Ja oder Nein"
       },
       {
-       "titel": "Hafer- oder Mandelmilch?",
+       "titel": "Schokolade: Ja oder Nein?",
+       "status": "offen",
+       "quelle": "https://youtu.be/fGFfcXtE_Ic",
+       "quelle_titel": "Schokolade: Ja oder Nein"
+      },
+      {
+       "titel": "Salz: Ja oder Nein?",
+       "status": "offen",
+       "quelle": "https://youtu.be/zdqr4n0CXXU",
+       "quelle_titel": "Salz: Ja oder Nein?"
+      }
+     ],
+     "anzahl": 7,
+     "fertig": 0
+    },
+    {
+     "name": "Trinken & Süßen",
+     "beschreibung": "Getränke und Süßungsmittel",
+     "videos": [
+      {
+       "titel": "Kaffee: Ja oder Nein?",
+       "status": "offen",
+       "quelle": "https://youtu.be/Tjxvv0ucJUg",
+       "quelle_titel": "Kaffee: Ja oder Nein?"
+      },
+      {
+       "titel": "Stevia: Ja oder Nein?",
+       "status": "offen",
+       "quelle": "https://youtu.be/-wX-igSRdmU",
+       "quelle_titel": "Stevia: Ja oder Nein?"
+      }
+     ],
+     "anzahl": 2,
+     "fertig": 0
+    },
+    {
+     "name": "Ergänzen",
+     "beschreibung": "Beliebte Ergänzungen kurz eingeordnet",
+     "videos": [
+      {
+       "titel": "Kollagen: Ja oder Nein?",
+       "status": "offen",
+       "quelle": "https://youtu.be/mq-InZnJ1o0",
+       "quelle_titel": "KOLLAGEN: JA ODER NEIN"
+      },
+      {
+       "titel": "Schwarzkümmelöl: Ja oder Nein?",
+       "status": "offen",
+       "quelle": "https://youtu.be/orm22RkmWx4",
+       "quelle_titel": "Schwarzkümmelöl: Ja oder Nein?"
+      }
+     ],
+     "anzahl": 2,
+     "fertig": 0
+    }
+   ],
+   "anzahl": 11,
+   "fertig": 0
+  },
+  {
+   "name": "Gut gegen Schlecht",
+   "saeule": "Zuhause & Pflege",
+   "laenge": "40 bis 55 s",
+   "beschreibung": "Zwei Alltagsdinge im direkten Vergleich: was drinsteckt, was es mit dir macht und welche Wahl die bessere ist.",
+   "unterformate": [
+    {
+     "name": "Küche",
+     "beschreibung": "Pfanne, Salz und Vorrat im Vergleich",
+     "videos": [
+      {
+       "titel": "Teflonpfanne gegen Edelstahlpfanne",
+       "status": "offen",
+       "quelle": "https://youtu.be/M6uRA6IgAd0",
+       "quelle_titel": "Er benutzte eine Teflon Pfanne…"
+      },
+      {
+       "titel": "Jodsalz gegen Ursalz",
+       "status": "offen",
+       "quelle": "https://youtu.be/LEaFBCPQqmA",
+       "quelle_titel": "welches salz nicht kaufen? (teilen)"
+      },
+      {
+       "titel": "Wilde Heidelbeeren gegen Kulturheidelbeeren",
+       "status": "offen",
+       "quelle": "https://youtu.be/5TwmHO0qzu4",
+       "quelle_titel": "Fake Heidelbeeren im Umlauf ‼️"
+      },
+      {
+       "titel": "Hafermilch gegen Mandelmilch",
        "status": "offen",
        "quelle": "https://youtu.be/lGKjEfiwjXM",
-       "quelle_titel": "Hafer oder Mandelmilch? #gesundheitstipps #ernährungstipps #vegan"
+       "quelle_titel": "Hafer oder Mandelmilch?"
       },
       {
-       "titel": "Haferflocken: worauf du achten musst",
+       "titel": "Zucker gegen Süßstoff",
        "status": "offen",
-       "quelle": "https://youtu.be/n8hX-dRP7_s",
-       "quelle_titel": "Kauf nicht die falschen Haferflocken #gesundheitstipps #ernährungstipps #gesundeernährung"
+       "quelle": "https://youtu.be/-65RKgKYqC0",
+       "quelle_titel": "Zucker vs. Süssstoffe?"
+      }
+     ],
+     "anzahl": 5,
+     "fertig": 0
+    },
+    {
+     "name": "Bad & Pflege",
+     "beschreibung": "Pflegeprodukte im Vergleich",
+     "videos": [
+      {
+       "titel": "Duschgel gegen Seife und Deo-Seife",
+       "status": "offen"
       },
       {
-       "titel": "Brot: ja oder nein?",
+       "titel": "Klassisches Deo gegen natürliche Alternative",
        "status": "offen",
-       "quelle": "https://youtu.be/1IlHjfCrQWQ",
-       "quelle_titel": "Iss Kein Brot Bevor Du Dieses Video Gesehen Hast (Wichtig!)"
+       "quelle": "https://youtu.be/HxDrnZ1FMxg",
+       "quelle_titel": "Deos sind das neue Rauchen"
       },
       {
-       "titel": "Grüner Tee: ja oder nein?",
+       "titel": "Shampoo oder weniger ist mehr?",
        "status": "offen",
-       "quelle": "https://youtu.be/FBCuApyPEo0",
-       "quelle_titel": "Grüntee nicht Trinken!! #tee #gesundheitstipps #aufklärung"
+       "quelle": "https://youtu.be/rUR9V2DKuUo",
+       "quelle_titel": "Shampoo ist eine Lüge. (für mich...für dich auch?)"
       },
       {
-       "titel": "Kollagen: lohnt sich das?",
+       "titel": "Normale Zahnpasta gegen remineralisierende Zahnpasta",
+       "status": "offen",
+       "quelle": "https://youtu.be/aLlMrsXyHQs",
+       "quelle_titel": "Diese Virale Zahnpasta Remineralisiert Zähne"
+      },
+      {
+       "titel": "Welche Zahnbürste ist besser?",
+       "status": "offen",
+       "quelle": "https://youtu.be/y6oTmVq7iZk",
+       "quelle_titel": "welche zahnbürste ist besser?"
+      }
+     ],
+     "anzahl": 5,
+     "fertig": 0
+    },
+    {
+     "name": "Wohnen & Luft",
+     "beschreibung": "Raumluft und Haushalt",
+     "videos": [
+      {
+       "titel": "Duftkerze gegen Duftlampe mit Wasser und ätherischen Ölen",
+       "status": "offen",
+       "quelle": "https://youtu.be/XDs1pCwBmgk",
+       "quelle_titel": "Warnung vor Duftkerzen ⚠️"
+      },
+      {
+       "titel": "Lufterfrischer gegen 2 Zutaten aus der Küche",
+       "status": "offen",
+       "quelle": "https://youtu.be/4DFAeZKNXZU",
+       "quelle_titel": "2-Zutaten-Formel Lufterfrischer (Abspeichern) ￼"
+      }
+     ],
+     "anzahl": 2,
+     "fertig": 0
+    }
+   ],
+   "anzahl": 12,
+   "fertig": 0
+  },
+  {
+   "name": "Nährstoff erklärt",
+   "saeule": "Nährstoffe",
+   "laenge": "45 bis 60 s",
+   "beschreibung": "Ein Nährstoff in einer Minute: wofür dein Körper ihn braucht, woran du einen Mangel erkennst und wo du ihn natürlich findest.",
+   "unterformate": [
+    {
+     "name": "Mineralstoffe",
+     "beschreibung": "Magnesium, Zink, Calcium und Co.",
+     "videos": [
+      {
+       "titel": "Magnesium: warum es so wichtig ist",
+       "status": "offen",
+       "quelle": "https://youtu.be/F1woK48-RiM",
+       "quelle_titel": "Darum Wirkt Dein Magnesium Nicht"
+      },
+      {
+       "titel": "Der häufigste Fehler bei Magnesium",
+       "status": "offen",
+       "quelle": "https://youtu.be/iLoE3T-jROQ",
+       "quelle_titel": "Der Häufigste Fehler den 99% bei Magnesium machen…"
+      },
+      {
+       "titel": "Zink und deine Haare",
+       "status": "offen",
+       "quelle": "https://youtu.be/v6zf9cBGcEw",
+       "quelle_titel": "Zink gegen Haarausfall?"
+      },
+      {
+       "titel": "Calcium: wo es in deinem Körper hingehört",
+       "status": "offen",
+       "quelle": "https://youtu.be/nkMdxmuG6_w",
+       "quelle_titel": "Weichteilverkalkung Umkehren: Calcium aus dem Gewebe zurück in die Knochen holen"
+      }
+     ],
+     "anzahl": 4,
+     "fertig": 0
+    },
+    {
+     "name": "Vitamine",
+     "beschreibung": "Die wichtigsten Vitamine einfach erklärt",
+     "videos": [
+      {
+       "titel": "Vitamin D: wie viel ist sinnvoll?",
+       "status": "offen",
+       "quelle": "https://youtu.be/5CZew_SwRtM",
+       "quelle_titel": "Sind 10.000 IU Vitamin D Sicher? (neue Studie)"
+      },
+      {
+       "titel": "Vitamin B12: woran du einen Mangel erkennst",
+       "status": "offen",
+       "quelle": "https://youtu.be/susNQj8A2i8",
+       "quelle_titel": "5 Symptome an denen du deinen B12 Mangel erkennst (neu!)"
+      },
+      {
+       "titel": "So nimmst du deine Vitamine richtig ein",
+       "status": "offen",
+       "quelle": "https://youtu.be/FjD5t2F0ncM",
+       "quelle_titel": "Nimmst Du Deine Vitamine Falsch?"
+      }
+     ],
+     "anzahl": 3,
+     "fertig": 0
+    },
+    {
+     "name": "Bausteine",
+     "beschreibung": "Eiweiß, Fette, Ballaststoffe",
+     "videos": [
+      {
+       "titel": "Protein ist nicht gleich Protein",
+       "status": "offen",
+       "quelle": "https://youtu.be/e_FT6cohlzc",
+       "quelle_titel": "Protein ist nicht gleich Protein"
+      },
+      {
+       "titel": "Kollagen: was du darüber wissen solltest",
        "status": "offen",
        "quelle": "https://youtu.be/-tKYJDqT_1o",
        "quelle_titel": "Funktionieren Kollagen Supplements? (Vermeide diese Fehler!)"
       },
       {
-       "titel": "Frühstück: ja oder nein?",
+       "titel": "Omega 3: alles, was du wissen musst",
        "status": "offen",
-       "quelle": "https://youtu.be/V_V82PLYFFY",
-       "quelle_titel": "Iss dieses Frühstück jeden Tag! #gesundheitstipps #ernährungstipps #aufklärung"
+       "quelle": "https://youtu.be/UD5PSLQLhtw",
+       "quelle_titel": "Alles was du wissen musst 🐟"
+      },
+      {
+       "titel": "Warum heißen Ballaststoffe eigentlich so?",
+       "status": "offen",
+       "quelle": "https://youtu.be/nG68kkxZgj4",
+       "quelle_titel": "Warum heisst es „Ballast-Stoff“? (teilen)"
+      },
+      {
+       "titel": "Cholesterin einfach erklärt",
+       "status": "offen",
+       "quelle": "https://youtu.be/yLwS2NeBGQg",
+       "quelle_titel": "Verstehst du Cholesterin?"
       }
-     ]
+     ],
+     "anzahl": 5,
+     "fertig": 0
     }
    ],
-   "anzahl": 8,
+   "anzahl": 12,
    "fertig": 0
   },
   {
    "name": "Top 3",
    "saeule": "Lebensmittel",
-   "laenge": "45 bis 60 s",
-   "beschreibung": "Drei Lebensmittel zu einem Ziel, das stärkste zuletzt.",
+   "laenge": "30 bis 45 s",
+   "beschreibung": "Drei Lebensmittel oder Tricks zu einem Ziel, von Platz 3 bis Platz 1, jeweils mit einem Satz warum.",
    "unterformate": [
     {
-     "name": "Top 3",
-     "beschreibung": "Drei Lebensmittel zu einem Ziel, das stärkste zuletzt.",
+     "name": "Top 3 gegen Kopfschmerzen",
+     "beschreibung": "Wenn der Kopf brummt",
      "videos": [
       {
-       "titel": "Top 3 Lebensmittel für besseren Schlaf",
+       "titel": "Top 3 Lebensmittel gegen Kopfschmerzen",
        "status": "offen",
-       "quelle": "https://youtu.be/z6Sfz47mhh8",
-       "quelle_titel": "Die Große Schlaf Lüge! (Top 6 Nicht mehr falsch schlafen)"
+       "quelle": "https://youtu.be/62Xyj2zoIsk",
+       "quelle_titel": "Kopfschmerzen Weg Tipp (Teilen)"
       },
       {
-       "titel": "Top 3 Lebensmittel, die besser sind als ihr Ruf",
+       "titel": "Top 3 Tricks, wenn die Migräne kommt",
        "status": "offen",
-       "quelle": "https://youtu.be/6zHCk2jzkGI",
-       "quelle_titel": "Diese Lebensmittel sind VIEL besser als ihr RUF!! #gesundeernährung ernährungstipps"
+       "quelle": "https://youtu.be/EJ-mEBcEbdM",
+       "quelle_titel": "Migräne Sofort Trick (teilen)"
+      }
+     ],
+     "anzahl": 2,
+     "fertig": 0
+    },
+    {
+     "name": "Top 3 für Kopf & Fokus",
+     "beschreibung": "Essen für klares Denken",
+     "videos": [
+      {
+       "titel": "Top 3 Lebensmittel für klares Denken",
+       "status": "offen",
+       "quelle": "https://youtu.be/ryQpUNcfUoc",
+       "quelle_titel": "Top 7 Lebensmittel um wieder denken zu können"
       },
+      {
+       "titel": "Top 3 Getränke, die deinem Gehirn nicht guttun",
+       "status": "offen",
+       "quelle": "https://youtu.be/vr5Cm723Z-E",
+       "quelle_titel": "diese 3 getränke zerstören dein gehirn 🤯"
+      }
+     ],
+     "anzahl": 2,
+     "fertig": 0
+    },
+    {
+     "name": "Top 3 für Haut",
+     "beschreibung": "Schöne Haut von innen",
+     "videos": [
+      {
+       "titel": "Top 3 Lebensmittel für schöne Haut",
+       "status": "offen",
+       "quelle": "https://youtu.be/8xYiErQdbmc",
+       "quelle_titel": "Ernährung für schöne Haut: Die 8 Besten Lebensmittel (Neue Studie)"
+      }
+     ],
+     "anzahl": 1,
+     "fertig": 0
+    },
+    {
+     "name": "Top 3 für Muskeln & Gelenke",
+     "beschreibung": "Kraft und Beweglichkeit",
+     "videos": [
+      {
+       "titel": "Top 3 Lebensmittel für starke Beine",
+       "status": "offen",
+       "quelle": "https://youtu.be/P4T0Ny7ZJYc",
+       "quelle_titel": "Warnung! Deine Beine werden zuerst Schwach! Iss diese 7 Lebensmittel (Muskelaufbau-Masterclass)"
+      },
+      {
+       "titel": "Top 3 Lebensmittel für deine Gelenke",
+       "status": "offen",
+       "quelle": "https://youtu.be/bZcIf-pg6os",
+       "quelle_titel": "Ernährung für starke Gelenke (teilen)"
+      }
+     ],
+     "anzahl": 2,
+     "fertig": 0
+    },
+    {
+     "name": "Top 3 für deine Organe",
+     "beschreibung": "Leber, Schilddrüse und Co.",
+     "videos": [
+      {
+       "titel": "Top 3 Lebensmittel für deine Leber",
+       "status": "offen",
+       "quelle": "https://youtu.be/-ZqjamEgXjE",
+       "quelle_titel": "TOP 10 Superfoods die eine FETTLEBER HEILEN"
+      },
+      {
+       "titel": "Top 3 Lebensmittel, die deine Schilddrüse nicht mag",
+       "status": "offen",
+       "quelle": "https://youtu.be/_wSerYd8SRM",
+       "quelle_titel": "Top 10 Lebensmittel die deine Schilddrüse ZERSTÖREN"
+      },
+      {
+       "titel": "Top 3 natürliche Mittel bei Entzündungen",
+       "status": "offen",
+       "quelle": "https://youtu.be/RKfmFLQIxzM",
+       "quelle_titel": "13 STÄRKSTE MITTEL gegen ENTZÜNDUNGEN 🦀 (neue Studien!)"
+      }
+     ],
+     "anzahl": 3,
+     "fertig": 0
+    },
+    {
+     "name": "Top 3 Lebensmittel allgemein",
+     "beschreibung": "Was öfter auf deinen Teller darf",
+     "videos": [
       {
        "titel": "Top 3 Lebensmittel, die du zu selten isst",
        "status": "offen",
@@ -230,145 +638,271 @@
        "quelle_titel": "Die Top 10 Gesündesten Lebensmittel die du nicht genug isst"
       },
       {
-       "titel": "Top 3 Gemüse, die du öfter essen solltest",
+       "titel": "Top 3 beste und schlechteste Fische",
        "status": "offen",
-       "quelle": "https://youtu.be/VNbqL1ArX2g",
-       "quelle_titel": "Die Große Gemüse Lüge"
-      },
-      {
-       "titel": "Top 3 Lebensmittel für deine Muskeln",
-       "status": "offen",
-       "quelle": "https://youtu.be/QZaLHi-R0H4",
-       "quelle_titel": "Schnell Muskeln aufbauen ohne frühzeitig alt und krank zu werden"
-      },
-      {
-       "titel": "Top 3 Getränke für den Morgen",
-       "status": "offen",
-       "quelle": "https://youtu.be/4c8yvOEq_fM",
-       "quelle_titel": "Diese Morgenroutine soll Krankheiten verhinder..."
+       "quelle": "https://youtu.be/WY6petsDzj4",
+       "quelle_titel": "Top 3 BESTE & SCHLECHTESTE FISCHE (Weiß Niemand)"
       }
-     ]
+     ],
+     "anzahl": 2,
+     "fertig": 0
     }
    ],
-   "anzahl": 6,
-   "fertig": 0
-  },
-  {
-   "name": "Spickzettel",
-   "saeule": "Wissen zum Abspeichern",
-   "laenge": "30 bis 45 s",
-   "beschreibung": "Kurze Übersicht zum Speichern: welche Sorte wofür.",
-   "unterformate": [
-    {
-     "name": "Spickzettel",
-     "beschreibung": "Kurze Übersicht zum Speichern: welche Sorte wofür.",
-     "videos": [
-      {
-       "titel": "Spickzettel: welcher Tee wofür",
-       "status": "offen",
-       "quelle": "https://youtu.be/O9TEEbFTrK8",
-       "quelle_titel": "🍵Tee Spickzettel (teilen) #gesundheitstipps #ernährungstipps #tee"
-      },
-      {
-       "titel": "Spickzettel: welche Nuss wofür",
-       "status": "offen",
-       "quelle": "https://youtu.be/eBa0gxiFEEE",
-       "quelle_titel": "🥜Nuss Spickzettel (Abspeichern) #gesundheitstipps #ernährungstipps #gesundeernährung"
-      },
-      {
-       "titel": "Spickzettel: welche Dattel wofür",
-       "status": "offen",
-       "quelle": "https://youtu.be/YuoYgJenJuo",
-       "quelle_titel": "Welche Dattel für welches Ziel? #gesundheit #ernährung #ramadan"
-      },
-      {
-       "titel": "Spickzettel: Magnesium, welche Form wofür",
-       "status": "offen",
-       "quelle": "https://youtu.be/TnYvzx51Ex8",
-       "quelle_titel": "🧪Magnesium Spickzettel (Abspeichern) #magnesium #gesundheitstipps #aufklärung"
-      },
-      {
-       "titel": "Spickzettel: mach dein Wasser besser",
-       "status": "offen",
-       "quelle": "https://youtu.be/za9Pc4kH7mc",
-       "quelle_titel": "Spickzettel: Mach dein Wasser Besser (Speichern) #gesundheitstipps #ernährungstipps #aufklärung"
-      },
-      {
-       "titel": "Spickzettel: Kaffee-Upgrades",
-       "status": "offen",
-       "quelle": "https://youtu.be/p7QBdfP33UE",
-       "quelle_titel": "Spickzettel: Kaffee Upgrades (Speichern) #gesundheitstipps #ernährungstipps #aufklärung"
-      },
-      {
-       "titel": "Spickzettel: welche Lebensmittel für welches Organ",
-       "status": "offen",
-       "quelle": "https://youtu.be/MOcNg3I1aAo",
-       "quelle_titel": "lebensmittel für organe"
-      }
-     ]
-    }
-   ],
-   "anzahl": 7,
+   "anzahl": 12,
    "fertig": 0
   },
   {
    "name": "Komische Zeichen",
    "saeule": "Körper",
-   "laenge": "40 bis 55 s",
-   "beschreibung": "Was der Körper dir zeigt: Zeichen erkennen und was dahinterstecken kann.",
+   "laenge": "30 bis 45 s",
+   "beschreibung": "Ein Körperzeichen, das viele kennen, und was es dir über deine Gesundheit verraten kann.",
    "unterformate": [
     {
-     "name": "Komische Zeichen",
-     "beschreibung": "Was der Körper dir zeigt: Zeichen erkennen und was dahinterstecken kann.",
+     "name": "Gesicht & Augen",
+     "beschreibung": "Was dein Gesicht verrät",
      "videos": [
       {
-       "titel": "Das verraten deine Fingernägel",
-       "status": "offen",
-       "quelle": "https://youtu.be/bTCBROzQtPQ",
-       "quelle_titel": "das bedeuten deine fingernägel"
-      },
-      {
-       "titel": "Komische Zeichen für Nährstoffmangel",
-       "status": "offen",
-       "quelle": "https://youtu.be/yU4WkVwsrLY",
-       "quelle_titel": "Komische Zeichen für Nährstoffmangel (schlimm) #gesundheitstipps #nahrungsergänzungsmittel"
-      },
-      {
-       "titel": "Was dein Gesicht über deine Gesundheit sagt",
+       "titel": "Komische Zeichen in deinem Gesicht",
        "status": "offen",
        "quelle": "https://youtu.be/UBZx7CcYd0k",
        "quelle_titel": "12 Komische Zeichen die dein Gesicht über deine Gesundheit aussagt"
       },
       {
+       "titel": "Was deine Augenfarbe über dich verrät",
+       "status": "offen",
+       "quelle": "https://youtu.be/vn5eYknVpR0",
+       "quelle_titel": "Was deine Augenfarbe WIRKLICH über dich aussagt"
+      },
+      {
+       "titel": "Warum zuckt dein Auge?",
+       "status": "offen",
+       "quelle": "https://youtu.be/FBAJQyL7-F4",
+       "quelle_titel": "Zuckt dein Auge manchmal? 🤯(teilen)"
+      },
+      {
+       "titel": "Die Pickel Karte aus der chinesischen Medizin",
+       "status": "offen",
+       "quelle": "https://youtu.be/CeLJ31avEaI",
+       "quelle_titel": "chinesischer arzt: die pickel karte (folgen für mehr)"
+      }
+     ],
+     "anzahl": 4,
+     "fertig": 0
+    },
+    {
+     "name": "Hände & Füße",
+     "beschreibung": "Nägel, Handgelenk, Füße",
+     "videos": [
+      {
+       "titel": "Was deine Nägel über deine Schilddrüse verraten",
+       "status": "offen",
+       "quelle": "https://youtu.be/mAbgd2Ec5GU",
+       "quelle_titel": "Schilddrüsenprobleme an Nägeln erkennen"
+      },
+      {
+       "titel": "Was deine Füße über deine Leber verraten",
+       "status": "offen",
+       "quelle": "https://youtu.be/yYzMeCQJpnE",
+       "quelle_titel": "Was deine Füße über deine Lebergesundheit verraten..."
+      }
+     ],
+     "anzahl": 2,
+     "fertig": 0
+    },
+    {
+     "name": "Nährstoffmangel",
+     "beschreibung": "Wenn dem Körper etwas fehlt",
+     "videos": [
+      {
+       "titel": "Komische Zeichen für Nährstoffmangel",
+       "status": "offen",
+       "quelle": "https://youtu.be/BnDszo1R3es",
+       "quelle_titel": "23 Komische Anzeichen dass dein Körper Nährstoffmängel hat"
+      },
+      {
+       "titel": "Was deine Haare über Nährstoffmangel verraten",
+       "status": "offen",
+       "quelle": "https://youtu.be/PZKiJe5cx9E",
+       "quelle_titel": "Ignoriere das niemals 🧑🏽‍🦱(teilen)"
+      },
+      {
+       "titel": "Warum deine Beine zuerst schwach werden",
+       "status": "offen",
+       "quelle": "https://youtu.be/FwMs3gSYRYY",
+       "quelle_titel": "Deine Beine werden zuerst schwach - Hier ist warum..."
+      }
+     ],
+     "anzahl": 3,
+     "fertig": 0
+    },
+    {
+     "name": "Ausscheidung & Geruch",
+     "beschreibung": "Urin, Stuhl, Achsel",
+     "videos": [
+      {
+       "titel": "Was deine Urinfarbe bedeutet",
+       "status": "offen",
+       "quelle": "https://youtu.be/VOJFx6P1ZEs",
+       "quelle_titel": "Was bedeutet deine URINFARBE?"
+      },
+      {
+       "titel": "Was dein Stuhl über deinen Darm verrät",
+       "status": "offen",
+       "quelle": "https://youtu.be/bTPtziSxNhQ",
+       "quelle_titel": "Das zeigt dein Kot über deine Darmgesundheit"
+      }
+     ],
+     "anzahl": 2,
+     "fertig": 0
+    },
+    {
+     "name": "Gute Zeichen",
+     "beschreibung": "Woran du merkst, dass es dir gut geht",
+     "videos": [
+      {
        "titel": "Komische Zeichen, dass du gesund bist",
        "status": "offen",
        "quelle": "https://youtu.be/JekNriPGNwM",
-       "quelle_titel": "Komische Zeichen dass du GESUND bist (teilen) #gesundheitstipps #ernährungstipps #aufklärung"
+       "quelle_titel": "Komische Zeichen dass du GESUND bist (teilen)"
       }
-     ]
+     ],
+     "anzahl": 1,
+     "fertig": 0
     }
    ],
-   "anzahl": 4,
+   "anzahl": 12,
    "fertig": 0
   },
   {
-   "name": "Schlaf & Routine",
+   "name": "Dein Körper erklärt",
    "saeule": "Körper",
    "laenge": "45 bis 60 s",
-   "beschreibung": "Abend, Morgen, Schlaf: kleine Gewohnheiten mit großer Wirkung.",
+   "beschreibung": "Ein Zusammenhang im Körper einfach erklärt, zum Beispiel wie Darm und Haut zusammenhängen, mit einem Tipp für den Alltag.",
    "unterformate": [
     {
-     "name": "Schlaf & Routine",
-     "beschreibung": "Abend, Morgen, Schlaf: kleine Gewohnheiten mit großer Wirkung.",
+     "name": "Darm & Haut",
+     "beschreibung": "Der Darm als Schaltzentrale",
      "videos": [
       {
-       "titel": "Das passiert, wenn du abends Magnesium nimmst",
+       "titel": "Darm und Haut: warum Hautprobleme oft im Darm beginnen",
+       "status": "offen",
+       "quelle": "https://youtu.be/MjMnFJHaz6Y",
+       "quelle_titel": "vielleicht weil gute haut vom darm kommt…"
+      },
+      {
+       "titel": "Was deine Haut mit deinem Essen zu tun hat",
+       "status": "offen",
+       "quelle": "https://youtu.be/PnrRPQ2-Obo",
+       "quelle_titel": "Es gäbe keine Akne, wenn das jeder wüsste.."
+      },
+      {
+       "titel": "Blähbauch: der wirksamste einfache Trick",
+       "status": "offen",
+       "quelle": "https://youtu.be/bzl9KTl7w6c",
+       "quelle_titel": "Der Nr1 Effektivste Trick gegen BLÄHBAUCH (Sofort Erleichterung)"
+      },
+      {
+       "titel": "Deinen Darm in 3 Schritten unterstützen",
+       "status": "offen",
+       "quelle": "https://youtu.be/qdYEd7E-iqg",
+       "quelle_titel": "Die wundersame 3-Schritte Darmsanierung nach Fabian"
+      }
+     ],
+     "anzahl": 4,
+     "fertig": 0
+    },
+    {
+     "name": "Stoffwechsel & Stress",
+     "beschreibung": "Hormone, Blutzucker, Energie",
+     "videos": [
+      {
+       "titel": "Was Stress mit deinem Bauch macht",
+       "status": "offen",
+       "quelle": "https://youtu.be/ZoF1dbYsMRc",
+       "quelle_titel": "DAS killt deinen Cortisol Belly in Maximal 7 Tagen"
+      },
+      {
+       "titel": "Warum dein Stoffwechsel streikt",
+       "status": "offen",
+       "quelle": "https://youtu.be/v3J6PrjfH-4",
+       "quelle_titel": "Darum funktioniert dein STOFFWECHSEL nicht? (Expertenwissen)"
+      },
+      {
+       "titel": "So funktioniert der Blutzucker Trick",
+       "status": "offen",
+       "quelle": "https://youtu.be/wOV8CYcFy6I",
+       "quelle_titel": "So Funktioniert der Blutzucker Trick"
+      },
+      {
+       "titel": "Warum Frauen anders essen und fasten als Männer",
+       "status": "offen",
+       "quelle": "https://youtu.be/umx0-LpP9A8",
+       "quelle_titel": "Nicht WAS du isst, sondern WIE du isst (Frauen vs. Männer, Fasten, Lebensmittel Kombinationen)."
+      }
+     ],
+     "anzahl": 4,
+     "fertig": 0
+    },
+    {
+     "name": "Was passiert, wenn…",
+     "beschreibung": "Ein Experiment, Schritt für Schritt erklärt",
+     "videos": [
+      {
+       "titel": "Was passiert, wenn du 5 Tage Sardinen isst?",
+       "status": "offen",
+       "quelle": "https://youtu.be/CcGaYSrRljA",
+       "quelle_titel": "Was passiert wenn du jeden Tag Sardinen isst für 5 Tage?"
+      },
+      {
+       "titel": "Was passiert, wenn du jeden Tag 4 Eier isst?",
+       "status": "offen",
+       "quelle": "https://youtu.be/_QpIRMbAe8U",
+       "quelle_titel": "Unglaubliches Passiert wenn du jeden Tag 4 Eier isst - So geht es gesund (neue Studie)"
+      },
+      {
+       "titel": "Was passiert, wenn du abends Magnesium nimmst?",
        "status": "offen",
        "quelle": "https://youtu.be/NvjniRcW1kI",
        "quelle_titel": "Das passiert wenn du Nachts MAGNESIUM nimmst (neue Studie)"
       },
       {
-       "titel": "3 Gramm Glycin vor dem Schlafen",
+       "titel": "Was passiert, wenn du 28 Tage Flohsamenschalen nimmst?",
+       "status": "offen",
+       "quelle": "https://youtu.be/N5GPugP_dSg",
+       "quelle_titel": "Ich habe 28 Tage Flohsamenschalen gemaxxt das habe ich NICHT erwartet"
+      }
+     ],
+     "anzahl": 4,
+     "fertig": 0
+    }
+   ],
+   "anzahl": 12,
+   "fertig": 0
+  },
+  {
+   "name": "Schlaf & Routine",
+   "saeule": "Körper",
+   "laenge": "40 bis 55 s",
+   "beschreibung": "Eine kleine Gewohnheit für Abend, Morgen oder Alltag, die du sofort ausprobieren kannst.",
+   "unterformate": [
+    {
+     "name": "Schlaf",
+     "beschreibung": "Besser einschlafen, durchschlafen, aufwachen",
+     "videos": [
+      {
+       "titel": "18 Schlaftipps aus der Militärforschung",
+       "status": "offen",
+       "quelle": "https://youtu.be/hrUQKisum6Q",
+       "quelle_titel": "18 Elite-Schlaftipps aus Militärforschung (98/100 Schlafscore)"
+      },
+      {
+       "titel": "6 Fehler, die deinen Schlaf stören",
+       "status": "offen",
+       "quelle": "https://youtu.be/z6Sfz47mhh8",
+       "quelle_titel": "Die Große Schlaf Lüge! (Top 6 Nicht mehr falsch schlafen)"
+      },
+      {
+       "titel": "Durchschlafen, ohne nachts aufs Klo zu müssen",
        "status": "offen",
        "quelle": "https://youtu.be/DEEibbu6y4A",
        "quelle_titel": "3g und du schläfst 8 Stunden OHNE aufstehen zum Urinieren (neue Studie)"
@@ -380,107 +914,827 @@
        "quelle_titel": "DAS hier hat mein LEBEN zerstört (Nie wieder nachts aufwachen)"
       },
       {
-       "titel": "Der Fehler beim Mittagsschlaf",
+       "titel": "Ein unbekannter Einschlaftrick",
        "status": "offen",
-       "quelle": "https://youtu.be/xOs65LU58CQ",
-       "quelle_titel": "Vermeide diesen Fehler beim Mittagsschlaf #gesundheitstipps #schlaftipps #aufklärung"
+       "quelle": "https://youtu.be/odmoJrkWOiU",
+       "quelle_titel": "Unbekannter Einschlaftrick (Teilen)"
       },
       {
-       "titel": "Die perfekte Morgenroutine",
+       "titel": "5 Dinge, die dein Schlafzimmer nicht braucht",
        "status": "offen",
-       "quelle": "https://youtu.be/6fqYJXwI6Lw",
-       "quelle_titel": "Die Perfekte Morgenroutine (Wir haben alles getestet€ #gesundheitstipps #morgenroutine"
+       "quelle": "https://youtu.be/T_mfJ44sbL8",
+       "quelle_titel": "Top 5 Gefahren beim Schlafen"
       }
-     ]
+     ],
+     "anzahl": 6,
+     "fertig": 0
+    },
+    {
+     "name": "Morgen",
+     "beschreibung": "Gut in den Tag",
+     "videos": [
+      {
+       "titel": "Die Morgenroutine, die wir getestet haben",
+       "status": "offen",
+       "quelle": "https://youtu.be/4c8yvOEq_fM",
+       "quelle_titel": "Diese Morgenroutine soll Krankheiten verhinder..."
+      },
+      {
+       "titel": "Der Fehler, den fast alle morgens beim Wasser machen",
+       "status": "offen",
+       "quelle": "https://youtu.be/Tp3ccJ9Q5aM",
+       "quelle_titel": "99% machen diesen Fehler…(teilen)"
+      },
+      {
+       "titel": "Dieses Frühstück kannst du jeden Tag essen",
+       "status": "offen",
+       "quelle": "https://youtu.be/V_V82PLYFFY",
+       "quelle_titel": "Iss dieses Frühstück jeden Tag!"
+      }
+     ],
+     "anzahl": 3,
+     "fertig": 0
+    },
+    {
+     "name": "Bewegung im Alltag",
+     "beschreibung": "Kleine Bewegung, große Wirkung",
+     "videos": [
+      {
+       "titel": "10 Veränderungen, wenn du täglich spazieren gehst",
+       "status": "offen",
+       "quelle": "https://youtu.be/Bv0Igpr4sdw",
+       "quelle_titel": "10 Veränderungen Die Passieren Wenn Du Anfängst Täglich Zu Spazieren"
+      },
+      {
+       "titel": "5 Tricks für eine bessere Haltung",
+       "status": "offen",
+       "quelle": "https://youtu.be/MXgFxUEWI-U",
+       "quelle_titel": "Sofort schreckliche Haltung heilen - 5 Tricks"
+      },
+      {
+       "titel": "3 Übungen für deinen Rücken",
+       "status": "offen",
+       "quelle": "https://youtu.be/RTohtKjxuNE",
+       "quelle_titel": "Mach diese 3 komischen Übungen: Nie Wieder Rückenschmerzen (Es ist der Ischias Schmerz)"
+      }
+     ],
+     "anzahl": 3,
+     "fertig": 0
     }
    ],
-   "anzahl": 5,
+   "anzahl": 12,
    "fertig": 0
   },
   {
    "name": "Hausmittel",
    "saeule": "Natur & Hausmittel",
-   "laenge": "45 bis 60 s",
-   "beschreibung": "Altes Wissen aus der Natur, einfach nachzumachen. Ohne Heilversprechen.",
+   "laenge": "40 bis 55 s",
+   "beschreibung": "Ein bewährtes Hausmittel aus Küche oder Natur: Zutaten zeigen, Zubereitung in wenigen Schritten, wofür es traditionell genutzt wird.",
    "unterformate": [
     {
-     "name": "Hausmittel",
-     "beschreibung": "Altes Wissen aus der Natur, einfach nachzumachen. Ohne Heilversprechen.",
+     "name": "Atemwege & Erkältung",
+     "beschreibung": "Für Lunge, Nase und Hals",
      "videos": [
       {
-       "titel": "Ingwer und Zimt: was passiert, wenn du das trinkst",
+       "titel": "Hausmittel für freie Atemwege",
        "status": "offen",
-       "quelle": "https://youtu.be/q22cyLqLAMs",
-       "quelle_titel": "Was passiert wenn Sie Ingwer&Zimt trinkt? (teilen) #gesundheitstipps #aufklärung #gesunderezepte"
+       "quelle": "https://youtu.be/A1ZmvvcWmeQ",
+       "quelle_titel": "So entferne ich Schleim, Rauchen, Dreck aus der Lunge (Top 6)"
       },
       {
-       "titel": "Nelkenwasser: warum es kaum einer kennt",
+       "titel": "2 Zutaten Tee bei Schleim",
        "status": "offen",
-       "quelle": "https://youtu.be/9KnkZcpgY8s",
-       "quelle_titel": "Warum kennt niemand dieses Nelkenwasser? (teilen) #gesunderezepte #akne #ernährungstipps"
+       "quelle": "https://youtu.be/sJIVIMQk11w",
+       "quelle_titel": "Trinke 1 Tasse um Schleim Sofort Auszuscheiden (2 Zutaten)"
       },
       {
-       "titel": "Zitronenwasser, aber richtig",
-       "status": "offen",
-       "quelle": "https://youtu.be/ZE21WVAb8SU",
-       "quelle_titel": "Das hier macht Zitronenwasser 3,7x gesünder"
-      },
-      {
-       "titel": "Wohltuender Trunk bei Husten",
-       "status": "offen",
-       "quelle": "https://youtu.be/wLhPGW9pE_E",
-       "quelle_titel": "Zaubertrank gegen Schleim und Husten #gesundheitstipps #ernährungstipps #aufklärung"
-      },
-      {
-       "titel": "Hausmittel für eine freie Nase",
+       "titel": "Mit einer Bewegung die Nase frei bekommen",
        "status": "offen",
        "quelle": "https://youtu.be/Bp_TiREmUpk",
        "quelle_titel": "Sinus Entleeren & Deine Verstopfe Nase Befreien mit 1 Bewegung"
+      },
+      {
+       "titel": "Der Hausmittel Trank bei Husten",
+       "status": "offen",
+       "quelle": "https://youtu.be/wLhPGW9pE_E",
+       "quelle_titel": "Zaubertrank gegen Schleim und Husten"
       }
-     ]
+     ],
+     "anzahl": 4,
+     "fertig": 0
+    },
+    {
+     "name": "Bauch & Verdauung",
+     "beschreibung": "Wenn der Bauch grummelt",
+     "videos": [
+      {
+       "titel": "Hausmittel bei Blähungen",
+       "status": "offen",
+       "quelle": "https://youtu.be/8GsaBSEnLHo",
+       "quelle_titel": "haushaltsmittel gegen blähungen"
+      },
+      {
+       "titel": "Ein Teelöffel Nelken für deinen Bauch",
+       "status": "offen",
+       "quelle": "https://youtu.be/ux6sBobvadw",
+       "quelle_titel": "Nur 1 Teelöffel Nelken Täglich: Blähbauch und Entzündung weg"
+      },
+      {
+       "titel": "Ein Rezept für einen leichten Morgen auf der Toilette",
+       "status": "offen",
+       "quelle": "https://youtu.be/yWsaAG6iXKY",
+       "quelle_titel": "rezept um morgens zu kacken -4 kg"
+      }
+     ],
+     "anzahl": 3,
+     "fertig": 0
+    },
+    {
+     "name": "Küchenklassiker",
+     "beschreibung": "Natron, Honig und Co.",
+     "videos": [
+      {
+       "titel": "Natron richtig anwenden",
+       "status": "offen",
+       "quelle": "https://youtu.be/LTn63d6VuHY",
+       "quelle_titel": "So Natron gegen Entzündungen Anwenden (Neue Studie 🦀)"
+      },
+      {
+       "titel": "Honig und Knoblauch: das alte Hausmittel",
+       "status": "offen",
+       "quelle": "https://youtu.be/xmeXN2LYARs",
+       "quelle_titel": "Heilmittel  🍯🧄"
+      }
+     ],
+     "anzahl": 2,
+     "fertig": 0
+    },
+    {
+     "name": "Kraft der Pflanzen",
+     "beschreibung": "Heilpflanzen und Kräuter",
+     "videos": [
+      {
+       "titel": "Artemisia annua: die Pflanze mit Geschichte",
+       "status": "offen",
+       "quelle": "https://youtu.be/1njVZUs8ZME",
+       "quelle_titel": "Die Verbotene Heilpflanze Artemisia Annua...(Einnahmeempfehlung, Anwendungsgebiete)"
+      },
+      {
+       "titel": "Pflanzen mit besonderer Wirkung",
+       "status": "offen",
+       "quelle": "https://youtu.be/byPye_8tdk8",
+       "quelle_titel": "Pflanzen mit besonderer Wirkung (Speichern)"
+      },
+      {
+       "titel": "Zecken: was du nach dem Waldspaziergang tun kannst",
+       "status": "offen",
+       "quelle": "https://youtu.be/rYuOlsDlYcs",
+       "quelle_titel": "Extreme Zeckengefahr - Tu Sofort Das! (+Borreliose Protokoll)"
+      }
+     ],
+     "anzahl": 3,
+     "fertig": 0
     }
    ],
-   "anzahl": 5,
+   "anzahl": 12,
+   "fertig": 0
+  },
+  {
+   "name": "Natürliche Pflege",
+   "saeule": "Zuhause & Pflege",
+   "laenge": "40 bis 55 s",
+   "beschreibung": "Ein Pflegeproblem und die natürliche Alternative aus Küche oder Natur, mit Rezept zum Nachmachen.",
+   "unterformate": [
+    {
+     "name": "Haut",
+     "beschreibung": "Pflege mit wenigen Zutaten",
+     "videos": [
+      {
+       "titel": "Rizinusöl für dein Gesicht",
+       "status": "offen",
+       "quelle": "https://youtu.be/Fa7Qiph2BZM",
+       "quelle_titel": "Rizinusöl fürs Gesicht (NATÜRLICHES BOTOX)"
+      },
+      {
+       "titel": "Mitesser natürlich loswerden",
+       "status": "offen",
+       "quelle": "https://youtu.be/6ahTnxtGtsM",
+       "quelle_titel": "So Mitesser PERMANENT Entfernen (KEINE HAUTCREME!)"
+      },
+      {
+       "titel": "Trockene Hände: das beste Mittel",
+       "status": "offen",
+       "quelle": "https://youtu.be/qsM8kIGvQ1g",
+       "quelle_titel": "Die ultimative Hand Transformation - Bestes Mittel für Trockenheit und Falten"
+      },
+      {
+       "titel": "Koreanische Hautcreme selber machen",
+       "status": "offen",
+       "quelle": "https://youtu.be/nhFk7I5Umhs",
+       "quelle_titel": "Rezept: Koreanische Hautcreme (Speichern)"
+      },
+      {
+       "titel": "Straffe Haut: 7 natürliche Tricks",
+       "status": "offen",
+       "quelle": "https://youtu.be/nS7X2wokeJ0",
+       "quelle_titel": "Sag Tschüss zu Schlaffer Haut - 7 Tricks für Natürliche Straffung"
+      }
+     ],
+     "anzahl": 5,
+     "fertig": 0
+    },
+    {
+     "name": "Haare",
+     "beschreibung": "Für volles, kräftiges Haar",
+     "videos": [
+      {
+       "titel": "Zwiebelsaft für deine Haare",
+       "status": "offen",
+       "quelle": "https://youtu.be/yW5Fe7G7r4g",
+       "quelle_titel": "Zwiebelsaft für Extremes Haarwachstum: Stop Haarausfall"
+      },
+      {
+       "titel": "Graue Haare und Haarausfall: was du tun kannst",
+       "status": "offen",
+       "quelle": "https://youtu.be/I6ic5KByqSs",
+       "quelle_titel": "Graue Haare und Haarausfall Verhindern & Rückgängig machen?"
+      }
+     ],
+     "anzahl": 2,
+     "fertig": 0
+    },
+    {
+     "name": "Zähne",
+     "beschreibung": "Natürliche Mundpflege",
+     "videos": [
+      {
+       "titel": "Die stärkste Lösung gegen Zahnbelag",
+       "status": "offen",
+       "quelle": "https://youtu.be/V8xpeiX0EqE",
+       "quelle_titel": "Die STÄRKSTE Lösung für Zahn Plaques (Weißzahn Methode)"
+      },
+      {
+       "titel": "7 Schritte für Zähne und Zahnfleisch",
+       "status": "offen",
+       "quelle": "https://youtu.be/SxIdoS2UTSw",
+       "quelle_titel": "Wie ich meine Zähne & Zahnfleisch gerettet habe (7-Schritte Methode)"
+      },
+      {
+       "titel": "Natürliche Zahnpasta selber machen",
+       "status": "offen",
+       "quelle": "https://youtu.be/ERn1cjzz82A",
+       "quelle_titel": "Gesunde natürliche Zahnpasta Rezept (teilen)"
+      }
+     ],
+     "anzahl": 3,
+     "fertig": 0
+    },
+    {
+     "name": "Haushalt",
+     "beschreibung": "Natürlich sauber",
+     "videos": [
+      {
+       "titel": "Hausmittel gegen Fliegen, Mäuse und Motten",
+       "status": "offen",
+       "quelle": "https://youtu.be/_S4O29rIGR8",
+       "quelle_titel": "Haushaltshacks gegen Fliegen, Mäuse, Motten (Speichern)"
+      }
+     ],
+     "anzahl": 1,
+     "fertig": 0
+    }
+   ],
+   "anzahl": 11,
+   "fertig": 0
+  },
+  {
+   "name": "Tee-Serie",
+   "saeule": "Natur & Hausmittel",
+   "laenge": "30 bis 45 s",
+   "beschreibung": "Jeder Short ein Tee: was drinsteckt, wofür er traditionell getrunken wird und wie du ihn richtig aufbrühst. Später ein langes Video mit allen.",
+   "unterformate": [
+    {
+     "name": "Ein Tee pro Short",
+     "beschreibung": "Jede Folge eine Teesorte",
+     "videos": [
+      {
+       "titel": "Grüner Tee: was du wissen solltest",
+       "status": "offen",
+       "quelle": "https://youtu.be/FBCuApyPEo0",
+       "quelle_titel": "Grüntee nicht Trinken!!"
+      },
+      {
+       "titel": "Matcha: was steckt hinter dem Hype?",
+       "status": "offen",
+       "quelle": "https://youtu.be/CA66rmnzozk",
+       "quelle_titel": "dieser hype ist komisch, oder?  (matsche latsche)"
+      },
+      {
+       "titel": "Ingwer und Zimt: was der Tee mit dir macht",
+       "status": "offen",
+       "quelle": "https://youtu.be/q22cyLqLAMs",
+       "quelle_titel": "Was passiert wenn Sie Ingwer&Zimt trinkt? (teilen)"
+      },
+      {
+       "titel": "Nelkenwasser: der unbekannte Tee",
+       "status": "offen",
+       "quelle": "https://youtu.be/9KnkZcpgY8s",
+       "quelle_titel": "Warum kennt niemand dieses Nelkenwasser? (teilen)"
+      },
+      {
+       "titel": "Kamillentee",
+       "status": "offen"
+      },
+      {
+       "titel": "Pfefferminztee",
+       "status": "offen"
+      },
+      {
+       "titel": "Brennnesseltee",
+       "status": "offen"
+      },
+      {
+       "titel": "Schwarzer Tee",
+       "status": "offen"
+      }
+     ],
+     "anzahl": 8,
+     "fertig": 0
+    },
+    {
+     "name": "Tee Spickzettel",
+     "beschreibung": "Alle Tees auf einen Blick",
+     "videos": [
+      {
+       "titel": "Tee Spickzettel: welcher Tee wofür?",
+       "status": "offen",
+       "quelle": "https://youtu.be/O9TEEbFTrK8",
+       "quelle_titel": "🍵Tee Spickzettel (teilen)"
+      },
+      {
+       "titel": "Tee Tipps: so brühst du richtig auf",
+       "status": "offen",
+       "quelle": "https://youtu.be/0vsk1oG3aM0",
+       "quelle_titel": "Tee Tips 🍵"
+      }
+     ],
+     "anzahl": 2,
+     "fertig": 0
+    },
+    {
+     "name": "Das große Tee-Video",
+     "beschreibung": "Langes Video mit allen Sorten",
+     "videos": [
+      {
+       "titel": "Der richtige Tee für jedes Anliegen",
+       "status": "offen",
+       "quelle": "https://youtu.be/oZyVn8ivC8s",
+       "quelle_titel": "Der richtige Tee für jedes Problem"
+      }
+     ],
+     "anzahl": 1,
+     "fertig": 0
+    }
+   ],
+   "anzahl": 11,
+   "fertig": 0
+  },
+  {
+   "name": "Sonne, Wasser, Wärme",
+   "saeule": "Natur & Hausmittel",
+   "laenge": "45 bis 60 s",
+   "beschreibung": "Ein Naturelement neu betrachtet: was Sonne, Wasser oder Wärme in deinem Körper bewirken und wie du sie klug nutzt.",
+   "unterformate": [
+    {
+     "name": "Sonne",
+     "beschreibung": "Licht, Haut und Schutz",
+     "videos": [
+      {
+       "titel": "Was dir keiner über die Sonne erzählt",
+       "status": "offen",
+       "quelle": "https://youtu.be/5UTfxTgZz50",
+       "quelle_titel": "Hast du Angst vor der Sonne? ☀️"
+      },
+      {
+       "titel": "Sonnencreme und natürliche Alternativen",
+       "status": "offen",
+       "quelle": "https://youtu.be/TLKnVK4D810",
+       "quelle_titel": "Das Geheimnis der Sonnenhornaut (❌ Sonnencreme)"
+      },
+      {
+       "titel": "Sonnencreme selber machen",
+       "status": "offen",
+       "quelle": "https://youtu.be/AB-zIjcu88E",
+       "quelle_titel": "So machst du selbst gesunde Sonnencreme"
+      },
+      {
+       "titel": "Was in deiner Sonnencreme steckt",
+       "status": "offen",
+       "quelle": "https://youtu.be/tvstgpQxank",
+       "quelle_titel": "vorsicht: giftige sonnencreme"
+      }
+     ],
+     "anzahl": 4,
+     "fertig": 0
+    },
+    {
+     "name": "Wasser",
+     "beschreibung": "Was du trinkst",
+     "videos": [
+      {
+       "titel": "Leitungswasser: was drin ist und was du tun kannst",
+       "status": "offen",
+       "quelle": "https://youtu.be/KrVuFVVYdcY",
+       "quelle_titel": "Das gesündeste Wasser! Trink bitte kein Leitungswasser. Einfach Selber machen."
+      },
+      {
+       "titel": "Welches Wasser ist das beste?",
+       "status": "offen",
+       "quelle": "https://youtu.be/9ZrQabf8Rkc",
+       "quelle_titel": "evidenzbasiert das beste"
+      },
+      {
+       "titel": "Wasserfilter: gutes Wasser selber machen",
+       "status": "offen",
+       "quelle": "https://youtu.be/aV693ajYs98",
+       "quelle_titel": "Das gesündeste Wasser selbermachen"
+      },
+      {
+       "titel": "Was das Meer in deinem Körper bewirkt",
+       "status": "offen",
+       "quelle": "https://youtu.be/3CjqXU41s3M",
+       "quelle_titel": "das bewirkt meer im körper"
+      }
+     ],
+     "anzahl": 4,
+     "fertig": 0
+    },
+    {
+     "name": "Wärme & Kälte",
+     "beschreibung": "Sauna, Eisbad und Natur",
+     "videos": [
+      {
+       "titel": "Sauna: wie gesund ist sie wirklich?",
+       "status": "offen",
+       "quelle": "https://youtu.be/MClqQlxvAFY",
+       "quelle_titel": "Ist Sauna WIRKLICH So Gesund? (13 Jahre & 255 Studien)"
+      },
+      {
+       "titel": "Das Geheimnis der Finnen",
+       "status": "offen",
+       "quelle": "https://youtu.be/u3cxeXb2aBM",
+       "quelle_titel": "Das Geheimnis der Finnen?"
+      },
+      {
+       "titel": "Eisbaden: worauf Frauen achten können",
+       "status": "offen",
+       "quelle": "https://youtu.be/9j3_V8Iw4xY",
+       "quelle_titel": "Frauen NIEMALS Eisbaden"
+      },
+      {
+       "titel": "Warum dir Zeit im Wald guttut",
+       "status": "offen",
+       "quelle": "https://youtu.be/KKHwMG56N6E",
+       "quelle_titel": "Deshalb umarmt er Bäume…"
+      }
+     ],
+     "anzahl": 4,
+     "fertig": 0
+    }
+   ],
+   "anzahl": 12,
+   "fertig": 0
+  },
+  {
+   "name": "Spickzettel",
+   "saeule": "Wissen zum Abspeichern",
+   "laenge": "20 bis 35 s",
+   "beschreibung": "Eine Übersicht als Bild zum Abspeichern: ein Thema, eine Liste, kurz eingesprochen.",
+   "unterformate": [
+    {
+     "name": "Essen & Kombinieren",
+     "beschreibung": "Was zusammenpasst",
+     "videos": [
+      {
+       "titel": "Spickzettel: Lebensmittel richtig kombinieren",
+       "status": "offen",
+       "quelle": "https://youtu.be/tsAauYnQZrQ",
+       "quelle_titel": "Spickzettel: Lebensmittel Kombinationen"
+      },
+      {
+       "titel": "Spickzettel: Nüsse",
+       "status": "offen",
+       "quelle": "https://youtu.be/eBa0gxiFEEE",
+       "quelle_titel": "🥜Nuss Spickzettel (Abspeichern)"
+      },
+      {
+       "titel": "Spickzettel: Kohlenhydrate",
+       "status": "offen",
+       "quelle": "https://youtu.be/PIk6V4jRjn8",
+       "quelle_titel": "Kohlenhydrate Spickzettel!"
+      }
+     ],
+     "anzahl": 3,
+     "fertig": 0
+    },
+    {
+     "name": "Trinken",
+     "beschreibung": "Getränke aufwerten",
+     "videos": [
+      {
+       "titel": "Spickzettel: mach dein Wasser besser",
+       "status": "offen",
+       "quelle": "https://youtu.be/za9Pc4kH7mc",
+       "quelle_titel": "Spickzettel: Mach dein Wasser Besser (Speichern)"
+      },
+      {
+       "titel": "Spickzettel: Apfelessig",
+       "status": "offen",
+       "quelle": "https://youtu.be/S9B3qjfAhBw",
+       "quelle_titel": "Apfelessig Spickzettel (teilen)"
+      }
+     ],
+     "anzahl": 2,
+     "fertig": 0
+    },
+    {
+     "name": "Körper",
+     "beschreibung": "Dein Körper auf einen Blick",
+     "videos": [
+      {
+       "titel": "Spickzettel: Magnesium",
+       "status": "offen",
+       "quelle": "https://youtu.be/TnYvzx51Ex8",
+       "quelle_titel": "🧪Magnesium Spickzettel (Abspeichern)"
+      },
+      {
+       "titel": "Spickzettel: Heißhunger und was dir fehlt",
+       "status": "offen",
+       "quelle": "https://youtu.be/TGFBK_7Yd78",
+       "quelle_titel": "Spickzettel: Heisshunger = Nährstoffmangel (Abspeichern)"
+      },
+      {
+       "titel": "Spickzettel: Lebensmittel für deine Organe",
+       "status": "offen",
+       "quelle": "https://youtu.be/MOcNg3I1aAo",
+       "quelle_titel": "lebensmittel für organe"
+      },
+      {
+       "titel": "Spickzettel: welches Lebensmittel wofür?",
+       "status": "offen",
+       "quelle": "https://youtu.be/fxcZTON2__U",
+       "quelle_titel": "Welche Lebensmittel für was?"
+      }
+     ],
+     "anzahl": 4,
+     "fertig": 0
+    },
+    {
+     "name": "Natur",
+     "beschreibung": "Naturmittel kompakt",
+     "videos": [
+      {
+       "titel": "Spickzettel: ätherische Öle",
+       "status": "offen",
+       "quelle": "https://youtu.be/Sa5CCcbdGfM",
+       "quelle_titel": "Ätherische Öle Spickzettel"
+      }
+     ],
+     "anzahl": 1,
+     "fertig": 0
+    },
+    {
+     "name": "Rankings",
+     "beschreibung": "Von schlecht bis gut sortiert",
+     "videos": [
+      {
+       "titel": "Gemüse im Ranking",
+       "status": "offen",
+       "quelle": "https://youtu.be/z76ICbayT-I",
+       "quelle_titel": "Du Isst Das Falsche Gemüse (Ranking)"
+      },
+      {
+       "titel": "Fette und Öle im Ranking",
+       "status": "offen",
+       "quelle": "https://youtu.be/O1UupG8uRpQ",
+       "quelle_titel": "Fette & Öle von Krankheitserregend bis Heilend"
+      },
+      {
+       "titel": "Süßungsmittel im Ranking",
+       "status": "offen",
+       "quelle": "https://youtu.be/OmFX1qRUY9U",
+       "quelle_titel": "Süßungsmittel von Krebserregend bis Heilend"
+      }
+     ],
+     "anzahl": 3,
+     "fertig": 0
+    }
+   ],
+   "anzahl": 13,
    "fertig": 0
   },
   {
    "name": "Echt oder Fake?",
-   "saeule": "Natur & Hausmittel",
+   "saeule": "Mythen & Wahrheiten",
    "laenge": "30 bis 45 s",
-   "beschreibung": "Selbsttest für zuhause: ist das Lebensmittel echt?",
+   "beschreibung": "Ein Produkt im Check: woran du das Echte erkennst, oft mit einem einfachen Test für zu Hause.",
    "unterformate": [
     {
-     "name": "Echt oder Fake?",
-     "beschreibung": "Selbsttest für zuhause: ist das Lebensmittel echt?",
+     "name": "Selbsttest zu Hause",
+     "beschreibung": "Mit einfachen Mitteln prüfen",
      "videos": [
       {
-       "titel": "Ist dein Olivenöl echt? Der Test für zuhause",
+       "titel": "Olivenöl: echt oder fake?",
        "status": "offen",
        "quelle": "https://youtu.be/nB5Ug_dApiU",
-       "quelle_titel": "Olivenöl Fake Selbsttest? #gesundheitstipps #ernährungstipps #olivenöl"
+       "quelle_titel": "Olivenöl Fake Selbsttest?"
       },
       {
-       "titel": "Ist dein Honig echt? Der Test für zuhause",
+       "titel": "Honig: echt oder fake?",
        "status": "offen",
        "quelle": "https://youtu.be/AMqYRKufkOo",
-       "quelle_titel": "Selbsttest: Ist dein Honig echt oder fake? #gesundheitstipps #honig #aufklärung"
+       "quelle_titel": "Selbsttest: Ist dein Honig echt oder fake?"
       },
       {
-       "titel": "Echte Butter oder nicht?",
+       "titel": "Obst: so erkennst du, ob es echt ist",
+       "status": "offen",
+       "quelle": "https://youtu.be/oCUhlmZ78WM",
+       "quelle_titel": "So erkennst du ob dein Onst fake ist"
+      },
+      {
+       "titel": "Oliven: echt oder gefärbt?",
+       "status": "offen",
+       "quelle": "https://youtu.be/ZeyuyLY7TpA",
+       "quelle_titel": "Diese Oliven sind fake 🤯 Aufpassen"
+      }
+     ],
+     "anzahl": 4,
+     "fertig": 0
+    },
+    {
+     "name": "Im Supermarkt",
+     "beschreibung": "Hinter das Etikett geschaut",
+     "videos": [
+      {
+       "titel": "Butter: echt oder Ersatz?",
        "status": "offen",
        "quelle": "https://youtu.be/aGVb2fYGeTo",
-       "quelle_titel": "Achtung: Neue Fake Butter #gesundheitstipps #aufklärung"
+       "quelle_titel": "Achtung: Neue Fake Butter"
       },
       {
-       "titel": "Welches Salz du nicht kaufen solltest",
+       "titel": "Was in manchem Käse steckt",
        "status": "offen",
-       "quelle": "https://youtu.be/LEaFBCPQqmA",
-       "quelle_titel": "welches salz nicht kaufen? (teilen)"
+       "quelle": "https://youtu.be/8ibZzXtg7Ag",
+       "quelle_titel": "neuer skandal in käse (teilen!)"
+      },
+      {
+       "titel": "Mini Möhren: so werden sie gemacht",
+       "status": "offen",
+       "quelle": "https://youtu.be/0dqS-dHkJWk",
+       "quelle_titel": "MiniMöhren sind nicht echt 🤯"
+      },
+      {
+       "titel": "Bio Eier: worauf du wirklich achten kannst",
+       "status": "offen",
+       "quelle": "https://youtu.be/_LV8hI5PunM",
+       "quelle_titel": "bio eier abzocke"
+      },
+      {
+       "titel": "Wo sich Bio wirklich lohnt",
+       "status": "offen",
+       "quelle": "https://youtu.be/-lLKYWHOBSE",
+       "quelle_titel": "Die Große Bio-Lüge (So verarschen sie dich)"
+      },
+      {
+       "titel": "Zutatenlisten früher und heute",
+       "status": "offen",
+       "quelle": "https://youtu.be/wbZ6wPi-DP4",
+       "quelle_titel": "Ekelhafte Zutatenlisten: Früher vs. Jetzt"
+      },
+      {
+       "titel": "Proteinriegel: was wirklich drin ist",
+       "status": "offen",
+       "quelle": "https://youtu.be/ojP_nqxxRt8",
+       "quelle_titel": "Proteinriegel ist Verarsche"
+      },
+      {
+       "titel": "Die unsichtbare Schicht auf Obst",
+       "status": "offen",
+       "quelle": "https://youtu.be/c7ugpcim6a4",
+       "quelle_titel": "NEU: Apeel jetzt versteckt (tu das!)"
       }
-     ]
+     ],
+     "anzahl": 8,
+     "fertig": 0
     }
    ],
-   "anzahl": 4,
+   "anzahl": 12,
+   "fertig": 0
+  },
+  {
+   "name": "Mythos-Check",
+   "saeule": "Mythen & Wahrheiten",
+   "laenge": "30 bis 45 s",
+   "beschreibung": "Ein bekannter Satz aus dem Alltag, kurz geprüft: stimmt das, stimmt das halb oder ist es ein Mythos?",
+   "unterformate": [
+    {
+     "name": "Körper-Mythen",
+     "beschreibung": "Was man sich über den Körper erzählt",
+     "videos": [
+      {
+       "titel": "Weiße Flecken auf den Nägeln: wirklich Zinkmangel?",
+       "status": "offen",
+       "quelle": "https://youtu.be/bTCBROzQtPQ",
+       "quelle_titel": "das bedeuten deine fingernägel"
+      },
+      {
+       "titel": "Fingerknacken: schadet das deinen Gelenken?",
+       "status": "offen",
+       "quelle": "https://youtu.be/ZsRQfwSOmz0",
+       "quelle_titel": "bloss nicht gelenke knacken ‼️(teilen)"
+      },
+      {
+       "titel": "Ist Fasten für Frauen tabu?",
+       "status": "offen",
+       "quelle": "https://youtu.be/5c5gpOnu0cI",
+       "quelle_titel": "frauen dürfen nicht fasten!"
+      }
+     ],
+     "anzahl": 3,
+     "fertig": 0
+    },
+    {
+     "name": "Ernährungs-Mythen",
+     "beschreibung": "Was auf dem Teller stimmt",
+     "videos": [
+      {
+       "titel": "Ist Salz wirklich ungesund?",
+       "status": "offen",
+       "quelle": "https://youtu.be/VBjDwyf2Q2o",
+       "quelle_titel": "Ist Salz doch gesund?"
+      },
+      {
+       "titel": "Vier Eier am Tag: zu viel Cholesterin?",
+       "status": "offen",
+       "quelle": "https://youtu.be/B1p_XHmgauk",
+       "quelle_titel": "4 EIER AM TAG?"
+      },
+      {
+       "titel": "Ist Frittiertes immer ungesund?",
+       "status": "offen",
+       "quelle": "https://youtu.be/AG7cuOF4SIE",
+       "quelle_titel": "Frittiertes ist nicht ungesund!!"
+      },
+      {
+       "titel": "Macht Fett wirklich fett?",
+       "status": "offen",
+       "quelle": "https://youtu.be/_ZzgStE1XvM",
+       "quelle_titel": "Welches Fett macht WIRKLICH krank?"
+      },
+      {
+       "titel": "Ist Frühstück die wichtigste Mahlzeit?",
+       "status": "offen",
+       "quelle": "https://youtu.be/sG0gag94-yY",
+       "quelle_titel": "Frühstückst du noch?"
+      },
+      {
+       "titel": "Kalorien: zählt wirklich nur die Zahl?",
+       "status": "offen",
+       "quelle": "https://youtu.be/2OW7JHXN-20",
+       "quelle_titel": "Abnehm-Wissenschaftler: Du wurdest ANGELOGEN über Kalorien, Diäten und Abnehmen @tammomartach"
+      }
+     ],
+     "anzahl": 6,
+     "fertig": 0
+    },
+    {
+     "name": "Wasser-Mythen",
+     "beschreibung": "Was du übers Trinken glaubst",
+     "videos": [
+      {
+       "titel": "Musst du wirklich 3 Liter Wasser trinken?",
+       "status": "offen",
+       "quelle": "https://youtu.be/SJ-5LxMvTKg",
+       "quelle_titel": "Die Große WASSER LÜGE ?! (Experte enthüllt: Wie richtig?)"
+      },
+      {
+       "titel": "5 Fehler beim Wassertrinken",
+       "status": "offen",
+       "quelle": "https://youtu.be/PswvWD97SQI",
+       "quelle_titel": "VERMEIDE diese FEHLER beim WASSER Trinken (Schlimme 5)‼️"
+      },
+      {
+       "titel": "Salz ins Wasser: sinnvoll oder Mythos?",
+       "status": "offen",
+       "quelle": "https://youtu.be/Ag_WZBXy4-s",
+       "quelle_titel": "Salz nicht ins Wasser?"
+      }
+     ],
+     "anzahl": 3,
+     "fertig": 0
+    }
+   ],
+   "anzahl": 12,
    "fertig": 0
   }
  ],
@@ -490,358 +1744,818 @@
    "runde": 1,
    "saeule": "Lebensmittel",
    "format": "Unter der Lupe",
-   "unterformat": "Unter der Lupe",
+   "unterformat": "Obst & Beeren",
    "thema": "Das solltest du über Datteln wissen",
    "titel": "Das solltest du über Datteln wissen",
-   "status": "fertig",
+   "status": "online",
    "key": "KU|Unter der Lupe|Das solltest du über Datteln wissen",
-   "id": "K02_Datteln",
    "quelle": "https://youtu.be/ufFUbEmS6Lg",
-   "datum": "2026-10-27"
+   "id": "K02_Datteln",
+   "gepostet_am": "2026-10-24"
   },
   {
    "nr": 2,
    "runde": 1,
    "saeule": "Lebensmittel",
    "format": "Ja oder Nein?",
-   "unterformat": "Ja oder Nein?",
-   "thema": "Kaffee: ja oder nein?",
-   "titel": "Kaffee: ja oder nein?",
+   "unterformat": "Essen",
+   "thema": "Kartoffeln: Ja oder Nein?",
+   "titel": "Kartoffeln: Ja oder Nein?",
    "status": "offen",
-   "key": "KU|Ja oder Nein?|Kaffee: ja oder nein?",
-   "quelle": "https://youtu.be/Tjxvv0ucJUg",
-   "datum": "2026-10-28"
+   "key": "KU|Ja oder Nein?|Kartoffeln: Ja oder Nein?",
+   "quelle": "https://youtu.be/8NjEgubaYMo",
+   "datum": "2026-10-25"
   },
   {
    "nr": 3,
    "runde": 1,
-   "saeule": "Lebensmittel",
-   "format": "Top 3",
-   "unterformat": "Top 3",
-   "thema": "Top 3 Lebensmittel für besseren Schlaf",
-   "titel": "Top 3 Lebensmittel für besseren Schlaf",
+   "saeule": "Zuhause & Pflege",
+   "format": "Gut gegen Schlecht",
+   "unterformat": "Küche",
+   "thema": "Teflonpfanne gegen Edelstahlpfanne",
+   "titel": "Teflonpfanne gegen Edelstahlpfanne",
    "status": "offen",
-   "key": "KU|Top 3|Top 3 Lebensmittel für besseren Schlaf",
-   "quelle": "https://youtu.be/z6Sfz47mhh8",
-   "datum": "2026-10-29"
+   "key": "KU|Gut gegen Schlecht|Teflonpfanne gegen Edelstahlpfanne",
+   "quelle": "https://youtu.be/M6uRA6IgAd0",
+   "datum": "2026-10-26"
   },
   {
    "nr": 4,
    "runde": 1,
-   "saeule": "Wissen zum Abspeichern",
-   "format": "Spickzettel",
-   "unterformat": "Spickzettel",
-   "thema": "Spickzettel: welcher Tee wofür",
-   "titel": "Spickzettel: welcher Tee wofür",
+   "saeule": "Nährstoffe",
+   "format": "Nährstoff erklärt",
+   "unterformat": "Mineralstoffe",
+   "thema": "Magnesium: warum es so wichtig ist",
+   "titel": "Magnesium: warum es so wichtig ist",
    "status": "offen",
-   "key": "KU|Spickzettel|Spickzettel: welcher Tee wofür",
-   "quelle": "https://youtu.be/O9TEEbFTrK8",
-   "datum": "2026-10-30"
+   "key": "KU|Nährstoff erklärt|Magnesium: warum es so wichtig ist",
+   "quelle": "https://youtu.be/F1woK48-RiM",
+   "datum": "2026-10-27"
   },
   {
    "nr": 5,
    "runde": 1,
-   "saeule": "Körper",
-   "format": "Komische Zeichen",
-   "unterformat": "Komische Zeichen",
-   "thema": "Das verraten deine Fingernägel",
-   "titel": "Das verraten deine Fingernägel",
+   "saeule": "Lebensmittel",
+   "format": "Top 3",
+   "unterformat": "Top 3 gegen Kopfschmerzen",
+   "thema": "Top 3 Lebensmittel gegen Kopfschmerzen",
+   "titel": "Top 3 Lebensmittel gegen Kopfschmerzen",
    "status": "offen",
-   "key": "KU|Komische Zeichen|Das verraten deine Fingernägel",
-   "quelle": "https://youtu.be/bTCBROzQtPQ",
-   "datum": "2026-10-31"
+   "key": "KU|Top 3|Top 3 Lebensmittel gegen Kopfschmerzen",
+   "quelle": "https://youtu.be/62Xyj2zoIsk",
+   "datum": "2026-10-28"
   },
   {
    "nr": 6,
    "runde": 1,
    "saeule": "Körper",
-   "format": "Schlaf & Routine",
-   "unterformat": "Schlaf & Routine",
-   "thema": "Das passiert, wenn du abends Magnesium nimmst",
-   "titel": "Das passiert, wenn du abends Magnesium nimmst",
+   "format": "Komische Zeichen",
+   "unterformat": "Gesicht & Augen",
+   "thema": "Komische Zeichen in deinem Gesicht",
+   "titel": "Komische Zeichen in deinem Gesicht",
    "status": "offen",
-   "key": "KU|Schlaf & Routine|Das passiert, wenn du abends Magnesium nimmst",
-   "quelle": "https://youtu.be/NvjniRcW1kI",
-   "datum": "2026-11-01"
+   "key": "KU|Komische Zeichen|Komische Zeichen in deinem Gesicht",
+   "quelle": "https://youtu.be/UBZx7CcYd0k",
+   "datum": "2026-10-29"
   },
   {
    "nr": 7,
    "runde": 1,
-   "saeule": "Natur & Hausmittel",
-   "format": "Hausmittel",
-   "unterformat": "Hausmittel",
-   "thema": "Ingwer und Zimt: was passiert, wenn du das trinkst",
-   "titel": "Ingwer und Zimt: was passiert, wenn du das trinkst",
+   "saeule": "Körper",
+   "format": "Dein Körper erklärt",
+   "unterformat": "Darm & Haut",
+   "thema": "Darm und Haut: warum Hautprobleme oft im Darm beginnen",
+   "titel": "Darm und Haut: warum Hautprobleme oft im Darm beginnen",
    "status": "offen",
-   "key": "KU|Hausmittel|Ingwer und Zimt: was passiert, wenn du das trinkst",
-   "quelle": "https://youtu.be/q22cyLqLAMs",
-   "datum": "2026-11-02"
+   "key": "KU|Dein Körper erklärt|Darm und Haut: warum Hautprobleme oft im Darm beginnen",
+   "quelle": "https://youtu.be/MjMnFJHaz6Y",
+   "datum": "2026-10-30"
   },
   {
    "nr": 8,
    "runde": 1,
-   "saeule": "Natur & Hausmittel",
-   "format": "Echt oder Fake?",
-   "unterformat": "Echt oder Fake?",
-   "thema": "Ist dein Olivenöl echt? Der Test für zuhause",
-   "titel": "Ist dein Olivenöl echt? Der Test für zuhause",
+   "saeule": "Körper",
+   "format": "Schlaf & Routine",
+   "unterformat": "Schlaf",
+   "thema": "18 Schlaftipps aus der Militärforschung",
+   "titel": "18 Schlaftipps aus der Militärforschung",
    "status": "offen",
-   "key": "KU|Echt oder Fake?|Ist dein Olivenöl echt? Der Test für zuhause",
-   "quelle": "https://youtu.be/nB5Ug_dApiU",
-   "datum": "2026-11-03"
+   "key": "KU|Schlaf & Routine|18 Schlaftipps aus der Militärforschung",
+   "quelle": "https://youtu.be/hrUQKisum6Q",
+   "datum": "2026-10-31"
   },
   {
    "nr": 9,
-   "runde": 2,
-   "saeule": "Lebensmittel",
-   "format": "Unter der Lupe",
-   "unterformat": "Unter der Lupe",
-   "thema": "Das solltest du über Schwarzkümmelöl wissen",
-   "titel": "Das solltest du über Schwarzkümmelöl wissen",
+   "runde": 1,
+   "saeule": "Natur & Hausmittel",
+   "format": "Hausmittel",
+   "unterformat": "Atemwege & Erkältung",
+   "thema": "Hausmittel für freie Atemwege",
+   "titel": "Hausmittel für freie Atemwege",
    "status": "offen",
-   "key": "KU|Unter der Lupe|Das solltest du über Schwarzkümmelöl wissen",
-   "quelle": "https://youtu.be/Id10vAKxiS4",
-   "datum": "2026-11-04"
+   "key": "KU|Hausmittel|Hausmittel für freie Atemwege",
+   "quelle": "https://youtu.be/A1ZmvvcWmeQ",
+   "datum": "2026-11-01"
   },
   {
    "nr": 10,
-   "runde": 2,
-   "saeule": "Lebensmittel",
-   "format": "Ja oder Nein?",
-   "unterformat": "Ja oder Nein?",
-   "thema": "Äpfel: ja oder nein?",
-   "titel": "Äpfel: ja oder nein?",
+   "runde": 1,
+   "saeule": "Zuhause & Pflege",
+   "format": "Natürliche Pflege",
+   "unterformat": "Haut",
+   "thema": "Rizinusöl für dein Gesicht",
+   "titel": "Rizinusöl für dein Gesicht",
    "status": "offen",
-   "key": "KU|Ja oder Nein?|Äpfel: ja oder nein?",
-   "quelle": "https://youtu.be/zY44h6NVphM",
-   "datum": "2026-11-05"
+   "key": "KU|Natürliche Pflege|Rizinusöl für dein Gesicht",
+   "quelle": "https://youtu.be/Fa7Qiph2BZM",
+   "datum": "2026-11-02"
   },
   {
    "nr": 11,
-   "runde": 2,
-   "saeule": "Lebensmittel",
-   "format": "Top 3",
-   "unterformat": "Top 3",
-   "thema": "Top 3 Lebensmittel, die besser sind als ihr Ruf",
-   "titel": "Top 3 Lebensmittel, die besser sind als ihr Ruf",
+   "runde": 1,
+   "saeule": "Natur & Hausmittel",
+   "format": "Tee-Serie",
+   "unterformat": "Ein Tee pro Short",
+   "thema": "Grüner Tee: was du wissen solltest",
+   "titel": "Grüner Tee: was du wissen solltest",
    "status": "offen",
-   "key": "KU|Top 3|Top 3 Lebensmittel, die besser sind als ihr Ruf",
-   "quelle": "https://youtu.be/6zHCk2jzkGI",
-   "datum": "2026-11-06"
+   "key": "KU|Tee-Serie|Grüner Tee: was du wissen solltest",
+   "quelle": "https://youtu.be/FBCuApyPEo0",
+   "datum": "2026-11-03"
   },
   {
    "nr": 12,
-   "runde": 2,
-   "saeule": "Wissen zum Abspeichern",
-   "format": "Spickzettel",
-   "unterformat": "Spickzettel",
-   "thema": "Spickzettel: welche Nuss wofür",
-   "titel": "Spickzettel: welche Nuss wofür",
+   "runde": 1,
+   "saeule": "Natur & Hausmittel",
+   "format": "Sonne, Wasser, Wärme",
+   "unterformat": "Sonne",
+   "thema": "Was dir keiner über die Sonne erzählt",
+   "titel": "Was dir keiner über die Sonne erzählt",
    "status": "offen",
-   "key": "KU|Spickzettel|Spickzettel: welche Nuss wofür",
-   "quelle": "https://youtu.be/eBa0gxiFEEE",
-   "datum": "2026-11-07"
+   "key": "KU|Sonne, Wasser, Wärme|Was dir keiner über die Sonne erzählt",
+   "quelle": "https://youtu.be/5UTfxTgZz50",
+   "datum": "2026-11-04"
   },
   {
    "nr": 13,
-   "runde": 2,
-   "saeule": "Körper",
-   "format": "Komische Zeichen",
-   "unterformat": "Komische Zeichen",
-   "thema": "Komische Zeichen für Nährstoffmangel",
-   "titel": "Komische Zeichen für Nährstoffmangel",
+   "runde": 1,
+   "saeule": "Wissen zum Abspeichern",
+   "format": "Spickzettel",
+   "unterformat": "Essen & Kombinieren",
+   "thema": "Spickzettel: Lebensmittel richtig kombinieren",
+   "titel": "Spickzettel: Lebensmittel richtig kombinieren",
    "status": "offen",
-   "key": "KU|Komische Zeichen|Komische Zeichen für Nährstoffmangel",
-   "quelle": "https://youtu.be/yU4WkVwsrLY",
-   "datum": "2026-11-08"
+   "key": "KU|Spickzettel|Spickzettel: Lebensmittel richtig kombinieren",
+   "quelle": "https://youtu.be/tsAauYnQZrQ",
+   "datum": "2026-11-05"
   },
   {
    "nr": 14,
-   "runde": 2,
-   "saeule": "Körper",
-   "format": "Schlaf & Routine",
-   "unterformat": "Schlaf & Routine",
-   "thema": "3 Gramm Glycin vor dem Schlafen",
-   "titel": "3 Gramm Glycin vor dem Schlafen",
+   "runde": 1,
+   "saeule": "Mythen & Wahrheiten",
+   "format": "Echt oder Fake?",
+   "unterformat": "Selbsttest zu Hause",
+   "thema": "Olivenöl: echt oder fake?",
+   "titel": "Olivenöl: echt oder fake?",
    "status": "offen",
-   "key": "KU|Schlaf & Routine|3 Gramm Glycin vor dem Schlafen",
-   "quelle": "https://youtu.be/DEEibbu6y4A",
-   "datum": "2026-11-09"
+   "key": "KU|Echt oder Fake?|Olivenöl: echt oder fake?",
+   "quelle": "https://youtu.be/nB5Ug_dApiU",
+   "datum": "2026-11-06"
   },
   {
    "nr": 15,
-   "runde": 2,
-   "saeule": "Natur & Hausmittel",
-   "format": "Hausmittel",
-   "unterformat": "Hausmittel",
-   "thema": "Nelkenwasser: warum es kaum einer kennt",
-   "titel": "Nelkenwasser: warum es kaum einer kennt",
+   "runde": 1,
+   "saeule": "Mythen & Wahrheiten",
+   "format": "Mythos-Check",
+   "unterformat": "Körper-Mythen",
+   "thema": "Weiße Flecken auf den Nägeln: wirklich Zinkmangel?",
+   "titel": "Weiße Flecken auf den Nägeln: wirklich Zinkmangel?",
    "status": "offen",
-   "key": "KU|Hausmittel|Nelkenwasser: warum es kaum einer kennt",
-   "quelle": "https://youtu.be/9KnkZcpgY8s"
+   "key": "KU|Mythos-Check|Weiße Flecken auf den Nägeln: wirklich Zinkmangel?",
+   "quelle": "https://youtu.be/bTCBROzQtPQ",
+   "datum": "2026-11-07"
   },
   {
    "nr": 16,
    "runde": 2,
-   "saeule": "Natur & Hausmittel",
-   "format": "Echt oder Fake?",
-   "unterformat": "Echt oder Fake?",
-   "thema": "Ist dein Honig echt? Der Test für zuhause",
-   "titel": "Ist dein Honig echt? Der Test für zuhause",
+   "saeule": "Lebensmittel",
+   "format": "Unter der Lupe",
+   "unterformat": "Vom Hof & aus dem Meer",
+   "thema": "So isst du Eier am besten",
+   "titel": "So isst du Eier am besten",
    "status": "offen",
-   "key": "KU|Echt oder Fake?|Ist dein Honig echt? Der Test für zuhause",
-   "quelle": "https://youtu.be/AMqYRKufkOo"
+   "key": "KU|Unter der Lupe|So isst du Eier am besten",
+   "quelle": "https://youtu.be/P-WZqXVrwoI",
+   "datum": "2026-11-08"
   },
   {
    "nr": 17,
-   "runde": 3,
+   "runde": 2,
    "saeule": "Lebensmittel",
-   "format": "Unter der Lupe",
-   "unterformat": "Unter der Lupe",
-   "thema": "Das solltest du über Apfelessig wissen",
-   "titel": "Das solltest du über Apfelessig wissen",
+   "format": "Ja oder Nein?",
+   "unterformat": "Trinken & Süßen",
+   "thema": "Kaffee: Ja oder Nein?",
+   "titel": "Kaffee: Ja oder Nein?",
    "status": "offen",
-   "key": "KU|Unter der Lupe|Das solltest du über Apfelessig wissen",
-   "quelle": "https://youtu.be/S9B3qjfAhBw"
+   "key": "KU|Ja oder Nein?|Kaffee: Ja oder Nein?",
+   "quelle": "https://youtu.be/Tjxvv0ucJUg",
+   "datum": "2026-11-09"
   },
   {
    "nr": 18,
-   "runde": 3,
-   "saeule": "Lebensmittel",
-   "format": "Ja oder Nein?",
-   "unterformat": "Ja oder Nein?",
-   "thema": "Hafer- oder Mandelmilch?",
-   "titel": "Hafer- oder Mandelmilch?",
+   "runde": 2,
+   "saeule": "Zuhause & Pflege",
+   "format": "Gut gegen Schlecht",
+   "unterformat": "Bad & Pflege",
+   "thema": "Duschgel gegen Seife und Deo-Seife",
+   "titel": "Duschgel gegen Seife und Deo-Seife",
    "status": "offen",
-   "key": "KU|Ja oder Nein?|Hafer- oder Mandelmilch?",
-   "quelle": "https://youtu.be/lGKjEfiwjXM"
+   "key": "KU|Gut gegen Schlecht|Duschgel gegen Seife und Deo-Seife",
+   "datum": "2026-11-10"
   },
   {
    "nr": 19,
-   "runde": 3,
-   "saeule": "Lebensmittel",
-   "format": "Top 3",
-   "unterformat": "Top 3",
-   "thema": "Top 3 Lebensmittel, die du zu selten isst",
-   "titel": "Top 3 Lebensmittel, die du zu selten isst",
+   "runde": 2,
+   "saeule": "Nährstoffe",
+   "format": "Nährstoff erklärt",
+   "unterformat": "Vitamine",
+   "thema": "Vitamin D: wie viel ist sinnvoll?",
+   "titel": "Vitamin D: wie viel ist sinnvoll?",
    "status": "offen",
-   "key": "KU|Top 3|Top 3 Lebensmittel, die du zu selten isst",
-   "quelle": "https://youtu.be/qdPwL3n4RYQ"
+   "key": "KU|Nährstoff erklärt|Vitamin D: wie viel ist sinnvoll?",
+   "quelle": "https://youtu.be/5CZew_SwRtM",
+   "datum": "2026-11-11"
   },
   {
    "nr": 20,
-   "runde": 3,
-   "saeule": "Wissen zum Abspeichern",
-   "format": "Spickzettel",
-   "unterformat": "Spickzettel",
-   "thema": "Spickzettel: welche Dattel wofür",
-   "titel": "Spickzettel: welche Dattel wofür",
+   "runde": 2,
+   "saeule": "Lebensmittel",
+   "format": "Top 3",
+   "unterformat": "Top 3 für Kopf & Fokus",
+   "thema": "Top 3 Lebensmittel für klares Denken",
+   "titel": "Top 3 Lebensmittel für klares Denken",
    "status": "offen",
-   "key": "KU|Spickzettel|Spickzettel: welche Dattel wofür",
-   "quelle": "https://youtu.be/YuoYgJenJuo"
+   "key": "KU|Top 3|Top 3 Lebensmittel für klares Denken",
+   "quelle": "https://youtu.be/ryQpUNcfUoc",
+   "datum": "2026-11-12"
   },
   {
    "nr": 21,
-   "runde": 3,
+   "runde": 2,
    "saeule": "Körper",
    "format": "Komische Zeichen",
-   "unterformat": "Komische Zeichen",
-   "thema": "Was dein Gesicht über deine Gesundheit sagt",
-   "titel": "Was dein Gesicht über deine Gesundheit sagt",
+   "unterformat": "Hände & Füße",
+   "thema": "Was deine Nägel über deine Schilddrüse verraten",
+   "titel": "Was deine Nägel über deine Schilddrüse verraten",
    "status": "offen",
-   "key": "KU|Komische Zeichen|Was dein Gesicht über deine Gesundheit sagt",
-   "quelle": "https://youtu.be/UBZx7CcYd0k"
+   "key": "KU|Komische Zeichen|Was deine Nägel über deine Schilddrüse verraten",
+   "quelle": "https://youtu.be/mAbgd2Ec5GU",
+   "datum": "2026-11-13"
   },
   {
    "nr": 22,
-   "runde": 3,
+   "runde": 2,
    "saeule": "Körper",
-   "format": "Schlaf & Routine",
-   "unterformat": "Schlaf & Routine",
-   "thema": "Warum du nachts aufwachst",
-   "titel": "Warum du nachts aufwachst",
+   "format": "Dein Körper erklärt",
+   "unterformat": "Stoffwechsel & Stress",
+   "thema": "Was Stress mit deinem Bauch macht",
+   "titel": "Was Stress mit deinem Bauch macht",
    "status": "offen",
-   "key": "KU|Schlaf & Routine|Warum du nachts aufwachst",
-   "quelle": "https://youtu.be/4KgXfT5NObk"
+   "key": "KU|Dein Körper erklärt|Was Stress mit deinem Bauch macht",
+   "quelle": "https://youtu.be/ZoF1dbYsMRc",
+   "datum": "2026-11-14"
   },
   {
    "nr": 23,
-   "runde": 3,
-   "saeule": "Natur & Hausmittel",
-   "format": "Hausmittel",
-   "unterformat": "Hausmittel",
-   "thema": "Zitronenwasser, aber richtig",
-   "titel": "Zitronenwasser, aber richtig",
+   "runde": 2,
+   "saeule": "Körper",
+   "format": "Schlaf & Routine",
+   "unterformat": "Morgen",
+   "thema": "Die Morgenroutine, die wir getestet haben",
+   "titel": "Die Morgenroutine, die wir getestet haben",
    "status": "offen",
-   "key": "KU|Hausmittel|Zitronenwasser, aber richtig",
-   "quelle": "https://youtu.be/ZE21WVAb8SU"
+   "key": "KU|Schlaf & Routine|Die Morgenroutine, die wir getestet haben",
+   "quelle": "https://youtu.be/4c8yvOEq_fM",
+   "datum": "2026-11-15"
   },
   {
    "nr": 24,
-   "runde": 3,
+   "runde": 2,
    "saeule": "Natur & Hausmittel",
-   "format": "Echt oder Fake?",
-   "unterformat": "Echt oder Fake?",
-   "thema": "Echte Butter oder nicht?",
-   "titel": "Echte Butter oder nicht?",
+   "format": "Hausmittel",
+   "unterformat": "Bauch & Verdauung",
+   "thema": "Hausmittel bei Blähungen",
+   "titel": "Hausmittel bei Blähungen",
    "status": "offen",
-   "key": "KU|Echt oder Fake?|Echte Butter oder nicht?",
-   "quelle": "https://youtu.be/aGVb2fYGeTo"
+   "key": "KU|Hausmittel|Hausmittel bei Blähungen",
+   "quelle": "https://youtu.be/8GsaBSEnLHo",
+   "datum": "2026-11-16"
   },
   {
    "nr": 25,
-   "runde": 4,
-   "saeule": "Lebensmittel",
-   "format": "Unter der Lupe",
-   "unterformat": "Unter der Lupe",
-   "thema": "Das solltest du über Nelken wissen",
-   "titel": "Das solltest du über Nelken wissen",
+   "runde": 2,
+   "saeule": "Zuhause & Pflege",
+   "format": "Natürliche Pflege",
+   "unterformat": "Haare",
+   "thema": "Zwiebelsaft für deine Haare",
+   "titel": "Zwiebelsaft für deine Haare",
    "status": "offen",
-   "key": "KU|Unter der Lupe|Das solltest du über Nelken wissen",
-   "quelle": "https://youtu.be/bNQk4ZdBsWc"
+   "key": "KU|Natürliche Pflege|Zwiebelsaft für deine Haare",
+   "quelle": "https://youtu.be/yW5Fe7G7r4g",
+   "datum": "2026-11-17"
   },
   {
    "nr": 26,
-   "runde": 4,
-   "saeule": "Lebensmittel",
-   "format": "Ja oder Nein?",
-   "unterformat": "Ja oder Nein?",
-   "thema": "Haferflocken: worauf du achten musst",
-   "titel": "Haferflocken: worauf du achten musst",
+   "runde": 2,
+   "saeule": "Natur & Hausmittel",
+   "format": "Tee-Serie",
+   "unterformat": "Tee Spickzettel",
+   "thema": "Tee Spickzettel: welcher Tee wofür?",
+   "titel": "Tee Spickzettel: welcher Tee wofür?",
    "status": "offen",
-   "key": "KU|Ja oder Nein?|Haferflocken: worauf du achten musst",
-   "quelle": "https://youtu.be/n8hX-dRP7_s"
+   "key": "KU|Tee-Serie|Tee Spickzettel: welcher Tee wofür?",
+   "quelle": "https://youtu.be/O9TEEbFTrK8",
+   "datum": "2026-11-18"
   },
   {
    "nr": 27,
-   "runde": 4,
-   "saeule": "Lebensmittel",
-   "format": "Top 3",
-   "unterformat": "Top 3",
-   "thema": "Top 3 Gemüse, die du öfter essen solltest",
-   "titel": "Top 3 Gemüse, die du öfter essen solltest",
+   "runde": 2,
+   "saeule": "Natur & Hausmittel",
+   "format": "Sonne, Wasser, Wärme",
+   "unterformat": "Wasser",
+   "thema": "Leitungswasser: was drin ist und was du tun kannst",
+   "titel": "Leitungswasser: was drin ist und was du tun kannst",
    "status": "offen",
-   "key": "KU|Top 3|Top 3 Gemüse, die du öfter essen solltest",
-   "quelle": "https://youtu.be/VNbqL1ArX2g"
+   "key": "KU|Sonne, Wasser, Wärme|Leitungswasser: was drin ist und was du tun kannst",
+   "quelle": "https://youtu.be/KrVuFVVYdcY",
+   "datum": "2026-11-19"
   },
   {
    "nr": 28,
-   "runde": 4,
+   "runde": 2,
    "saeule": "Wissen zum Abspeichern",
    "format": "Spickzettel",
-   "unterformat": "Spickzettel",
-   "thema": "Spickzettel: Magnesium, welche Form wofür",
-   "titel": "Spickzettel: Magnesium, welche Form wofür",
+   "unterformat": "Trinken",
+   "thema": "Spickzettel: mach dein Wasser besser",
+   "titel": "Spickzettel: mach dein Wasser besser",
    "status": "offen",
-   "key": "KU|Spickzettel|Spickzettel: Magnesium, welche Form wofür",
-   "quelle": "https://youtu.be/TnYvzx51Ex8"
+   "key": "KU|Spickzettel|Spickzettel: mach dein Wasser besser",
+   "quelle": "https://youtu.be/za9Pc4kH7mc",
+   "datum": "2026-11-20"
   },
   {
    "nr": 29,
+   "runde": 2,
+   "saeule": "Mythen & Wahrheiten",
+   "format": "Echt oder Fake?",
+   "unterformat": "Im Supermarkt",
+   "thema": "Butter: echt oder Ersatz?",
+   "titel": "Butter: echt oder Ersatz?",
+   "status": "offen",
+   "key": "KU|Echt oder Fake?|Butter: echt oder Ersatz?",
+   "quelle": "https://youtu.be/aGVb2fYGeTo",
+   "datum": "2026-11-21"
+  },
+  {
+   "nr": 30,
+   "runde": 2,
+   "saeule": "Mythen & Wahrheiten",
+   "format": "Mythos-Check",
+   "unterformat": "Ernährungs-Mythen",
+   "thema": "Ist Salz wirklich ungesund?",
+   "titel": "Ist Salz wirklich ungesund?",
+   "status": "offen",
+   "key": "KU|Mythos-Check|Ist Salz wirklich ungesund?",
+   "quelle": "https://youtu.be/VBjDwyf2Q2o",
+   "datum": "2026-11-22"
+  },
+  {
+   "nr": 31,
+   "runde": 3,
+   "saeule": "Lebensmittel",
+   "format": "Unter der Lupe",
+   "unterformat": "Getreide & Knolle",
+   "thema": "Buchweizen: das unterschätzte Korn",
+   "titel": "Buchweizen: das unterschätzte Korn",
+   "status": "offen",
+   "key": "KU|Unter der Lupe|Buchweizen: das unterschätzte Korn",
+   "quelle": "https://youtu.be/VAcQ7SPrH_4",
+   "datum": "2026-11-23"
+  },
+  {
+   "nr": 32,
+   "runde": 3,
+   "saeule": "Lebensmittel",
+   "format": "Ja oder Nein?",
+   "unterformat": "Ergänzen",
+   "thema": "Kollagen: Ja oder Nein?",
+   "titel": "Kollagen: Ja oder Nein?",
+   "status": "offen",
+   "key": "KU|Ja oder Nein?|Kollagen: Ja oder Nein?",
+   "quelle": "https://youtu.be/mq-InZnJ1o0"
+  },
+  {
+   "nr": 33,
+   "runde": 3,
+   "saeule": "Zuhause & Pflege",
+   "format": "Gut gegen Schlecht",
+   "unterformat": "Wohnen & Luft",
+   "thema": "Duftkerze gegen Duftlampe mit Wasser und ätherischen Ölen",
+   "titel": "Duftkerze gegen Duftlampe mit Wasser und ätherischen Ölen",
+   "status": "offen",
+   "key": "KU|Gut gegen Schlecht|Duftkerze gegen Duftlampe mit Wasser und ätherischen Ölen",
+   "quelle": "https://youtu.be/XDs1pCwBmgk"
+  },
+  {
+   "nr": 34,
+   "runde": 3,
+   "saeule": "Nährstoffe",
+   "format": "Nährstoff erklärt",
+   "unterformat": "Bausteine",
+   "thema": "Protein ist nicht gleich Protein",
+   "titel": "Protein ist nicht gleich Protein",
+   "status": "offen",
+   "key": "KU|Nährstoff erklärt|Protein ist nicht gleich Protein",
+   "quelle": "https://youtu.be/e_FT6cohlzc"
+  },
+  {
+   "nr": 35,
+   "runde": 3,
+   "saeule": "Lebensmittel",
+   "format": "Top 3",
+   "unterformat": "Top 3 für Haut",
+   "thema": "Top 3 Lebensmittel für schöne Haut",
+   "titel": "Top 3 Lebensmittel für schöne Haut",
+   "status": "offen",
+   "key": "KU|Top 3|Top 3 Lebensmittel für schöne Haut",
+   "quelle": "https://youtu.be/8xYiErQdbmc"
+  },
+  {
+   "nr": 36,
+   "runde": 3,
+   "saeule": "Körper",
+   "format": "Komische Zeichen",
+   "unterformat": "Nährstoffmangel",
+   "thema": "Komische Zeichen für Nährstoffmangel",
+   "titel": "Komische Zeichen für Nährstoffmangel",
+   "status": "offen",
+   "key": "KU|Komische Zeichen|Komische Zeichen für Nährstoffmangel",
+   "quelle": "https://youtu.be/BnDszo1R3es"
+  },
+  {
+   "nr": 37,
+   "runde": 3,
+   "saeule": "Körper",
+   "format": "Dein Körper erklärt",
+   "unterformat": "Was passiert, wenn…",
+   "thema": "Was passiert, wenn du 5 Tage Sardinen isst?",
+   "titel": "Was passiert, wenn du 5 Tage Sardinen isst?",
+   "status": "offen",
+   "key": "KU|Dein Körper erklärt|Was passiert, wenn du 5 Tage Sardinen isst?",
+   "quelle": "https://youtu.be/CcGaYSrRljA"
+  },
+  {
+   "nr": 38,
+   "runde": 3,
+   "saeule": "Körper",
+   "format": "Schlaf & Routine",
+   "unterformat": "Bewegung im Alltag",
+   "thema": "10 Veränderungen, wenn du täglich spazieren gehst",
+   "titel": "10 Veränderungen, wenn du täglich spazieren gehst",
+   "status": "offen",
+   "key": "KU|Schlaf & Routine|10 Veränderungen, wenn du täglich spazieren gehst",
+   "quelle": "https://youtu.be/Bv0Igpr4sdw"
+  },
+  {
+   "nr": 39,
+   "runde": 3,
+   "saeule": "Natur & Hausmittel",
+   "format": "Hausmittel",
+   "unterformat": "Küchenklassiker",
+   "thema": "Natron richtig anwenden",
+   "titel": "Natron richtig anwenden",
+   "status": "offen",
+   "key": "KU|Hausmittel|Natron richtig anwenden",
+   "quelle": "https://youtu.be/LTn63d6VuHY"
+  },
+  {
+   "nr": 40,
+   "runde": 3,
+   "saeule": "Zuhause & Pflege",
+   "format": "Natürliche Pflege",
+   "unterformat": "Zähne",
+   "thema": "Die stärkste Lösung gegen Zahnbelag",
+   "titel": "Die stärkste Lösung gegen Zahnbelag",
+   "status": "offen",
+   "key": "KU|Natürliche Pflege|Die stärkste Lösung gegen Zahnbelag",
+   "quelle": "https://youtu.be/V8xpeiX0EqE"
+  },
+  {
+   "nr": 41,
+   "runde": 3,
+   "saeule": "Natur & Hausmittel",
+   "format": "Tee-Serie",
+   "unterformat": "Das große Tee-Video",
+   "thema": "Der richtige Tee für jedes Anliegen",
+   "titel": "Der richtige Tee für jedes Anliegen",
+   "status": "offen",
+   "key": "KU|Tee-Serie|Der richtige Tee für jedes Anliegen",
+   "quelle": "https://youtu.be/oZyVn8ivC8s"
+  },
+  {
+   "nr": 42,
+   "runde": 3,
+   "saeule": "Natur & Hausmittel",
+   "format": "Sonne, Wasser, Wärme",
+   "unterformat": "Wärme & Kälte",
+   "thema": "Sauna: wie gesund ist sie wirklich?",
+   "titel": "Sauna: wie gesund ist sie wirklich?",
+   "status": "offen",
+   "key": "KU|Sonne, Wasser, Wärme|Sauna: wie gesund ist sie wirklich?",
+   "quelle": "https://youtu.be/MClqQlxvAFY"
+  },
+  {
+   "nr": 43,
+   "runde": 3,
+   "saeule": "Wissen zum Abspeichern",
+   "format": "Spickzettel",
+   "unterformat": "Körper",
+   "thema": "Spickzettel: Magnesium",
+   "titel": "Spickzettel: Magnesium",
+   "status": "offen",
+   "key": "KU|Spickzettel|Spickzettel: Magnesium",
+   "quelle": "https://youtu.be/TnYvzx51Ex8"
+  },
+  {
+   "nr": 44,
+   "runde": 3,
+   "saeule": "Mythen & Wahrheiten",
+   "format": "Echt oder Fake?",
+   "unterformat": "Selbsttest zu Hause",
+   "thema": "Honig: echt oder fake?",
+   "titel": "Honig: echt oder fake?",
+   "status": "offen",
+   "key": "KU|Echt oder Fake?|Honig: echt oder fake?",
+   "quelle": "https://youtu.be/AMqYRKufkOo"
+  },
+  {
+   "nr": 45,
+   "runde": 3,
+   "saeule": "Mythen & Wahrheiten",
+   "format": "Mythos-Check",
+   "unterformat": "Wasser-Mythen",
+   "thema": "Musst du wirklich 3 Liter Wasser trinken?",
+   "titel": "Musst du wirklich 3 Liter Wasser trinken?",
+   "status": "offen",
+   "key": "KU|Mythos-Check|Musst du wirklich 3 Liter Wasser trinken?",
+   "quelle": "https://youtu.be/SJ-5LxMvTKg"
+  },
+  {
+   "nr": 46,
+   "runde": 4,
+   "saeule": "Lebensmittel",
+   "format": "Unter der Lupe",
+   "unterformat": "Süßes & Öle",
+   "thema": "Alles, was du über Honig wissen solltest",
+   "titel": "Alles, was du über Honig wissen solltest",
+   "status": "offen",
+   "key": "KU|Unter der Lupe|Alles, was du über Honig wissen solltest",
+   "quelle": "https://youtu.be/ybNFSummezI"
+  },
+  {
+   "nr": 47,
+   "runde": 4,
+   "saeule": "Lebensmittel",
+   "format": "Ja oder Nein?",
+   "unterformat": "Essen",
+   "thema": "Haferflocken: Ja oder Nein?",
+   "titel": "Haferflocken: Ja oder Nein?",
+   "status": "offen",
+   "key": "KU|Ja oder Nein?|Haferflocken: Ja oder Nein?",
+   "quelle": "https://youtu.be/dvSfx5tv6zc"
+  },
+  {
+   "nr": 48,
+   "runde": 4,
+   "saeule": "Zuhause & Pflege",
+   "format": "Gut gegen Schlecht",
+   "unterformat": "Küche",
+   "thema": "Jodsalz gegen Ursalz",
+   "titel": "Jodsalz gegen Ursalz",
+   "status": "offen",
+   "key": "KU|Gut gegen Schlecht|Jodsalz gegen Ursalz",
+   "quelle": "https://youtu.be/LEaFBCPQqmA"
+  },
+  {
+   "nr": 49,
+   "runde": 4,
+   "saeule": "Nährstoffe",
+   "format": "Nährstoff erklärt",
+   "unterformat": "Mineralstoffe",
+   "thema": "Der häufigste Fehler bei Magnesium",
+   "titel": "Der häufigste Fehler bei Magnesium",
+   "status": "offen",
+   "key": "KU|Nährstoff erklärt|Der häufigste Fehler bei Magnesium",
+   "quelle": "https://youtu.be/iLoE3T-jROQ"
+  },
+  {
+   "nr": 50,
+   "runde": 4,
+   "saeule": "Lebensmittel",
+   "format": "Top 3",
+   "unterformat": "Top 3 für Muskeln & Gelenke",
+   "thema": "Top 3 Lebensmittel für starke Beine",
+   "titel": "Top 3 Lebensmittel für starke Beine",
+   "status": "offen",
+   "key": "KU|Top 3|Top 3 Lebensmittel für starke Beine",
+   "quelle": "https://youtu.be/P4T0Ny7ZJYc"
+  },
+  {
+   "nr": 51,
    "runde": 4,
    "saeule": "Körper",
    "format": "Komische Zeichen",
-   "unterformat": "Komische Zeichen",
+   "unterformat": "Ausscheidung & Geruch",
+   "thema": "Was deine Urinfarbe bedeutet",
+   "titel": "Was deine Urinfarbe bedeutet",
+   "status": "offen",
+   "key": "KU|Komische Zeichen|Was deine Urinfarbe bedeutet",
+   "quelle": "https://youtu.be/VOJFx6P1ZEs"
+  },
+  {
+   "nr": 52,
+   "runde": 4,
+   "saeule": "Körper",
+   "format": "Dein Körper erklärt",
+   "unterformat": "Darm & Haut",
+   "thema": "Was deine Haut mit deinem Essen zu tun hat",
+   "titel": "Was deine Haut mit deinem Essen zu tun hat",
+   "status": "offen",
+   "key": "KU|Dein Körper erklärt|Was deine Haut mit deinem Essen zu tun hat",
+   "quelle": "https://youtu.be/PnrRPQ2-Obo"
+  },
+  {
+   "nr": 53,
+   "runde": 4,
+   "saeule": "Körper",
+   "format": "Schlaf & Routine",
+   "unterformat": "Schlaf",
+   "thema": "6 Fehler, die deinen Schlaf stören",
+   "titel": "6 Fehler, die deinen Schlaf stören",
+   "status": "offen",
+   "key": "KU|Schlaf & Routine|6 Fehler, die deinen Schlaf stören",
+   "quelle": "https://youtu.be/z6Sfz47mhh8"
+  },
+  {
+   "nr": 54,
+   "runde": 4,
+   "saeule": "Natur & Hausmittel",
+   "format": "Hausmittel",
+   "unterformat": "Kraft der Pflanzen",
+   "thema": "Artemisia annua: die Pflanze mit Geschichte",
+   "titel": "Artemisia annua: die Pflanze mit Geschichte",
+   "status": "offen",
+   "key": "KU|Hausmittel|Artemisia annua: die Pflanze mit Geschichte",
+   "quelle": "https://youtu.be/1njVZUs8ZME"
+  },
+  {
+   "nr": 55,
+   "runde": 4,
+   "saeule": "Zuhause & Pflege",
+   "format": "Natürliche Pflege",
+   "unterformat": "Haushalt",
+   "thema": "Hausmittel gegen Fliegen, Mäuse und Motten",
+   "titel": "Hausmittel gegen Fliegen, Mäuse und Motten",
+   "status": "offen",
+   "key": "KU|Natürliche Pflege|Hausmittel gegen Fliegen, Mäuse und Motten",
+   "quelle": "https://youtu.be/_S4O29rIGR8"
+  },
+  {
+   "nr": 56,
+   "runde": 4,
+   "saeule": "Natur & Hausmittel",
+   "format": "Tee-Serie",
+   "unterformat": "Ein Tee pro Short",
+   "thema": "Matcha: was steckt hinter dem Hype?",
+   "titel": "Matcha: was steckt hinter dem Hype?",
+   "status": "offen",
+   "key": "KU|Tee-Serie|Matcha: was steckt hinter dem Hype?",
+   "quelle": "https://youtu.be/CA66rmnzozk"
+  },
+  {
+   "nr": 57,
+   "runde": 4,
+   "saeule": "Natur & Hausmittel",
+   "format": "Sonne, Wasser, Wärme",
+   "unterformat": "Sonne",
+   "thema": "Sonnencreme und natürliche Alternativen",
+   "titel": "Sonnencreme und natürliche Alternativen",
+   "status": "offen",
+   "key": "KU|Sonne, Wasser, Wärme|Sonnencreme und natürliche Alternativen",
+   "quelle": "https://youtu.be/TLKnVK4D810"
+  },
+  {
+   "nr": 58,
+   "runde": 4,
+   "saeule": "Wissen zum Abspeichern",
+   "format": "Spickzettel",
+   "unterformat": "Natur",
+   "thema": "Spickzettel: ätherische Öle",
+   "titel": "Spickzettel: ätherische Öle",
+   "status": "offen",
+   "key": "KU|Spickzettel|Spickzettel: ätherische Öle",
+   "quelle": "https://youtu.be/Sa5CCcbdGfM"
+  },
+  {
+   "nr": 59,
+   "runde": 4,
+   "saeule": "Mythen & Wahrheiten",
+   "format": "Echt oder Fake?",
+   "unterformat": "Im Supermarkt",
+   "thema": "Was in manchem Käse steckt",
+   "titel": "Was in manchem Käse steckt",
+   "status": "offen",
+   "key": "KU|Echt oder Fake?|Was in manchem Käse steckt",
+   "quelle": "https://youtu.be/8ibZzXtg7Ag"
+  },
+  {
+   "nr": 60,
+   "runde": 4,
+   "saeule": "Mythen & Wahrheiten",
+   "format": "Mythos-Check",
+   "unterformat": "Körper-Mythen",
+   "thema": "Fingerknacken: schadet das deinen Gelenken?",
+   "titel": "Fingerknacken: schadet das deinen Gelenken?",
+   "status": "offen",
+   "key": "KU|Mythos-Check|Fingerknacken: schadet das deinen Gelenken?",
+   "quelle": "https://youtu.be/ZsRQfwSOmz0"
+  },
+  {
+   "nr": 61,
+   "runde": 5,
+   "saeule": "Lebensmittel",
+   "format": "Unter der Lupe",
+   "unterformat": "Gewürze",
+   "thema": "Eine Nelke im Kaffee: was dahintersteckt",
+   "titel": "Eine Nelke im Kaffee: was dahintersteckt",
+   "status": "offen",
+   "key": "KU|Unter der Lupe|Eine Nelke im Kaffee: was dahintersteckt",
+   "quelle": "https://youtu.be/bNQk4ZdBsWc"
+  },
+  {
+   "nr": 62,
+   "runde": 5,
+   "saeule": "Lebensmittel",
+   "format": "Ja oder Nein?",
+   "unterformat": "Trinken & Süßen",
+   "thema": "Stevia: Ja oder Nein?",
+   "titel": "Stevia: Ja oder Nein?",
+   "status": "offen",
+   "key": "KU|Ja oder Nein?|Stevia: Ja oder Nein?",
+   "quelle": "https://youtu.be/-wX-igSRdmU"
+  },
+  {
+   "nr": 63,
+   "runde": 5,
+   "saeule": "Zuhause & Pflege",
+   "format": "Gut gegen Schlecht",
+   "unterformat": "Bad & Pflege",
+   "thema": "Klassisches Deo gegen natürliche Alternative",
+   "titel": "Klassisches Deo gegen natürliche Alternative",
+   "status": "offen",
+   "key": "KU|Gut gegen Schlecht|Klassisches Deo gegen natürliche Alternative",
+   "quelle": "https://youtu.be/HxDrnZ1FMxg"
+  },
+  {
+   "nr": 64,
+   "runde": 5,
+   "saeule": "Nährstoffe",
+   "format": "Nährstoff erklärt",
+   "unterformat": "Vitamine",
+   "thema": "Vitamin B12: woran du einen Mangel erkennst",
+   "titel": "Vitamin B12: woran du einen Mangel erkennst",
+   "status": "offen",
+   "key": "KU|Nährstoff erklärt|Vitamin B12: woran du einen Mangel erkennst",
+   "quelle": "https://youtu.be/susNQj8A2i8"
+  },
+  {
+   "nr": 65,
+   "runde": 5,
+   "saeule": "Lebensmittel",
+   "format": "Top 3",
+   "unterformat": "Top 3 für deine Organe",
+   "thema": "Top 3 Lebensmittel für deine Leber",
+   "titel": "Top 3 Lebensmittel für deine Leber",
+   "status": "offen",
+   "key": "KU|Top 3|Top 3 Lebensmittel für deine Leber",
+   "quelle": "https://youtu.be/-ZqjamEgXjE"
+  },
+  {
+   "nr": 66,
+   "runde": 5,
+   "saeule": "Körper",
+   "format": "Komische Zeichen",
+   "unterformat": "Gute Zeichen",
    "thema": "Komische Zeichen, dass du gesund bist",
    "titel": "Komische Zeichen, dass du gesund bist",
    "status": "offen",
@@ -849,244 +2563,1356 @@
    "quelle": "https://youtu.be/JekNriPGNwM"
   },
   {
-   "nr": 30,
-   "runde": 4,
+   "nr": 67,
+   "runde": 5,
+   "saeule": "Körper",
+   "format": "Dein Körper erklärt",
+   "unterformat": "Stoffwechsel & Stress",
+   "thema": "Warum dein Stoffwechsel streikt",
+   "titel": "Warum dein Stoffwechsel streikt",
+   "status": "offen",
+   "key": "KU|Dein Körper erklärt|Warum dein Stoffwechsel streikt",
+   "quelle": "https://youtu.be/v3J6PrjfH-4"
+  },
+  {
+   "nr": 68,
+   "runde": 5,
    "saeule": "Körper",
    "format": "Schlaf & Routine",
-   "unterformat": "Schlaf & Routine",
-   "thema": "Der Fehler beim Mittagsschlaf",
-   "titel": "Der Fehler beim Mittagsschlaf",
+   "unterformat": "Morgen",
+   "thema": "Der Fehler, den fast alle morgens beim Wasser machen",
+   "titel": "Der Fehler, den fast alle morgens beim Wasser machen",
    "status": "offen",
-   "key": "KU|Schlaf & Routine|Der Fehler beim Mittagsschlaf",
-   "quelle": "https://youtu.be/xOs65LU58CQ"
+   "key": "KU|Schlaf & Routine|Der Fehler, den fast alle morgens beim Wasser machen",
+   "quelle": "https://youtu.be/Tp3ccJ9Q5aM"
   },
   {
-   "nr": 31,
-   "runde": 4,
+   "nr": 69,
+   "runde": 5,
    "saeule": "Natur & Hausmittel",
    "format": "Hausmittel",
-   "unterformat": "Hausmittel",
-   "thema": "Wohltuender Trunk bei Husten",
-   "titel": "Wohltuender Trunk bei Husten",
+   "unterformat": "Atemwege & Erkältung",
+   "thema": "2 Zutaten Tee bei Schleim",
+   "titel": "2 Zutaten Tee bei Schleim",
    "status": "offen",
-   "key": "KU|Hausmittel|Wohltuender Trunk bei Husten",
-   "quelle": "https://youtu.be/wLhPGW9pE_E"
+   "key": "KU|Hausmittel|2 Zutaten Tee bei Schleim",
+   "quelle": "https://youtu.be/sJIVIMQk11w"
   },
   {
-   "nr": 32,
-   "runde": 4,
+   "nr": 70,
+   "runde": 5,
+   "saeule": "Zuhause & Pflege",
+   "format": "Natürliche Pflege",
+   "unterformat": "Haut",
+   "thema": "Mitesser natürlich loswerden",
+   "titel": "Mitesser natürlich loswerden",
+   "status": "offen",
+   "key": "KU|Natürliche Pflege|Mitesser natürlich loswerden",
+   "quelle": "https://youtu.be/6ahTnxtGtsM"
+  },
+  {
+   "nr": 71,
+   "runde": 5,
    "saeule": "Natur & Hausmittel",
+   "format": "Tee-Serie",
+   "unterformat": "Tee Spickzettel",
+   "thema": "Tee Tipps: so brühst du richtig auf",
+   "titel": "Tee Tipps: so brühst du richtig auf",
+   "status": "offen",
+   "key": "KU|Tee-Serie|Tee Tipps: so brühst du richtig auf",
+   "quelle": "https://youtu.be/0vsk1oG3aM0"
+  },
+  {
+   "nr": 72,
+   "runde": 5,
+   "saeule": "Natur & Hausmittel",
+   "format": "Sonne, Wasser, Wärme",
+   "unterformat": "Wasser",
+   "thema": "Welches Wasser ist das beste?",
+   "titel": "Welches Wasser ist das beste?",
+   "status": "offen",
+   "key": "KU|Sonne, Wasser, Wärme|Welches Wasser ist das beste?",
+   "quelle": "https://youtu.be/9ZrQabf8Rkc"
+  },
+  {
+   "nr": 73,
+   "runde": 5,
+   "saeule": "Wissen zum Abspeichern",
+   "format": "Spickzettel",
+   "unterformat": "Rankings",
+   "thema": "Gemüse im Ranking",
+   "titel": "Gemüse im Ranking",
+   "status": "offen",
+   "key": "KU|Spickzettel|Gemüse im Ranking",
+   "quelle": "https://youtu.be/z76ICbayT-I"
+  },
+  {
+   "nr": 74,
+   "runde": 5,
+   "saeule": "Mythen & Wahrheiten",
    "format": "Echt oder Fake?",
-   "unterformat": "Echt oder Fake?",
-   "thema": "Welches Salz du nicht kaufen solltest",
-   "titel": "Welches Salz du nicht kaufen solltest",
+   "unterformat": "Selbsttest zu Hause",
+   "thema": "Obst: so erkennst du, ob es echt ist",
+   "titel": "Obst: so erkennst du, ob es echt ist",
    "status": "offen",
-   "key": "KU|Echt oder Fake?|Welches Salz du nicht kaufen solltest",
-   "quelle": "https://youtu.be/LEaFBCPQqmA"
+   "key": "KU|Echt oder Fake?|Obst: so erkennst du, ob es echt ist",
+   "quelle": "https://youtu.be/oCUhlmZ78WM"
   },
   {
-   "nr": 33,
+   "nr": 75,
    "runde": 5,
-   "saeule": "Lebensmittel",
-   "format": "Unter der Lupe",
-   "unterformat": "Unter der Lupe",
-   "thema": "Das solltest du über Cayennepfeffer wissen",
-   "titel": "Das solltest du über Cayennepfeffer wissen",
+   "saeule": "Mythen & Wahrheiten",
+   "format": "Mythos-Check",
+   "unterformat": "Ernährungs-Mythen",
+   "thema": "Vier Eier am Tag: zu viel Cholesterin?",
+   "titel": "Vier Eier am Tag: zu viel Cholesterin?",
    "status": "offen",
-   "key": "KU|Unter der Lupe|Das solltest du über Cayennepfeffer wissen",
-   "quelle": "https://youtu.be/BG-g0vaR6Dg"
+   "key": "KU|Mythos-Check|Vier Eier am Tag: zu viel Cholesterin?",
+   "quelle": "https://youtu.be/B1p_XHmgauk"
   },
   {
-   "nr": 34,
-   "runde": 5,
-   "saeule": "Lebensmittel",
-   "format": "Ja oder Nein?",
-   "unterformat": "Ja oder Nein?",
-   "thema": "Brot: ja oder nein?",
-   "titel": "Brot: ja oder nein?",
-   "status": "offen",
-   "key": "KU|Ja oder Nein?|Brot: ja oder nein?",
-   "quelle": "https://youtu.be/1IlHjfCrQWQ"
-  },
-  {
-   "nr": 35,
-   "runde": 5,
-   "saeule": "Lebensmittel",
-   "format": "Top 3",
-   "unterformat": "Top 3",
-   "thema": "Top 3 Lebensmittel für deine Muskeln",
-   "titel": "Top 3 Lebensmittel für deine Muskeln",
-   "status": "offen",
-   "key": "KU|Top 3|Top 3 Lebensmittel für deine Muskeln",
-   "quelle": "https://youtu.be/QZaLHi-R0H4"
-  },
-  {
-   "nr": 36,
-   "runde": 5,
-   "saeule": "Wissen zum Abspeichern",
-   "format": "Spickzettel",
-   "unterformat": "Spickzettel",
-   "thema": "Spickzettel: mach dein Wasser besser",
-   "titel": "Spickzettel: mach dein Wasser besser",
-   "status": "offen",
-   "key": "KU|Spickzettel|Spickzettel: mach dein Wasser besser",
-   "quelle": "https://youtu.be/za9Pc4kH7mc"
-  },
-  {
-   "nr": 37,
-   "runde": 5,
-   "saeule": "Körper",
-   "format": "Schlaf & Routine",
-   "unterformat": "Schlaf & Routine",
-   "thema": "Die perfekte Morgenroutine",
-   "titel": "Die perfekte Morgenroutine",
-   "status": "offen",
-   "key": "KU|Schlaf & Routine|Die perfekte Morgenroutine",
-   "quelle": "https://youtu.be/6fqYJXwI6Lw"
-  },
-  {
-   "nr": 38,
-   "runde": 5,
-   "saeule": "Natur & Hausmittel",
-   "format": "Hausmittel",
-   "unterformat": "Hausmittel",
-   "thema": "Hausmittel für eine freie Nase",
-   "titel": "Hausmittel für eine freie Nase",
-   "status": "offen",
-   "key": "KU|Hausmittel|Hausmittel für eine freie Nase",
-   "quelle": "https://youtu.be/Bp_TiREmUpk"
-  },
-  {
-   "nr": 39,
+   "nr": 76,
    "runde": 6,
    "saeule": "Lebensmittel",
    "format": "Unter der Lupe",
-   "unterformat": "Unter der Lupe",
-   "thema": "Das solltest du über Ingwer und Zimt wissen",
-   "titel": "Das solltest du über Ingwer und Zimt wissen",
+   "unterformat": "Obst & Beeren",
+   "thema": "Was du über die Avocado wissen solltest",
+   "titel": "Was du über die Avocado wissen solltest",
    "status": "offen",
-   "key": "KU|Unter der Lupe|Das solltest du über Ingwer und Zimt wissen",
-   "quelle": "https://youtu.be/q22cyLqLAMs"
+   "key": "KU|Unter der Lupe|Was du über die Avocado wissen solltest",
+   "quelle": "https://youtu.be/1PhfqChcy9I"
   },
   {
-   "nr": 40,
+   "nr": 77,
    "runde": 6,
    "saeule": "Lebensmittel",
    "format": "Ja oder Nein?",
-   "unterformat": "Ja oder Nein?",
-   "thema": "Grüner Tee: ja oder nein?",
-   "titel": "Grüner Tee: ja oder nein?",
+   "unterformat": "Ergänzen",
+   "thema": "Schwarzkümmelöl: Ja oder Nein?",
+   "titel": "Schwarzkümmelöl: Ja oder Nein?",
    "status": "offen",
-   "key": "KU|Ja oder Nein?|Grüner Tee: ja oder nein?",
-   "quelle": "https://youtu.be/FBCuApyPEo0"
+   "key": "KU|Ja oder Nein?|Schwarzkümmelöl: Ja oder Nein?",
+   "quelle": "https://youtu.be/orm22RkmWx4"
   },
   {
-   "nr": 41,
+   "nr": 78,
    "runde": 6,
-   "saeule": "Lebensmittel",
-   "format": "Top 3",
-   "unterformat": "Top 3",
-   "thema": "Top 3 Getränke für den Morgen",
-   "titel": "Top 3 Getränke für den Morgen",
+   "saeule": "Zuhause & Pflege",
+   "format": "Gut gegen Schlecht",
+   "unterformat": "Wohnen & Luft",
+   "thema": "Lufterfrischer gegen 2 Zutaten aus der Küche",
+   "titel": "Lufterfrischer gegen 2 Zutaten aus der Küche",
    "status": "offen",
-   "key": "KU|Top 3|Top 3 Getränke für den Morgen",
-   "quelle": "https://youtu.be/4c8yvOEq_fM"
+   "key": "KU|Gut gegen Schlecht|Lufterfrischer gegen 2 Zutaten aus der Küche",
+   "quelle": "https://youtu.be/4DFAeZKNXZU"
   },
   {
-   "nr": 42,
+   "nr": 79,
    "runde": 6,
-   "saeule": "Wissen zum Abspeichern",
-   "format": "Spickzettel",
-   "unterformat": "Spickzettel",
-   "thema": "Spickzettel: Kaffee-Upgrades",
-   "titel": "Spickzettel: Kaffee-Upgrades",
+   "saeule": "Nährstoffe",
+   "format": "Nährstoff erklärt",
+   "unterformat": "Bausteine",
+   "thema": "Kollagen: was du darüber wissen solltest",
+   "titel": "Kollagen: was du darüber wissen solltest",
    "status": "offen",
-   "key": "KU|Spickzettel|Spickzettel: Kaffee-Upgrades",
-   "quelle": "https://youtu.be/p7QBdfP33UE"
-  },
-  {
-   "nr": 43,
-   "runde": 7,
-   "saeule": "Lebensmittel",
-   "format": "Unter der Lupe",
-   "unterformat": "Unter der Lupe",
-   "thema": "Das solltest du über Eier wissen",
-   "titel": "Das solltest du über Eier wissen",
-   "status": "offen",
-   "key": "KU|Unter der Lupe|Das solltest du über Eier wissen",
-   "quelle": "https://youtu.be/_QpIRMbAe8U"
-  },
-  {
-   "nr": 44,
-   "runde": 7,
-   "saeule": "Lebensmittel",
-   "format": "Ja oder Nein?",
-   "unterformat": "Ja oder Nein?",
-   "thema": "Kollagen: lohnt sich das?",
-   "titel": "Kollagen: lohnt sich das?",
-   "status": "offen",
-   "key": "KU|Ja oder Nein?|Kollagen: lohnt sich das?",
+   "key": "KU|Nährstoff erklärt|Kollagen: was du darüber wissen solltest",
    "quelle": "https://youtu.be/-tKYJDqT_1o"
   },
   {
-   "nr": 45,
+   "nr": 80,
+   "runde": 6,
+   "saeule": "Lebensmittel",
+   "format": "Top 3",
+   "unterformat": "Top 3 Lebensmittel allgemein",
+   "thema": "Top 3 Lebensmittel, die du zu selten isst",
+   "titel": "Top 3 Lebensmittel, die du zu selten isst",
+   "status": "offen",
+   "key": "KU|Top 3|Top 3 Lebensmittel, die du zu selten isst",
+   "quelle": "https://youtu.be/qdPwL3n4RYQ"
+  },
+  {
+   "nr": 81,
+   "runde": 6,
+   "saeule": "Körper",
+   "format": "Komische Zeichen",
+   "unterformat": "Gesicht & Augen",
+   "thema": "Was deine Augenfarbe über dich verrät",
+   "titel": "Was deine Augenfarbe über dich verrät",
+   "status": "offen",
+   "key": "KU|Komische Zeichen|Was deine Augenfarbe über dich verrät",
+   "quelle": "https://youtu.be/vn5eYknVpR0"
+  },
+  {
+   "nr": 82,
+   "runde": 6,
+   "saeule": "Körper",
+   "format": "Dein Körper erklärt",
+   "unterformat": "Was passiert, wenn…",
+   "thema": "Was passiert, wenn du jeden Tag 4 Eier isst?",
+   "titel": "Was passiert, wenn du jeden Tag 4 Eier isst?",
+   "status": "offen",
+   "key": "KU|Dein Körper erklärt|Was passiert, wenn du jeden Tag 4 Eier isst?",
+   "quelle": "https://youtu.be/_QpIRMbAe8U"
+  },
+  {
+   "nr": 83,
+   "runde": 6,
+   "saeule": "Körper",
+   "format": "Schlaf & Routine",
+   "unterformat": "Bewegung im Alltag",
+   "thema": "5 Tricks für eine bessere Haltung",
+   "titel": "5 Tricks für eine bessere Haltung",
+   "status": "offen",
+   "key": "KU|Schlaf & Routine|5 Tricks für eine bessere Haltung",
+   "quelle": "https://youtu.be/MXgFxUEWI-U"
+  },
+  {
+   "nr": 84,
+   "runde": 6,
+   "saeule": "Natur & Hausmittel",
+   "format": "Hausmittel",
+   "unterformat": "Bauch & Verdauung",
+   "thema": "Ein Teelöffel Nelken für deinen Bauch",
+   "titel": "Ein Teelöffel Nelken für deinen Bauch",
+   "status": "offen",
+   "key": "KU|Hausmittel|Ein Teelöffel Nelken für deinen Bauch",
+   "quelle": "https://youtu.be/ux6sBobvadw"
+  },
+  {
+   "nr": 85,
+   "runde": 6,
+   "saeule": "Zuhause & Pflege",
+   "format": "Natürliche Pflege",
+   "unterformat": "Haare",
+   "thema": "Graue Haare und Haarausfall: was du tun kannst",
+   "titel": "Graue Haare und Haarausfall: was du tun kannst",
+   "status": "offen",
+   "key": "KU|Natürliche Pflege|Graue Haare und Haarausfall: was du tun kannst",
+   "quelle": "https://youtu.be/I6ic5KByqSs"
+  },
+  {
+   "nr": 86,
+   "runde": 6,
+   "saeule": "Natur & Hausmittel",
+   "format": "Tee-Serie",
+   "unterformat": "Ein Tee pro Short",
+   "thema": "Ingwer und Zimt: was der Tee mit dir macht",
+   "titel": "Ingwer und Zimt: was der Tee mit dir macht",
+   "status": "offen",
+   "key": "KU|Tee-Serie|Ingwer und Zimt: was der Tee mit dir macht",
+   "quelle": "https://youtu.be/q22cyLqLAMs"
+  },
+  {
+   "nr": 87,
+   "runde": 6,
+   "saeule": "Natur & Hausmittel",
+   "format": "Sonne, Wasser, Wärme",
+   "unterformat": "Wärme & Kälte",
+   "thema": "Das Geheimnis der Finnen",
+   "titel": "Das Geheimnis der Finnen",
+   "status": "offen",
+   "key": "KU|Sonne, Wasser, Wärme|Das Geheimnis der Finnen",
+   "quelle": "https://youtu.be/u3cxeXb2aBM"
+  },
+  {
+   "nr": 88,
+   "runde": 6,
+   "saeule": "Wissen zum Abspeichern",
+   "format": "Spickzettel",
+   "unterformat": "Essen & Kombinieren",
+   "thema": "Spickzettel: Nüsse",
+   "titel": "Spickzettel: Nüsse",
+   "status": "offen",
+   "key": "KU|Spickzettel|Spickzettel: Nüsse",
+   "quelle": "https://youtu.be/eBa0gxiFEEE"
+  },
+  {
+   "nr": 89,
+   "runde": 6,
+   "saeule": "Mythen & Wahrheiten",
+   "format": "Echt oder Fake?",
+   "unterformat": "Im Supermarkt",
+   "thema": "Mini Möhren: so werden sie gemacht",
+   "titel": "Mini Möhren: so werden sie gemacht",
+   "status": "offen",
+   "key": "KU|Echt oder Fake?|Mini Möhren: so werden sie gemacht",
+   "quelle": "https://youtu.be/0dqS-dHkJWk"
+  },
+  {
+   "nr": 90,
+   "runde": 6,
+   "saeule": "Mythen & Wahrheiten",
+   "format": "Mythos-Check",
+   "unterformat": "Wasser-Mythen",
+   "thema": "5 Fehler beim Wassertrinken",
+   "titel": "5 Fehler beim Wassertrinken",
+   "status": "offen",
+   "key": "KU|Mythos-Check|5 Fehler beim Wassertrinken",
+   "quelle": "https://youtu.be/PswvWD97SQI"
+  },
+  {
+   "nr": 91,
+   "runde": 7,
+   "saeule": "Lebensmittel",
+   "format": "Unter der Lupe",
+   "unterformat": "Vom Hof & aus dem Meer",
+   "thema": "Milch: was steckt wirklich drin?",
+   "titel": "Milch: was steckt wirklich drin?",
+   "status": "offen",
+   "key": "KU|Unter der Lupe|Milch: was steckt wirklich drin?",
+   "quelle": "https://youtu.be/VRTIf83xnvA"
+  },
+  {
+   "nr": 92,
+   "runde": 7,
+   "saeule": "Lebensmittel",
+   "format": "Ja oder Nein?",
+   "unterformat": "Essen",
+   "thema": "Magerquark und Skyr: Ja oder Nein?",
+   "titel": "Magerquark und Skyr: Ja oder Nein?",
+   "status": "offen",
+   "key": "KU|Ja oder Nein?|Magerquark und Skyr: Ja oder Nein?",
+   "quelle": "https://youtu.be/uFEvDLrUVnE"
+  },
+  {
+   "nr": 93,
+   "runde": 7,
+   "saeule": "Zuhause & Pflege",
+   "format": "Gut gegen Schlecht",
+   "unterformat": "Küche",
+   "thema": "Wilde Heidelbeeren gegen Kulturheidelbeeren",
+   "titel": "Wilde Heidelbeeren gegen Kulturheidelbeeren",
+   "status": "offen",
+   "key": "KU|Gut gegen Schlecht|Wilde Heidelbeeren gegen Kulturheidelbeeren",
+   "quelle": "https://youtu.be/5TwmHO0qzu4"
+  },
+  {
+   "nr": 94,
+   "runde": 7,
+   "saeule": "Nährstoffe",
+   "format": "Nährstoff erklärt",
+   "unterformat": "Mineralstoffe",
+   "thema": "Zink und deine Haare",
+   "titel": "Zink und deine Haare",
+   "status": "offen",
+   "key": "KU|Nährstoff erklärt|Zink und deine Haare",
+   "quelle": "https://youtu.be/v6zf9cBGcEw"
+  },
+  {
+   "nr": 95,
+   "runde": 7,
+   "saeule": "Lebensmittel",
+   "format": "Top 3",
+   "unterformat": "Top 3 gegen Kopfschmerzen",
+   "thema": "Top 3 Tricks, wenn die Migräne kommt",
+   "titel": "Top 3 Tricks, wenn die Migräne kommt",
+   "status": "offen",
+   "key": "KU|Top 3|Top 3 Tricks, wenn die Migräne kommt",
+   "quelle": "https://youtu.be/EJ-mEBcEbdM"
+  },
+  {
+   "nr": 96,
+   "runde": 7,
+   "saeule": "Körper",
+   "format": "Komische Zeichen",
+   "unterformat": "Hände & Füße",
+   "thema": "Was deine Füße über deine Leber verraten",
+   "titel": "Was deine Füße über deine Leber verraten",
+   "status": "offen",
+   "key": "KU|Komische Zeichen|Was deine Füße über deine Leber verraten",
+   "quelle": "https://youtu.be/yYzMeCQJpnE"
+  },
+  {
+   "nr": 97,
+   "runde": 7,
+   "saeule": "Körper",
+   "format": "Dein Körper erklärt",
+   "unterformat": "Darm & Haut",
+   "thema": "Blähbauch: der wirksamste einfache Trick",
+   "titel": "Blähbauch: der wirksamste einfache Trick",
+   "status": "offen",
+   "key": "KU|Dein Körper erklärt|Blähbauch: der wirksamste einfache Trick",
+   "quelle": "https://youtu.be/bzl9KTl7w6c"
+  },
+  {
+   "nr": 98,
+   "runde": 7,
+   "saeule": "Körper",
+   "format": "Schlaf & Routine",
+   "unterformat": "Schlaf",
+   "thema": "Durchschlafen, ohne nachts aufs Klo zu müssen",
+   "titel": "Durchschlafen, ohne nachts aufs Klo zu müssen",
+   "status": "offen",
+   "key": "KU|Schlaf & Routine|Durchschlafen, ohne nachts aufs Klo zu müssen",
+   "quelle": "https://youtu.be/DEEibbu6y4A"
+  },
+  {
+   "nr": 99,
+   "runde": 7,
+   "saeule": "Natur & Hausmittel",
+   "format": "Hausmittel",
+   "unterformat": "Küchenklassiker",
+   "thema": "Honig und Knoblauch: das alte Hausmittel",
+   "titel": "Honig und Knoblauch: das alte Hausmittel",
+   "status": "offen",
+   "key": "KU|Hausmittel|Honig und Knoblauch: das alte Hausmittel",
+   "quelle": "https://youtu.be/xmeXN2LYARs"
+  },
+  {
+   "nr": 100,
+   "runde": 7,
+   "saeule": "Zuhause & Pflege",
+   "format": "Natürliche Pflege",
+   "unterformat": "Zähne",
+   "thema": "7 Schritte für Zähne und Zahnfleisch",
+   "titel": "7 Schritte für Zähne und Zahnfleisch",
+   "status": "offen",
+   "key": "KU|Natürliche Pflege|7 Schritte für Zähne und Zahnfleisch",
+   "quelle": "https://youtu.be/SxIdoS2UTSw"
+  },
+  {
+   "nr": 101,
+   "runde": 7,
+   "saeule": "Natur & Hausmittel",
+   "format": "Tee-Serie",
+   "unterformat": "Ein Tee pro Short",
+   "thema": "Nelkenwasser: der unbekannte Tee",
+   "titel": "Nelkenwasser: der unbekannte Tee",
+   "status": "offen",
+   "key": "KU|Tee-Serie|Nelkenwasser: der unbekannte Tee",
+   "quelle": "https://youtu.be/9KnkZcpgY8s"
+  },
+  {
+   "nr": 102,
+   "runde": 7,
+   "saeule": "Natur & Hausmittel",
+   "format": "Sonne, Wasser, Wärme",
+   "unterformat": "Sonne",
+   "thema": "Sonnencreme selber machen",
+   "titel": "Sonnencreme selber machen",
+   "status": "offen",
+   "key": "KU|Sonne, Wasser, Wärme|Sonnencreme selber machen",
+   "quelle": "https://youtu.be/AB-zIjcu88E"
+  },
+  {
+   "nr": 103,
    "runde": 7,
    "saeule": "Wissen zum Abspeichern",
    "format": "Spickzettel",
-   "unterformat": "Spickzettel",
-   "thema": "Spickzettel: welche Lebensmittel für welches Organ",
-   "titel": "Spickzettel: welche Lebensmittel für welches Organ",
+   "unterformat": "Trinken",
+   "thema": "Spickzettel: Apfelessig",
+   "titel": "Spickzettel: Apfelessig",
    "status": "offen",
-   "key": "KU|Spickzettel|Spickzettel: welche Lebensmittel für welches Organ",
-   "quelle": "https://youtu.be/MOcNg3I1aAo"
+   "key": "KU|Spickzettel|Spickzettel: Apfelessig",
+   "quelle": "https://youtu.be/S9B3qjfAhBw"
   },
   {
-   "nr": 46,
+   "nr": 104,
+   "runde": 7,
+   "saeule": "Mythen & Wahrheiten",
+   "format": "Echt oder Fake?",
+   "unterformat": "Selbsttest zu Hause",
+   "thema": "Oliven: echt oder gefärbt?",
+   "titel": "Oliven: echt oder gefärbt?",
+   "status": "offen",
+   "key": "KU|Echt oder Fake?|Oliven: echt oder gefärbt?",
+   "quelle": "https://youtu.be/ZeyuyLY7TpA"
+  },
+  {
+   "nr": 105,
+   "runde": 7,
+   "saeule": "Mythen & Wahrheiten",
+   "format": "Mythos-Check",
+   "unterformat": "Körper-Mythen",
+   "thema": "Ist Fasten für Frauen tabu?",
+   "titel": "Ist Fasten für Frauen tabu?",
+   "status": "offen",
+   "key": "KU|Mythos-Check|Ist Fasten für Frauen tabu?",
+   "quelle": "https://youtu.be/5c5gpOnu0cI"
+  },
+  {
+   "nr": 106,
    "runde": 8,
    "saeule": "Lebensmittel",
    "format": "Unter der Lupe",
-   "unterformat": "Unter der Lupe",
-   "thema": "Das solltest du über Olivenöl wissen",
-   "titel": "Das solltest du über Olivenöl wissen",
+   "unterformat": "Getreide & Knolle",
+   "thema": "Was du über dein Brot wissen solltest",
+   "titel": "Was du über dein Brot wissen solltest",
    "status": "offen",
-   "key": "KU|Unter der Lupe|Das solltest du über Olivenöl wissen",
-   "quelle": "https://youtu.be/nB5Ug_dApiU"
+   "key": "KU|Unter der Lupe|Was du über dein Brot wissen solltest",
+   "quelle": "https://youtu.be/1IlHjfCrQWQ"
   },
   {
-   "nr": 47,
+   "nr": 107,
    "runde": 8,
    "saeule": "Lebensmittel",
    "format": "Ja oder Nein?",
-   "unterformat": "Ja oder Nein?",
-   "thema": "Frühstück: ja oder nein?",
-   "titel": "Frühstück: ja oder nein?",
+   "unterformat": "Essen",
+   "thema": "Erdnussbutter: Ja oder Nein?",
+   "titel": "Erdnussbutter: Ja oder Nein?",
    "status": "offen",
-   "key": "KU|Ja oder Nein?|Frühstück: ja oder nein?",
+   "key": "KU|Ja oder Nein?|Erdnussbutter: Ja oder Nein?",
+   "quelle": "https://youtu.be/Km-QqSWfB5A"
+  },
+  {
+   "nr": 108,
+   "runde": 8,
+   "saeule": "Zuhause & Pflege",
+   "format": "Gut gegen Schlecht",
+   "unterformat": "Bad & Pflege",
+   "thema": "Shampoo oder weniger ist mehr?",
+   "titel": "Shampoo oder weniger ist mehr?",
+   "status": "offen",
+   "key": "KU|Gut gegen Schlecht|Shampoo oder weniger ist mehr?",
+   "quelle": "https://youtu.be/rUR9V2DKuUo"
+  },
+  {
+   "nr": 109,
+   "runde": 8,
+   "saeule": "Nährstoffe",
+   "format": "Nährstoff erklärt",
+   "unterformat": "Vitamine",
+   "thema": "So nimmst du deine Vitamine richtig ein",
+   "titel": "So nimmst du deine Vitamine richtig ein",
+   "status": "offen",
+   "key": "KU|Nährstoff erklärt|So nimmst du deine Vitamine richtig ein",
+   "quelle": "https://youtu.be/FjD5t2F0ncM"
+  },
+  {
+   "nr": 110,
+   "runde": 8,
+   "saeule": "Lebensmittel",
+   "format": "Top 3",
+   "unterformat": "Top 3 für Kopf & Fokus",
+   "thema": "Top 3 Getränke, die deinem Gehirn nicht guttun",
+   "titel": "Top 3 Getränke, die deinem Gehirn nicht guttun",
+   "status": "offen",
+   "key": "KU|Top 3|Top 3 Getränke, die deinem Gehirn nicht guttun",
+   "quelle": "https://youtu.be/vr5Cm723Z-E"
+  },
+  {
+   "nr": 111,
+   "runde": 8,
+   "saeule": "Körper",
+   "format": "Komische Zeichen",
+   "unterformat": "Nährstoffmangel",
+   "thema": "Was deine Haare über Nährstoffmangel verraten",
+   "titel": "Was deine Haare über Nährstoffmangel verraten",
+   "status": "offen",
+   "key": "KU|Komische Zeichen|Was deine Haare über Nährstoffmangel verraten",
+   "quelle": "https://youtu.be/PZKiJe5cx9E"
+  },
+  {
+   "nr": 112,
+   "runde": 8,
+   "saeule": "Körper",
+   "format": "Dein Körper erklärt",
+   "unterformat": "Stoffwechsel & Stress",
+   "thema": "So funktioniert der Blutzucker Trick",
+   "titel": "So funktioniert der Blutzucker Trick",
+   "status": "offen",
+   "key": "KU|Dein Körper erklärt|So funktioniert der Blutzucker Trick",
+   "quelle": "https://youtu.be/wOV8CYcFy6I"
+  },
+  {
+   "nr": 113,
+   "runde": 8,
+   "saeule": "Körper",
+   "format": "Schlaf & Routine",
+   "unterformat": "Morgen",
+   "thema": "Dieses Frühstück kannst du jeden Tag essen",
+   "titel": "Dieses Frühstück kannst du jeden Tag essen",
+   "status": "offen",
+   "key": "KU|Schlaf & Routine|Dieses Frühstück kannst du jeden Tag essen",
    "quelle": "https://youtu.be/V_V82PLYFFY"
   },
   {
-   "nr": 48,
+   "nr": 114,
+   "runde": 8,
+   "saeule": "Natur & Hausmittel",
+   "format": "Hausmittel",
+   "unterformat": "Kraft der Pflanzen",
+   "thema": "Pflanzen mit besonderer Wirkung",
+   "titel": "Pflanzen mit besonderer Wirkung",
+   "status": "offen",
+   "key": "KU|Hausmittel|Pflanzen mit besonderer Wirkung",
+   "quelle": "https://youtu.be/byPye_8tdk8"
+  },
+  {
+   "nr": 115,
+   "runde": 8,
+   "saeule": "Zuhause & Pflege",
+   "format": "Natürliche Pflege",
+   "unterformat": "Haut",
+   "thema": "Trockene Hände: das beste Mittel",
+   "titel": "Trockene Hände: das beste Mittel",
+   "status": "offen",
+   "key": "KU|Natürliche Pflege|Trockene Hände: das beste Mittel",
+   "quelle": "https://youtu.be/qsM8kIGvQ1g"
+  },
+  {
+   "nr": 116,
+   "runde": 8,
+   "saeule": "Natur & Hausmittel",
+   "format": "Tee-Serie",
+   "unterformat": "Ein Tee pro Short",
+   "thema": "Kamillentee",
+   "titel": "Kamillentee",
+   "status": "offen",
+   "key": "KU|Tee-Serie|Kamillentee"
+  },
+  {
+   "nr": 117,
+   "runde": 8,
+   "saeule": "Natur & Hausmittel",
+   "format": "Sonne, Wasser, Wärme",
+   "unterformat": "Wasser",
+   "thema": "Wasserfilter: gutes Wasser selber machen",
+   "titel": "Wasserfilter: gutes Wasser selber machen",
+   "status": "offen",
+   "key": "KU|Sonne, Wasser, Wärme|Wasserfilter: gutes Wasser selber machen",
+   "quelle": "https://youtu.be/aV693ajYs98"
+  },
+  {
+   "nr": 118,
+   "runde": 8,
+   "saeule": "Wissen zum Abspeichern",
+   "format": "Spickzettel",
+   "unterformat": "Körper",
+   "thema": "Spickzettel: Heißhunger und was dir fehlt",
+   "titel": "Spickzettel: Heißhunger und was dir fehlt",
+   "status": "offen",
+   "key": "KU|Spickzettel|Spickzettel: Heißhunger und was dir fehlt",
+   "quelle": "https://youtu.be/TGFBK_7Yd78"
+  },
+  {
+   "nr": 119,
+   "runde": 8,
+   "saeule": "Mythen & Wahrheiten",
+   "format": "Echt oder Fake?",
+   "unterformat": "Im Supermarkt",
+   "thema": "Bio Eier: worauf du wirklich achten kannst",
+   "titel": "Bio Eier: worauf du wirklich achten kannst",
+   "status": "offen",
+   "key": "KU|Echt oder Fake?|Bio Eier: worauf du wirklich achten kannst",
+   "quelle": "https://youtu.be/_LV8hI5PunM"
+  },
+  {
+   "nr": 120,
+   "runde": 8,
+   "saeule": "Mythen & Wahrheiten",
+   "format": "Mythos-Check",
+   "unterformat": "Ernährungs-Mythen",
+   "thema": "Ist Frittiertes immer ungesund?",
+   "titel": "Ist Frittiertes immer ungesund?",
+   "status": "offen",
+   "key": "KU|Mythos-Check|Ist Frittiertes immer ungesund?",
+   "quelle": "https://youtu.be/AG7cuOF4SIE"
+  },
+  {
+   "nr": 121,
    "runde": 9,
    "saeule": "Lebensmittel",
    "format": "Unter der Lupe",
-   "unterformat": "Unter der Lupe",
-   "thema": "Das solltest du über Honig wissen",
-   "titel": "Das solltest du über Honig wissen",
+   "unterformat": "Süßes & Öle",
+   "thema": "Die gesündeste Schokolade",
+   "titel": "Die gesündeste Schokolade",
    "status": "offen",
-   "key": "KU|Unter der Lupe|Das solltest du über Honig wissen",
-   "quelle": "https://youtu.be/ybNFSummezI"
+   "key": "KU|Unter der Lupe|Die gesündeste Schokolade",
+   "quelle": "https://youtu.be/UYQqlEttuh8"
   },
   {
-   "nr": 49,
+   "nr": 122,
+   "runde": 9,
+   "saeule": "Lebensmittel",
+   "format": "Ja oder Nein?",
+   "unterformat": "Essen",
+   "thema": "Äpfel: Ja oder Nein?",
+   "titel": "Äpfel: Ja oder Nein?",
+   "status": "offen",
+   "key": "KU|Ja oder Nein?|Äpfel: Ja oder Nein?",
+   "quelle": "https://youtu.be/zY44h6NVphM"
+  },
+  {
+   "nr": 123,
+   "runde": 9,
+   "saeule": "Zuhause & Pflege",
+   "format": "Gut gegen Schlecht",
+   "unterformat": "Küche",
+   "thema": "Hafermilch gegen Mandelmilch",
+   "titel": "Hafermilch gegen Mandelmilch",
+   "status": "offen",
+   "key": "KU|Gut gegen Schlecht|Hafermilch gegen Mandelmilch",
+   "quelle": "https://youtu.be/lGKjEfiwjXM"
+  },
+  {
+   "nr": 124,
+   "runde": 9,
+   "saeule": "Nährstoffe",
+   "format": "Nährstoff erklärt",
+   "unterformat": "Bausteine",
+   "thema": "Omega 3: alles, was du wissen musst",
+   "titel": "Omega 3: alles, was du wissen musst",
+   "status": "offen",
+   "key": "KU|Nährstoff erklärt|Omega 3: alles, was du wissen musst",
+   "quelle": "https://youtu.be/UD5PSLQLhtw"
+  },
+  {
+   "nr": 125,
+   "runde": 9,
+   "saeule": "Lebensmittel",
+   "format": "Top 3",
+   "unterformat": "Top 3 für Muskeln & Gelenke",
+   "thema": "Top 3 Lebensmittel für deine Gelenke",
+   "titel": "Top 3 Lebensmittel für deine Gelenke",
+   "status": "offen",
+   "key": "KU|Top 3|Top 3 Lebensmittel für deine Gelenke",
+   "quelle": "https://youtu.be/bZcIf-pg6os"
+  },
+  {
+   "nr": 126,
+   "runde": 9,
+   "saeule": "Körper",
+   "format": "Komische Zeichen",
+   "unterformat": "Ausscheidung & Geruch",
+   "thema": "Was dein Stuhl über deinen Darm verrät",
+   "titel": "Was dein Stuhl über deinen Darm verrät",
+   "status": "offen",
+   "key": "KU|Komische Zeichen|Was dein Stuhl über deinen Darm verrät",
+   "quelle": "https://youtu.be/bTPtziSxNhQ"
+  },
+  {
+   "nr": 127,
+   "runde": 9,
+   "saeule": "Körper",
+   "format": "Dein Körper erklärt",
+   "unterformat": "Was passiert, wenn…",
+   "thema": "Was passiert, wenn du abends Magnesium nimmst?",
+   "titel": "Was passiert, wenn du abends Magnesium nimmst?",
+   "status": "offen",
+   "key": "KU|Dein Körper erklärt|Was passiert, wenn du abends Magnesium nimmst?",
+   "quelle": "https://youtu.be/NvjniRcW1kI"
+  },
+  {
+   "nr": 128,
+   "runde": 9,
+   "saeule": "Körper",
+   "format": "Schlaf & Routine",
+   "unterformat": "Bewegung im Alltag",
+   "thema": "3 Übungen für deinen Rücken",
+   "titel": "3 Übungen für deinen Rücken",
+   "status": "offen",
+   "key": "KU|Schlaf & Routine|3 Übungen für deinen Rücken",
+   "quelle": "https://youtu.be/RTohtKjxuNE"
+  },
+  {
+   "nr": 129,
+   "runde": 9,
+   "saeule": "Natur & Hausmittel",
+   "format": "Hausmittel",
+   "unterformat": "Atemwege & Erkältung",
+   "thema": "Mit einer Bewegung die Nase frei bekommen",
+   "titel": "Mit einer Bewegung die Nase frei bekommen",
+   "status": "offen",
+   "key": "KU|Hausmittel|Mit einer Bewegung die Nase frei bekommen",
+   "quelle": "https://youtu.be/Bp_TiREmUpk"
+  },
+  {
+   "nr": 130,
+   "runde": 9,
+   "saeule": "Zuhause & Pflege",
+   "format": "Natürliche Pflege",
+   "unterformat": "Zähne",
+   "thema": "Natürliche Zahnpasta selber machen",
+   "titel": "Natürliche Zahnpasta selber machen",
+   "status": "offen",
+   "key": "KU|Natürliche Pflege|Natürliche Zahnpasta selber machen",
+   "quelle": "https://youtu.be/ERn1cjzz82A"
+  },
+  {
+   "nr": 131,
+   "runde": 9,
+   "saeule": "Natur & Hausmittel",
+   "format": "Tee-Serie",
+   "unterformat": "Ein Tee pro Short",
+   "thema": "Pfefferminztee",
+   "titel": "Pfefferminztee",
+   "status": "offen",
+   "key": "KU|Tee-Serie|Pfefferminztee"
+  },
+  {
+   "nr": 132,
+   "runde": 9,
+   "saeule": "Natur & Hausmittel",
+   "format": "Sonne, Wasser, Wärme",
+   "unterformat": "Wärme & Kälte",
+   "thema": "Eisbaden: worauf Frauen achten können",
+   "titel": "Eisbaden: worauf Frauen achten können",
+   "status": "offen",
+   "key": "KU|Sonne, Wasser, Wärme|Eisbaden: worauf Frauen achten können",
+   "quelle": "https://youtu.be/9j3_V8Iw4xY"
+  },
+  {
+   "nr": 133,
+   "runde": 9,
+   "saeule": "Wissen zum Abspeichern",
+   "format": "Spickzettel",
+   "unterformat": "Rankings",
+   "thema": "Fette und Öle im Ranking",
+   "titel": "Fette und Öle im Ranking",
+   "status": "offen",
+   "key": "KU|Spickzettel|Fette und Öle im Ranking",
+   "quelle": "https://youtu.be/O1UupG8uRpQ"
+  },
+  {
+   "nr": 134,
+   "runde": 9,
+   "saeule": "Mythen & Wahrheiten",
+   "format": "Echt oder Fake?",
+   "unterformat": "Im Supermarkt",
+   "thema": "Wo sich Bio wirklich lohnt",
+   "titel": "Wo sich Bio wirklich lohnt",
+   "status": "offen",
+   "key": "KU|Echt oder Fake?|Wo sich Bio wirklich lohnt",
+   "quelle": "https://youtu.be/-lLKYWHOBSE"
+  },
+  {
+   "nr": 135,
+   "runde": 9,
+   "saeule": "Mythen & Wahrheiten",
+   "format": "Mythos-Check",
+   "unterformat": "Wasser-Mythen",
+   "thema": "Salz ins Wasser: sinnvoll oder Mythos?",
+   "titel": "Salz ins Wasser: sinnvoll oder Mythos?",
+   "status": "offen",
+   "key": "KU|Mythos-Check|Salz ins Wasser: sinnvoll oder Mythos?",
+   "quelle": "https://youtu.be/Ag_WZBXy4-s"
+  },
+  {
+   "nr": 136,
    "runde": 10,
    "saeule": "Lebensmittel",
    "format": "Unter der Lupe",
-   "unterformat": "Unter der Lupe",
-   "thema": "Das solltest du über Buchweizen wissen",
-   "titel": "Das solltest du über Buchweizen wissen",
+   "unterformat": "Obst & Beeren",
+   "thema": "Granatapfel: so isst du ihn ganz einfach",
+   "titel": "Granatapfel: so isst du ihn ganz einfach",
    "status": "offen",
-   "key": "KU|Unter der Lupe|Das solltest du über Buchweizen wissen",
-   "quelle": "https://youtu.be/VAcQ7SPrH_4"
+   "key": "KU|Unter der Lupe|Granatapfel: so isst du ihn ganz einfach",
+   "quelle": "https://youtu.be/8FqV0pCIKVs"
+  },
+  {
+   "nr": 137,
+   "runde": 10,
+   "saeule": "Lebensmittel",
+   "format": "Ja oder Nein?",
+   "unterformat": "Essen",
+   "thema": "Schokolade: Ja oder Nein?",
+   "titel": "Schokolade: Ja oder Nein?",
+   "status": "offen",
+   "key": "KU|Ja oder Nein?|Schokolade: Ja oder Nein?",
+   "quelle": "https://youtu.be/fGFfcXtE_Ic"
+  },
+  {
+   "nr": 138,
+   "runde": 10,
+   "saeule": "Zuhause & Pflege",
+   "format": "Gut gegen Schlecht",
+   "unterformat": "Bad & Pflege",
+   "thema": "Normale Zahnpasta gegen remineralisierende Zahnpasta",
+   "titel": "Normale Zahnpasta gegen remineralisierende Zahnpasta",
+   "status": "offen",
+   "key": "KU|Gut gegen Schlecht|Normale Zahnpasta gegen remineralisierende Zahnpasta",
+   "quelle": "https://youtu.be/aLlMrsXyHQs"
+  },
+  {
+   "nr": 139,
+   "runde": 10,
+   "saeule": "Nährstoffe",
+   "format": "Nährstoff erklärt",
+   "unterformat": "Mineralstoffe",
+   "thema": "Calcium: wo es in deinem Körper hingehört",
+   "titel": "Calcium: wo es in deinem Körper hingehört",
+   "status": "offen",
+   "key": "KU|Nährstoff erklärt|Calcium: wo es in deinem Körper hingehört",
+   "quelle": "https://youtu.be/nkMdxmuG6_w"
+  },
+  {
+   "nr": 140,
+   "runde": 10,
+   "saeule": "Lebensmittel",
+   "format": "Top 3",
+   "unterformat": "Top 3 für deine Organe",
+   "thema": "Top 3 Lebensmittel, die deine Schilddrüse nicht mag",
+   "titel": "Top 3 Lebensmittel, die deine Schilddrüse nicht mag",
+   "status": "offen",
+   "key": "KU|Top 3|Top 3 Lebensmittel, die deine Schilddrüse nicht mag",
+   "quelle": "https://youtu.be/_wSerYd8SRM"
+  },
+  {
+   "nr": 141,
+   "runde": 10,
+   "saeule": "Körper",
+   "format": "Komische Zeichen",
+   "unterformat": "Gesicht & Augen",
+   "thema": "Warum zuckt dein Auge?",
+   "titel": "Warum zuckt dein Auge?",
+   "status": "offen",
+   "key": "KU|Komische Zeichen|Warum zuckt dein Auge?",
+   "quelle": "https://youtu.be/FBAJQyL7-F4"
+  },
+  {
+   "nr": 142,
+   "runde": 10,
+   "saeule": "Körper",
+   "format": "Dein Körper erklärt",
+   "unterformat": "Darm & Haut",
+   "thema": "Deinen Darm in 3 Schritten unterstützen",
+   "titel": "Deinen Darm in 3 Schritten unterstützen",
+   "status": "offen",
+   "key": "KU|Dein Körper erklärt|Deinen Darm in 3 Schritten unterstützen",
+   "quelle": "https://youtu.be/qdYEd7E-iqg"
+  },
+  {
+   "nr": 143,
+   "runde": 10,
+   "saeule": "Körper",
+   "format": "Schlaf & Routine",
+   "unterformat": "Schlaf",
+   "thema": "Warum du nachts aufwachst",
+   "titel": "Warum du nachts aufwachst",
+   "status": "offen",
+   "key": "KU|Schlaf & Routine|Warum du nachts aufwachst",
+   "quelle": "https://youtu.be/4KgXfT5NObk"
+  },
+  {
+   "nr": 144,
+   "runde": 10,
+   "saeule": "Natur & Hausmittel",
+   "format": "Hausmittel",
+   "unterformat": "Bauch & Verdauung",
+   "thema": "Ein Rezept für einen leichten Morgen auf der Toilette",
+   "titel": "Ein Rezept für einen leichten Morgen auf der Toilette",
+   "status": "offen",
+   "key": "KU|Hausmittel|Ein Rezept für einen leichten Morgen auf der Toilette",
+   "quelle": "https://youtu.be/yWsaAG6iXKY"
+  },
+  {
+   "nr": 145,
+   "runde": 10,
+   "saeule": "Zuhause & Pflege",
+   "format": "Natürliche Pflege",
+   "unterformat": "Haut",
+   "thema": "Koreanische Hautcreme selber machen",
+   "titel": "Koreanische Hautcreme selber machen",
+   "status": "offen",
+   "key": "KU|Natürliche Pflege|Koreanische Hautcreme selber machen",
+   "quelle": "https://youtu.be/nhFk7I5Umhs"
+  },
+  {
+   "nr": 146,
+   "runde": 10,
+   "saeule": "Natur & Hausmittel",
+   "format": "Tee-Serie",
+   "unterformat": "Ein Tee pro Short",
+   "thema": "Brennnesseltee",
+   "titel": "Brennnesseltee",
+   "status": "offen",
+   "key": "KU|Tee-Serie|Brennnesseltee"
+  },
+  {
+   "nr": 147,
+   "runde": 10,
+   "saeule": "Natur & Hausmittel",
+   "format": "Sonne, Wasser, Wärme",
+   "unterformat": "Sonne",
+   "thema": "Was in deiner Sonnencreme steckt",
+   "titel": "Was in deiner Sonnencreme steckt",
+   "status": "offen",
+   "key": "KU|Sonne, Wasser, Wärme|Was in deiner Sonnencreme steckt",
+   "quelle": "https://youtu.be/tvstgpQxank"
+  },
+  {
+   "nr": 148,
+   "runde": 10,
+   "saeule": "Wissen zum Abspeichern",
+   "format": "Spickzettel",
+   "unterformat": "Essen & Kombinieren",
+   "thema": "Spickzettel: Kohlenhydrate",
+   "titel": "Spickzettel: Kohlenhydrate",
+   "status": "offen",
+   "key": "KU|Spickzettel|Spickzettel: Kohlenhydrate",
+   "quelle": "https://youtu.be/PIk6V4jRjn8"
+  },
+  {
+   "nr": 149,
+   "runde": 10,
+   "saeule": "Mythen & Wahrheiten",
+   "format": "Echt oder Fake?",
+   "unterformat": "Im Supermarkt",
+   "thema": "Zutatenlisten früher und heute",
+   "titel": "Zutatenlisten früher und heute",
+   "status": "offen",
+   "key": "KU|Echt oder Fake?|Zutatenlisten früher und heute",
+   "quelle": "https://youtu.be/wbZ6wPi-DP4"
+  },
+  {
+   "nr": 150,
+   "runde": 10,
+   "saeule": "Mythen & Wahrheiten",
+   "format": "Mythos-Check",
+   "unterformat": "Ernährungs-Mythen",
+   "thema": "Macht Fett wirklich fett?",
+   "titel": "Macht Fett wirklich fett?",
+   "status": "offen",
+   "key": "KU|Mythos-Check|Macht Fett wirklich fett?",
+   "quelle": "https://youtu.be/_ZzgStE1XvM"
+  },
+  {
+   "nr": 151,
+   "runde": 11,
+   "saeule": "Lebensmittel",
+   "format": "Unter der Lupe",
+   "unterformat": "Süßes & Öle",
+   "thema": "So gut ist Olivenöl wirklich",
+   "titel": "So gut ist Olivenöl wirklich",
+   "status": "offen",
+   "key": "KU|Unter der Lupe|So gut ist Olivenöl wirklich",
+   "quelle": "https://youtu.be/XgUO0qk8g_Y"
+  },
+  {
+   "nr": 152,
+   "runde": 11,
+   "saeule": "Lebensmittel",
+   "format": "Ja oder Nein?",
+   "unterformat": "Essen",
+   "thema": "Salz: Ja oder Nein?",
+   "titel": "Salz: Ja oder Nein?",
+   "status": "offen",
+   "key": "KU|Ja oder Nein?|Salz: Ja oder Nein?",
+   "quelle": "https://youtu.be/zdqr4n0CXXU"
+  },
+  {
+   "nr": 153,
+   "runde": 11,
+   "saeule": "Zuhause & Pflege",
+   "format": "Gut gegen Schlecht",
+   "unterformat": "Küche",
+   "thema": "Zucker gegen Süßstoff",
+   "titel": "Zucker gegen Süßstoff",
+   "status": "offen",
+   "key": "KU|Gut gegen Schlecht|Zucker gegen Süßstoff",
+   "quelle": "https://youtu.be/-65RKgKYqC0"
+  },
+  {
+   "nr": 154,
+   "runde": 11,
+   "saeule": "Nährstoffe",
+   "format": "Nährstoff erklärt",
+   "unterformat": "Bausteine",
+   "thema": "Warum heißen Ballaststoffe eigentlich so?",
+   "titel": "Warum heißen Ballaststoffe eigentlich so?",
+   "status": "offen",
+   "key": "KU|Nährstoff erklärt|Warum heißen Ballaststoffe eigentlich so?",
+   "quelle": "https://youtu.be/nG68kkxZgj4"
+  },
+  {
+   "nr": 155,
+   "runde": 11,
+   "saeule": "Lebensmittel",
+   "format": "Top 3",
+   "unterformat": "Top 3 Lebensmittel allgemein",
+   "thema": "Top 3 beste und schlechteste Fische",
+   "titel": "Top 3 beste und schlechteste Fische",
+   "status": "offen",
+   "key": "KU|Top 3|Top 3 beste und schlechteste Fische",
+   "quelle": "https://youtu.be/WY6petsDzj4"
+  },
+  {
+   "nr": 156,
+   "runde": 11,
+   "saeule": "Körper",
+   "format": "Komische Zeichen",
+   "unterformat": "Nährstoffmangel",
+   "thema": "Warum deine Beine zuerst schwach werden",
+   "titel": "Warum deine Beine zuerst schwach werden",
+   "status": "offen",
+   "key": "KU|Komische Zeichen|Warum deine Beine zuerst schwach werden",
+   "quelle": "https://youtu.be/FwMs3gSYRYY"
+  },
+  {
+   "nr": 157,
+   "runde": 11,
+   "saeule": "Körper",
+   "format": "Dein Körper erklärt",
+   "unterformat": "Stoffwechsel & Stress",
+   "thema": "Warum Frauen anders essen und fasten als Männer",
+   "titel": "Warum Frauen anders essen und fasten als Männer",
+   "status": "offen",
+   "key": "KU|Dein Körper erklärt|Warum Frauen anders essen und fasten als Männer",
+   "quelle": "https://youtu.be/umx0-LpP9A8"
+  },
+  {
+   "nr": 158,
+   "runde": 11,
+   "saeule": "Körper",
+   "format": "Schlaf & Routine",
+   "unterformat": "Schlaf",
+   "thema": "Ein unbekannter Einschlaftrick",
+   "titel": "Ein unbekannter Einschlaftrick",
+   "status": "offen",
+   "key": "KU|Schlaf & Routine|Ein unbekannter Einschlaftrick",
+   "quelle": "https://youtu.be/odmoJrkWOiU"
+  },
+  {
+   "nr": 159,
+   "runde": 11,
+   "saeule": "Natur & Hausmittel",
+   "format": "Hausmittel",
+   "unterformat": "Kraft der Pflanzen",
+   "thema": "Zecken: was du nach dem Waldspaziergang tun kannst",
+   "titel": "Zecken: was du nach dem Waldspaziergang tun kannst",
+   "status": "offen",
+   "key": "KU|Hausmittel|Zecken: was du nach dem Waldspaziergang tun kannst",
+   "quelle": "https://youtu.be/rYuOlsDlYcs"
+  },
+  {
+   "nr": 160,
+   "runde": 11,
+   "saeule": "Zuhause & Pflege",
+   "format": "Natürliche Pflege",
+   "unterformat": "Haut",
+   "thema": "Straffe Haut: 7 natürliche Tricks",
+   "titel": "Straffe Haut: 7 natürliche Tricks",
+   "status": "offen",
+   "key": "KU|Natürliche Pflege|Straffe Haut: 7 natürliche Tricks",
+   "quelle": "https://youtu.be/nS7X2wokeJ0"
+  },
+  {
+   "nr": 161,
+   "runde": 11,
+   "saeule": "Natur & Hausmittel",
+   "format": "Tee-Serie",
+   "unterformat": "Ein Tee pro Short",
+   "thema": "Schwarzer Tee",
+   "titel": "Schwarzer Tee",
+   "status": "offen",
+   "key": "KU|Tee-Serie|Schwarzer Tee"
+  },
+  {
+   "nr": 162,
+   "runde": 11,
+   "saeule": "Natur & Hausmittel",
+   "format": "Sonne, Wasser, Wärme",
+   "unterformat": "Wasser",
+   "thema": "Was das Meer in deinem Körper bewirkt",
+   "titel": "Was das Meer in deinem Körper bewirkt",
+   "status": "offen",
+   "key": "KU|Sonne, Wasser, Wärme|Was das Meer in deinem Körper bewirkt",
+   "quelle": "https://youtu.be/3CjqXU41s3M"
+  },
+  {
+   "nr": 163,
+   "runde": 11,
+   "saeule": "Wissen zum Abspeichern",
+   "format": "Spickzettel",
+   "unterformat": "Körper",
+   "thema": "Spickzettel: Lebensmittel für deine Organe",
+   "titel": "Spickzettel: Lebensmittel für deine Organe",
+   "status": "offen",
+   "key": "KU|Spickzettel|Spickzettel: Lebensmittel für deine Organe",
+   "quelle": "https://youtu.be/MOcNg3I1aAo"
+  },
+  {
+   "nr": 164,
+   "runde": 11,
+   "saeule": "Mythen & Wahrheiten",
+   "format": "Echt oder Fake?",
+   "unterformat": "Im Supermarkt",
+   "thema": "Proteinriegel: was wirklich drin ist",
+   "titel": "Proteinriegel: was wirklich drin ist",
+   "status": "offen",
+   "key": "KU|Echt oder Fake?|Proteinriegel: was wirklich drin ist",
+   "quelle": "https://youtu.be/ojP_nqxxRt8"
+  },
+  {
+   "nr": 165,
+   "runde": 11,
+   "saeule": "Mythen & Wahrheiten",
+   "format": "Mythos-Check",
+   "unterformat": "Ernährungs-Mythen",
+   "thema": "Ist Frühstück die wichtigste Mahlzeit?",
+   "titel": "Ist Frühstück die wichtigste Mahlzeit?",
+   "status": "offen",
+   "key": "KU|Mythos-Check|Ist Frühstück die wichtigste Mahlzeit?",
+   "quelle": "https://youtu.be/sG0gag94-yY"
+  },
+  {
+   "nr": 166,
+   "runde": 12,
+   "saeule": "Lebensmittel",
+   "format": "Unter der Lupe",
+   "unterformat": "Obst & Beeren",
+   "thema": "So holst du mehr aus deinem Zitronenwasser",
+   "titel": "So holst du mehr aus deinem Zitronenwasser",
+   "status": "offen",
+   "key": "KU|Unter der Lupe|So holst du mehr aus deinem Zitronenwasser",
+   "quelle": "https://youtu.be/ZE21WVAb8SU"
+  },
+  {
+   "nr": 167,
+   "runde": 12,
+   "saeule": "Zuhause & Pflege",
+   "format": "Gut gegen Schlecht",
+   "unterformat": "Bad & Pflege",
+   "thema": "Welche Zahnbürste ist besser?",
+   "titel": "Welche Zahnbürste ist besser?",
+   "status": "offen",
+   "key": "KU|Gut gegen Schlecht|Welche Zahnbürste ist besser?",
+   "quelle": "https://youtu.be/y6oTmVq7iZk"
+  },
+  {
+   "nr": 168,
+   "runde": 12,
+   "saeule": "Nährstoffe",
+   "format": "Nährstoff erklärt",
+   "unterformat": "Bausteine",
+   "thema": "Cholesterin einfach erklärt",
+   "titel": "Cholesterin einfach erklärt",
+   "status": "offen",
+   "key": "KU|Nährstoff erklärt|Cholesterin einfach erklärt",
+   "quelle": "https://youtu.be/yLwS2NeBGQg"
+  },
+  {
+   "nr": 169,
+   "runde": 12,
+   "saeule": "Lebensmittel",
+   "format": "Top 3",
+   "unterformat": "Top 3 für deine Organe",
+   "thema": "Top 3 natürliche Mittel bei Entzündungen",
+   "titel": "Top 3 natürliche Mittel bei Entzündungen",
+   "status": "offen",
+   "key": "KU|Top 3|Top 3 natürliche Mittel bei Entzündungen",
+   "quelle": "https://youtu.be/RKfmFLQIxzM"
+  },
+  {
+   "nr": 170,
+   "runde": 12,
+   "saeule": "Körper",
+   "format": "Komische Zeichen",
+   "unterformat": "Gesicht & Augen",
+   "thema": "Die Pickel Karte aus der chinesischen Medizin",
+   "titel": "Die Pickel Karte aus der chinesischen Medizin",
+   "status": "offen",
+   "key": "KU|Komische Zeichen|Die Pickel Karte aus der chinesischen Medizin",
+   "quelle": "https://youtu.be/CeLJ31avEaI"
+  },
+  {
+   "nr": 171,
+   "runde": 12,
+   "saeule": "Körper",
+   "format": "Dein Körper erklärt",
+   "unterformat": "Was passiert, wenn…",
+   "thema": "Was passiert, wenn du 28 Tage Flohsamenschalen nimmst?",
+   "titel": "Was passiert, wenn du 28 Tage Flohsamenschalen nimmst?",
+   "status": "offen",
+   "key": "KU|Dein Körper erklärt|Was passiert, wenn du 28 Tage Flohsamenschalen nimmst?",
+   "quelle": "https://youtu.be/N5GPugP_dSg"
+  },
+  {
+   "nr": 172,
+   "runde": 12,
+   "saeule": "Körper",
+   "format": "Schlaf & Routine",
+   "unterformat": "Schlaf",
+   "thema": "5 Dinge, die dein Schlafzimmer nicht braucht",
+   "titel": "5 Dinge, die dein Schlafzimmer nicht braucht",
+   "status": "offen",
+   "key": "KU|Schlaf & Routine|5 Dinge, die dein Schlafzimmer nicht braucht",
+   "quelle": "https://youtu.be/T_mfJ44sbL8"
+  },
+  {
+   "nr": 173,
+   "runde": 12,
+   "saeule": "Natur & Hausmittel",
+   "format": "Hausmittel",
+   "unterformat": "Atemwege & Erkältung",
+   "thema": "Der Hausmittel Trank bei Husten",
+   "titel": "Der Hausmittel Trank bei Husten",
+   "status": "offen",
+   "key": "KU|Hausmittel|Der Hausmittel Trank bei Husten",
+   "quelle": "https://youtu.be/wLhPGW9pE_E"
+  },
+  {
+   "nr": 174,
+   "runde": 12,
+   "saeule": "Natur & Hausmittel",
+   "format": "Sonne, Wasser, Wärme",
+   "unterformat": "Wärme & Kälte",
+   "thema": "Warum dir Zeit im Wald guttut",
+   "titel": "Warum dir Zeit im Wald guttut",
+   "status": "offen",
+   "key": "KU|Sonne, Wasser, Wärme|Warum dir Zeit im Wald guttut",
+   "quelle": "https://youtu.be/KKHwMG56N6E"
+  },
+  {
+   "nr": 175,
+   "runde": 12,
+   "saeule": "Wissen zum Abspeichern",
+   "format": "Spickzettel",
+   "unterformat": "Rankings",
+   "thema": "Süßungsmittel im Ranking",
+   "titel": "Süßungsmittel im Ranking",
+   "status": "offen",
+   "key": "KU|Spickzettel|Süßungsmittel im Ranking",
+   "quelle": "https://youtu.be/OmFX1qRUY9U"
+  },
+  {
+   "nr": 176,
+   "runde": 12,
+   "saeule": "Mythen & Wahrheiten",
+   "format": "Echt oder Fake?",
+   "unterformat": "Im Supermarkt",
+   "thema": "Die unsichtbare Schicht auf Obst",
+   "titel": "Die unsichtbare Schicht auf Obst",
+   "status": "offen",
+   "key": "KU|Echt oder Fake?|Die unsichtbare Schicht auf Obst",
+   "quelle": "https://youtu.be/c7ugpcim6a4"
+  },
+  {
+   "nr": 177,
+   "runde": 12,
+   "saeule": "Mythen & Wahrheiten",
+   "format": "Mythos-Check",
+   "unterformat": "Ernährungs-Mythen",
+   "thema": "Kalorien: zählt wirklich nur die Zahl?",
+   "titel": "Kalorien: zählt wirklich nur die Zahl?",
+   "status": "offen",
+   "key": "KU|Mythos-Check|Kalorien: zählt wirklich nur die Zahl?",
+   "quelle": "https://youtu.be/2OW7JHXN-20"
+  },
+  {
+   "nr": 178,
+   "runde": 13,
+   "saeule": "Lebensmittel",
+   "format": "Unter der Lupe",
+   "unterformat": "Süßes & Öle",
+   "thema": "Schwarzkümmelöl: was du wissen solltest",
+   "titel": "Schwarzkümmelöl: was du wissen solltest",
+   "status": "offen",
+   "key": "KU|Unter der Lupe|Schwarzkümmelöl: was du wissen solltest",
+   "quelle": "https://youtu.be/Id10vAKxiS4"
+  },
+  {
+   "nr": 179,
+   "runde": 13,
+   "saeule": "Wissen zum Abspeichern",
+   "format": "Spickzettel",
+   "unterformat": "Körper",
+   "thema": "Spickzettel: welches Lebensmittel wofür?",
+   "titel": "Spickzettel: welches Lebensmittel wofür?",
+   "status": "offen",
+   "key": "KU|Spickzettel|Spickzettel: welches Lebensmittel wofür?",
+   "quelle": "https://youtu.be/fxcZTON2__U"
   }
  ]
 }

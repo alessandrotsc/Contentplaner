@@ -1773,21 +1773,6 @@
   },
   {
    "runde": 1,
-   "saeule": "Zuhause & Pflege",
-   "format": "Gut gegen Schlecht",
-   "unterformat": "Küche",
-   "lang": true,
-   "thema": "Teflonpfanne gegen Edelstahlpfanne",
-   "titel": "Teflonpfanne gegen Edelstahlpfanne",
-   "status": "offen",
-   "key": "KU|Gut gegen Schlecht|Teflonpfanne gegen Edelstahlpfanne",
-   "quelle": "https://youtu.be/M6uRA6IgAd0",
-   "datum": "2026-10-26",
-   "zeit": "19:00",
-   "nr": 3
-  },
-  {
-   "runde": 1,
    "saeule": "Nährstoffe",
    "format": "Nährstoff erklärt",
    "unterformat": "Mineralstoffe",
@@ -1797,6 +1782,21 @@
    "status": "offen",
    "key": "KU|Nährstoff erklärt|Magnesium: warum es so wichtig ist",
    "quelle": "https://youtu.be/F1woK48-RiM",
+   "datum": "2026-10-26",
+   "zeit": "19:00",
+   "nr": 3
+  },
+  {
+   "runde": 1,
+   "saeule": "Zuhause & Pflege",
+   "format": "Gut gegen Schlecht",
+   "unterformat": "Küche",
+   "lang": true,
+   "thema": "Teflonpfanne gegen Edelstahlpfanne",
+   "titel": "Teflonpfanne gegen Edelstahlpfanne",
+   "status": "offen",
+   "key": "KU|Gut gegen Schlecht|Teflonpfanne gegen Edelstahlpfanne",
+   "quelle": "https://youtu.be/M6uRA6IgAd0",
    "datum": "2026-10-27",
    "zeit": "19:00",
    "nr": 4

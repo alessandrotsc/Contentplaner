@@ -7,7 +7,7 @@ import * as S from "./store.js";
 import * as D from "./datum.js";
 import { Z, neu, eintragPasst } from "./zustand.js";
 import { el, ikon, ikonKnopf, dialog, feld, pillen, inZwischenablage } from "./ui.js";
-import { zuEintrag, postenDialog } from "./posten.js";
+import { zuEintrag, postenDialog, istErledigt } from "./posten.js";
 
 function anTag(tag) {
   return S.eintraege()
@@ -183,7 +183,10 @@ function karte(e, tag) {
     meta.append(el("span", { text: t }));
   });
   meta.append(plattformIcons(e));
-  if (zuEintrag(e)) meta.append(el("span", { class: "video-bereit", text: "▶ Video bereit" }));
+  const vid = zuEintrag(e);
+  if (vid) meta.append(istErledigt(vid)
+    ? el("span", { class: "video-bereit erledigt", text: "✓ Erledigt" })
+    : el("span", { class: "video-bereit", text: "▶ Video bereit" }));
   const serie = e.wiederholung && e.wiederholung.art !== "einmal"
     ? el("div", { class: "karte-meta" }, el("span", { text: D.regelText(e.wiederholung) })) : null;
 

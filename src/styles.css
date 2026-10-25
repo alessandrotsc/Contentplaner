@@ -567,3 +567,10 @@ select.eingabe { -webkit-appearance: none; appearance: none; }
 .teilen:disabled { opacity: .75; }
 .posten-text { white-space: pre-wrap; font-size: 13.5px; line-height: 1.45; color: var(--ink); background: var(--creme-hell); border-radius: 10px; padding: 10px 12px; }
 .posten-zu { display: block; width: 100%; margin-top: 12px; height: 46px; border-radius: 12px; font-weight: 700; font-size: 15px; color: var(--ink); background: #EEF1F5; }
+/* Häkchen je Plattform in der Posten-Ansicht (25.10.2026) */
+.abhaken-reihe { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 10px; }
+.abhaken { display: inline-flex; align-items: center; gap: 6px; height: 38px; padding: 0 12px; border-radius: 99px; border: 1.5px solid #D9E6F2; background: var(--weiss); color: var(--ink-2); font-size: 13px; font-weight: 700; }
+.abhaken svg { width: 15px; height: 15px; }
+.abhaken.an { background: var(--gut); border-color: var(--gut); color: var(--weiss); }
+.erledigt-box { background: #E6F5EE; }
+.video-bereit.erledigt { color: var(--ink-2); background: #EEF2F6; }

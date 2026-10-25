@@ -10,6 +10,8 @@
  */
 
 import * as Server from "./server.js";
+import * as S from "./store.js";
+import { neu } from "./zustand.js";
 import { el, ikon, dialog, inZwischenablage } from "./ui.js";
 
 const CACHE = "contentplaner.ablage";
@@ -27,6 +29,68 @@ export async function ablageLaden() {
 }
 
 export const zuEintrag = (e) => (e?.planKey && videos.find((v) => v.key === e.planKey)) || null;
+export const istErledigt = (v) => !!v?.status?.erledigt;
+
+/** Plattformen, die für dieses Video abgehakt werden müssen. */
+function zielPlattformen(v) {
+  const f = v.dateien || {};
+  const kurz = f.video || f.youtube || v.youtubeTitel || v.caption;
+  return [
+    kurz && { id: "tiktok", name: "TikTok", ikon: "tiktok" },
+    kurz && { id: "instagram", name: "Instagram", ikon: "instagram" },
+    kurz && { id: "facebook", name: "Facebook", ikon: "facebook" },
+    kurz && { id: "shorts", name: "YT Shorts", ikon: "youtube" },
+    (f.lang || v.langTitel) && { id: "youtube", name: "YouTube lang", ikon: "youtube" },
+  ].filter(Boolean);
+}
+
+async function statusSenden(v, plattformen, erledigt) {
+  const r = await Server.anfrageRoh("/ablage/status", { method: "PUT",
+    body: JSON.stringify({ projekt: v.projekt, ordner: v.ordner || v.id, plattformen, erledigt }) });
+  v.status = r.status;
+  if (erledigt) {
+    for (const k of ["video", "youtube", "lang"]) { if (v.dateien?.[k]) { geladen.delete(v.dateien[k]); delete v.dateien[k]; } }
+  }
+  try { localStorage.setItem(CACHE, JSON.stringify(videos)); } catch { /* egal */ }
+}
+
+/** Zeile mit einem Knopf je Plattform zum Abhaken. */
+function haekchen(e, v, d) {
+  const ziel = zielPlattformen(v);
+  const an = { ...(v.status?.plattformen || {}) };
+  if (istErledigt(v)) {
+    return el("div", { class: "posten-kanal erledigt-box" },
+      el("div", { class: "posten-kopf" }, ikon("haken", 16), el("b", { text: "Erledigt" })),
+      el("div", { class: "hinweis", text: "Auf allen Plattformen eingeplant oder hochgeladen. Das Video ist vom Server gelöscht, Cover und Texte bleiben." }));
+  }
+  const knoepfe = ziel.map((p) => {
+    const b = el("button", { class: "abhaken" + (an[p.id] ? " an" : ""), onclick: klick }, ikon(p.ikon, 15), el("span", { text: p.name }));
+    async function klick(ev) {
+      ev.preventDefault();
+      an[p.id] = !an[p.id];
+      b.classList.toggle("an", an[p.id]);
+      const alle = ziel.every((x) => an[x.id]);
+      if (alle && !confirm("Alles abgehakt. Video als erledigt markieren und vom Server löschen?")) {
+        an[p.id] = false; b.classList.remove("an"); return;
+      }
+      try {
+        await statusSenden(v, an, alle);
+        if (alle) {
+          if (e?.id && S.eintrag(e.id)) S.eintragSpeichern({ id: e.id, status: "online" });
+          d.zu(); neu();
+        }
+      } catch (err) {
+        an[p.id] = !an[p.id]; b.classList.toggle("an", an[p.id]);
+        alert("Speichern ging nicht: " + err.message);
+      }
+    }
+    return b;
+  });
+  return el("div", { class: "posten-kanal" },
+    el("div", { class: "posten-kopf" }, ikon("haken", 16), el("b", { text: "Eingeplant oder hochgeladen" })),
+    el("div", { class: "hinweis", text: "Abhaken, sobald es auf der Plattform geplant oder online ist. Sind alle abgehakt, wird das Video vom Server gelöscht." }),
+    el("div", { class: "abhaken-reihe" }, knoepfe));
+}
 
 /* Geladene Dateien bleiben im Speicher, solange die App offen ist (ein Video ca. 110 MB). */
 const geladen = new Map();
@@ -101,11 +165,13 @@ export function postenDialog(e, v, beiBearbeiten) {
   const f = v.dateien || {};
   const kurz = f.video || f.youtube;
   d.inhalt.append(
+    haekchen(e, v, d),
+
     (f.video || f.lang) && el("video", { class: "posten-video", src: f.video || f.lang, poster: f.cover || f.thumbnail || null,
       controls: true, playsinline: true, preload: "none" }),
 
     kurz && el("div", { class: "posten-kanal" },
-      el("div", { class: "posten-kopf" }, ikon("tiktok", 16), ikon("instagram", 16), el("b", { text: "TikTok & Instagram" })),
+      el("div", { class: "posten-kopf" }, ikon("tiktok", 16), ikon("instagram", 16), ikon("facebook", 16), el("b", { text: "TikTok, Instagram & Facebook" })),
       el("div", { class: "hinweis", text: "Video ohne Musik. Den Sound wählst du in der App." }),
       f.video && teilenKnopf("Video", f.video),
       el("div", { class: "posten-reihe" },
@@ -122,13 +188,13 @@ export function postenDialog(e, v, beiBearbeiten) {
 
     el("div", { class: "posten-kanal" },
       el("div", { class: "posten-kopf" }, ikon("youtube", 16), el("b", { text: "YouTube Video" })),
-      f.lang
+      f.lang && !istErledigt(v)
         ? [el("div", { class: "hinweis", text: "Langes Video im Querformat, mit Thumbnail." }),
            teilenKnopf("Video", f.lang),
            f.thumbnail && teilenKnopf("Thumbnail", f.thumbnail, "raster"),
            textBlock("Titel", v.langTitel, "Titel kopieren"),
            textBlock("Beschreibung", v.langText, "Beschreibung kopieren")]
-        : el("div", { class: "hinweis", text: "Das lange Video zu diesem Thema ist noch nicht fertig." })),
+        : el("div", { class: "hinweis", text: istErledigt(v) ? "Erledigt." : "Das lange Video zu diesem Thema ist noch nicht fertig." })),
 
     el("button", { class: "zufuegen", text: "Eintrag bearbeiten", onclick: () => { d.zu(); beiBearbeiten(); } }),
     el("button", { class: "posten-zu", text: "Schließen", onclick: () => d.zu() }),

@@ -1,5 +1,17 @@
 {
- "projekte": ["Kultas"],
- "kategorien": [{"projekt": "Astromaster", "kategorie": "YouTube", "datei": "astromaster-youtube-app.json"}],
- "entfernt": ["Astromaster YouTube"]
+ "projekte": [
+  "Kultas"
+ ],
+ "kategorien": [
+  {
+   "projekt": "Astromaster",
+   "kategorie": "YouTube",
+   "datei": "astromaster-youtube-app.json"
+  }
+ ],
+ "entfernt": [
+  "Astromaster YouTube",
+  "HausRund",
+  "SynCrate"
+ ]
 }

@@ -87,12 +87,8 @@ const plattform = (typ, handle = "") => ({ id: k(), typ, handle, sichtbar: true 
 function startzustand() {
   return {
     version: 2,
-    projekte: [astromaster(),
-      { id: k(), name: "HausRund", farbe: "#C79A4E", sichtbar: true,
-        plattformen: [plattform("instagram"), plattform("tiktok")] },
-      { id: k(), name: "SynCrate", farbe: "#0B76D1", sichtbar: true,
-        plattformen: [plattform("instagram")] },
-    ],
+    // Nur Astromaster und Kultas (User 25.10.2026), Kultas kommt über daten/projekte.json
+    projekte: [astromaster()],
     formate: [], eintraege: [], reihen: [], messungen: [], einnahmen: [], verbindungen: {},
   };
 }

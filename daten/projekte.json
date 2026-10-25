@@ -7,6 +7,11 @@
    "projekt": "Astromaster",
    "kategorie": "YouTube",
    "datei": "astromaster-youtube-app.json"
+  },
+  {
+   "projekt": "Kultas",
+   "kategorie": "YouTube",
+   "datei": "kultas-youtube-app.json"
   }
  ],
  "entfernt": [

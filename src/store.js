@@ -414,9 +414,9 @@ function sendeplanEintragen(p, r) {
             ...(kategorie ? { kategorie } : {}) };
       daten.eintraege.push(e);
     }
-    Object.assign(e, { titel, datum: v.datum, formatId: fm?.id || null, reiheNr: v.nr });
+    Object.assign(e, { titel, datum: v.datum, formatId: fm?.id || null, reiheNr: v.nr, ...(v.zeit ? { zeit: v.zeit } : {}) });
     if (v.status === "fertig" && ["idee", "skript", "gedreht", "schnitt"].includes(e.status)) e.status = "fertig";
-    if (!e.notiz || e.notiz.startsWith("Nr. ")) e.notiz = `Nr. ${v.nr} · ${v.saeule} · ${v.unterformat}${v.id ? ` · ${v.id}` : ""}`;
+    if (!e.notiz || e.notiz.startsWith("Nr. ")) e.notiz = `Nr. ${v.nr} · ${v.saeule} · ${v.unterformat}${v.lang ? " · mit Langvideo" : ""}${v.id ? ` · ${v.id}` : ""}`;
     v.eintragId = e.id;
   }
   // Gepostete Videos mit Postdatum bleiben im Kalender, als veröffentlicht am echten Tag

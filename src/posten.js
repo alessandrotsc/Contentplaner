@@ -209,11 +209,11 @@ function pinterestBlock(v, f) {
   const ohneDeko = (t) => (t || "").replace(/#\S+/g, "").replace(/[\u{1F000}-\u{1FFFF}\u{2600}-\u{27BF}\u{2B00}-\u{2BFF}\uFE0F]/gu, "").replace(/\s+/g, " ").trim();
   const titel = ohneDeko(v.youtubeTitel || v.titel).slice(0, 100);
   const link = "https://astro-masters.com";
-  const text = "Deine kostenlose Analyse: https://astro-masters.com";   // User 25.10.2026: nur Hinweis plus Link
+  const text = "👇 Deine kostenlose Analyse 👇";   // User 25.10.2026: Link nur ins Link-Feld, Pfeile zeigen darauf
   return el("div", { class: "posten-kanal" },
     el("div", { class: "posten-kopf" }, ikon("pinterest", 16), el("b", { text: "Pinterest" })),
-    el("div", { class: "hinweis", text: "Als Video-Pin hochladen (Video ohne Musik), Pinnwand wählen, Link immer setzen." }),
-    f.video && teilenKnopf("Video", f.video),
+    el("div", { class: "hinweis", text: "Als Video-Pin hochladen (Fassung mit Musik), Pinnwand wählen, Link immer ins Link-Feld." }),
+    (f.youtube || f.video) && teilenKnopf(f.youtube ? "Video mit Musik" : "Video", f.youtube || f.video),
     textBlock("Pinnwand", pinnwand, "Pinnwand kopieren"),
     textBlock("Titel", titel, "Titel kopieren"),
     textBlock("Beschreibung", text, "Beschreibung kopieren"),

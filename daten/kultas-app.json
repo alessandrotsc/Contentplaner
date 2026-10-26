@@ -16,7 +16,7 @@
    "handle": "Kultas"
   }
  ],
- "stand": "2026-10-25",
+ "stand": "2026-10-26",
  "saeulen": [
   {
    "name": "Lebensmittel",
@@ -428,7 +428,8 @@
      "videos": [
       {
        "titel": "Magnesium: warum es so wichtig ist",
-       "status": "offen",
+       "status": "fertig",
+       "id": "K04_Magnesium",
        "quelle": "https://youtu.be/F1woK48-RiM",
        "quelle_titel": "Darum Wirkt Dein Magnesium Nicht"
       },
@@ -452,7 +453,7 @@
       }
      ],
      "anzahl": 4,
-     "fertig": 0
+     "fertig": 1
     },
     {
      "name": "Vitamine",
@@ -520,7 +521,7 @@
     }
    ],
    "anzahl": 12,
-   "fertig": 0
+   "fertig": 1
   },
   {
    "name": "Top 3",
@@ -1757,6 +1758,22 @@
   },
   {
    "runde": 1,
+   "saeule": "Nährstoffe",
+   "format": "Nährstoff erklärt",
+   "unterformat": "Mineralstoffe",
+   "lang": true,
+   "thema": "Magnesium: warum es so wichtig ist",
+   "titel": "Magnesium: warum es so wichtig ist",
+   "status": "fertig",
+   "key": "KU|Nährstoff erklärt|Magnesium: warum es so wichtig ist",
+   "quelle": "https://youtu.be/F1woK48-RiM",
+   "id": "K04_Magnesium",
+   "datum": "2026-10-25",
+   "zeit": "19:00",
+   "nr": 2
+  },
+  {
+   "runde": 1,
    "saeule": "Lebensmittel",
    "format": "Ja oder Nein?",
    "unterformat": "Essen",
@@ -1767,21 +1784,6 @@
    "key": "KU|Ja oder Nein?|Kartoffeln: Ja oder Nein?",
    "quelle": "https://youtu.be/8NjEgubaYMo",
    "id": "K03_Kartoffeln",
-   "datum": "2026-10-25",
-   "zeit": "19:00",
-   "nr": 2
-  },
-  {
-   "runde": 1,
-   "saeule": "Nährstoffe",
-   "format": "Nährstoff erklärt",
-   "unterformat": "Mineralstoffe",
-   "lang": true,
-   "thema": "Magnesium: warum es so wichtig ist",
-   "titel": "Magnesium: warum es so wichtig ist",
-   "status": "offen",
-   "key": "KU|Nährstoff erklärt|Magnesium: warum es so wichtig ist",
-   "quelle": "https://youtu.be/F1woK48-RiM",
    "datum": "2026-10-26",
    "zeit": "19:00",
    "nr": 3

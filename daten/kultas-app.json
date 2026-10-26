@@ -223,7 +223,7 @@
      "videos": [
       {
        "titel": "Kartoffeln: Ja oder Nein?",
-       "status": "fertig",
+       "status": "online",
        "id": "K03_Kartoffeln",
        "quelle": "https://youtu.be/8NjEgubaYMo",
        "quelle_titel": "Kartoffeln: Ja oder Nein?"
@@ -1758,6 +1758,21 @@
   },
   {
    "runde": 1,
+   "saeule": "Lebensmittel",
+   "format": "Ja oder Nein?",
+   "unterformat": "Essen",
+   "lang": true,
+   "thema": "Kartoffeln: Ja oder Nein?",
+   "titel": "Kartoffeln: Ja oder Nein?",
+   "status": "online",
+   "key": "KU|Ja oder Nein?|Kartoffeln: Ja oder Nein?",
+   "quelle": "https://youtu.be/8NjEgubaYMo",
+   "id": "K03_Kartoffeln",
+   "gepostet_am": "2026-10-25",
+   "nr": 2
+  },
+  {
+   "runde": 1,
    "saeule": "Nährstoffe",
    "format": "Nährstoff erklärt",
    "unterformat": "Mineralstoffe",
@@ -1768,22 +1783,6 @@
    "key": "KU|Nährstoff erklärt|Magnesium: warum es so wichtig ist",
    "quelle": "https://youtu.be/F1woK48-RiM",
    "id": "K04_Magnesium",
-   "datum": "2026-10-25",
-   "zeit": "19:00",
-   "nr": 2
-  },
-  {
-   "runde": 1,
-   "saeule": "Lebensmittel",
-   "format": "Ja oder Nein?",
-   "unterformat": "Essen",
-   "lang": true,
-   "thema": "Kartoffeln: Ja oder Nein?",
-   "titel": "Kartoffeln: Ja oder Nein?",
-   "status": "fertig",
-   "key": "KU|Ja oder Nein?|Kartoffeln: Ja oder Nein?",
-   "quelle": "https://youtu.be/8NjEgubaYMo",
-   "id": "K03_Kartoffeln",
    "datum": "2026-10-26",
    "zeit": "19:00",
    "nr": 3
@@ -2339,6 +2338,8 @@
    "status": "offen",
    "key": "KU|Dein Körper erklärt|Warum dein Stoffwechsel streikt",
    "quelle": "https://youtu.be/v3J6PrjfH-4",
+   "datum": "2026-11-24",
+   "zeit": "19:00",
    "nr": 40
   },
   {

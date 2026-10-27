@@ -28,13 +28,16 @@ export async function ablageLaden() {
   return true;
 }
 
+/** Stories aus der Ablage (Ordner stories-<kanal>, meta.typ "story"), getrennt von den Videos. */
+export const ablageStories = () => videos.filter((v) => v.typ === "story");
+
 export const zuEintrag = (e) => (e?.planKey && videos.find((v) => v.key === e.planKey)) || null;
 export const istErledigt = (v) => !!v?.status?.erledigt;
 
 /* Geladene Dateien bleiben im Speicher, solange die App offen ist (ein Video ca. 110 MB). */
 const geladen = new Map();
 
-async function laden(url, beiFortschritt) {
+export async function laden(url, beiFortschritt) {
   if (geladen.has(url)) return geladen.get(url);
   const r = await fetch(url);
   if (!r.ok) throw new Error(`Datei nicht gefunden (${r.status})`);
@@ -56,7 +59,7 @@ async function laden(url, beiFortschritt) {
 
 /** Zweistufig: iOS erlaubt das Teilen nur direkt nach einem Tipp, das Laden dauert aber.
  *  Erster Tipp lädt, zweiter Tipp teilt. */
-function teilenKnopf(beschriftung, url, ikonName) {
+export function teilenKnopf(beschriftung, url, ikonName) {
   const text = el("span", { text: beschriftung });
   const b = el("button", { class: "teilen", onclick: los }, ikon(ikonName || "pfeil_hoch"), text);
   if (geladen.has(url)) bereit();

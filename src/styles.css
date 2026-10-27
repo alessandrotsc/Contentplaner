@@ -585,3 +585,21 @@ select.eingabe { -webkit-appearance: none; appearance: none; }
 .karte.erledigt { background: #F4F6F5; }
 .karte.erledigt .karte-titel { text-decoration: line-through; text-decoration-color: rgba(0,0,0,.35); }
 .block.erledigt, .gt-chip.erledigt { opacity: .5; text-decoration: line-through; }
+
+/* Stories (27.10.2026) */
+.story-reihe { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; }
+.story-slot { display: flex; flex-direction: column; gap: 6px; min-width: 0; }
+.story-slot.erledigt .story-bild, .story-slot.erledigt .story-titel { opacity: .45; filter: saturate(.4); }
+.story-kopf { display: flex; align-items: center; gap: 6px; }
+.story-kopf small { color: var(--ink-3); flex: 1; }
+.story-kopf { flex-wrap: wrap; }
+.story-rahmen { position: relative; }
+.story-rahmen .fertig-haken { position: absolute; top: 6px; right: 6px; width: 32px; height: 32px; margin: 0; background: rgba(255,255,255,.9); }
+.story-rahmen .fertig-haken.an { background: var(--gut); }
+.story-rahmen .fertig-haken svg { width: 17px; height: 17px; }
+.story-rahmen .story-leer, .story-rahmen .story-bild { display: block; }
+.story-bild { width: 100%; aspect-ratio: 9 / 16; object-fit: cover; border-radius: 12px; background: #EEF2F6; cursor: pointer; }
+.story-leer { width: 100%; aspect-ratio: 9 / 16; border-radius: 12px; background: #EEF2F6; color: var(--ink-3); font-size: 12px; display: grid; place-items: center; text-align: center; padding: 8px; }
+.story-titel { font-size: 12px; font-weight: 700; color: var(--ink-2); }
+.story-slot .teilen { height: 36px; font-size: 12px; padding: 0 8px; }
+.story-gross { width: 100%; border-radius: 16px; margin-bottom: 10px; }

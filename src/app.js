@@ -19,11 +19,13 @@ import { mehrBereich } from "./mehr.js";
 import { allesAbgleichen } from "./quellen.js";
 import * as Server from "./server.js";
 import { ablageLaden } from "./posten.js";
+import { storiesBereich } from "./stories.js";
 
 const app = document.getElementById("app");
 
 const BEREICHE = [
   { id: "kalender", name: "Kalender", ikon: "kalender", kicker: "Contentplan" },
+  { id: "stories", name: "Stories", ikon: "story", kicker: "Stories" },
   { id: "formate", name: "Formate", ikon: "stapel", kicker: "Bibliothek" },
   { id: "analytics", name: "Analytics", ikon: "chart", kicker: "Zahlen" },
   { id: "mehr", name: "Mehr", ikon: "mehr", kicker: "Einstellungen" },
@@ -97,6 +99,7 @@ function zeichnen() {
 
   const inhalt = el("main", { class: "inhalt bereich-" + Z.bereich });
   const ansicht = Z.bereich === "kalender" ? kalender()
+                : Z.bereich === "stories" ? storiesBereich()
                 : Z.bereich === "formate" ? formateBereich()
                 : Z.bereich === "analytics" ? analyticsBereich()
                 : mehrBereich();
@@ -120,7 +123,7 @@ zeichnen();
 if (Server.aktiv()) {
   Server.dauerabgleich((n) => { if (n || Z.bereich === "analytics") zeichnen(); });
   // Fertige Videos zum Posten (Ablage auf dem Server)
-  const ablage = () => ablageLaden().then((neu) => { if (neu && Z.bereich === "kalender") zeichnen(); }).catch((e) => console.warn("Ablage", e.message));
+  const ablage = () => ablageLaden().then((neu) => { if (neu && ["kalender", "stories"].includes(Z.bereich)) zeichnen(); }).catch((e) => console.warn("Ablage", e.message));
   ablage();
   setInterval(() => { if (document.visibilityState === "visible") ablage(); }, 5 * 60_000);
   document.addEventListener("visibilitychange", () => { if (document.visibilityState === "visible") ablage(); });

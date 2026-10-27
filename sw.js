@@ -6,7 +6,7 @@ const DATEIEN = [
   "./", "./index.html", "./manifest.webmanifest",
   "./src/styles.css", "./src/app.js", "./src/store.js",
   "./src/datum.js", "./src/ui.js", "./src/zustand.js", "./src/kalender.js",
-  "./src/formate.js", "./src/analytics.js", "./src/quellen.js", "./src/mehr.js", "./src/server.js", "./src/detail.js", "./src/posten.js",
+  "./src/formate.js", "./src/analytics.js", "./src/quellen.js", "./src/mehr.js", "./src/server.js", "./src/detail.js", "./src/posten.js", "./src/stories.js",
   "./assets/icon-180.png", "./assets/icon-192.png",
   "./assets/icon-512.png", "./assets/icon-1024.png",
 ];

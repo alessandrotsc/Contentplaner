@@ -16,7 +16,7 @@
    "handle": "Kultas"
   }
  ],
- "stand": "2026-10-26",
+ "stand": "2026-10-27",
  "saeulen": [
   {
    "name": "Lebensmittel",
@@ -324,7 +324,8 @@
      "videos": [
       {
        "titel": "Teflonpfanne gegen Edelstahlpfanne",
-       "status": "offen",
+       "status": "fertig",
+       "id": "K05_Teflon",
        "quelle": "https://youtu.be/M6uRA6IgAd0",
        "quelle_titel": "Er benutzte eine Teflon Pfanne…"
       },
@@ -354,7 +355,7 @@
       }
      ],
      "anzahl": 5,
-     "fertig": 0
+     "fertig": 1
     },
     {
      "name": "Bad & Pflege",
@@ -414,7 +415,7 @@
     }
    ],
    "anzahl": 12,
-   "fertig": 0
+   "fertig": 1
   },
   {
    "name": "Nährstoff erklärt",
@@ -428,7 +429,7 @@
      "videos": [
       {
        "titel": "Magnesium: warum es so wichtig ist",
-       "status": "fertig",
+       "status": "online",
        "id": "K04_Magnesium",
        "quelle": "https://youtu.be/F1woK48-RiM",
        "quelle_titel": "Darum Wirkt Dein Magnesium Nicht"
@@ -1779,12 +1780,11 @@
    "lang": true,
    "thema": "Magnesium: warum es so wichtig ist",
    "titel": "Magnesium: warum es so wichtig ist",
-   "status": "fertig",
+   "status": "online",
    "key": "KU|Nährstoff erklärt|Magnesium: warum es so wichtig ist",
    "quelle": "https://youtu.be/F1woK48-RiM",
    "id": "K04_Magnesium",
-   "datum": "2026-10-26",
-   "zeit": "19:00",
+   "gepostet_am": "2026-10-26",
    "nr": 3
   },
   {
@@ -1795,9 +1795,10 @@
    "lang": true,
    "thema": "Teflonpfanne gegen Edelstahlpfanne",
    "titel": "Teflonpfanne gegen Edelstahlpfanne",
-   "status": "offen",
+   "status": "fertig",
    "key": "KU|Gut gegen Schlecht|Teflonpfanne gegen Edelstahlpfanne",
    "quelle": "https://youtu.be/M6uRA6IgAd0",
+   "id": "K05_Teflon",
    "datum": "2026-10-27",
    "zeit": "19:00",
    "nr": 4
@@ -2353,6 +2354,8 @@
    "status": "offen",
    "key": "KU|Sonne, Wasser, Wärme|Welches Wasser ist das beste?",
    "quelle": "https://youtu.be/9ZrQabf8Rkc",
+   "datum": "2026-11-25",
+   "zeit": "19:00",
    "nr": 41
   },
   {

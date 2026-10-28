@@ -16,7 +16,7 @@
    "handle": "Kultas"
   }
  ],
- "stand": "2026-10-27",
+ "stand": "2026-10-28",
  "saeulen": [
   {
    "name": "Lebensmittel",
@@ -1548,7 +1548,8 @@
      "videos": [
       {
        "titel": "Olivenöl: echt oder fake?",
-       "status": "offen",
+       "status": "fertig",
+       "id": "K06_Olivenoel",
        "quelle": "https://youtu.be/nB5Ug_dApiU",
        "quelle_titel": "Olivenöl Fake Selbsttest?"
       },
@@ -1572,7 +1573,7 @@
       }
      ],
      "anzahl": 4,
-     "fertig": 0
+     "fertig": 1
     },
     {
      "name": "Im Supermarkt",
@@ -1632,7 +1633,7 @@
     }
    ],
    "anzahl": 12,
-   "fertig": 0
+   "fertig": 1
   },
   {
    "name": "Mythos-Check",
@@ -1811,9 +1812,10 @@
    "lang": true,
    "thema": "Olivenöl: echt oder fake?",
    "titel": "Olivenöl: echt oder fake?",
-   "status": "offen",
+   "status": "fertig",
    "key": "KU|Echt oder Fake?|Olivenöl: echt oder fake?",
    "quelle": "https://youtu.be/nB5Ug_dApiU",
+   "id": "K06_Olivenoel",
    "datum": "2026-10-28",
    "zeit": "19:00",
    "nr": 5

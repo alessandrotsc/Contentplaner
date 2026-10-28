@@ -9,7 +9,7 @@
    "handle": "Astromaster"
   }
  ],
- "stand": "2026-10-26",
+ "stand": "2026-10-28",
  "saeulen": [
   {
    "name": "Sternzeichen",
@@ -207,7 +207,8 @@
      "videos": [
       {
        "titel": "Alle Sternzeichen gerankt: Wer ist am loyalsten?",
-       "status": "offen"
+       "status": "fertig",
+       "id": "L04_Ranking-Loyal"
       },
       {
        "titel": "Alle Sternzeichen gerankt: Wer ist am eifersüchtigsten?",
@@ -289,7 +290,7 @@
     }
    ],
    "anzahl": 20,
-   "fertig": 0
+   "fertig": 1
   },
   {
    "name": "Mysterien Deep Dive",
@@ -303,7 +304,8 @@
      "videos": [
       {
        "titel": "Wurden die Pyramiden mit Klang gebaut?",
-       "status": "offen"
+       "status": "fertig",
+       "id": "L03_Pyramiden-Klang"
       },
       {
        "titel": "Riesen im alten Ägypten und weltweit",
@@ -421,7 +423,7 @@
     }
    ],
    "anzahl": 29,
-   "fertig": 0
+   "fertig": 1
   },
   {
    "name": "Zahlen & Astro-Wissen",
@@ -610,9 +612,10 @@
    "unterformat": "Short: Die Pyramiden von Gizeh: wie wurden sie gebaut?",
    "thema": "Wurden die Pyramiden mit Klang gebaut?",
    "titel": "Wurden die Pyramiden mit Klang gebaut?",
-   "status": "offen",
+   "status": "fertig",
    "datum": "2026-10-26",
-   "key": "YT|Mysterien Deep Dive|Wurden die Pyramiden mit Klang gebaut?"
+   "key": "YT|Mysterien Deep Dive|Wurden die Pyramiden mit Klang gebaut?",
+   "id": "L03_Pyramiden-Klang"
   },
   {
    "nr": 3,
@@ -634,9 +637,10 @@
    "unterformat": "Ranking: alle 12",
    "thema": "Alle Sternzeichen gerankt: Wer ist am loyalsten?",
    "titel": "Alle Sternzeichen gerankt: Wer ist am loyalsten?",
-   "status": "offen",
+   "status": "fertig",
    "datum": "2026-10-28",
-   "key": "YT|Ranking: alle 12|Alle Sternzeichen gerankt: Wer ist am loyalsten?"
+   "key": "YT|Ranking: alle 12|Alle Sternzeichen gerankt: Wer ist am loyalsten?",
+   "id": "L04_Ranking-Loyal"
   },
   {
    "nr": 5,
@@ -2314,9 +2318,10 @@
    "unterformat": "Ranking: alle 12",
    "thema": "Alle Sternzeichen gerankt: Wer ist am loyalsten?",
    "titel": "Alle Sternzeichen gerankt: Wer ist am loyalsten?",
-   "status": "offen",
+   "status": "fertig",
    "datum": "2027-03-17",
-   "key": "YT|Ranking: alle 12|Alle Sternzeichen gerankt: Wer ist am loyalsten?"
+   "key": "YT|Ranking: alle 12|Alle Sternzeichen gerankt: Wer ist am loyalsten?",
+   "id": "L04_Ranking-Loyal"
   },
   {
    "nr": 145,

@@ -771,11 +771,10 @@
    "format": "Gut vs Schlecht",
    "unterformat": "Gut vs Schlecht",
    "lang": true,
-   "thema": "Teflonpfanne gegen Edelstahlpfanne",
-   "titel": "Teflonpfanne gegen Edelstahlpfanne",
-   "status": "fertig",
-   "key": "KU|Gut vs Schlecht|Teflonpfanne gegen Edelstahlpfanne",
-   "id": "K05_Teflon",
+   "thema": "Skincare-Produkte gegen Rizinusöl",
+   "titel": "Skincare-Produkte gegen Rizinusöl",
+   "status": "offen",
+   "key": "KU|Gut vs Schlecht|Skincare-Produkte gegen Rizinusöl",
    "datum": "2026-11-02",
    "zeit": "19:00",
    "nr": 9
@@ -786,10 +785,10 @@
    "format": "Supplemente",
    "unterformat": "Supplemente",
    "lang": true,
-   "thema": "Vitamin D3 K2",
-   "titel": "Vitamin D3 K2",
+   "thema": "Ashwagandha",
+   "titel": "Ashwagandha",
    "status": "offen",
-   "key": "KU|Supplemente|Vitamin D3 K2",
+   "key": "KU|Supplemente|Ashwagandha",
    "datum": "2026-11-03",
    "zeit": "19:00",
    "nr": 10
@@ -870,10 +869,10 @@
    "format": "Gut vs Schlecht",
    "unterformat": "Gut vs Schlecht",
    "lang": true,
-   "thema": "Duftkerze gegen Duftlampe",
-   "titel": "Duftkerze gegen Duftlampe",
+   "thema": "Fluorid-Zahnpasta gegen Fluoridfreie Zahnpasta",
+   "titel": "Fluorid-Zahnpasta gegen Fluoridfreie Zahnpasta",
    "status": "offen",
-   "key": "KU|Gut vs Schlecht|Duftkerze gegen Duftlampe",
+   "key": "KU|Gut vs Schlecht|Fluorid-Zahnpasta gegen Fluoridfreie Zahnpasta",
    "datum": "2026-11-09",
    "zeit": "19:00",
    "nr": 16
@@ -884,10 +883,10 @@
    "format": "Supplemente",
    "unterformat": "Supplemente",
    "lang": true,
-   "thema": "Zink",
-   "titel": "Zink",
+   "thema": "Omega 3",
+   "titel": "Omega 3",
    "status": "offen",
-   "key": "KU|Supplemente|Zink",
+   "key": "KU|Supplemente|Omega 3",
    "datum": "2026-11-10",
    "zeit": "19:00",
    "nr": 17
@@ -912,10 +911,10 @@
    "format": "Zurück zum Ursprung",
    "unterformat": "Zurück zum Ursprung",
    "lang": true,
-   "thema": "Sonne",
-   "titel": "Sonne",
+   "thema": "Fasten",
+   "titel": "Fasten",
    "status": "offen",
-   "key": "KU|Zurück zum Ursprung|Sonne",
+   "key": "KU|Zurück zum Ursprung|Fasten",
    "datum": "2026-11-12",
    "zeit": "19:00",
    "nr": 19
@@ -968,10 +967,10 @@
    "format": "Gut vs Schlecht",
    "unterformat": "Gut vs Schlecht",
    "lang": true,
-   "thema": "Duschgel gegen Aleppo-Seife",
-   "titel": "Duschgel gegen Aleppo-Seife",
+   "thema": "Protein Shake gegen Eier",
+   "titel": "Protein Shake gegen Eier",
    "status": "offen",
-   "key": "KU|Gut vs Schlecht|Duschgel gegen Aleppo-Seife",
+   "key": "KU|Gut vs Schlecht|Protein Shake gegen Eier",
    "datum": "2026-11-16",
    "zeit": "19:00",
    "nr": 23
@@ -982,10 +981,10 @@
    "format": "Supplemente",
    "unterformat": "Supplemente",
    "lang": true,
-   "thema": "Ashwagandha",
-   "titel": "Ashwagandha",
+   "thema": "Kreatin",
+   "titel": "Kreatin",
    "status": "offen",
-   "key": "KU|Supplemente|Ashwagandha",
+   "key": "KU|Supplemente|Kreatin",
    "datum": "2026-11-17",
    "zeit": "19:00",
    "nr": 24
@@ -1010,10 +1009,10 @@
    "format": "Zurück zum Ursprung",
    "unterformat": "Zurück zum Ursprung",
    "lang": true,
-   "thema": "Fasten",
-   "titel": "Fasten",
+   "thema": "Stress",
+   "titel": "Stress",
    "status": "offen",
-   "key": "KU|Zurück zum Ursprung|Fasten",
+   "key": "KU|Zurück zum Ursprung|Stress",
    "datum": "2026-11-19",
    "zeit": "19:00",
    "nr": 26
@@ -1066,10 +1065,10 @@
    "format": "Gut vs Schlecht",
    "unterformat": "Gut vs Schlecht",
    "lang": true,
-   "thema": "Skincare-Produkte gegen Rizinusöl",
-   "titel": "Skincare-Produkte gegen Rizinusöl",
+   "thema": "Deo gegen Eigenes Deo",
+   "titel": "Deo gegen Eigenes Deo",
    "status": "offen",
-   "key": "KU|Gut vs Schlecht|Skincare-Produkte gegen Rizinusöl",
+   "key": "KU|Gut vs Schlecht|Deo gegen Eigenes Deo",
    "datum": "2026-11-23",
    "zeit": "19:00",
    "nr": 30
@@ -1080,10 +1079,10 @@
    "format": "Supplemente",
    "unterformat": "Supplemente",
    "lang": true,
-   "thema": "Omega 3",
-   "titel": "Omega 3",
+   "thema": "Kollagen",
+   "titel": "Kollagen",
    "status": "offen",
-   "key": "KU|Supplemente|Omega 3",
+   "key": "KU|Supplemente|Kollagen",
    "datum": "2026-11-24",
    "zeit": "19:00",
    "nr": 31
@@ -1108,10 +1107,10 @@
    "format": "Zurück zum Ursprung",
    "unterformat": "Zurück zum Ursprung",
    "lang": true,
-   "thema": "Stress",
-   "titel": "Stress",
+   "thema": "Zimmerpflanzen",
+   "titel": "Zimmerpflanzen",
    "status": "offen",
-   "key": "KU|Zurück zum Ursprung|Stress",
+   "key": "KU|Zurück zum Ursprung|Zimmerpflanzen",
    "datum": "2026-11-26",
    "zeit": "19:00",
    "nr": 33
@@ -1136,83 +1135,11 @@
    "format": "Gut vs Schlecht",
    "unterformat": "Gut vs Schlecht",
    "lang": true,
-   "thema": "Kulturheidelbeeren gegen Wildheidelbeeren",
-   "titel": "Kulturheidelbeeren gegen Wildheidelbeeren",
-   "status": "offen",
-   "key": "KU|Gut vs Schlecht|Kulturheidelbeeren gegen Wildheidelbeeren",
-   "nr": 35
-  },
-  {
-   "runde": 1,
-   "saeule": "Gut vs Schlecht",
-   "format": "Gut vs Schlecht",
-   "unterformat": "Gut vs Schlecht",
-   "lang": true,
-   "thema": "Jodsalz gegen Ursalz",
-   "titel": "Jodsalz gegen Ursalz",
-   "status": "offen",
-   "key": "KU|Gut vs Schlecht|Jodsalz gegen Ursalz",
-   "nr": 36
-  },
-  {
-   "runde": 1,
-   "saeule": "Gut vs Schlecht",
-   "format": "Gut vs Schlecht",
-   "unterformat": "Gut vs Schlecht",
-   "lang": true,
-   "thema": "Fluorid-Zahnpasta gegen Fluoridfreie Zahnpasta",
-   "titel": "Fluorid-Zahnpasta gegen Fluoridfreie Zahnpasta",
-   "status": "offen",
-   "key": "KU|Gut vs Schlecht|Fluorid-Zahnpasta gegen Fluoridfreie Zahnpasta",
-   "nr": 37
-  },
-  {
-   "runde": 1,
-   "saeule": "Gut vs Schlecht",
-   "format": "Gut vs Schlecht",
-   "unterformat": "Gut vs Schlecht",
-   "lang": true,
-   "thema": "Leitungswasser gegen Quellwasser",
-   "titel": "Leitungswasser gegen Quellwasser",
-   "status": "offen",
-   "key": "KU|Gut vs Schlecht|Leitungswasser gegen Quellwasser",
-   "nr": 38
-  },
-  {
-   "runde": 1,
-   "saeule": "Gut vs Schlecht",
-   "format": "Gut vs Schlecht",
-   "unterformat": "Gut vs Schlecht",
-   "lang": true,
-   "thema": "Protein Shake gegen Eier",
-   "titel": "Protein Shake gegen Eier",
-   "status": "offen",
-   "key": "KU|Gut vs Schlecht|Protein Shake gegen Eier",
-   "nr": 39
-  },
-  {
-   "runde": 1,
-   "saeule": "Gut vs Schlecht",
-   "format": "Gut vs Schlecht",
-   "unterformat": "Gut vs Schlecht",
-   "lang": true,
-   "thema": "Deo gegen Eigenes Deo",
-   "titel": "Deo gegen Eigenes Deo",
-   "status": "offen",
-   "key": "KU|Gut vs Schlecht|Deo gegen Eigenes Deo",
-   "nr": 40
-  },
-  {
-   "runde": 1,
-   "saeule": "Gut vs Schlecht",
-   "format": "Gut vs Schlecht",
-   "unterformat": "Gut vs Schlecht",
-   "lang": true,
    "thema": "Sonnenblumenöl gegen Weidenrute, Ghee",
    "titel": "Sonnenblumenöl gegen Weidenrute, Ghee",
    "status": "offen",
    "key": "KU|Gut vs Schlecht|Sonnenblumenöl gegen Weidenrute, Ghee",
-   "nr": 41
+   "nr": 35
   },
   {
    "runde": 1,
@@ -1224,19 +1151,7 @@
    "titel": "Weizennudeln gegen Buchweizennudeln",
    "status": "offen",
    "key": "KU|Gut vs Schlecht|Weizennudeln gegen Buchweizennudeln",
-   "nr": 42
-  },
-  {
-   "runde": 1,
-   "saeule": "Gut vs Schlecht",
-   "format": "Gut vs Schlecht",
-   "unterformat": "Gut vs Schlecht",
-   "lang": true,
-   "thema": "Sonnencreme gegen Selbst gemacht",
-   "titel": "Sonnencreme gegen Selbst gemacht",
-   "status": "offen",
-   "key": "KU|Gut vs Schlecht|Sonnencreme gegen Selbst gemacht",
-   "nr": 43
+   "nr": 36
   },
   {
    "runde": 1,
@@ -1248,7 +1163,7 @@
    "titel": "Jegliche Softdrinks gegen Wasser mit Zitrone",
    "status": "offen",
    "key": "KU|Gut vs Schlecht|Jegliche Softdrinks gegen Wasser mit Zitrone",
-   "nr": 44
+   "nr": 37
   },
   {
    "runde": 1,
@@ -1260,7 +1175,7 @@
    "titel": "Margarine, Butter gegen Weidebutter",
    "status": "offen",
    "key": "KU|Gut vs Schlecht|Margarine, Butter gegen Weidebutter",
-   "nr": 45
+   "nr": 38
   },
   {
    "runde": 1,
@@ -1272,31 +1187,92 @@
    "titel": "Weizenbrot gegen Sauerteigbrot",
    "status": "offen",
    "key": "KU|Gut vs Schlecht|Weizenbrot gegen Sauerteigbrot",
+   "nr": 39
+  },
+  {
+   "runde": 1,
+   "saeule": "Gut vs Schlecht",
+   "format": "Gut vs Schlecht",
+   "unterformat": "Gut vs Schlecht",
+   "lang": true,
+   "thema": "Teflonpfanne gegen Edelstahlpfanne",
+   "titel": "Teflonpfanne gegen Edelstahlpfanne",
+   "status": "fertig",
+   "key": "KU|Gut vs Schlecht|Teflonpfanne gegen Edelstahlpfanne",
+   "id": "K05_Teflon",
+   "nr": 40
+  },
+  {
+   "runde": 1,
+   "saeule": "Gut vs Schlecht",
+   "format": "Gut vs Schlecht",
+   "unterformat": "Gut vs Schlecht",
+   "lang": true,
+   "thema": "Duftkerze gegen Duftlampe",
+   "titel": "Duftkerze gegen Duftlampe",
+   "status": "offen",
+   "key": "KU|Gut vs Schlecht|Duftkerze gegen Duftlampe",
+   "nr": 41
+  },
+  {
+   "runde": 1,
+   "saeule": "Gut vs Schlecht",
+   "format": "Gut vs Schlecht",
+   "unterformat": "Gut vs Schlecht",
+   "lang": true,
+   "thema": "Duschgel gegen Aleppo-Seife",
+   "titel": "Duschgel gegen Aleppo-Seife",
+   "status": "offen",
+   "key": "KU|Gut vs Schlecht|Duschgel gegen Aleppo-Seife",
+   "nr": 42
+  },
+  {
+   "runde": 1,
+   "saeule": "Gut vs Schlecht",
+   "format": "Gut vs Schlecht",
+   "unterformat": "Gut vs Schlecht",
+   "lang": true,
+   "thema": "Kulturheidelbeeren gegen Wildheidelbeeren",
+   "titel": "Kulturheidelbeeren gegen Wildheidelbeeren",
+   "status": "offen",
+   "key": "KU|Gut vs Schlecht|Kulturheidelbeeren gegen Wildheidelbeeren",
+   "nr": 43
+  },
+  {
+   "runde": 1,
+   "saeule": "Gut vs Schlecht",
+   "format": "Gut vs Schlecht",
+   "unterformat": "Gut vs Schlecht",
+   "lang": true,
+   "thema": "Jodsalz gegen Ursalz",
+   "titel": "Jodsalz gegen Ursalz",
+   "status": "offen",
+   "key": "KU|Gut vs Schlecht|Jodsalz gegen Ursalz",
+   "nr": 44
+  },
+  {
+   "runde": 1,
+   "saeule": "Gut vs Schlecht",
+   "format": "Gut vs Schlecht",
+   "unterformat": "Gut vs Schlecht",
+   "lang": true,
+   "thema": "Leitungswasser gegen Quellwasser",
+   "titel": "Leitungswasser gegen Quellwasser",
+   "status": "offen",
+   "key": "KU|Gut vs Schlecht|Leitungswasser gegen Quellwasser",
+   "nr": 45
+  },
+  {
+   "runde": 1,
+   "saeule": "Gut vs Schlecht",
+   "format": "Gut vs Schlecht",
+   "unterformat": "Gut vs Schlecht",
+   "lang": true,
+   "thema": "Sonnencreme gegen Selbst gemacht",
+   "titel": "Sonnencreme gegen Selbst gemacht",
+   "status": "offen",
+   "key": "KU|Gut vs Schlecht|Sonnencreme gegen Selbst gemacht",
    "nr": 46
-  },
-  {
-   "runde": 1,
-   "saeule": "Supplemente",
-   "format": "Supplemente",
-   "unterformat": "Supplemente",
-   "lang": true,
-   "thema": "Kreatin",
-   "titel": "Kreatin",
-   "status": "offen",
-   "key": "KU|Supplemente|Kreatin",
-   "nr": 47
-  },
-  {
-   "runde": 1,
-   "saeule": "Supplemente",
-   "format": "Supplemente",
-   "unterformat": "Supplemente",
-   "lang": true,
-   "thema": "Kollagen",
-   "titel": "Kollagen",
-   "status": "offen",
-   "key": "KU|Supplemente|Kollagen",
-   "nr": 48
   },
   {
    "runde": 1,
@@ -1308,7 +1284,7 @@
    "titel": "Jod",
    "status": "offen",
    "key": "KU|Supplemente|Jod",
-   "nr": 49
+   "nr": 47
   },
   {
    "runde": 1,
@@ -1320,7 +1296,7 @@
    "titel": "OPC",
    "status": "offen",
    "key": "KU|Supplemente|OPC",
-   "nr": 50
+   "nr": 48
   },
   {
    "runde": 1,
@@ -1332,7 +1308,7 @@
    "titel": "Vitamin C",
    "status": "offen",
    "key": "KU|Supplemente|Vitamin C",
-   "nr": 51
+   "nr": 49
   },
   {
    "runde": 1,
@@ -1344,7 +1320,7 @@
    "titel": "MSM",
    "status": "offen",
    "key": "KU|Supplemente|MSM",
-   "nr": 52
+   "nr": 50
   },
   {
    "runde": 1,
@@ -1356,7 +1332,7 @@
    "titel": "Schwarzkümmelöl",
    "status": "offen",
    "key": "KU|Supplemente|Schwarzkümmelöl",
-   "nr": 53
+   "nr": 51
   },
   {
    "runde": 1,
@@ -1368,7 +1344,7 @@
    "titel": "Vitamin B12",
    "status": "offen",
    "key": "KU|Supplemente|Vitamin B12",
-   "nr": 54
+   "nr": 52
   },
   {
    "runde": 1,
@@ -1380,7 +1356,7 @@
    "titel": "Oregano-Öl",
    "status": "offen",
    "key": "KU|Supplemente|Oregano-Öl",
-   "nr": 55
+   "nr": 53
   },
   {
    "runde": 1,
@@ -1392,7 +1368,7 @@
    "titel": "Shilajit",
    "status": "offen",
    "key": "KU|Supplemente|Shilajit",
-   "nr": 56
+   "nr": 54
   },
   {
    "runde": 1,
@@ -1404,6 +1380,30 @@
    "titel": "Kurkuma",
    "status": "offen",
    "key": "KU|Supplemente|Kurkuma",
+   "nr": 55
+  },
+  {
+   "runde": 1,
+   "saeule": "Supplemente",
+   "format": "Supplemente",
+   "unterformat": "Supplemente",
+   "lang": true,
+   "thema": "Vitamin D3 K2",
+   "titel": "Vitamin D3 K2",
+   "status": "offen",
+   "key": "KU|Supplemente|Vitamin D3 K2",
+   "nr": 56
+  },
+  {
+   "runde": 1,
+   "saeule": "Supplemente",
+   "format": "Supplemente",
+   "unterformat": "Supplemente",
+   "lang": true,
+   "thema": "Zink",
+   "titel": "Zink",
+   "status": "offen",
+   "key": "KU|Supplemente|Zink",
    "nr": 57
   },
   {
@@ -1448,23 +1448,11 @@
    "format": "Tee Sorten",
    "unterformat": "Tee Sorten",
    "lang": true,
-   "thema": "Ingwer",
-   "titel": "Ingwer",
-   "status": "offen",
-   "key": "KU|Tee Sorten|Ingwer",
-   "nr": 61
-  },
-  {
-   "runde": 1,
-   "saeule": "Tee Sorten",
-   "format": "Tee Sorten",
-   "unterformat": "Tee Sorten",
-   "lang": true,
    "thema": "Kurkuma",
    "titel": "Kurkuma",
    "status": "offen",
    "key": "KU|Tee Sorten|Kurkuma",
-   "nr": 62
+   "nr": 61
   },
   {
    "runde": 1,
@@ -1476,7 +1464,7 @@
    "titel": "Hagebutte",
    "status": "offen",
    "key": "KU|Tee Sorten|Hagebutte",
-   "nr": 63
+   "nr": 62
   },
   {
    "runde": 1,
@@ -1488,7 +1476,7 @@
    "titel": "Hibiskus",
    "status": "offen",
    "key": "KU|Tee Sorten|Hibiskus",
-   "nr": 64
+   "nr": 63
   },
   {
    "runde": 1,
@@ -1500,7 +1488,7 @@
    "titel": "Kamillentee",
    "status": "offen",
    "key": "KU|Tee Sorten|Kamillentee",
-   "nr": 65
+   "nr": 64
   },
   {
    "runde": 1,
@@ -1512,7 +1500,7 @@
    "titel": "Zitronenmelisse",
    "status": "offen",
    "key": "KU|Tee Sorten|Zitronenmelisse",
-   "nr": 66
+   "nr": 65
   },
   {
    "runde": 1,
@@ -1524,7 +1512,7 @@
    "titel": "Salbei",
    "status": "offen",
    "key": "KU|Tee Sorten|Salbei",
-   "nr": 67
+   "nr": 66
   },
   {
    "runde": 1,
@@ -1536,7 +1524,7 @@
    "titel": "Brennnesseltee",
    "status": "offen",
    "key": "KU|Tee Sorten|Brennnesseltee",
-   "nr": 68
+   "nr": 67
   },
   {
    "runde": 1,
@@ -1548,31 +1536,19 @@
    "titel": "Oolong Tee",
    "status": "offen",
    "key": "KU|Tee Sorten|Oolong Tee",
+   "nr": 68
+  },
+  {
+   "runde": 1,
+   "saeule": "Tee Sorten",
+   "format": "Tee Sorten",
+   "unterformat": "Tee Sorten",
+   "lang": true,
+   "thema": "Ingwer",
+   "titel": "Ingwer",
+   "status": "offen",
+   "key": "KU|Tee Sorten|Ingwer",
    "nr": 69
-  },
-  {
-   "runde": 1,
-   "saeule": "Zurück zum Ursprung",
-   "format": "Zurück zum Ursprung",
-   "unterformat": "Zurück zum Ursprung",
-   "lang": true,
-   "thema": "Sauna",
-   "titel": "Sauna",
-   "status": "offen",
-   "key": "KU|Zurück zum Ursprung|Sauna",
-   "nr": 70
-  },
-  {
-   "runde": 1,
-   "saeule": "Zurück zum Ursprung",
-   "format": "Zurück zum Ursprung",
-   "unterformat": "Zurück zum Ursprung",
-   "lang": true,
-   "thema": "Zimmerpflanzen",
-   "titel": "Zimmerpflanzen",
-   "status": "offen",
-   "key": "KU|Zurück zum Ursprung|Zimmerpflanzen",
-   "nr": 71
   },
   {
    "runde": 1,
@@ -1584,7 +1560,7 @@
    "titel": "Blau-, Rotlicht-Brille",
    "status": "offen",
    "key": "KU|Zurück zum Ursprung|Blau-, Rotlicht-Brille",
-   "nr": 72
+   "nr": 70
   },
   {
    "runde": 1,
@@ -1596,19 +1572,7 @@
    "titel": "Ölziehen",
    "status": "offen",
    "key": "KU|Zurück zum Ursprung|Ölziehen",
-   "nr": 73
-  },
-  {
-   "runde": 1,
-   "saeule": "Zurück zum Ursprung",
-   "format": "Zurück zum Ursprung",
-   "unterformat": "Zurück zum Ursprung",
-   "lang": true,
-   "thema": "Haut / Darm",
-   "titel": "Haut / Darm",
-   "status": "offen",
-   "key": "KU|Zurück zum Ursprung|Haut / Darm",
-   "nr": 74
+   "nr": 71
   },
   {
    "runde": 1,
@@ -1620,7 +1584,7 @@
    "titel": "Rotlicht",
    "status": "offen",
    "key": "KU|Zurück zum Ursprung|Rotlicht",
-   "nr": 75
+   "nr": 72
   },
   {
    "runde": 1,
@@ -1632,7 +1596,7 @@
    "titel": "Essen vorm Schlafen",
    "status": "offen",
    "key": "KU|Zurück zum Ursprung|Essen vorm Schlafen",
-   "nr": 76
+   "nr": 73
   },
   {
    "runde": 1,
@@ -1644,7 +1608,7 @@
    "titel": "Toilettenhocker",
    "status": "offen",
    "key": "KU|Zurück zum Ursprung|Toilettenhocker",
-   "nr": 77
+   "nr": 74
   },
   {
    "runde": 1,
@@ -1656,7 +1620,7 @@
    "titel": "Klamotten",
    "status": "offen",
    "key": "KU|Zurück zum Ursprung|Klamotten",
-   "nr": 78
+   "nr": 75
   },
   {
    "runde": 1,
@@ -1668,7 +1632,7 @@
    "titel": "Nasenatmung",
    "status": "offen",
    "key": "KU|Zurück zum Ursprung|Nasenatmung",
-   "nr": 79
+   "nr": 76
   },
   {
    "runde": 1,
@@ -1680,6 +1644,42 @@
    "titel": "Manifestieren",
    "status": "offen",
    "key": "KU|Zurück zum Ursprung|Manifestieren",
+   "nr": 77
+  },
+  {
+   "runde": 1,
+   "saeule": "Zurück zum Ursprung",
+   "format": "Zurück zum Ursprung",
+   "unterformat": "Zurück zum Ursprung",
+   "lang": true,
+   "thema": "Sonne",
+   "titel": "Sonne",
+   "status": "offen",
+   "key": "KU|Zurück zum Ursprung|Sonne",
+   "nr": 78
+  },
+  {
+   "runde": 1,
+   "saeule": "Zurück zum Ursprung",
+   "format": "Zurück zum Ursprung",
+   "unterformat": "Zurück zum Ursprung",
+   "lang": true,
+   "thema": "Sauna",
+   "titel": "Sauna",
+   "status": "offen",
+   "key": "KU|Zurück zum Ursprung|Sauna",
+   "nr": 79
+  },
+  {
+   "runde": 1,
+   "saeule": "Zurück zum Ursprung",
+   "format": "Zurück zum Ursprung",
+   "unterformat": "Zurück zum Ursprung",
+   "lang": true,
+   "thema": "Haut / Darm",
+   "titel": "Haut / Darm",
+   "status": "offen",
+   "key": "KU|Zurück zum Ursprung|Haut / Darm",
    "nr": 80
   },
   {
@@ -1784,23 +1784,11 @@
    "format": "Top 3",
    "unterformat": "Top 3",
    "lang": true,
-   "thema": "Top 3: Innerer UV-Schutz",
-   "titel": "Top 3: Innerer UV-Schutz",
-   "status": "offen",
-   "key": "KU|Top 3|Top 3: Innerer UV-Schutz",
-   "nr": 89
-  },
-  {
-   "runde": 1,
-   "saeule": "Top 3",
-   "format": "Top 3",
-   "unterformat": "Top 3",
-   "lang": true,
    "thema": "Top 3: Tricks für Nase öffnen",
    "titel": "Top 3: Tricks für Nase öffnen",
    "status": "offen",
    "key": "KU|Top 3|Top 3: Tricks für Nase öffnen",
-   "nr": 90
+   "nr": 89
   },
   {
    "runde": 1,
@@ -1812,6 +1800,18 @@
    "titel": "Top 3: Gegen Husten",
    "status": "offen",
    "key": "KU|Top 3|Top 3: Gegen Husten",
+   "nr": 90
+  },
+  {
+   "runde": 1,
+   "saeule": "Top 3",
+   "format": "Top 3",
+   "unterformat": "Top 3",
+   "lang": true,
+   "thema": "Top 3: Innerer UV-Schutz",
+   "titel": "Top 3: Innerer UV-Schutz",
+   "status": "offen",
+   "key": "KU|Top 3|Top 3: Innerer UV-Schutz",
    "nr": 91
   },
   {
@@ -1964,23 +1964,11 @@
    "format": "Wahrheit oder Mythos",
    "unterformat": "Wahrheit oder Mythos",
    "lang": true,
-   "thema": "Weiße Fingernägel Flecken",
-   "titel": "Weiße Fingernägel Flecken",
-   "status": "offen",
-   "key": "KU|Wahrheit oder Mythos|Weiße Fingernägel Flecken",
-   "nr": 104
-  },
-  {
-   "runde": 1,
-   "saeule": "Wahrheit oder Mythos",
-   "format": "Wahrheit oder Mythos",
-   "unterformat": "Wahrheit oder Mythos",
-   "lang": true,
    "thema": "Brille kann man nicht heilen",
    "titel": "Brille kann man nicht heilen",
    "status": "offen",
    "key": "KU|Wahrheit oder Mythos|Brille kann man nicht heilen",
-   "nr": 105
+   "nr": 104
   },
   {
    "runde": 1,
@@ -1992,7 +1980,7 @@
    "titel": "Karies",
    "status": "offen",
    "key": "KU|Wahrheit oder Mythos|Karies",
-   "nr": 106
+   "nr": 105
   },
   {
    "runde": 1,
@@ -2004,7 +1992,7 @@
    "titel": "Rein durch Ernährung alle Nährstoffe",
    "status": "offen",
    "key": "KU|Wahrheit oder Mythos|Rein durch Ernährung alle Nährstoffe",
-   "nr": 107
+   "nr": 106
   },
   {
    "runde": 1,
@@ -2016,7 +2004,7 @@
    "titel": "Symptome können nur rein durch den Körper behoben werden",
    "status": "offen",
    "key": "KU|Wahrheit oder Mythos|Symptome können nur rein durch den Körper behoben werden",
-   "nr": 108
+   "nr": 107
   },
   {
    "runde": 1,
@@ -2028,7 +2016,7 @@
    "titel": "Dass der Blinddarm unnötig sei",
    "status": "offen",
    "key": "KU|Wahrheit oder Mythos|Dass der Blinddarm unnötig sei",
-   "nr": 109
+   "nr": 108
   },
   {
    "runde": 1,
@@ -2040,7 +2028,7 @@
    "titel": "Mandeln entfernen",
    "status": "offen",
    "key": "KU|Wahrheit oder Mythos|Mandeln entfernen",
-   "nr": 110
+   "nr": 109
   },
   {
    "runde": 1,
@@ -2052,7 +2040,7 @@
    "titel": "Ohrstäbchen",
    "status": "offen",
    "key": "KU|Wahrheit oder Mythos|Ohrstäbchen",
-   "nr": 111
+   "nr": 110
   },
   {
    "runde": 1,
@@ -2064,7 +2052,7 @@
    "titel": "Finger knacken ist ungesund",
    "status": "offen",
    "key": "KU|Wahrheit oder Mythos|Finger knacken ist ungesund",
-   "nr": 112
+   "nr": 111
   },
   {
    "runde": 1,
@@ -2076,7 +2064,7 @@
    "titel": "Blasen aufstechen",
    "status": "offen",
    "key": "KU|Wahrheit oder Mythos|Blasen aufstechen",
-   "nr": 113
+   "nr": 112
   },
   {
    "runde": 1,
@@ -2088,7 +2076,7 @@
    "titel": "Schweiß stinkt",
    "status": "offen",
    "key": "KU|Wahrheit oder Mythos|Schweiß stinkt",
-   "nr": 114
+   "nr": 113
   },
   {
    "runde": 1,
@@ -2100,6 +2088,18 @@
    "titel": "Bio ist nicht Bio",
    "status": "offen",
    "key": "KU|Wahrheit oder Mythos|Bio ist nicht Bio",
+   "nr": 114
+  },
+  {
+   "runde": 1,
+   "saeule": "Wahrheit oder Mythos",
+   "format": "Wahrheit oder Mythos",
+   "unterformat": "Wahrheit oder Mythos",
+   "lang": true,
+   "thema": "Weiße Fingernägel Flecken",
+   "titel": "Weiße Fingernägel Flecken",
+   "status": "offen",
+   "key": "KU|Wahrheit oder Mythos|Weiße Fingernägel Flecken",
    "nr": 115
   }
  ]

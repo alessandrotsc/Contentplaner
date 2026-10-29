@@ -334,7 +334,8 @@
      "videos": [
       {
        "titel": "Erden",
-       "status": "offen"
+       "status": "fertig",
+       "id": "K07_Erden"
       },
       {
        "titel": "Frequenz Heilung",
@@ -398,11 +399,11 @@
       }
      ],
      "anzahl": 16,
-     "fertig": 0
+     "fertig": 1
     }
    ],
    "anzahl": 16,
-   "fertig": 0
+   "fertig": 1
   },
   {
    "name": "Top 3",
@@ -717,8 +718,9 @@
    "lang": true,
    "thema": "Erden",
    "titel": "Erden",
-   "status": "offen",
+   "status": "fertig",
    "key": "KU|Zurück zum Ursprung|Erden",
+   "id": "K07_Erden",
    "datum": "2026-10-29",
    "zeit": "19:00",
    "nr": 5

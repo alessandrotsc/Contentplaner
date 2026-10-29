@@ -417,7 +417,8 @@
      "videos": [
       {
        "titel": "Top 3: Kopfschmerzen",
-       "status": "offen"
+       "status": "fertig",
+       "id": "K08_Kopfschmerzen"
       },
       {
        "titel": "Top 3: Besserer Schlaf",
@@ -481,11 +482,11 @@
       }
      ],
      "anzahl": 16,
-     "fertig": 0
+     "fertig": 1
     }
    ],
    "anzahl": 16,
-   "fertig": 0
+   "fertig": 1
   },
   {
    "name": "Was passiert, wenn …",
@@ -733,8 +734,9 @@
    "lang": true,
    "thema": "Top 3: Kopfschmerzen",
    "titel": "Top 3: Kopfschmerzen",
-   "status": "offen",
+   "status": "fertig",
    "key": "KU|Top 3|Top 3: Kopfschmerzen",
+   "id": "K08_Kopfschmerzen",
    "datum": "2026-10-30",
    "zeit": "19:00",
    "nr": 6

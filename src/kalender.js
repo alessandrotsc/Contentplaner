@@ -6,8 +6,8 @@
 import * as S from "./store.js";
 import * as D from "./datum.js";
 import { Z, neu, eintragPasst } from "./zustand.js";
-import { el, ikon, ikonKnopf, dialog, feld, pillen, inZwischenablage } from "./ui.js";
-import { zuEintrag, postenDialog, istErledigt, fortschritt, alleErledigen } from "./posten.js";
+import { el, ikon, ikonKnopf, dialog, feld, pillen } from "./ui.js";
+import { zuEintrag, postenDialog, istErledigt, geplanteZeiten, zeitText } from "./posten.js";
 
 function anTag(tag) {
   return S.eintraege()
@@ -78,7 +78,7 @@ function monatsAnsicht() {
       el("div", { class: "tageszahl", text: String(D.ausIso(tag).getDate()) }));
 
     posten.slice(0, 3).forEach((e) => zelle.append(el("div", {
-      class: "chip" + (e.status === "online" ? " erledigt" : ""),
+      class: "chip" + (e.status === "online" ? " erledigt" : "") + (tag < heute ? " vergangen" : ""),
       style: { borderLeftColor: farbeVon(e) }, text: e.titel || "Ohne Titel" })));
     if (posten.length > 3) zelle.append(el("div", { class: "mehr", text: `+${posten.length - 3}` }));
     raster.append(zelle);
@@ -104,7 +104,7 @@ function wochenAnsicht() {
   tage.forEach((tag) => {
     const sp = el("div");
     anTag(tag).filter((e) => !e.zeit).forEach((e) => sp.append(el("div", {
-      class: "gt-chip" + (e.status === "online" ? " erledigt" : ""), style: { borderLeftColor: farbeVon(e) }, text: e.titel || "Ohne Titel",
+      class: "gt-chip" + (e.status === "online" ? " erledigt" : "") + (tag < heute ? " vergangen" : ""), style: { borderLeftColor: farbeVon(e) }, text: e.titel || "Ohne Titel",
       onclick: () => oeffnen(e, tag) })));
     ganztag.append(sp);
   });
@@ -119,7 +119,7 @@ function wochenAnsicht() {
     for (let h = 0; h < 24; h++) spalte.append(el("div", { class: "stunde-linie" }));
     anTag(tag).filter((e) => e.zeit).forEach((e) => {
       const [hh, mm] = e.zeit.split(":").map(Number);
-      spalte.append(el("div", { class: "block" + (e.status === "online" ? " erledigt" : ""),
+      spalte.append(el("div", { class: "block" + (e.status === "online" ? " erledigt" : "") + (tag < heute ? " vergangen" : ""),
         style: { top: ((hh + mm / 60) * 52) + "px", height: "48px", borderLeftColor: farbeVon(e) },
         text: e.titel || "Ohne Titel",
         onclick: (ev) => { ev.stopPropagation(); oeffnen(e, tag); } }));
@@ -138,9 +138,12 @@ function agendaAnsicht() {
   const box = el("div", { class: "agenda" });
   const heute = D.heute();
   let gefunden = 0;
+  // Vergangene Tage nicht mehr zeigen (User 29.10.2026): gepostet wird automatisch, das alte Video ist weg.
+  // Datumstexte JJJJ-MM-TT lassen sich direkt vergleichen.
+  const start = Z.anker < heute ? heute : Z.anker;
 
   for (let i = 0; i < 45; i++) {
-    const tag = D.plusTage(Z.anker, i);
+    const tag = D.plusTage(start, i);
     const posten = anTag(tag);
     if (!posten.length) continue;
     gefunden += posten.length;
@@ -183,29 +186,21 @@ function karte(e, tag) {
     meta.append(el("span", { text: t }));
   });
   meta.append(plattformIcons(e));
+  // Gepostet wird automatisch über Metricool (User 29.10.2026), hier nur der Stand zum Ansehen
   const vid = zuEintrag(e);
-  const [fertigN, gesamtN] = fortschritt(e, vid);
-  const erledigt = e.status === "online" || istErledigt(vid) || (gesamtN && fertigN === gesamtN);
-  if (!erledigt && vid) meta.append(el("span", { class: "video-bereit", text: "▶ Video bereit" }));
+  const erledigt = e.status === "online" || istErledigt(vid);
+  const geplant = !erledigt && geplanteZeiten(vid)[0];
+  if (erledigt && vid) meta.append(el("span", { class: "video-bereit erledigt", text: "✓ Veröffentlicht" }));
+  else if (geplant) meta.append(el("span", { class: "video-bereit", text: `Eingeplant ${zeitText(geplant.zeit, false)}` }));
+  else if (vid) meta.append(el("span", { class: "video-bereit", text: "▶ Video bereit" }));
   const serie = e.wiederholung && e.wiederholung.art !== "einmal"
     ? el("div", { class: "karte-meta" }, el("span", { text: D.regelText(e.wiederholung) })) : null;
-
-  // Ein Haken rechts für alles: erledigt = auf allen Plattformen hochgeladen, ohne Rückfrage (User 25.10.2026).
-  // Der Eintrag bleibt im Kalender sichtbar (ausgegraut), nur die großen Videodateien verschwinden vom Server.
-  const haken = el("button", { class: "fertig-haken" + (erledigt ? " an" : ""), title: erledigt ? "Erledigt" : "Als erledigt abhaken",
-    onclick: async (ev) => {
-      ev.stopPropagation();
-      const wert = !erledigt;
-      try { await alleErledigen(e, vid, wert); neu(); }
-      catch (err) { alert("Speichern ging nicht: " + err.message); }
-    } }, ikon("haken", 20));
 
   return el("div", { class: "karte" + (erledigt ? " erledigt" : ""), onclick: () => oeffnen(e, tag) },
     el("div", { class: "karte-strich", style: { background: p?.farbe || "#888" } }),
     el("div", { class: "karte-text" },
       el("div", { class: "karte-titel", text: e.titel || "Ohne Titel" }), meta, serie),
     erledigt ? null : el("div", { class: "status-pille", style: { background: st.farbe + "1f", color: st.farbe }, text: st.name }),
-    haken,
   );
 }
 
@@ -225,12 +220,9 @@ export function eintragDialog(vorgabe = {}, tagDerSerie = null) {
 
   const d = dialog(istNeu ? "Neuer Eintrag" : "Eintrag", () => {
     if (!e.titel.trim()) { alert("Der Eintrag braucht einen Titel."); return false; }
-    if (e.id && S.eintrag(e.id)?.hochgeladen) e.hochgeladen = S.eintrag(e.id).hochgeladen;  // Häkchen nicht mit altem Stand überschreiben
     S.eintragSpeichern(e);
     neu();
   });
-
-  // Häkchen je Plattform (eingeplant oder hochgeladen), auch ohne Video auf dem Server
 
   d.inhalt.append(feld("Titel", el("input", { class: "eingabe", value: e.titel,
     placeholder: "z.B. Top 3: Die loyalsten", oninput: (ev) => (e.titel = ev.target.value) })));
@@ -316,9 +308,7 @@ export function eintragDialog(vorgabe = {}, tagDerSerie = null) {
   const capFeld = el("textarea", { class: "eingabe", placeholder: "Text, der unter das Video kommt",
     oninput: (ev) => (e.caption = ev.target.value) });
   capFeld.value = e.caption;
-  const kopierKnopf = el("button", { class: "kopieren", onclick: (ev) => { ev.preventDefault(); inZwischenablage(capFeld.value, kopierKnopf); } },
-    ikon("kopieren"), el("span", { text: "Caption kopieren" }));
-  d.inhalt.append(feld("Caption", capFeld, kopierKnopf));
+  d.inhalt.append(feld("Caption", capFeld));
 
   const notizFeld = el("textarea", { class: "eingabe", placeholder: "Hook, Ablauf, To-dos", oninput: (ev) => (e.notiz = ev.target.value) });
   notizFeld.value = e.notiz;

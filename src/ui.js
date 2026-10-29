@@ -114,28 +114,3 @@ export function pillen(werte, aktiv, beiWahl) {
   });
   return box;
 }
-
-export function inZwischenablage(text, knopf) {
-  const fertig = () => {
-    const alt = knopf.lastChild.textContent;
-    knopf.classList.add("fertig");
-    knopf.lastChild.textContent = "Kopiert";
-    setTimeout(() => {
-      knopf.classList.remove("fertig");
-      knopf.lastChild.textContent = alt;
-    }, 1400);
-  };
-  if (navigator.clipboard?.writeText) {
-    navigator.clipboard.writeText(text).then(fertig).catch(() => ersatz(text, fertig));
-  } else ersatz(text, fertig);
-}
-
-/** Safari im Standalone-Modus verweigert die Clipboard-API manchmal. */
-function ersatz(text, fertig) {
-  const t = el("textarea", { style: { position: "fixed", opacity: "0" } });
-  t.value = text;
-  document.body.append(t);
-  t.select();
-  try { document.execCommand("copy"); fertig(); } catch (e) { /* still */ }
-  t.remove();
-}

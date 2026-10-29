@@ -439,12 +439,6 @@ select.eingabe { -webkit-appearance: none; appearance: none; }
 .tage-wahl button { height: 36px; border-radius: 10px; background: #F2EEE6; font-size: 12.5px; font-weight: 600; }
 .tage-wahl button.an { background: var(--navy); color: #fff; }
 
-.kopieren {
-  display: inline-flex; align-items: center; gap: 6px; margin-top: 8px; height: 34px; padding: 0 12px;
-  border-radius: 10px; font-size: 13px; font-weight: 600; color: var(--blau); background: #E8F3FC;
-}
-.kopieren svg { width: 16px; height: 16px; }
-.kopieren.fertig { color: var(--gut); background: #E6F5EE; }
 .zufuegen {
   display: block; width: 100%; margin-top: 10px; height: 42px; border-radius: 12px;
   font-size: 13.5px; font-weight: 700; color: var(--blau); border: 1.5px dashed #B9D3EA;
@@ -556,35 +550,32 @@ select.eingabe { -webkit-appearance: none; appearance: none; }
 .posten-kanal { margin-top: 16px; padding: 14px; border-radius: 14px; background: var(--weiss); box-shadow: 0 2px 0 #D9E6F2, 0 6px 16px -10px rgba(6,26,47,.3); }
 .posten-kopf { display: flex; align-items: center; gap: 6px; font-size: 14.5px; }
 .posten-kopf svg { color: var(--ink-2); }
-.posten-reihe { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
 .teilen {
   display: flex; align-items: center; justify-content: center; gap: 7px; width: 100%; margin-top: 10px; height: 44px; padding: 0 10px;
   border-radius: 12px; font-size: 14px; font-weight: 700; color: var(--weiss); background: var(--verlauf);
 }
-.posten-reihe .teilen { font-size: 12.5px; height: 40px; color: var(--blau); background: #E8F3FC; }
 .teilen svg { width: 17px; height: 17px; flex: none; }
 .teilen.bereit { background: var(--gut); color: var(--weiss); }
 .teilen:disabled { opacity: .75; }
 .posten-text { white-space: pre-wrap; font-size: 13.5px; line-height: 1.45; color: var(--ink); background: var(--creme-hell); border-radius: 10px; padding: 10px 12px; }
 .posten-zu { display: block; width: 100%; margin-top: 12px; height: 46px; border-radius: 12px; font-weight: 700; font-size: 15px; color: var(--ink); background: #EEF1F5; }
-/* Häkchen je Plattform in der Posten-Ansicht (25.10.2026) */
-.abhaken-reihe { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 10px; }
-.abhaken { display: inline-flex; align-items: center; gap: 6px; height: 38px; padding: 0 12px; border-radius: 99px; border: 1.5px solid #D9E6F2; background: var(--weiss); color: var(--ink-2); font-size: 13px; font-weight: 700; }
-.abhaken svg { width: 15px; height: 15px; }
-.abhaken.an { background: var(--gut); border-color: var(--gut); color: var(--weiss); }
 .erledigt-box { background: #E6F5EE; }
 .video-bereit.erledigt { color: var(--ink-2); background: #EEF2F6; }
 
-/* Ein Haken je Eintrag (25.10.2026): erledigt = alle Plattformen, Karte tritt zurück */
+/* Haken (nur noch bei den Stories, seit 29.10.2026 keine Haken mehr im Kalender) */
 .fertig-haken { flex-shrink: 0; width: 38px; height: 38px; border-radius: 50%; border: 2px solid #CFDCE8; background: var(--weiss);
   color: transparent; display: grid; place-items: center; margin-left: 8px; transition: all .2s ease; }
 .fertig-haken svg { width: 20px; height: 20px; }
 .fertig-haken:hover { border-color: var(--gut); color: #9FD9BC; }
 .fertig-haken.an { background: var(--gut); border-color: var(--gut); color: var(--weiss); }
-.karte.erledigt > :not(.fertig-haken) { opacity: .5; filter: saturate(.4); }
+.karte.erledigt > * { opacity: .5; filter: saturate(.4); }
 .karte.erledigt { background: #F4F6F5; }
 .karte.erledigt .karte-titel { text-decoration: line-through; text-decoration-color: rgba(0,0,0,.35); }
 .block.erledigt, .gt-chip.erledigt { opacity: .5; text-decoration: line-through; }
+/* Vergangene Tage in Monat/Woche blass (29.10.2026), die Liste zeigt sie gar nicht */
+.chip.vergangen, .block.vergangen, .gt-chip.vergangen { opacity: .35; }
+.posten-kopf + .posten-kopf { margin-top: 8px; }
+.posten-pl { color: var(--ink-3); font-size: 12px; margin-left: auto; }
 
 /* Stories (27.10.2026) */
 .story-reihe { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; }

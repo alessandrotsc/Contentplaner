@@ -799,10 +799,10 @@
    "format": "Tee Sorten",
    "unterformat": "Tee Sorten",
    "lang": true,
-   "thema": "Grüner Tee",
-   "titel": "Grüner Tee",
+   "thema": "Mate Tee",
+   "titel": "Mate Tee",
    "status": "offen",
-   "key": "KU|Tee Sorten|Grüner Tee",
+   "key": "KU|Tee Sorten|Mate Tee",
    "datum": "2026-11-04",
    "zeit": "19:00",
    "nr": 11
@@ -897,10 +897,10 @@
    "format": "Tee Sorten",
    "unterformat": "Tee Sorten",
    "lang": true,
-   "thema": "Mate Tee",
-   "titel": "Mate Tee",
+   "thema": "Blue pia Tee",
+   "titel": "Blue pia Tee",
    "status": "offen",
-   "key": "KU|Tee Sorten|Mate Tee",
+   "key": "KU|Tee Sorten|Blue pia Tee",
    "datum": "2026-11-11",
    "zeit": "19:00",
    "nr": 18
@@ -995,10 +995,10 @@
    "format": "Tee Sorten",
    "unterformat": "Tee Sorten",
    "lang": true,
-   "thema": "Blue pia Tee",
-   "titel": "Blue pia Tee",
+   "thema": "Schwarzer Tee",
+   "titel": "Schwarzer Tee",
    "status": "offen",
-   "key": "KU|Tee Sorten|Blue pia Tee",
+   "key": "KU|Tee Sorten|Schwarzer Tee",
    "datum": "2026-11-18",
    "zeit": "19:00",
    "nr": 25
@@ -1093,10 +1093,10 @@
    "format": "Tee Sorten",
    "unterformat": "Tee Sorten",
    "lang": true,
-   "thema": "Schwarzer Tee",
-   "titel": "Schwarzer Tee",
+   "thema": "Pfefferminztee",
+   "titel": "Pfefferminztee",
    "status": "offen",
-   "key": "KU|Tee Sorten|Schwarzer Tee",
+   "key": "KU|Tee Sorten|Pfefferminztee",
    "datum": "2026-11-25",
    "zeit": "19:00",
    "nr": 32
@@ -1412,23 +1412,11 @@
    "format": "Tee Sorten",
    "unterformat": "Tee Sorten",
    "lang": true,
-   "thema": "Pfefferminztee",
-   "titel": "Pfefferminztee",
-   "status": "offen",
-   "key": "KU|Tee Sorten|Pfefferminztee",
-   "nr": 58
-  },
-  {
-   "runde": 1,
-   "saeule": "Tee Sorten",
-   "format": "Tee Sorten",
-   "unterformat": "Tee Sorten",
-   "lang": true,
    "thema": "Fencheltee",
    "titel": "Fencheltee",
    "status": "offen",
    "key": "KU|Tee Sorten|Fencheltee",
-   "nr": 59
+   "nr": 58
   },
   {
    "runde": 1,
@@ -1440,7 +1428,7 @@
    "titel": "Löwenzahntee",
    "status": "offen",
    "key": "KU|Tee Sorten|Löwenzahntee",
-   "nr": 60
+   "nr": 59
   },
   {
    "runde": 1,
@@ -1452,7 +1440,7 @@
    "titel": "Kurkuma",
    "status": "offen",
    "key": "KU|Tee Sorten|Kurkuma",
-   "nr": 61
+   "nr": 60
   },
   {
    "runde": 1,
@@ -1464,7 +1452,7 @@
    "titel": "Hagebutte",
    "status": "offen",
    "key": "KU|Tee Sorten|Hagebutte",
-   "nr": 62
+   "nr": 61
   },
   {
    "runde": 1,
@@ -1476,7 +1464,7 @@
    "titel": "Hibiskus",
    "status": "offen",
    "key": "KU|Tee Sorten|Hibiskus",
-   "nr": 63
+   "nr": 62
   },
   {
    "runde": 1,
@@ -1488,7 +1476,7 @@
    "titel": "Kamillentee",
    "status": "offen",
    "key": "KU|Tee Sorten|Kamillentee",
-   "nr": 64
+   "nr": 63
   },
   {
    "runde": 1,
@@ -1500,7 +1488,7 @@
    "titel": "Zitronenmelisse",
    "status": "offen",
    "key": "KU|Tee Sorten|Zitronenmelisse",
-   "nr": 65
+   "nr": 64
   },
   {
    "runde": 1,
@@ -1512,7 +1500,7 @@
    "titel": "Salbei",
    "status": "offen",
    "key": "KU|Tee Sorten|Salbei",
-   "nr": 66
+   "nr": 65
   },
   {
    "runde": 1,
@@ -1524,7 +1512,7 @@
    "titel": "Brennnesseltee",
    "status": "offen",
    "key": "KU|Tee Sorten|Brennnesseltee",
-   "nr": 67
+   "nr": 66
   },
   {
    "runde": 1,
@@ -1536,6 +1524,18 @@
    "titel": "Oolong Tee",
    "status": "offen",
    "key": "KU|Tee Sorten|Oolong Tee",
+   "nr": 67
+  },
+  {
+   "runde": 1,
+   "saeule": "Tee Sorten",
+   "format": "Tee Sorten",
+   "unterformat": "Tee Sorten",
+   "lang": true,
+   "thema": "Grüner Tee",
+   "titel": "Grüner Tee",
+   "status": "offen",
+   "key": "KU|Tee Sorten|Grüner Tee",
    "nr": 68
   },
   {

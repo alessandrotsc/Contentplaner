@@ -5,7 +5,8 @@
  * Am Kalendereintrag (verknüpft über planKey) zeigt die App nur noch zum Ansehen:
  * Vorschau, Titel, Caption und den Stand (eingeplant bzw. veröffentlicht).
  *
- * meta: dateien.video/youtube/lang/cover/thumbnail, caption, youtubeTitel, youtubeText, langTitel, langText.
+ * meta: dateien.video/youtube/lang/cover/thumbnail, caption, youtubeTitel, youtubeText, langTitel, langText,
+ * dazu zum Prüfen (30.10.2026): hooks, skript, hashtags, langSkript, langTitelPlan. Ohne Dateien = nur Skript.
  * geplant: { posts: [{ plattformen: ["tiktok", ...], zeit: ISO }] } (vom Server, sonst null).
  */
 
@@ -101,11 +102,17 @@ export function postenDialog(e, v, beiBearbeiten) {
     film ? el("video", { class: "posten-video", src: film, poster: bild || null, controls: true, playsinline: true, preload: "none" })
          : bild && el("img", { class: "posten-video", src: bild, alt: "" }),
 
+    film ? null : el("div", { class: "posten-kanal" }, el("div", { class: "posten-kopf" }, el("b", { text: "Skript zum Prüfen, Video noch nicht gebaut" }))),
+    textBlock("Hook (gewählt und Varianten)", v.hooks),
+    textBlock("Skript Short", v.skript),
+    textBlock("Hashtags", v.hashtags),
     textBlock("Caption", v.caption),
     textBlock("YouTube Shorts Titel", v.youtubeTitel),
     textBlock("YouTube Shorts Beschreibung", v.youtubeText),
     textBlock("YouTube Video Titel", v.langTitel),
     textBlock("YouTube Video Beschreibung", v.langText),
+    textBlock("YouTube Video Titel (geplant)", v.langTitel ? null : v.langTitelPlan),
+    textBlock("Skript YouTube Video", v.langSkript),
 
     el("button", { class: "zufuegen", text: "Eintrag bearbeiten", onclick: () => { d.zu(); beiBearbeiten(); } }),
     el("button", { class: "posten-zu", text: "Schließen", onclick: () => d.zu() }),

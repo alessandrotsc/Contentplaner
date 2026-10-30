@@ -500,7 +500,8 @@
      "videos": [
       {
        "titel": "Was passiert, wenn du täglich Rote Bete trinkst?",
-       "status": "offen"
+       "status": "fertig",
+       "id": "K09_RoteBete"
       },
       {
        "titel": "Was passiert, wenn du täglich Karotten isst?",
@@ -564,11 +565,11 @@
       }
      ],
      "anzahl": 16,
-     "fertig": 0
+     "fertig": 1
     }
    ],
    "anzahl": 16,
-   "fertig": 0
+   "fertig": 1
   },
   {
    "name": "Wahrheit oder Mythos",
@@ -775,9 +776,9 @@
    "lang": true,
    "thema": "Was passiert, wenn du täglich Rote Bete trinkst?",
    "titel": "Was passiert, wenn du täglich Rote Bete trinkst?",
-   "status": "offen",
+   "status": "fertig",
    "key": "KU|Was passiert, wenn …|Was passiert, wenn du täglich Rote Bete trinkst?",
-   "skript": "K09_RoteBete",
+   "id": "K09_RoteBete",
    "datum": "2026-10-31",
    "zeit": "19:00",
    "nr": 9

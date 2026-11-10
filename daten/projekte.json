@@ -1,7 +1,6 @@
 {
  "projekte": [
-  "Kultas",
-  "EmpaMind"
+  "Kultas"
  ],
  "kategorien": [
   {
@@ -18,6 +17,7 @@
  "entfernt": [
   "Astromaster YouTube",
   "HausRund",
-  "SynCrate"
+  "SynCrate",
+  "EmpaMind"
  ]
 }

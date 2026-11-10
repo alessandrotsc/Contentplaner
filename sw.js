@@ -1,7 +1,7 @@
 /* Service Worker. Haelt die App offline lauffaehig.
    Bei jeder Aenderung an den Dateien die VERSION hochzaehlen, sonst zeigt
    das iPhone hartnaeckig die alte Fassung. */
-const VERSION = "contentplaner-v43";
+const VERSION = "contentplaner-v44";
 const DATEIEN = [
   "./", "./index.html", "./manifest.webmanifest",
   "./src/styles.css", "./src/app.js", "./src/store.js",
@@ -17,7 +17,7 @@ self.addEventListener("install", (e) => {
 
 self.addEventListener("activate", (e) => {
   e.waitUntil(caches.keys()
-    .then((namen) => Promise.all(namen.filter((n) => n !== VERSION).map((n) => caches.delete(n))))
+    .then((namen) => Promise.all(namen.filter((n) => n.startsWith("contentplaner-") && n !== VERSION).map((n) => caches.delete(n))))
     .then(() => self.clients.claim()));
 });
 

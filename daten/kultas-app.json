@@ -16,7 +16,7 @@
    "handle": "Kultas"
   }
  ],
- "stand": "2026-11-09",
+ "stand": "2026-11-10",
  "saeulen": [
   {
    "name": "Gut vs Schlecht",
@@ -285,7 +285,7 @@
       },
       {
        "titel": "Ingwer",
-       "status": "fertig",
+       "status": "online",
        "id": "K20_Ingwer"
       },
       {
@@ -1083,12 +1083,25 @@
    "lang": true,
    "thema": "Ingwer",
    "titel": "Ingwer",
-   "status": "fertig",
+   "status": "online",
    "key": "KU|Tee Sorten|Ingwer",
    "id": "K20_Ingwer",
+   "gepostet_am": "2026-11-13",
+   "nr": 30
+  },
+  {
+   "runde": 1,
+   "saeule": "Tee Sorten",
+   "format": "Tee Sorten",
+   "unterformat": "Tee Sorten",
+   "lang": true,
+   "thema": "Blue pia Tee",
+   "titel": "Blue pia Tee",
+   "status": "offen",
+   "key": "KU|Tee Sorten|Blue pia Tee",
    "datum": "2026-11-13",
    "zeit": "20:00",
-   "nr": 30
+   "nr": 31
   },
   {
    "runde": 1,
@@ -1102,7 +1115,7 @@
    "key": "KU|Zurück zum Ursprung|Zimmerpflanzen",
    "id": "K21_Zimmerpflanzen",
    "gepostet_am": "2026-11-14",
-   "nr": 31
+   "nr": 32
   },
   {
    "runde": 1,
@@ -1116,7 +1129,7 @@
    "key": "KU|Zurück zum Ursprung|Blau-, Rotlicht-Brille",
    "datum": "2026-11-14",
    "zeit": "20:00",
-   "nr": 32
+   "nr": 33
   },
   {
    "runde": 1,
@@ -1130,7 +1143,7 @@
    "key": "KU|Top 3|Top 3: Gegen Haarausfall",
    "id": "K22_Haarausfall",
    "gepostet_am": "2026-11-15",
-   "nr": 33
+   "nr": 34
   },
   {
    "runde": 1,
@@ -1144,7 +1157,7 @@
    "key": "KU|Top 3|Top 3: Gegen Stress",
    "datum": "2026-11-15",
    "zeit": "20:00",
-   "nr": 34
+   "nr": 35
   },
   {
    "runde": 1,
@@ -1158,7 +1171,7 @@
    "key": "KU|Was passiert, wenn …|Was passiert, wenn du täglich Knoblauch isst?",
    "datum": "2026-11-16",
    "zeit": "20:00",
-   "nr": 35
+   "nr": 36
   },
   {
    "runde": 1,
@@ -1172,7 +1185,7 @@
    "key": "KU|Wahrheit oder Mythos|Brille kann man nicht heilen",
    "datum": "2026-11-17",
    "zeit": "20:00",
-   "nr": 36
+   "nr": 37
   },
   {
    "runde": 1,
@@ -1186,7 +1199,7 @@
    "key": "KU|Gut vs Schlecht|Sonnenblumenöl gegen Weidenrute, Ghee",
    "datum": "2026-11-18",
    "zeit": "20:00",
-   "nr": 37
+   "nr": 38
   },
   {
    "runde": 1,
@@ -1200,7 +1213,7 @@
    "key": "KU|Supplemente|Jod",
    "datum": "2026-11-19",
    "zeit": "20:00",
-   "nr": 38
+   "nr": 39
   },
   {
    "runde": 1,
@@ -1208,13 +1221,13 @@
    "format": "Tee Sorten",
    "unterformat": "Tee Sorten",
    "lang": true,
-   "thema": "Blue pia Tee",
-   "titel": "Blue pia Tee",
+   "thema": "Schwarzer Tee",
+   "titel": "Schwarzer Tee",
    "status": "offen",
-   "key": "KU|Tee Sorten|Blue pia Tee",
+   "key": "KU|Tee Sorten|Schwarzer Tee",
    "datum": "2026-11-20",
    "zeit": "20:00",
-   "nr": 39
+   "nr": 40
   },
   {
    "runde": 1,
@@ -1228,7 +1241,7 @@
    "key": "KU|Zurück zum Ursprung|Ölziehen",
    "datum": "2026-11-21",
    "zeit": "20:00",
-   "nr": 40
+   "nr": 41
   },
   {
    "runde": 1,
@@ -1242,7 +1255,7 @@
    "key": "KU|Top 3|Top 3: Halsschmerzen",
    "datum": "2026-11-22",
    "zeit": "20:00",
-   "nr": 41
+   "nr": 42
   },
   {
    "runde": 1,
@@ -1256,7 +1269,7 @@
    "key": "KU|Was passiert, wenn …|Was passiert, wenn du 30 Tage auf Industriezucker verzichtest?",
    "datum": "2026-11-23",
    "zeit": "20:00",
-   "nr": 42
+   "nr": 43
   },
   {
    "runde": 1,
@@ -1270,7 +1283,7 @@
    "key": "KU|Wahrheit oder Mythos|Karies",
    "datum": "2026-11-24",
    "zeit": "20:00",
-   "nr": 43
+   "nr": 44
   },
   {
    "runde": 1,
@@ -1284,7 +1297,7 @@
    "key": "KU|Gut vs Schlecht|Weizennudeln gegen Buchweizennudeln",
    "datum": "2026-11-25",
    "zeit": "20:00",
-   "nr": 44
+   "nr": 45
   },
   {
    "runde": 1,
@@ -1298,7 +1311,7 @@
    "key": "KU|Supplemente|OPC",
    "datum": "2026-11-26",
    "zeit": "20:00",
-   "nr": 45
+   "nr": 46
   },
   {
    "runde": 1,
@@ -1306,13 +1319,13 @@
    "format": "Tee Sorten",
    "unterformat": "Tee Sorten",
    "lang": true,
-   "thema": "Schwarzer Tee",
-   "titel": "Schwarzer Tee",
+   "thema": "Pfefferminztee",
+   "titel": "Pfefferminztee",
    "status": "offen",
-   "key": "KU|Tee Sorten|Schwarzer Tee",
+   "key": "KU|Tee Sorten|Pfefferminztee",
    "datum": "2026-11-27",
    "zeit": "20:00",
-   "nr": 46
+   "nr": 47
   },
   {
    "runde": 1,
@@ -1324,7 +1337,7 @@
    "titel": "Jegliche Softdrinks gegen Wasser mit Zitrone",
    "status": "offen",
    "key": "KU|Gut vs Schlecht|Jegliche Softdrinks gegen Wasser mit Zitrone",
-   "nr": 47
+   "nr": 48
   },
   {
    "runde": 1,
@@ -1336,7 +1349,7 @@
    "titel": "Margarine, Butter gegen Weidebutter",
    "status": "offen",
    "key": "KU|Gut vs Schlecht|Margarine, Butter gegen Weidebutter",
-   "nr": 48
+   "nr": 49
   },
   {
    "runde": 1,
@@ -1348,7 +1361,7 @@
    "titel": "Weizenbrot gegen Sauerteigbrot",
    "status": "offen",
    "key": "KU|Gut vs Schlecht|Weizenbrot gegen Sauerteigbrot",
-   "nr": 49
+   "nr": 50
   },
   {
    "runde": 1,
@@ -1361,7 +1374,7 @@
    "status": "fertig",
    "key": "KU|Gut vs Schlecht|Teflonpfanne gegen Edelstahlpfanne",
    "id": "K05_Teflon",
-   "nr": 50
+   "nr": 51
   },
   {
    "runde": 1,
@@ -1373,7 +1386,7 @@
    "titel": "Duftkerze gegen Duftlampe",
    "status": "offen",
    "key": "KU|Gut vs Schlecht|Duftkerze gegen Duftlampe",
-   "nr": 51
+   "nr": 52
   },
   {
    "runde": 1,
@@ -1385,7 +1398,7 @@
    "titel": "Duschgel gegen Aleppo-Seife",
    "status": "offen",
    "key": "KU|Gut vs Schlecht|Duschgel gegen Aleppo-Seife",
-   "nr": 52
+   "nr": 53
   },
   {
    "runde": 1,
@@ -1397,7 +1410,7 @@
    "titel": "Kulturheidelbeeren gegen Wildheidelbeeren",
    "status": "offen",
    "key": "KU|Gut vs Schlecht|Kulturheidelbeeren gegen Wildheidelbeeren",
-   "nr": 53
+   "nr": 54
   },
   {
    "runde": 1,
@@ -1409,7 +1422,7 @@
    "titel": "Jodsalz gegen Ursalz",
    "status": "offen",
    "key": "KU|Gut vs Schlecht|Jodsalz gegen Ursalz",
-   "nr": 54
+   "nr": 55
   },
   {
    "runde": 1,
@@ -1421,7 +1434,7 @@
    "titel": "Leitungswasser gegen Quellwasser",
    "status": "offen",
    "key": "KU|Gut vs Schlecht|Leitungswasser gegen Quellwasser",
-   "nr": 55
+   "nr": 56
   },
   {
    "runde": 1,
@@ -1433,7 +1446,7 @@
    "titel": "Sonnencreme gegen Selbst gemacht",
    "status": "offen",
    "key": "KU|Gut vs Schlecht|Sonnencreme gegen Selbst gemacht",
-   "nr": 56
+   "nr": 57
   },
   {
    "runde": 1,
@@ -1445,7 +1458,7 @@
    "titel": "Vitamin C",
    "status": "offen",
    "key": "KU|Supplemente|Vitamin C",
-   "nr": 57
+   "nr": 58
   },
   {
    "runde": 1,
@@ -1457,7 +1470,7 @@
    "titel": "MSM",
    "status": "offen",
    "key": "KU|Supplemente|MSM",
-   "nr": 58
+   "nr": 59
   },
   {
    "runde": 1,
@@ -1469,7 +1482,7 @@
    "titel": "Schwarzkümmelöl",
    "status": "offen",
    "key": "KU|Supplemente|Schwarzkümmelöl",
-   "nr": 59
+   "nr": 60
   },
   {
    "runde": 1,
@@ -1481,7 +1494,7 @@
    "titel": "Vitamin B12",
    "status": "offen",
    "key": "KU|Supplemente|Vitamin B12",
-   "nr": 60
+   "nr": 61
   },
   {
    "runde": 1,
@@ -1493,7 +1506,7 @@
    "titel": "Oregano-Öl",
    "status": "offen",
    "key": "KU|Supplemente|Oregano-Öl",
-   "nr": 61
+   "nr": 62
   },
   {
    "runde": 1,
@@ -1505,7 +1518,7 @@
    "titel": "Shilajit",
    "status": "offen",
    "key": "KU|Supplemente|Shilajit",
-   "nr": 62
+   "nr": 63
   },
   {
    "runde": 1,
@@ -1517,7 +1530,7 @@
    "titel": "Kurkuma",
    "status": "offen",
    "key": "KU|Supplemente|Kurkuma",
-   "nr": 63
+   "nr": 64
   },
   {
    "runde": 1,
@@ -1529,7 +1542,7 @@
    "titel": "Vitamin D3 K2",
    "status": "offen",
    "key": "KU|Supplemente|Vitamin D3 K2",
-   "nr": 64
+   "nr": 65
   },
   {
    "runde": 1,
@@ -1541,18 +1554,6 @@
    "titel": "Zink",
    "status": "offen",
    "key": "KU|Supplemente|Zink",
-   "nr": 65
-  },
-  {
-   "runde": 1,
-   "saeule": "Tee Sorten",
-   "format": "Tee Sorten",
-   "unterformat": "Tee Sorten",
-   "lang": true,
-   "thema": "Pfefferminztee",
-   "titel": "Pfefferminztee",
-   "status": "offen",
-   "key": "KU|Tee Sorten|Pfefferminztee",
    "nr": 66
   },
   {

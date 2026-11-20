@@ -16,7 +16,7 @@
    "handle": "Kultas"
   }
  ],
- "stand": "2026-11-10",
+ "stand": "2026-11-20",
  "saeulen": [
   {
    "name": "Gut vs Schlecht",
@@ -129,7 +129,8 @@
       },
       {
        "titel": "Sonnenblumenöl gegen Weidenrute, Ghee",
-       "status": "offen"
+       "status": "online",
+       "id": "K24_Sonnenblumenoel"
       },
       {
        "titel": "Weizennudeln gegen Buchweizennudeln",
@@ -153,11 +154,11 @@
       }
      ],
      "anzahl": 16,
-     "fertig": 3
+     "fertig": 4
     }
    ],
    "anzahl": 16,
-   "fertig": 3
+   "fertig": 4
   },
   {
    "name": "Supplemente",
@@ -1193,10 +1194,10 @@
    "format": "Gut vs Schlecht",
    "unterformat": "Gut vs Schlecht",
    "lang": true,
-   "thema": "Sonnenblumenöl gegen Weidenrute, Ghee",
-   "titel": "Sonnenblumenöl gegen Weidenrute, Ghee",
+   "thema": "Weizennudeln gegen Buchweizennudeln",
+   "titel": "Weizennudeln gegen Buchweizennudeln",
    "status": "offen",
-   "key": "KU|Gut vs Schlecht|Sonnenblumenöl gegen Weidenrute, Ghee",
+   "key": "KU|Gut vs Schlecht|Weizennudeln gegen Buchweizennudeln",
    "datum": "2026-11-18",
    "zeit": "20:00",
    "nr": 38
@@ -1217,6 +1218,20 @@
   },
   {
    "runde": 1,
+   "saeule": "Gut vs Schlecht",
+   "format": "Gut vs Schlecht",
+   "unterformat": "Gut vs Schlecht",
+   "lang": true,
+   "thema": "Sonnenblumenöl gegen Weidenrute, Ghee",
+   "titel": "Sonnenblumenöl gegen Weidenrute, Ghee",
+   "status": "online",
+   "key": "KU|Gut vs Schlecht|Sonnenblumenöl gegen Weidenrute, Ghee",
+   "id": "K24_Sonnenblumenoel",
+   "gepostet_am": "2026-11-20",
+   "nr": 40
+  },
+  {
+   "runde": 1,
    "saeule": "Tee Sorten",
    "format": "Tee Sorten",
    "unterformat": "Tee Sorten",
@@ -1227,7 +1242,7 @@
    "key": "KU|Tee Sorten|Schwarzer Tee",
    "datum": "2026-11-20",
    "zeit": "20:00",
-   "nr": 40
+   "nr": 41
   },
   {
    "runde": 1,
@@ -1241,7 +1256,7 @@
    "key": "KU|Zurück zum Ursprung|Ölziehen",
    "datum": "2026-11-21",
    "zeit": "20:00",
-   "nr": 41
+   "nr": 42
   },
   {
    "runde": 1,
@@ -1255,7 +1270,7 @@
    "key": "KU|Top 3|Top 3: Halsschmerzen",
    "datum": "2026-11-22",
    "zeit": "20:00",
-   "nr": 42
+   "nr": 43
   },
   {
    "runde": 1,
@@ -1269,7 +1284,7 @@
    "key": "KU|Was passiert, wenn …|Was passiert, wenn du 30 Tage auf Industriezucker verzichtest?",
    "datum": "2026-11-23",
    "zeit": "20:00",
-   "nr": 43
+   "nr": 44
   },
   {
    "runde": 1,
@@ -1283,7 +1298,7 @@
    "key": "KU|Wahrheit oder Mythos|Karies",
    "datum": "2026-11-24",
    "zeit": "20:00",
-   "nr": 44
+   "nr": 45
   },
   {
    "runde": 1,
@@ -1291,13 +1306,13 @@
    "format": "Gut vs Schlecht",
    "unterformat": "Gut vs Schlecht",
    "lang": true,
-   "thema": "Weizennudeln gegen Buchweizennudeln",
-   "titel": "Weizennudeln gegen Buchweizennudeln",
+   "thema": "Jegliche Softdrinks gegen Wasser mit Zitrone",
+   "titel": "Jegliche Softdrinks gegen Wasser mit Zitrone",
    "status": "offen",
-   "key": "KU|Gut vs Schlecht|Weizennudeln gegen Buchweizennudeln",
+   "key": "KU|Gut vs Schlecht|Jegliche Softdrinks gegen Wasser mit Zitrone",
    "datum": "2026-11-25",
    "zeit": "20:00",
-   "nr": 45
+   "nr": 46
   },
   {
    "runde": 1,
@@ -1311,7 +1326,7 @@
    "key": "KU|Supplemente|OPC",
    "datum": "2026-11-26",
    "zeit": "20:00",
-   "nr": 46
+   "nr": 47
   },
   {
    "runde": 1,
@@ -1325,18 +1340,6 @@
    "key": "KU|Tee Sorten|Pfefferminztee",
    "datum": "2026-11-27",
    "zeit": "20:00",
-   "nr": 47
-  },
-  {
-   "runde": 1,
-   "saeule": "Gut vs Schlecht",
-   "format": "Gut vs Schlecht",
-   "unterformat": "Gut vs Schlecht",
-   "lang": true,
-   "thema": "Jegliche Softdrinks gegen Wasser mit Zitrone",
-   "titel": "Jegliche Softdrinks gegen Wasser mit Zitrone",
-   "status": "offen",
-   "key": "KU|Gut vs Schlecht|Jegliche Softdrinks gegen Wasser mit Zitrone",
    "nr": 48
   },
   {

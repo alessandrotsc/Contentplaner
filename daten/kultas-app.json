@@ -16,7 +16,7 @@
    "handle": "Kultas"
   }
  ],
- "stand": "2026-11-20",
+ "stand": "2026-11-21",
  "saeulen": [
   {
    "name": "Gut vs Schlecht",
@@ -376,7 +376,8 @@
       },
       {
        "titel": "Ölziehen",
-       "status": "offen"
+       "status": "online",
+       "id": "K25_Oelziehen"
       },
       {
        "titel": "Haut / Darm",
@@ -408,11 +409,11 @@
       }
      ],
      "anzahl": 16,
-     "fertig": 3
+     "fertig": 4
     }
    ],
    "anzahl": 16,
-   "fertig": 3
+   "fertig": 4
   },
   {
    "name": "Top 3",
@@ -1252,11 +1253,25 @@
    "lang": true,
    "thema": "Ölziehen",
    "titel": "Ölziehen",
-   "status": "offen",
+   "status": "online",
    "key": "KU|Zurück zum Ursprung|Ölziehen",
+   "id": "K25_Oelziehen",
+   "gepostet_am": "2026-11-21",
+   "nr": 42
+  },
+  {
+   "runde": 1,
+   "saeule": "Zurück zum Ursprung",
+   "format": "Zurück zum Ursprung",
+   "unterformat": "Zurück zum Ursprung",
+   "lang": true,
+   "thema": "Rotlicht",
+   "titel": "Rotlicht",
+   "status": "offen",
+   "key": "KU|Zurück zum Ursprung|Rotlicht",
    "datum": "2026-11-21",
    "zeit": "20:00",
-   "nr": 42
+   "nr": 43
   },
   {
    "runde": 1,
@@ -1270,7 +1285,7 @@
    "key": "KU|Top 3|Top 3: Halsschmerzen",
    "datum": "2026-11-22",
    "zeit": "20:00",
-   "nr": 43
+   "nr": 44
   },
   {
    "runde": 1,
@@ -1284,7 +1299,7 @@
    "key": "KU|Was passiert, wenn …|Was passiert, wenn du 30 Tage auf Industriezucker verzichtest?",
    "datum": "2026-11-23",
    "zeit": "20:00",
-   "nr": 44
+   "nr": 45
   },
   {
    "runde": 1,
@@ -1298,7 +1313,7 @@
    "key": "KU|Wahrheit oder Mythos|Karies",
    "datum": "2026-11-24",
    "zeit": "20:00",
-   "nr": 45
+   "nr": 46
   },
   {
    "runde": 1,
@@ -1312,7 +1327,7 @@
    "key": "KU|Gut vs Schlecht|Jegliche Softdrinks gegen Wasser mit Zitrone",
    "datum": "2026-11-25",
    "zeit": "20:00",
-   "nr": 46
+   "nr": 47
   },
   {
    "runde": 1,
@@ -1326,7 +1341,7 @@
    "key": "KU|Supplemente|OPC",
    "datum": "2026-11-26",
    "zeit": "20:00",
-   "nr": 47
+   "nr": 48
   },
   {
    "runde": 1,
@@ -1340,7 +1355,7 @@
    "key": "KU|Tee Sorten|Pfefferminztee",
    "datum": "2026-11-27",
    "zeit": "20:00",
-   "nr": 48
+   "nr": 49
   },
   {
    "runde": 1,
@@ -1352,7 +1367,7 @@
    "titel": "Margarine, Butter gegen Weidebutter",
    "status": "offen",
    "key": "KU|Gut vs Schlecht|Margarine, Butter gegen Weidebutter",
-   "nr": 49
+   "nr": 50
   },
   {
    "runde": 1,
@@ -1364,7 +1379,7 @@
    "titel": "Weizenbrot gegen Sauerteigbrot",
    "status": "offen",
    "key": "KU|Gut vs Schlecht|Weizenbrot gegen Sauerteigbrot",
-   "nr": 50
+   "nr": 51
   },
   {
    "runde": 1,
@@ -1377,7 +1392,7 @@
    "status": "fertig",
    "key": "KU|Gut vs Schlecht|Teflonpfanne gegen Edelstahlpfanne",
    "id": "K05_Teflon",
-   "nr": 51
+   "nr": 52
   },
   {
    "runde": 1,
@@ -1389,7 +1404,7 @@
    "titel": "Duftkerze gegen Duftlampe",
    "status": "offen",
    "key": "KU|Gut vs Schlecht|Duftkerze gegen Duftlampe",
-   "nr": 52
+   "nr": 53
   },
   {
    "runde": 1,
@@ -1401,7 +1416,7 @@
    "titel": "Duschgel gegen Aleppo-Seife",
    "status": "offen",
    "key": "KU|Gut vs Schlecht|Duschgel gegen Aleppo-Seife",
-   "nr": 53
+   "nr": 54
   },
   {
    "runde": 1,
@@ -1413,7 +1428,7 @@
    "titel": "Kulturheidelbeeren gegen Wildheidelbeeren",
    "status": "offen",
    "key": "KU|Gut vs Schlecht|Kulturheidelbeeren gegen Wildheidelbeeren",
-   "nr": 54
+   "nr": 55
   },
   {
    "runde": 1,
@@ -1425,7 +1440,7 @@
    "titel": "Jodsalz gegen Ursalz",
    "status": "offen",
    "key": "KU|Gut vs Schlecht|Jodsalz gegen Ursalz",
-   "nr": 55
+   "nr": 56
   },
   {
    "runde": 1,
@@ -1437,7 +1452,7 @@
    "titel": "Leitungswasser gegen Quellwasser",
    "status": "offen",
    "key": "KU|Gut vs Schlecht|Leitungswasser gegen Quellwasser",
-   "nr": 56
+   "nr": 57
   },
   {
    "runde": 1,
@@ -1449,7 +1464,7 @@
    "titel": "Sonnencreme gegen Selbst gemacht",
    "status": "offen",
    "key": "KU|Gut vs Schlecht|Sonnencreme gegen Selbst gemacht",
-   "nr": 57
+   "nr": 58
   },
   {
    "runde": 1,
@@ -1461,7 +1476,7 @@
    "titel": "Vitamin C",
    "status": "offen",
    "key": "KU|Supplemente|Vitamin C",
-   "nr": 58
+   "nr": 59
   },
   {
    "runde": 1,
@@ -1473,7 +1488,7 @@
    "titel": "MSM",
    "status": "offen",
    "key": "KU|Supplemente|MSM",
-   "nr": 59
+   "nr": 60
   },
   {
    "runde": 1,
@@ -1485,7 +1500,7 @@
    "titel": "Schwarzkümmelöl",
    "status": "offen",
    "key": "KU|Supplemente|Schwarzkümmelöl",
-   "nr": 60
+   "nr": 61
   },
   {
    "runde": 1,
@@ -1497,7 +1512,7 @@
    "titel": "Vitamin B12",
    "status": "offen",
    "key": "KU|Supplemente|Vitamin B12",
-   "nr": 61
+   "nr": 62
   },
   {
    "runde": 1,
@@ -1509,7 +1524,7 @@
    "titel": "Oregano-Öl",
    "status": "offen",
    "key": "KU|Supplemente|Oregano-Öl",
-   "nr": 62
+   "nr": 63
   },
   {
    "runde": 1,
@@ -1521,7 +1536,7 @@
    "titel": "Shilajit",
    "status": "offen",
    "key": "KU|Supplemente|Shilajit",
-   "nr": 63
+   "nr": 64
   },
   {
    "runde": 1,
@@ -1533,7 +1548,7 @@
    "titel": "Kurkuma",
    "status": "offen",
    "key": "KU|Supplemente|Kurkuma",
-   "nr": 64
+   "nr": 65
   },
   {
    "runde": 1,
@@ -1545,7 +1560,7 @@
    "titel": "Vitamin D3 K2",
    "status": "offen",
    "key": "KU|Supplemente|Vitamin D3 K2",
-   "nr": 65
+   "nr": 66
   },
   {
    "runde": 1,
@@ -1557,7 +1572,7 @@
    "titel": "Zink",
    "status": "offen",
    "key": "KU|Supplemente|Zink",
-   "nr": 66
+   "nr": 67
   },
   {
    "runde": 1,
@@ -1569,7 +1584,7 @@
    "titel": "Fencheltee",
    "status": "offen",
    "key": "KU|Tee Sorten|Fencheltee",
-   "nr": 67
+   "nr": 68
   },
   {
    "runde": 1,
@@ -1581,7 +1596,7 @@
    "titel": "Löwenzahntee",
    "status": "offen",
    "key": "KU|Tee Sorten|Löwenzahntee",
-   "nr": 68
+   "nr": 69
   },
   {
    "runde": 1,
@@ -1593,7 +1608,7 @@
    "titel": "Kurkuma",
    "status": "offen",
    "key": "KU|Tee Sorten|Kurkuma",
-   "nr": 69
+   "nr": 70
   },
   {
    "runde": 1,
@@ -1605,7 +1620,7 @@
    "titel": "Hagebutte",
    "status": "offen",
    "key": "KU|Tee Sorten|Hagebutte",
-   "nr": 70
+   "nr": 71
   },
   {
    "runde": 1,
@@ -1617,7 +1632,7 @@
    "titel": "Hibiskus",
    "status": "offen",
    "key": "KU|Tee Sorten|Hibiskus",
-   "nr": 71
+   "nr": 72
   },
   {
    "runde": 1,
@@ -1629,7 +1644,7 @@
    "titel": "Kamillentee",
    "status": "offen",
    "key": "KU|Tee Sorten|Kamillentee",
-   "nr": 72
+   "nr": 73
   },
   {
    "runde": 1,
@@ -1641,7 +1656,7 @@
    "titel": "Zitronenmelisse",
    "status": "offen",
    "key": "KU|Tee Sorten|Zitronenmelisse",
-   "nr": 73
+   "nr": 74
   },
   {
    "runde": 1,
@@ -1653,7 +1668,7 @@
    "titel": "Salbei",
    "status": "offen",
    "key": "KU|Tee Sorten|Salbei",
-   "nr": 74
+   "nr": 75
   },
   {
    "runde": 1,
@@ -1665,7 +1680,7 @@
    "titel": "Brennnesseltee",
    "status": "offen",
    "key": "KU|Tee Sorten|Brennnesseltee",
-   "nr": 75
+   "nr": 76
   },
   {
    "runde": 1,
@@ -1677,18 +1692,6 @@
    "titel": "Oolong Tee",
    "status": "offen",
    "key": "KU|Tee Sorten|Oolong Tee",
-   "nr": 76
-  },
-  {
-   "runde": 1,
-   "saeule": "Zurück zum Ursprung",
-   "format": "Zurück zum Ursprung",
-   "unterformat": "Zurück zum Ursprung",
-   "lang": true,
-   "thema": "Rotlicht",
-   "titel": "Rotlicht",
-   "status": "offen",
-   "key": "KU|Zurück zum Ursprung|Rotlicht",
    "nr": 77
   },
   {

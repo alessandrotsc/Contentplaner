@@ -16,7 +16,7 @@
    "handle": "Kultas"
   }
  ],
- "stand": "2026-11-21",
+ "stand": "2026-11-24",
  "saeulen": [
   {
    "name": "Gut vs Schlecht",
@@ -624,7 +624,8 @@
       },
       {
        "titel": "Karies",
-       "status": "offen"
+       "status": "online",
+       "id": "K28_Karies"
       },
       {
        "titel": "Rein durch Ernährung alle Nährstoffe",
@@ -664,11 +665,11 @@
       }
      ],
      "anzahl": 16,
-     "fertig": 2
+     "fertig": 3
     }
    ],
    "anzahl": 16,
-   "fertig": 2
+   "fertig": 3
   }
  ],
  "reihenfolge": [
@@ -1339,11 +1340,25 @@
    "lang": true,
    "thema": "Karies",
    "titel": "Karies",
-   "status": "offen",
+   "status": "online",
    "key": "KU|Wahrheit oder Mythos|Karies",
+   "id": "K28_Karies",
+   "gepostet_am": "2026-11-24",
+   "nr": 48
+  },
+  {
+   "runde": 1,
+   "saeule": "Wahrheit oder Mythos",
+   "format": "Wahrheit oder Mythos",
+   "unterformat": "Wahrheit oder Mythos",
+   "lang": true,
+   "thema": "Rein durch Ernährung alle Nährstoffe",
+   "titel": "Rein durch Ernährung alle Nährstoffe",
+   "status": "offen",
+   "key": "KU|Wahrheit oder Mythos|Rein durch Ernährung alle Nährstoffe",
    "datum": "2026-11-24",
    "zeit": "20:00",
-   "nr": 48
+   "nr": 49
   },
   {
    "runde": 1,
@@ -1357,7 +1372,7 @@
    "key": "KU|Gut vs Schlecht|Jegliche Softdrinks gegen Wasser mit Zitrone",
    "datum": "2026-11-25",
    "zeit": "20:00",
-   "nr": 49
+   "nr": 50
   },
   {
    "runde": 1,
@@ -1371,7 +1386,7 @@
    "key": "KU|Supplemente|OPC",
    "datum": "2026-11-26",
    "zeit": "20:00",
-   "nr": 50
+   "nr": 51
   },
   {
    "runde": 1,
@@ -1385,7 +1400,7 @@
    "key": "KU|Tee Sorten|Pfefferminztee",
    "datum": "2026-11-27",
    "zeit": "20:00",
-   "nr": 51
+   "nr": 52
   },
   {
    "runde": 1,
@@ -1397,7 +1412,7 @@
    "titel": "Margarine, Butter gegen Weidebutter",
    "status": "offen",
    "key": "KU|Gut vs Schlecht|Margarine, Butter gegen Weidebutter",
-   "nr": 52
+   "nr": 53
   },
   {
    "runde": 1,
@@ -1409,7 +1424,7 @@
    "titel": "Weizenbrot gegen Sauerteigbrot",
    "status": "offen",
    "key": "KU|Gut vs Schlecht|Weizenbrot gegen Sauerteigbrot",
-   "nr": 53
+   "nr": 54
   },
   {
    "runde": 1,
@@ -1422,7 +1437,7 @@
    "status": "fertig",
    "key": "KU|Gut vs Schlecht|Teflonpfanne gegen Edelstahlpfanne",
    "id": "K05_Teflon",
-   "nr": 54
+   "nr": 55
   },
   {
    "runde": 1,
@@ -1434,7 +1449,7 @@
    "titel": "Duftkerze gegen Duftlampe",
    "status": "offen",
    "key": "KU|Gut vs Schlecht|Duftkerze gegen Duftlampe",
-   "nr": 55
+   "nr": 56
   },
   {
    "runde": 1,
@@ -1446,7 +1461,7 @@
    "titel": "Duschgel gegen Aleppo-Seife",
    "status": "offen",
    "key": "KU|Gut vs Schlecht|Duschgel gegen Aleppo-Seife",
-   "nr": 56
+   "nr": 57
   },
   {
    "runde": 1,
@@ -1458,7 +1473,7 @@
    "titel": "Kulturheidelbeeren gegen Wildheidelbeeren",
    "status": "offen",
    "key": "KU|Gut vs Schlecht|Kulturheidelbeeren gegen Wildheidelbeeren",
-   "nr": 57
+   "nr": 58
   },
   {
    "runde": 1,
@@ -1470,7 +1485,7 @@
    "titel": "Jodsalz gegen Ursalz",
    "status": "offen",
    "key": "KU|Gut vs Schlecht|Jodsalz gegen Ursalz",
-   "nr": 58
+   "nr": 59
   },
   {
    "runde": 1,
@@ -1482,7 +1497,7 @@
    "titel": "Leitungswasser gegen Quellwasser",
    "status": "offen",
    "key": "KU|Gut vs Schlecht|Leitungswasser gegen Quellwasser",
-   "nr": 59
+   "nr": 60
   },
   {
    "runde": 1,
@@ -1494,7 +1509,7 @@
    "titel": "Sonnencreme gegen Selbst gemacht",
    "status": "offen",
    "key": "KU|Gut vs Schlecht|Sonnencreme gegen Selbst gemacht",
-   "nr": 60
+   "nr": 61
   },
   {
    "runde": 1,
@@ -1506,7 +1521,7 @@
    "titel": "Vitamin C",
    "status": "offen",
    "key": "KU|Supplemente|Vitamin C",
-   "nr": 61
+   "nr": 62
   },
   {
    "runde": 1,
@@ -1518,7 +1533,7 @@
    "titel": "MSM",
    "status": "offen",
    "key": "KU|Supplemente|MSM",
-   "nr": 62
+   "nr": 63
   },
   {
    "runde": 1,
@@ -1530,7 +1545,7 @@
    "titel": "Schwarzkümmelöl",
    "status": "offen",
    "key": "KU|Supplemente|Schwarzkümmelöl",
-   "nr": 63
+   "nr": 64
   },
   {
    "runde": 1,
@@ -1542,7 +1557,7 @@
    "titel": "Vitamin B12",
    "status": "offen",
    "key": "KU|Supplemente|Vitamin B12",
-   "nr": 64
+   "nr": 65
   },
   {
    "runde": 1,
@@ -1554,7 +1569,7 @@
    "titel": "Oregano-Öl",
    "status": "offen",
    "key": "KU|Supplemente|Oregano-Öl",
-   "nr": 65
+   "nr": 66
   },
   {
    "runde": 1,
@@ -1566,7 +1581,7 @@
    "titel": "Shilajit",
    "status": "offen",
    "key": "KU|Supplemente|Shilajit",
-   "nr": 66
+   "nr": 67
   },
   {
    "runde": 1,
@@ -1578,7 +1593,7 @@
    "titel": "Kurkuma",
    "status": "offen",
    "key": "KU|Supplemente|Kurkuma",
-   "nr": 67
+   "nr": 68
   },
   {
    "runde": 1,
@@ -1590,7 +1605,7 @@
    "titel": "Vitamin D3 K2",
    "status": "offen",
    "key": "KU|Supplemente|Vitamin D3 K2",
-   "nr": 68
+   "nr": 69
   },
   {
    "runde": 1,
@@ -1602,7 +1617,7 @@
    "titel": "Zink",
    "status": "offen",
    "key": "KU|Supplemente|Zink",
-   "nr": 69
+   "nr": 70
   },
   {
    "runde": 1,
@@ -1614,7 +1629,7 @@
    "titel": "Fencheltee",
    "status": "offen",
    "key": "KU|Tee Sorten|Fencheltee",
-   "nr": 70
+   "nr": 71
   },
   {
    "runde": 1,
@@ -1626,7 +1641,7 @@
    "titel": "Löwenzahntee",
    "status": "offen",
    "key": "KU|Tee Sorten|Löwenzahntee",
-   "nr": 71
+   "nr": 72
   },
   {
    "runde": 1,
@@ -1638,7 +1653,7 @@
    "titel": "Kurkuma",
    "status": "offen",
    "key": "KU|Tee Sorten|Kurkuma",
-   "nr": 72
+   "nr": 73
   },
   {
    "runde": 1,
@@ -1650,7 +1665,7 @@
    "titel": "Hagebutte",
    "status": "offen",
    "key": "KU|Tee Sorten|Hagebutte",
-   "nr": 73
+   "nr": 74
   },
   {
    "runde": 1,
@@ -1662,7 +1677,7 @@
    "titel": "Hibiskus",
    "status": "offen",
    "key": "KU|Tee Sorten|Hibiskus",
-   "nr": 74
+   "nr": 75
   },
   {
    "runde": 1,
@@ -1674,7 +1689,7 @@
    "titel": "Kamillentee",
    "status": "offen",
    "key": "KU|Tee Sorten|Kamillentee",
-   "nr": 75
+   "nr": 76
   },
   {
    "runde": 1,
@@ -1686,7 +1701,7 @@
    "titel": "Zitronenmelisse",
    "status": "offen",
    "key": "KU|Tee Sorten|Zitronenmelisse",
-   "nr": 76
+   "nr": 77
   },
   {
    "runde": 1,
@@ -1698,7 +1713,7 @@
    "titel": "Salbei",
    "status": "offen",
    "key": "KU|Tee Sorten|Salbei",
-   "nr": 77
+   "nr": 78
   },
   {
    "runde": 1,
@@ -1710,7 +1725,7 @@
    "titel": "Brennnesseltee",
    "status": "offen",
    "key": "KU|Tee Sorten|Brennnesseltee",
-   "nr": 78
+   "nr": 79
   },
   {
    "runde": 1,
@@ -1722,7 +1737,7 @@
    "titel": "Oolong Tee",
    "status": "offen",
    "key": "KU|Tee Sorten|Oolong Tee",
-   "nr": 79
+   "nr": 80
   },
   {
    "runde": 1,
@@ -1734,7 +1749,7 @@
    "titel": "Essen vorm Schlafen",
    "status": "offen",
    "key": "KU|Zurück zum Ursprung|Essen vorm Schlafen",
-   "nr": 80
+   "nr": 81
   },
   {
    "runde": 1,
@@ -1746,7 +1761,7 @@
    "titel": "Toilettenhocker",
    "status": "offen",
    "key": "KU|Zurück zum Ursprung|Toilettenhocker",
-   "nr": 81
+   "nr": 82
   },
   {
    "runde": 1,
@@ -1758,7 +1773,7 @@
    "titel": "Klamotten",
    "status": "offen",
    "key": "KU|Zurück zum Ursprung|Klamotten",
-   "nr": 82
+   "nr": 83
   },
   {
    "runde": 1,
@@ -1770,7 +1785,7 @@
    "titel": "Nasenatmung",
    "status": "offen",
    "key": "KU|Zurück zum Ursprung|Nasenatmung",
-   "nr": 83
+   "nr": 84
   },
   {
    "runde": 1,
@@ -1782,7 +1797,7 @@
    "titel": "Manifestieren",
    "status": "offen",
    "key": "KU|Zurück zum Ursprung|Manifestieren",
-   "nr": 84
+   "nr": 85
   },
   {
    "runde": 1,
@@ -1794,7 +1809,7 @@
    "titel": "Sonne",
    "status": "offen",
    "key": "KU|Zurück zum Ursprung|Sonne",
-   "nr": 85
+   "nr": 86
   },
   {
    "runde": 1,
@@ -1806,7 +1821,7 @@
    "titel": "Sauna",
    "status": "offen",
    "key": "KU|Zurück zum Ursprung|Sauna",
-   "nr": 86
+   "nr": 87
   },
   {
    "runde": 1,
@@ -1818,7 +1833,7 @@
    "titel": "Haut / Darm",
    "status": "offen",
    "key": "KU|Zurück zum Ursprung|Haut / Darm",
-   "nr": 87
+   "nr": 88
   },
   {
    "runde": 1,
@@ -1830,7 +1845,7 @@
    "titel": "Top 3: Testosteron weniger",
    "status": "offen",
    "key": "KU|Top 3|Top 3: Testosteron weniger",
-   "nr": 88
+   "nr": 89
   },
   {
    "runde": 1,
@@ -1842,7 +1857,7 @@
    "titel": "Top 3: Gewürze",
    "status": "offen",
    "key": "KU|Top 3|Top 3: Gewürze",
-   "nr": 89
+   "nr": 90
   },
   {
    "runde": 1,
@@ -1854,7 +1869,7 @@
    "titel": "Top 3: Pre Workout",
    "status": "offen",
    "key": "KU|Top 3|Top 3: Pre Workout",
-   "nr": 90
+   "nr": 91
   },
   {
    "runde": 1,
@@ -1866,7 +1881,7 @@
    "titel": "Top 3: Leber entgiften",
    "status": "offen",
    "key": "KU|Top 3|Top 3: Leber entgiften",
-   "nr": 91
+   "nr": 92
   },
   {
    "runde": 1,
@@ -1878,7 +1893,7 @@
    "titel": "Top 3: Binden Lebensmittel",
    "status": "offen",
    "key": "KU|Top 3|Top 3: Binden Lebensmittel",
-   "nr": 92
+   "nr": 93
   },
   {
    "runde": 1,
@@ -1890,7 +1905,7 @@
    "titel": "Top 3: Tricks für Nase öffnen",
    "status": "offen",
    "key": "KU|Top 3|Top 3: Tricks für Nase öffnen",
-   "nr": 93
+   "nr": 94
   },
   {
    "runde": 1,
@@ -1902,7 +1917,7 @@
    "titel": "Top 3: Gegen Husten",
    "status": "offen",
    "key": "KU|Top 3|Top 3: Gegen Husten",
-   "nr": 94
+   "nr": 95
   },
   {
    "runde": 1,
@@ -1914,7 +1929,7 @@
    "titel": "Top 3: Innerer UV-Schutz",
    "status": "offen",
    "key": "KU|Top 3|Top 3: Innerer UV-Schutz",
-   "nr": 95
+   "nr": 96
   },
   {
    "runde": 1,
@@ -1926,7 +1941,7 @@
    "titel": "Was passiert, wenn du zum Schlafen Nasenstrips benutzt?",
    "status": "offen",
    "key": "KU|Was passiert, wenn …|Was passiert, wenn du zum Schlafen Nasenstrips benutzt?",
-   "nr": 96
+   "nr": 97
   },
   {
    "runde": 1,
@@ -1938,7 +1953,7 @@
    "titel": "Was passiert, wenn du 30 Tage keinen Kaffee mehr trinkst?",
    "status": "offen",
    "key": "KU|Was passiert, wenn …|Was passiert, wenn du 30 Tage keinen Kaffee mehr trinkst?",
-   "nr": 97
+   "nr": 98
   },
   {
    "runde": 1,
@@ -1950,7 +1965,7 @@
    "titel": "Was passiert, wenn du 1 Std. vorm Schlafen alle Bildschirme ausmachst?",
    "status": "offen",
    "key": "KU|Was passiert, wenn …|Was passiert, wenn du 1 Std. vorm Schlafen alle Bildschirme ausmachst?",
-   "nr": 98
+   "nr": 99
   },
   {
    "runde": 1,
@@ -1962,7 +1977,7 @@
    "titel": "Was passiert, wenn du jeden Tag Flohsamenschalen in Wasser trinkst?",
    "status": "offen",
    "key": "KU|Was passiert, wenn …|Was passiert, wenn du jeden Tag Flohsamenschalen in Wasser trinkst?",
-   "nr": 99
+   "nr": 100
   },
   {
    "runde": 1,
@@ -1974,7 +1989,7 @@
    "titel": "Was passiert, wenn du täglich zur gleichen Uhrzeit aufwachst?",
    "status": "offen",
    "key": "KU|Was passiert, wenn …|Was passiert, wenn du täglich zur gleichen Uhrzeit aufwachst?",
-   "nr": 100
+   "nr": 101
   },
   {
    "runde": 1,
@@ -1986,7 +2001,7 @@
    "titel": "Was passiert, wenn du nach einer Mahlzeit spazieren gehst?",
    "status": "offen",
    "key": "KU|Was passiert, wenn …|Was passiert, wenn du nach einer Mahlzeit spazieren gehst?",
-   "nr": 101
+   "nr": 102
   },
   {
    "runde": 1,
@@ -1998,7 +2013,7 @@
    "titel": "Was passiert, wenn du direkt nach dem Aufstehen ans Handy gehst?",
    "status": "offen",
    "key": "KU|Was passiert, wenn …|Was passiert, wenn du direkt nach dem Aufstehen ans Handy gehst?",
-   "nr": 102
+   "nr": 103
   },
   {
    "runde": 1,
@@ -2010,7 +2025,7 @@
    "titel": "Was passiert, wenn du 30 Tage lang alle Shampoos weglässt?",
    "status": "offen",
    "key": "KU|Was passiert, wenn …|Was passiert, wenn du 30 Tage lang alle Shampoos weglässt?",
-   "nr": 103
+   "nr": 104
   },
   {
    "runde": 1,
@@ -2022,7 +2037,7 @@
    "titel": "Was passiert, wenn du 30 Tage lang keinen Alkohol trinkst?",
    "status": "offen",
    "key": "KU|Was passiert, wenn …|Was passiert, wenn du 30 Tage lang keinen Alkohol trinkst?",
-   "nr": 104
+   "nr": 105
   },
   {
    "runde": 1,
@@ -2034,18 +2049,6 @@
    "titel": "Was passiert, wenn du täglich Eier isst?",
    "status": "offen",
    "key": "KU|Was passiert, wenn …|Was passiert, wenn du täglich Eier isst?",
-   "nr": 105
-  },
-  {
-   "runde": 1,
-   "saeule": "Wahrheit oder Mythos",
-   "format": "Wahrheit oder Mythos",
-   "unterformat": "Wahrheit oder Mythos",
-   "lang": true,
-   "thema": "Rein durch Ernährung alle Nährstoffe",
-   "titel": "Rein durch Ernährung alle Nährstoffe",
-   "status": "offen",
-   "key": "KU|Wahrheit oder Mythos|Rein durch Ernährung alle Nährstoffe",
    "nr": 106
   },
   {

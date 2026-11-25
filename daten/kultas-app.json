@@ -208,7 +208,8 @@
       },
       {
        "titel": "OPC",
-       "status": "offen"
+       "status": "online",
+       "id": "K30_OPC"
       },
       {
        "titel": "Vitamin C",
@@ -240,11 +241,11 @@
       }
      ],
      "anzahl": 16,
-     "fertig": 3
+     "fertig": 4
     }
    ],
    "anzahl": 16,
-   "fertig": 3
+   "fertig": 4
   },
   {
    "name": "Tee Sorten",
@@ -1397,11 +1398,25 @@
    "lang": true,
    "thema": "OPC",
    "titel": "OPC",
-   "status": "offen",
+   "status": "online",
    "key": "KU|Supplemente|OPC",
+   "id": "K30_OPC",
+   "gepostet_am": "2026-11-26",
+   "nr": 52
+  },
+  {
+   "runde": 1,
+   "saeule": "Supplemente",
+   "format": "Supplemente",
+   "unterformat": "Supplemente",
+   "lang": true,
+   "thema": "Vitamin C",
+   "titel": "Vitamin C",
+   "status": "offen",
+   "key": "KU|Supplemente|Vitamin C",
    "datum": "2026-11-26",
    "zeit": "20:00",
-   "nr": 52
+   "nr": 53
   },
   {
    "runde": 1,
@@ -1415,7 +1430,7 @@
    "key": "KU|Tee Sorten|Pfefferminztee",
    "datum": "2026-11-27",
    "zeit": "20:00",
-   "nr": 53
+   "nr": 54
   },
   {
    "runde": 1,
@@ -1427,7 +1442,7 @@
    "titel": "Weizenbrot gegen Sauerteigbrot",
    "status": "offen",
    "key": "KU|Gut vs Schlecht|Weizenbrot gegen Sauerteigbrot",
-   "nr": 54
+   "nr": 55
   },
   {
    "runde": 1,
@@ -1440,7 +1455,7 @@
    "status": "fertig",
    "key": "KU|Gut vs Schlecht|Teflonpfanne gegen Edelstahlpfanne",
    "id": "K05_Teflon",
-   "nr": 55
+   "nr": 56
   },
   {
    "runde": 1,
@@ -1452,7 +1467,7 @@
    "titel": "Duftkerze gegen Duftlampe",
    "status": "offen",
    "key": "KU|Gut vs Schlecht|Duftkerze gegen Duftlampe",
-   "nr": 56
+   "nr": 57
   },
   {
    "runde": 1,
@@ -1464,7 +1479,7 @@
    "titel": "Duschgel gegen Aleppo-Seife",
    "status": "offen",
    "key": "KU|Gut vs Schlecht|Duschgel gegen Aleppo-Seife",
-   "nr": 57
+   "nr": 58
   },
   {
    "runde": 1,
@@ -1476,7 +1491,7 @@
    "titel": "Kulturheidelbeeren gegen Wildheidelbeeren",
    "status": "offen",
    "key": "KU|Gut vs Schlecht|Kulturheidelbeeren gegen Wildheidelbeeren",
-   "nr": 58
+   "nr": 59
   },
   {
    "runde": 1,
@@ -1488,7 +1503,7 @@
    "titel": "Jodsalz gegen Ursalz",
    "status": "offen",
    "key": "KU|Gut vs Schlecht|Jodsalz gegen Ursalz",
-   "nr": 59
+   "nr": 60
   },
   {
    "runde": 1,
@@ -1500,7 +1515,7 @@
    "titel": "Leitungswasser gegen Quellwasser",
    "status": "offen",
    "key": "KU|Gut vs Schlecht|Leitungswasser gegen Quellwasser",
-   "nr": 60
+   "nr": 61
   },
   {
    "runde": 1,
@@ -1512,18 +1527,6 @@
    "titel": "Sonnencreme gegen Selbst gemacht",
    "status": "offen",
    "key": "KU|Gut vs Schlecht|Sonnencreme gegen Selbst gemacht",
-   "nr": 61
-  },
-  {
-   "runde": 1,
-   "saeule": "Supplemente",
-   "format": "Supplemente",
-   "unterformat": "Supplemente",
-   "lang": true,
-   "thema": "Vitamin C",
-   "titel": "Vitamin C",
-   "status": "offen",
-   "key": "KU|Supplemente|Vitamin C",
    "nr": 62
   },
   {

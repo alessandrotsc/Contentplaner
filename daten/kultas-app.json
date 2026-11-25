@@ -16,7 +16,7 @@
    "handle": "Kultas"
   }
  ],
- "stand": "2026-11-24",
+ "stand": "2026-11-25",
  "saeulen": [
   {
    "name": "Gut vs Schlecht",
@@ -142,7 +142,8 @@
       },
       {
        "titel": "Jegliche Softdrinks gegen Wasser mit Zitrone",
-       "status": "offen"
+       "status": "online",
+       "id": "K29_Softdrinks"
       },
       {
        "titel": "Margarine, Butter gegen Weidebutter",
@@ -154,11 +155,11 @@
       }
      ],
      "anzahl": 16,
-     "fertig": 4
+     "fertig": 5
     }
    ],
    "anzahl": 16,
-   "fertig": 4
+   "fertig": 5
   },
   {
    "name": "Supplemente",
@@ -1368,11 +1369,25 @@
    "lang": true,
    "thema": "Jegliche Softdrinks gegen Wasser mit Zitrone",
    "titel": "Jegliche Softdrinks gegen Wasser mit Zitrone",
-   "status": "offen",
+   "status": "online",
    "key": "KU|Gut vs Schlecht|Jegliche Softdrinks gegen Wasser mit Zitrone",
+   "id": "K29_Softdrinks",
+   "gepostet_am": "2026-11-25",
+   "nr": 50
+  },
+  {
+   "runde": 1,
+   "saeule": "Gut vs Schlecht",
+   "format": "Gut vs Schlecht",
+   "unterformat": "Gut vs Schlecht",
+   "lang": true,
+   "thema": "Margarine, Butter gegen Weidebutter",
+   "titel": "Margarine, Butter gegen Weidebutter",
+   "status": "offen",
+   "key": "KU|Gut vs Schlecht|Margarine, Butter gegen Weidebutter",
    "datum": "2026-11-25",
    "zeit": "20:00",
-   "nr": 50
+   "nr": 51
   },
   {
    "runde": 1,
@@ -1386,7 +1401,7 @@
    "key": "KU|Supplemente|OPC",
    "datum": "2026-11-26",
    "zeit": "20:00",
-   "nr": 51
+   "nr": 52
   },
   {
    "runde": 1,
@@ -1400,18 +1415,6 @@
    "key": "KU|Tee Sorten|Pfefferminztee",
    "datum": "2026-11-27",
    "zeit": "20:00",
-   "nr": 52
-  },
-  {
-   "runde": 1,
-   "saeule": "Gut vs Schlecht",
-   "format": "Gut vs Schlecht",
-   "unterformat": "Gut vs Schlecht",
-   "lang": true,
-   "thema": "Margarine, Butter gegen Weidebutter",
-   "titel": "Margarine, Butter gegen Weidebutter",
-   "status": "offen",
-   "key": "KU|Gut vs Schlecht|Margarine, Butter gegen Weidebutter",
    "nr": 53
   },
   {

@@ -362,7 +362,8 @@
       },
       {
        "titel": "Stress",
-       "status": "offen"
+       "status": "fertig",
+       "id": "K32_Stress"
       },
       {
        "titel": "Sauna",
@@ -412,11 +413,11 @@
       }
      ],
      "anzahl": 16,
-     "fertig": 4
+     "fertig": 5
     }
    ],
    "anzahl": 16,
-   "fertig": 4
+   "fertig": 5
   },
   {
    "name": "Top 3",
@@ -1075,10 +1076,11 @@
    "format": "Zurück zum Ursprung",
    "unterformat": "Zurück zum Ursprung",
    "lang": true,
-   "thema": "Frequenz Heilung",
-   "titel": "Frequenz Heilung",
-   "status": "offen",
-   "key": "KU|Zurück zum Ursprung|Frequenz Heilung",
+   "thema": "Stress",
+   "titel": "Stress",
+   "status": "fertig",
+   "key": "KU|Zurück zum Ursprung|Stress",
+   "id": "K32_Stress",
    "datum": "2026-11-28",
    "zeit": "20:00",
    "nr": 29
@@ -1173,10 +1175,10 @@
    "format": "Zurück zum Ursprung",
    "unterformat": "Zurück zum Ursprung",
    "lang": true,
-   "thema": "Stress",
-   "titel": "Stress",
+   "thema": "Frequenz Heilung",
+   "titel": "Frequenz Heilung",
    "status": "offen",
-   "key": "KU|Zurück zum Ursprung|Stress",
+   "key": "KU|Zurück zum Ursprung|Frequenz Heilung",
    "datum": "2026-12-05",
    "zeit": "20:00",
    "nr": 36

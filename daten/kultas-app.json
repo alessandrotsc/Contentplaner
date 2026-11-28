@@ -16,7 +16,7 @@
    "handle": "Kultas"
   }
  ],
- "stand": "2026-11-27",
+ "stand": "2026-11-28",
  "saeulen": [
   {
    "name": "Gut vs Schlecht",
@@ -436,7 +436,8 @@
       },
       {
        "titel": "Top 3: Besserer Schlaf",
-       "status": "offen"
+       "status": "fertig",
+       "id": "K33_Schlaf"
       },
       {
        "titel": "Top 3: Mehr Energie",
@@ -499,11 +500,11 @@
       }
      ],
      "anzahl": 16,
-     "fertig": 4
+     "fertig": 5
     }
    ],
    "anzahl": 16,
-   "fertig": 4
+   "fertig": 5
   },
   {
    "name": "Was passiert, wenn …",
@@ -540,7 +541,8 @@
       },
       {
        "titel": "Was passiert, wenn du täglich morgens Zitronenwasser trinkst?",
-       "status": "offen"
+       "status": "fertig",
+       "id": "K34_Zitronenwasser"
       },
       {
        "titel": "Was passiert, wenn du zum Schlafen Nasenstrips benutzt?",
@@ -584,11 +586,11 @@
       }
      ],
      "anzahl": 16,
-     "fertig": 3
+     "fertig": 4
     }
    ],
    "anzahl": 16,
-   "fertig": 3
+   "fertig": 4
   },
   {
    "name": "Wahrheit oder Mythos",
@@ -1093,8 +1095,9 @@
    "lang": true,
    "thema": "Top 3: Besserer Schlaf",
    "titel": "Top 3: Besserer Schlaf",
-   "status": "offen",
+   "status": "fertig",
    "key": "KU|Top 3|Top 3: Besserer Schlaf",
+   "id": "K33_Schlaf",
    "datum": "2026-11-29",
    "zeit": "20:00",
    "nr": 30
@@ -1105,10 +1108,11 @@
    "format": "Was passiert, wenn …",
    "unterformat": "Was passiert, wenn …",
    "lang": true,
-   "thema": "Was passiert, wenn du täglich Pornos schaust?",
-   "titel": "Was passiert, wenn du täglich Pornos schaust?",
-   "status": "offen",
-   "key": "KU|Was passiert, wenn …|Was passiert, wenn du täglich Pornos schaust?",
+   "thema": "Was passiert, wenn du täglich morgens Zitronenwasser trinkst?",
+   "titel": "Was passiert, wenn du täglich morgens Zitronenwasser trinkst?",
+   "status": "fertig",
+   "key": "KU|Was passiert, wenn …|Was passiert, wenn du täglich morgens Zitronenwasser trinkst?",
+   "id": "K34_Zitronenwasser",
    "datum": "2026-11-30",
    "zeit": "20:00",
    "nr": 31
@@ -1203,10 +1207,10 @@
    "format": "Was passiert, wenn …",
    "unterformat": "Was passiert, wenn …",
    "lang": true,
-   "thema": "Was passiert, wenn du täglich Knoblauch isst?",
-   "titel": "Was passiert, wenn du täglich Knoblauch isst?",
+   "thema": "Was passiert, wenn du täglich Pornos schaust?",
+   "titel": "Was passiert, wenn du täglich Pornos schaust?",
    "status": "offen",
-   "key": "KU|Was passiert, wenn …|Was passiert, wenn du täglich Knoblauch isst?",
+   "key": "KU|Was passiert, wenn …|Was passiert, wenn du täglich Pornos schaust?",
    "datum": "2026-12-07",
    "zeit": "20:00",
    "nr": 38
@@ -1301,10 +1305,10 @@
    "format": "Was passiert, wenn …",
    "unterformat": "Was passiert, wenn …",
    "lang": true,
-   "thema": "Was passiert, wenn du täglich morgens Zitronenwasser trinkst?",
-   "titel": "Was passiert, wenn du täglich morgens Zitronenwasser trinkst?",
+   "thema": "Was passiert, wenn du täglich Knoblauch isst?",
+   "titel": "Was passiert, wenn du täglich Knoblauch isst?",
    "status": "offen",
-   "key": "KU|Was passiert, wenn …|Was passiert, wenn du täglich morgens Zitronenwasser trinkst?",
+   "key": "KU|Was passiert, wenn …|Was passiert, wenn du täglich Knoblauch isst?",
    "datum": "2026-12-14",
    "zeit": "20:00",
    "nr": 45
